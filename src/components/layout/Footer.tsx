@@ -7,6 +7,7 @@ const solutionsLinks = [
   { title: "School Programs", href: "/solutions/school-programs" },
   { title: "Squads", href: "/solutions/squads" },
   { title: "Martial Arts & Sports (SportDesk)", href: "/solutions/sportdesk" },
+  { title: "Soopervision", href: "https://soopervision.com", external: true },
 ];
 
 const platformLinks = [
@@ -51,9 +52,20 @@ export function Footer() {
             <ul className="space-y-2">
               {solutionsLinks.map((link) => (
                 <li key={link.href}>
-                  <Link to={link.href} className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
-                    {link.title}
-                  </Link>
+                  {link.external ? (
+                    <a 
+                      href={link.href} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors"
+                    >
+                      {link.title} ↗
+                    </a>
+                  ) : (
+                    <Link to={link.href} className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
+                      {link.title}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
