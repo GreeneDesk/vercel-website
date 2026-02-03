@@ -6,140 +6,138 @@
 
 /* GreeneDesk Design System
    Australian corporate SaaS - trustworthy, friendly, conversion-focused
-   Brand colors: Ocean Blue + Mint Green
    All colors in HSL
 */
 
 @layer base {
   :root {
-    /* Core brand */
+    /* Core brand - Eucalyptus Green */
     --background: 0 0% 100%;
-    --foreground: 210 40% 15%;
+    --foreground: 222 47% 11%;
 
     /* Cards & Surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 210 40% 15%;
+    --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 210 40% 15%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Primary - Ocean Blue (main brand color) */
-    --primary: 200 60% 50%;
+    /* Primary - Fresh Green */
+    --primary: 152 55% 38%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 200 50% 96%;
-    --primary-glow: 200 65% 58%;
+    --primary-light: 152 45% 95%;
+    --primary-glow: 152 65% 45%;
 
-    /* Secondary - Mint Green (accent/highlights) */
-    --secondary: 160 50% 55%;
+    /* Secondary - Deep Navy */
+    --secondary: 222 47% 20%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Warm Orange (CTAs) */
-    --accent: 25 95% 53%;
-    --accent-foreground: 0 0% 100%;
-    --accent-hover: 25 95% 48%;
+    /* Accent - Warm Amber (CTAs) */
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
+    --accent-hover: 38 92% 45%;
 
     /* Muted */
     --muted: 210 20% 96%;
-    --muted-foreground: 210 20% 45%;
+    --muted-foreground: 215 16% 47%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 210 25% 90%;
-    --input: 210 25% 90%;
-    --ring: 200 60% 50%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 152 55% 38%;
 
     --radius: 0.75rem;
 
     /* Surface variants */
     --surface-elevated: 210 20% 99%;
-    --surface-section: 200 30% 97%;
-    --surface-dark: 210 40% 12%;
-    --surface-dark-elevated: 210 35% 18%;
+    --surface-section: 152 30% 97%;
+    --surface-dark: 222 47% 11%;
+    --surface-dark-elevated: 222 40% 16%;
 
     /* Text variants */
-    --text-primary: 210 40% 15%;
-    --text-secondary: 210 20% 45%;
-    --text-tertiary: 210 15% 60%;
+    --text-primary: 222 47% 11%;
+    --text-secondary: 215 16% 47%;
+    --text-tertiary: 215 13% 65%;
     --text-on-dark: 0 0% 100%;
-    --text-on-dark-muted: 200 20% 80%;
+    --text-on-dark-muted: 210 20% 80%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(200 60% 50%) 0%, hsl(180 55% 52%) 50%, hsl(160 50% 55%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(20 90% 48%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(210 40% 12%) 0%, hsl(210 35% 18%) 100%);
-    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(200 30% 97%) 100%);
-    --gradient-brand: linear-gradient(135deg, hsl(200 60% 50%) 0%, hsl(160 50% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(152 55% 38%) 0%, hsl(152 65% 45%) 50%, hsl(165 50% 42%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(32 90% 48%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(222 47% 11%) 0%, hsl(222 40% 16%) 100%);
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(152 30% 97%) 100%);
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(210 40% 15% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(210 40% 15% / 0.1), 0 2px 4px -2px hsl(210 40% 15% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(210 40% 15% / 0.1), 0 4px 6px -4px hsl(210 40% 15% / 0.1);
-    --shadow-xl: 0 20px 25px -5px hsl(210 40% 15% / 0.1), 0 8px 10px -6px hsl(210 40% 15% / 0.1);
-    --shadow-glow: 0 0 40px hsl(200 60% 50% / 0.15);
-    --shadow-cta: 0 4px 14px 0 hsl(25 95% 53% / 0.35);
+    --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.1), 0 2px 4px -2px hsl(222 47% 11% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.1), 0 4px 6px -4px hsl(222 47% 11% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(222 47% 11% / 0.1), 0 8px 10px -6px hsl(222 47% 11% / 0.1);
+    --shadow-glow: 0 0 40px hsl(152 55% 38% / 0.15);
+    --shadow-cta: 0 4px 14px 0 hsl(38 92% 50% / 0.35);
 
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 210 20% 30%;
-    --sidebar-primary: 200 60% 50%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 152 55% 38%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 200 30% 97%;
-    --sidebar-accent-foreground: 210 40% 15%;
-    --sidebar-border: 210 25% 90%;
-    --sidebar-ring: 200 60% 50%;
+    --sidebar-accent: 152 30% 97%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 152 55% 38%;
   }
 
   .dark {
-    --background: 210 40% 6%;
-    --foreground: 200 20% 98%;
+    --background: 222 47% 6%;
+    --foreground: 210 20% 98%;
 
-    --card: 210 35% 10%;
-    --card-foreground: 200 20% 98%;
-    --popover: 210 35% 10%;
-    --popover-foreground: 200 20% 98%;
+    --card: 222 40% 10%;
+    --card-foreground: 210 20% 98%;
+    --popover: 222 40% 10%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 200 60% 55%;
+    --primary: 152 55% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 200 30% 15%;
-    --primary-glow: 200 65% 60%;
+    --primary-light: 152 30% 15%;
+    --primary-glow: 152 65% 50%;
 
-    --secondary: 160 45% 50%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 222 30% 25%;
+    --secondary-foreground: 210 20% 98%;
 
-    --accent: 25 95% 58%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 38 92% 55%;
+    --accent-foreground: 222 47% 11%;
 
-    --muted: 210 30% 15%;
-    --muted-foreground: 210 15% 65%;
+    --muted: 222 30% 15%;
+    --muted-foreground: 215 16% 65%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 30% 20%;
-    --input: 210 30% 20%;
-    --ring: 200 60% 55%;
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 152 55% 45%;
 
-    --surface-elevated: 210 35% 12%;
-    --surface-section: 210 35% 8%;
-    --surface-dark: 210 40% 4%;
-    --surface-dark-elevated: 210 35% 8%;
+    --surface-elevated: 222 40% 12%;
+    --surface-section: 222 35% 8%;
+    --surface-dark: 222 47% 4%;
+    --surface-dark-elevated: 222 40% 8%;
 
-    --text-primary: 200 20% 98%;
-    --text-secondary: 210 15% 65%;
-    --text-tertiary: 210 12% 45%;
+    --text-primary: 210 20% 98%;
+    --text-secondary: 215 16% 65%;
+    --text-tertiary: 215 13% 45%;
     --text-on-dark: 0 0% 100%;
-    --text-on-dark-muted: 200 20% 70%;
+    --text-on-dark-muted: 210 20% 70%;
 
-    --sidebar-background: 210 35% 8%;
-    --sidebar-foreground: 200 20% 90%;
-    --sidebar-primary: 200 60% 55%;
+    --sidebar-background: 222 40% 8%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 152 55% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 30% 15%;
-    --sidebar-accent-foreground: 200 20% 98%;
-    --sidebar-border: 210 30% 20%;
-    --sidebar-ring: 200 60% 55%;
+    --sidebar-accent: 222 30% 15%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 222 30% 20%;
+    --sidebar-ring: 152 55% 45%;
   }
 }
 
