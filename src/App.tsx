@@ -10,7 +10,12 @@ import SportDesk from "./pages/solutions/SportDesk";
 import SchoolPrograms from "./pages/solutions/SchoolPrograms";
 import Squads from "./pages/solutions/Squads";
 import Features from "./pages/platform/Features";
-import MemberApp from "./pages/platform/MemberApp";
+import Communication from "./pages/platform/Communication";
+import RosterScheduler from "./pages/platform/RosterScheduler";
+import TeacherTrainer from "./pages/platform/TeacherTrainer";
+import ParentMember from "./pages/platform/ParentMember";
+import Managers from "./pages/platform/Managers";
+import CEOs from "./pages/platform/CEOs";
 import Payments from "./pages/platform/Payments";
 import Analytics from "./pages/platform/Analytics";
 import Integrations from "./pages/Integrations";
@@ -41,7 +46,12 @@ const App = () => (
           
           {/* Platform */}
           <Route path="/platform/features" element={<Features />} />
-          <Route path="/platform/member-app" element={<MemberApp />} />
+          <Route path="/platform/communication" element={<Communication />} />
+          <Route path="/platform/roster-scheduler" element={<RosterScheduler />} />
+          <Route path="/platform/teacher-trainer" element={<TeacherTrainer />} />
+          <Route path="/platform/parent-member" element={<ParentMember />} />
+          <Route path="/platform/managers" element={<Managers />} />
+          <Route path="/platform/ceos" element={<CEOs />} />
           <Route path="/platform/payments" element={<Payments />} />
           <Route path="/platform/analytics" element={<Analytics />} />
           
