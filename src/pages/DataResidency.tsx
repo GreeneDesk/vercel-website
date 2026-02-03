@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { ArrowRight, Shield, MapPin, Lock, Users, FileX, Check, Globe } from "lucide-react";
 
 const keyPoints = [
-  { icon: MapPin, title: "All customer data hosted in Australia" },
-  { icon: Lock, title: "Role-based access controls" },
-  { icon: Globe, title: "Cross-border access under strict contractual safeguards" },
-  { icon: FileX, title: "No resale or commercial use of identifiable data" },
+  { icon: MapPin, title: "Hosted exclusively on AWS Sydney (ap-southeast-2)" },
+  { icon: Lock, title: "Role-based access, restricted to operational needs" },
+  { icon: Shield, title: "All access logged and monitored" },
+  { icon: FileX, title: "No third-party providers for data processing or storage" },
 ];
 
 const idealFor = [
@@ -46,7 +46,7 @@ const DataResidency = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-text-on-dark-muted mb-8">
-                Customer data stays in Australia. Our platform is used by centres around the world, with cross-border access managed under strict compliance safeguards.
+                GreeneDesk customer data is hosted exclusively in Australia on AWS Sydney (ap-southeast-2). Access is role-based, logged, and monitored — with no third-party providers involved.
               </p>
             </motion.div>
           </div>
