@@ -26,10 +26,10 @@ export function FitDeskBenefits() {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Why FitDesk works in practice
+            Why mid and large centres choose FitDesk
           </h2>
           <p className="text-lg text-muted-foreground">
-            What centres notice after using FitDesk
+            The difference a comprehensive, purpose-built system makes
           </p>
         </motion.div>
 

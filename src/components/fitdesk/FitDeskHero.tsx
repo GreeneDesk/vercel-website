@@ -17,16 +17,16 @@ export function FitDeskHero() {
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
               <Activity className="h-4 w-4" />
-              Operations & Coaching Platform
+              Complete Gym & Recreation Management
             </div>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              FitDesk — software that managers trust and{" "}
-              <span className="text-gradient-primary">trainers actually enjoy using</span>
+              FitDesk — the complete system for{" "}
+              <span className="text-gradient-primary">mid and large fitness centres</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl">
-              FitDesk supports the full day-to-day reality of running gyms, swim schools and community sports centres — combining scheduling, engagement, coaching tools and reporting in one practical system.
+              A comprehensive platform covering scheduling, engagement, coaching tools, retention analytics and reporting — built specifically for how gyms, leisure centres and community recreation facilities actually operate.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

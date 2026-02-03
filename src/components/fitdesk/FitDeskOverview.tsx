@@ -27,10 +27,10 @@ export function FitDeskOverview() {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            FitDesk brings operations and coaching together
+            Everything your gym or fitness centre needs — in one system
           </h2>
           <p className="text-lg text-text-on-dark-muted max-w-2xl mx-auto">
-            FitDesk combines everything your centre needs:
+            A complete platform that covers the full scope of gym operations:
           </p>
         </motion.div>
 

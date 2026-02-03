@@ -40,16 +40,16 @@ const SwimDesk = () => {
             >
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
                 <Waves className="h-4 w-4" />
-                For Swim Schools
+                Complete Swim School Management
               </div>
               
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                SwimDesk — swim school software that fixes the{" "}
-                <span className="text-gradient-primary">communication gap</span>
+                SwimDesk — the complete system for{" "}
+                <span className="text-gradient-primary">mid and large swim schools</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Designed for learn-to-swim programs, school swimming and squads — where progress visibility matters most.
+                A comprehensive platform covering scheduling, assessments, parent communication, school programs and squad management — built specifically for how swim schools actually operate.
               </p>
               
               <Button variant="cta" size="xl" asChild>

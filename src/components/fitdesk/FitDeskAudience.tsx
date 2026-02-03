@@ -28,10 +28,10 @@ export function FitDeskAudience() {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Designed for real-world centres, not just private gyms
+            Built for mid and large fitness operations
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            FitDesk is widely used in environments where diverse programs, age groups and abilities need to be supported:
+            FitDesk is a comprehensive solution for centres that need operational depth — not basic booking tools:
           </p>
         </motion.div>
 
