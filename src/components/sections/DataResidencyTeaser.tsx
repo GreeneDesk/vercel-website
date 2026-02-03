@@ -24,15 +24,15 @@ export function DataResidencyTeaser() {
             <div>
               <div className="flex items-center gap-2 mb-6">
                 <Shield className="h-6 w-6 text-primary" />
-                <span className="text-primary font-medium">Data Sovereignty</span>
+                <span className="text-primary font-medium">Built in Australia. Used across the world.</span>
               </div>
               
               <h2 className="font-display text-3xl md:text-4xl font-bold text-text-on-dark mb-4">
-                Data hosted in Australia — by design
+                Australian data hosting with global reach
               </h2>
               
               <p className="text-lg text-text-on-dark-muted mb-8 max-w-lg">
-                More Australian centres are reassessing overseas-hosted platforms. GreeneDesk keeps customer data hosted in Australia, with controlled access and clear accountability.
+                Customer data stays in Australia. Cross-border access for support is managed under strict contractual safeguards and technical controls — aligned with Australian Privacy Principles.
               </p>
               
               <Button variant="cta" asChild>
@@ -75,7 +75,7 @@ export function DataResidencyTeaser() {
                   className="rounded-xl bg-background/10 backdrop-blur-sm p-6 text-center col-span-2"
                 >
                   <Shield className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <p className="text-text-on-dark font-medium">No offshore data access</p>
+                  <p className="text-text-on-dark font-medium">APP 8 Compliant</p>
                 </motion.div>
               </div>
             </div>

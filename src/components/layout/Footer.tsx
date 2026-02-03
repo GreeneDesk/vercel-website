@@ -41,7 +41,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm text-text-on-dark-muted">
               <MapPin className="h-4 w-4 text-primary" />
-              <span>Built in Australia. Data hosted in Australia.</span>
+              <span>Built in Australia. Used across the world.</span>
             </div>
           </div>
 
