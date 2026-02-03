@@ -32,7 +32,7 @@ export function DataResidencyTeaser() {
               </h2>
               
               <p className="text-lg text-text-on-dark-muted mb-8 max-w-lg">
-                Customer data stays in Australia. Cross-border access for support is managed under strict contractual safeguards and technical controls — aligned with Australian Privacy Principles.
+                Customer data hosted exclusively on AWS Sydney. Access is role-based, logged and monitored — with no third-party providers involved in data processing or storage.
               </p>
               
               <Button variant="cta" asChild>

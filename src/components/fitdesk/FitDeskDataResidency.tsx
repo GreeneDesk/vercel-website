@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { Shield, MapPin, Lock, Users, Check, Globe } from "lucide-react";
 
 const dataPoints = [
-  { icon: MapPin, text: "All customer data hosted in Australia" },
-  { icon: Lock, text: "Role-based access controls" },
-  { icon: Globe, text: "Cross-border access under strict contractual safeguards" },
-  { icon: Check, text: "Aligned with Australian Privacy Principles (APP 8)" },
+  { icon: MapPin, text: "Hosted on AWS Sydney (ap-southeast-2)" },
+  { icon: Lock, text: "Role-based access, restricted to operational needs" },
+  { icon: Shield, text: "All access logged and monitored" },
+  { icon: Check, text: "No third-party providers for data processing" },
 ];
 
 export function FitDeskDataResidency() {
