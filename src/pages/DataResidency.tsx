@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, MapPin, Lock, Users, FileX, Check } from "lucide-react";
+import { ArrowRight, Shield, MapPin, Lock, Users, FileX, Check, Globe } from "lucide-react";
 
 const keyPoints = [
   { icon: MapPin, title: "All customer data hosted in Australia" },
   { icon: Lock, title: "Role-based access controls" },
-  { icon: Users, title: "No offshore support teams accessing customer data" },
+  { icon: Globe, title: "Cross-border access under strict contractual safeguards" },
   { icon: FileX, title: "No resale or commercial use of identifiable data" },
 ];
 
@@ -37,7 +37,7 @@ const DataResidency = () => {
             >
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary mb-6">
                 <Shield className="h-4 w-4" />
-                Data Sovereignty
+                Built in Australia. Used across the world.
               </div>
               
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -46,7 +46,7 @@ const DataResidency = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-text-on-dark-muted mb-8">
-                More Australian centres are reassessing overseas-hosted platforms. GreeneDesk keeps customer data where it belongs.
+                Customer data stays in Australia. Our platform is used by centres around the world, with cross-border access managed under strict compliance safeguards.
               </p>
             </motion.div>
           </div>
@@ -73,6 +73,18 @@ const DataResidency = () => {
               </motion.div>
             ))}
           </div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto mt-8 p-6 rounded-xl bg-surface-section border border-border"
+          >
+            <h3 className="font-display text-lg font-semibold mb-3">Cross-Border Access & Privacy Compliance</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Where authorised support personnel located outside Australia access systems for maintenance or support purposes, such access is performed under strict contractual confidentiality obligations and technical safeguards, and does not involve offshore storage or processing of customer data. This model is designed to align with the Australian Privacy Principles, including APP 8 (Cross-border Disclosure).
+            </p>
+          </motion.div>
         </div>
       </section>
 

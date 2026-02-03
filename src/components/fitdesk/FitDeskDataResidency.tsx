@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Shield, MapPin, Lock, Users, Check } from "lucide-react";
+import { Shield, MapPin, Lock, Users, Check, Globe } from "lucide-react";
 
 const dataPoints = [
   { icon: MapPin, text: "All customer data hosted in Australia" },
   { icon: Lock, text: "Role-based access controls" },
-  { icon: Users, text: "No offshore support teams accessing customer data" },
-  { icon: Check, text: "Suitable for councils, community facilities and YMCAs" },
+  { icon: Globe, text: "Cross-border access under strict contractual safeguards" },
+  { icon: Check, text: "Aligned with Australian Privacy Principles (APP 8)" },
 ];
 
 export function FitDeskDataResidency() {
@@ -24,9 +24,9 @@ export function FitDeskDataResidency() {
               <Shield className="h-6 w-6 text-primary-foreground" />
             </div>
             <div>
-              <span className="text-sm font-medium text-primary">Important for Public Facilities</span>
+              <span className="text-sm font-medium text-primary">Built in Australia. Used across the world.</span>
               <h2 className="font-display text-2xl md:text-3xl font-bold">
-                Built with Australian data expectations
+                Australian data hosting with global reach
               </h2>
             </div>
           </div>
@@ -41,6 +41,10 @@ export function FitDeskDataResidency() {
               </div>
             ))}
           </div>
+
+          <p className="text-sm text-muted-foreground mb-6">
+            Where authorised support personnel located outside Australia access systems for maintenance purposes, such access is performed under strict contractual confidentiality obligations and technical safeguards — without offshore storage or processing of customer data.
+          </p>
 
           <Link
             to="/data-residency"
