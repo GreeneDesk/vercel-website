@@ -23,8 +23,12 @@ const solutionsItems: { title: string; href: string; description: string; extern
 ];
 
 const platformItems = [
-  { title: "Features", href: "/platform/features", description: "Core platform capabilities" },
-  { title: "Member App & Engagement", href: "/platform/member-app", description: "Mobile apps and communication" },
+  { title: "Communication", href: "/platform/communication", description: "Multi-channel messaging and automation" },
+  { title: "Roster & Scheduler", href: "/platform/roster-scheduler", description: "Visual scheduling and capacity management" },
+  { title: "Teacher & Trainer Tools", href: "/platform/teacher-trainer", description: "Mobile-first tools for instructors" },
+  { title: "Parent & Member Experience", href: "/platform/parent-member", description: "Apps and engagement for families" },
+  { title: "For Managers", href: "/platform/managers", description: "Dashboards, alerts, and reporting" },
+  { title: "For CEOs", href: "/platform/ceos", description: "Strategic visibility and governance" },
   { title: "Payments & Billing", href: "/platform/payments", description: "Integrated payment processing" },
   { title: "Analytics & Retention", href: "/platform/analytics", description: "Insights and retention tools" },
 ];
