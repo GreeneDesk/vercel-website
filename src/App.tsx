@@ -23,6 +23,8 @@ import DataResidency from "./pages/DataResidency";
 import Pricing from "./pages/Pricing";
 import Resources from "./pages/Resources";
 import Demo from "./pages/Demo";
+import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -61,6 +63,8 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/demo" element={<Demo />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           
           <Route path="*" element={<NotFound />} />
         </Routes>

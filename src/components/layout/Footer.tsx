@@ -11,17 +11,19 @@ const solutionsLinks: { title: string; href: string; external?: boolean }[] = [
 ];
 
 const platformLinks = [
-  { title: "Features", href: "/platform/features" },
-  { title: "Member App & Engagement", href: "/platform/member-app" },
-  { title: "Payments & Billing", href: "/platform/payments" },
-  { title: "Analytics & Retention", href: "/platform/analytics" },
+  { title: "Communication", href: "/platform/communication" },
+  { title: "Roster & Scheduler", href: "/platform/roster-scheduler" },
+  { title: "Teacher & Trainer Tools", href: "/platform/teacher-trainer" },
+  { title: "Parent & Member Experience", href: "/platform/parent-member" },
+  { title: "For Managers", href: "/platform/managers" },
+  { title: "For CEOs", href: "/platform/ceos" },
 ];
 
 const companyLinks = [
   { title: "Integrations", href: "/integrations" },
   { title: "Data Residency", href: "/data-residency" },
   { title: "Pricing", href: "/pricing" },
-  { title: "Resources", href: "/resources" },
+  { title: "Contact", href: "/contact" },
 ];
 
 export function Footer() {
@@ -106,11 +108,11 @@ export function Footer() {
               © {new Date().getFullYear()} GreeneDesk. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="/privacy" className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
+              <Link to="/privacy-policy" className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
-                Terms of Service
+              <Link to="/contact" className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
+                Contact
               </Link>
             </div>
           </div>
