@@ -24,7 +24,7 @@ export function FitDeskDataResidency() {
               <Shield className="h-6 w-6 text-primary-foreground" />
             </div>
             <div>
-              <span className="text-sm font-medium text-primary">Built in Australia. Used across the world.</span>
+              <span className="text-sm font-medium text-primary">Built in Australia for the World.</span>
               <h2 className="font-display text-2xl md:text-3xl font-bold">
                 Australian data hosting with global reach
               </h2>

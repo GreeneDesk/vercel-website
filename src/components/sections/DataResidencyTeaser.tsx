@@ -24,7 +24,7 @@ export function DataResidencyTeaser() {
             <div>
               <div className="flex items-center gap-2 mb-6">
                 <Shield className="h-6 w-6 text-primary" />
-                <span className="text-primary font-medium">Built in Australia. Used across the world.</span>
+                <span className="text-primary font-medium">Built in Australia for the World.</span>
               </div>
               
               <h2 className="font-display text-3xl md:text-4xl font-bold text-text-on-dark mb-4">
