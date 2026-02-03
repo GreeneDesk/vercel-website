@@ -19,7 +19,6 @@ const solutionsItems = [
   { title: "School Programs", href: "/solutions/school-programs", description: "Manage school swimming and sports" },
   { title: "Squads", href: "/solutions/squads", description: "Squad progression and tracking" },
   { title: "Martial Arts & Sports", href: "/solutions/sportdesk", description: "SportDesk for structured sports" },
-  { title: "Soopervision", href: "https://soopervision.com", description: "AI-powered supervision and safety", external: true },
 ];
 
 const platformItems = [
@@ -65,32 +64,15 @@ export function Header() {
                   {solutionsItems.map((item) => (
                     <li key={item.href}>
                       <NavigationMenuLink asChild>
-                        {item.external ? (
-                          <a
-                            href={item.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none flex items-center gap-1">
-                              {item.title}
-                              <span className="text-xs text-muted-foreground">↗</span>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              {item.description}
-                            </p>
-                          </a>
-                        ) : (
-                          <Link
-                            to={item.href}
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">{item.title}</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              {item.description}
-                            </p>
-                          </Link>
-                        )}
+                        <Link
+                          to={item.href}
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">{item.title}</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            {item.description}
+                          </p>
+                        </Link>
                       </NavigationMenuLink>
                     </li>
                   ))}
@@ -179,27 +161,14 @@ export function Header() {
               <div className="space-y-2">
                 <p className="text-sm font-semibold text-muted-foreground">Solutions</p>
                 {solutionsItems.map((item) => (
-                  item.external ? (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block pl-4 py-1 text-sm hover:text-primary"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.title} ↗
-                    </a>
-                  ) : (
-                    <Link
-                      key={item.href}
-                      to={item.href}
-                      className="block pl-4 py-1 text-sm hover:text-primary"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.title}
-                    </Link>
-                  )
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="block pl-4 py-1 text-sm hover:text-primary"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.title}
+                  </Link>
                 ))}
               </div>
 
