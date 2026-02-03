@@ -61,7 +61,7 @@ export function FitDeskCTA() {
         className="container-wide mt-16 pt-8 border-t border-primary-foreground/10"
       >
         <p className="text-center text-sm text-text-on-dark-muted">
-          FitDesk is part of the GreeneDesk platform — built in Australia for sports and recreation centres worldwide.
+          FitDesk is part of the GreeneDesk platform — built in Australia for the World.
           <br />
           All customer data is hosted in Australia.
         </p>
