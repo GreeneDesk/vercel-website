@@ -37,7 +37,7 @@ export function Footer() {
               <span className="font-display text-xl font-bold">GreeneDesk</span>
             </Link>
             <p className="text-text-on-dark-muted max-w-sm mb-4">
-              Unified software platform for gyms, swim schools, school programs, squads and structured sports.
+              Comprehensive software for gyms, swim schools, gymnastics centres and sports academies. Each solution is purpose-built for your specific operations.
             </p>
             <div className="flex items-center gap-2 text-sm text-text-on-dark-muted">
               <MapPin className="h-4 w-4 text-primary" />

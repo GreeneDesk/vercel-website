@@ -44,16 +44,16 @@ const SportDesk = () => {
             >
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
                 <Swords className="h-4 w-4" />
-                For Martial Arts & Structured Sports
+                Complete Sports Academy Management
               </div>
               
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                SportDesk — software for martial arts and{" "}
-                <span className="text-gradient-primary">structured sports</span>
+                SportDesk — the complete system for{" "}
+                <span className="text-gradient-primary">martial arts and sports academies</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Built for clubs that run on structure, progression and consistency.
+                A comprehensive platform for gymnastics, martial arts, tennis and any structured sports program. Built for mid and large centres that need depth in scheduling, progression tracking and member management.
               </p>
               
               <Button variant="cta" size="xl" asChild>

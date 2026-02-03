@@ -27,12 +27,12 @@ export function HeroSection() {
             </div>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Software built for how Australian sports and recreation centres{" "}
-              <span className="text-gradient-primary">actually run</span>
+              Comprehensive software for{" "}
+              <span className="text-gradient-primary">your type of centre</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
-              Running a gym, swim school or sports program is already complex. GreeneDesk helps reduce admin, improve retention and give you clearer visibility — without adding more systems or stress.
+              Whether you run a gym, swim school, gymnastics centre or sports academy — we have a complete system built specifically for your operations. Designed for mid and large centres that need depth, not workarounds.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
