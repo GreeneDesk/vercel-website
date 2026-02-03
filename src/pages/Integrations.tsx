@@ -101,7 +101,7 @@ const Integrations = () => {
             className="text-center mb-12"
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Integration Partners
+              Systems We Integrate With
             </h2>
           </motion.div>
 
