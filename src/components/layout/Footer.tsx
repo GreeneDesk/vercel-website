@@ -17,11 +17,14 @@ const platformLinks = [
   { title: "Parent & Member Experience", href: "/platform/parent-member" },
   { title: "For Managers", href: "/platform/managers" },
   { title: "For CEOs", href: "/platform/ceos" },
+  { title: "Payments & Billing", href: "/platform/payments" },
+  { title: "Analytics & Retention", href: "/platform/analytics" },
 ];
 
-const companyLinks = [
+const whyLinks = [
   { title: "Integrations", href: "/integrations" },
   { title: "Data Residency", href: "/data-residency" },
+  { title: "Resources", href: "/resources" },
   { title: "Pricing", href: "/pricing" },
   { title: "Contact", href: "/contact" },
 ];
@@ -87,11 +90,11 @@ export function Footer() {
             </ul>
           </nav>
 
-          {/* Company */}
-          <nav aria-label="Company">
-            <p className="font-display font-semibold mb-4">Company</p>
+          {/* Why GreeneDesk */}
+          <nav aria-label="Why GreeneDesk">
+            <p className="font-display font-semibold mb-4">Why GreeneDesk</p>
             <ul className="space-y-2">
-              {companyLinks.map((link) => (
+              {whyLinks.map((link) => (
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
                     {link.title}
