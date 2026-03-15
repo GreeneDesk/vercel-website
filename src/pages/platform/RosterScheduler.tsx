@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { 
@@ -57,6 +58,7 @@ const workflowBenefits = [
 const RosterScheduler = () => {
   return (
     <Layout>
+      <SEO title="Roster & Scheduler – Visual Timetabling" description="Drag-and-drop scheduling for gyms, swim schools, and sports centres. Multi-location capacity management with conflict detection." canonical="/platform/roster-scheduler" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/roster-scheduler" }, { label: "Roster & Scheduler" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

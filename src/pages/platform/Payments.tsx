@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { 
@@ -32,6 +33,7 @@ const benefits = [
 const Payments = () => {
   return (
     <Layout>
+      <SEO title="Payments & Billing – Integrated Processing" description="Integrated payment processing for gyms and swim schools. Direct debit, EFTPOS, online payments, and automated billing with failed payment recovery." canonical="/platform/payments" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/payments" }, { label: "Payments & Billing" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

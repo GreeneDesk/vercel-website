@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { 
@@ -114,6 +115,20 @@ const challenges = [
 const SchoolPrograms = () => {
   return (
     <Layout>
+      <SEO
+        title="School Swimming Program Management"
+        description="Manage school swimming and sports programs end-to-end. Automated compliance reporting, instructor scheduling, and school portal access."
+        canonical="/solutions/school-programs"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "GreeneDesk School Programs",
+          "description": "End-to-end school swimming and sports program management. Compliance reporting, instructor scheduling, and school portal.",
+          "provider": { "@type": "Organization", "name": "GreeneDesk" },
+          "areaServed": "AU",
+          "serviceType": "School Program Management Software"
+        }}
+      />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/school-programs" }, { label: "School Programs" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

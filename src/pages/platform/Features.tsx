@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { 
@@ -28,6 +29,7 @@ const capabilities = [
 const Features = () => {
   return (
     <Layout>
+      <SEO title="Platform Features – All Capabilities" description="Explore GreeneDesk's full platform: scheduling, payments, communication, assessments, analytics, and member management for Australian centres." canonical="/platform/features" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/features" }, { label: "Features Overview" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

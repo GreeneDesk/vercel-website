@@ -96,7 +96,20 @@ const programTypes = [
 const SportDesk = () => {
   return (
     <Layout>
-      <SEO title="SportDesk – Sports Centre Software" description="Comprehensive sports centre management software for gymnastics, martial arts, dance, and multi-sport facilities in Australia." canonical="/solutions/sportdesk" />
+      <SEO
+        title="SportDesk – Sports Centre Management Software"
+        description="Comprehensive sports centre management software for gymnastics, martial arts, dance, and multi-sport facilities in Australia."
+        canonical="/solutions/sportdesk"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "SportDesk",
+          "description": "Sports centre management software for gymnastics, martial arts, dance, and multi-sport facilities. Scheduling, assessments, and member management.",
+          "provider": { "@type": "Organization", "name": "GreeneDesk" },
+          "areaServed": "AU",
+          "serviceType": "Sports Centre Management Software"
+        }}
+      />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/sportdesk" }, { label: "SportDesk" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

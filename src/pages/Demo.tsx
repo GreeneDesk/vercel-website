@@ -73,7 +73,7 @@ const Demo = () => {
 
   return (
     <Layout>
-      <SEO title="Request a Demo" description="See GreeneDesk in action. Book a short, practical walkthrough tailored to your gym, swim school, or sports centre." canonical="/demo" />
+      <SEO title="Request a Demo – See GreeneDesk in Action" description="Book a short, practical walkthrough of GreeneDesk tailored to your gym, swim school, or sports centre. No pressure, just clarity." canonical="/demo" />
       <Breadcrumbs items={[{ label: "Request a Demo" }]} />
       <section className="section-padding">
         <div className="container-wide">

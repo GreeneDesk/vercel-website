@@ -18,6 +18,15 @@ const FitDesk = () => {
         title="FitDesk – Gym & Fitness Centre Software"
         description="Complete gym management software for Australian fitness centres. Member management, class scheduling, payments, and retention tools. Data hosted in Australia."
         canonical="/solutions/fitdesk"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "FitDesk",
+          "description": "Complete gym and fitness centre management software. Member management, class scheduling, payments, communication, and retention tools.",
+          "provider": { "@type": "Organization", "name": "GreeneDesk" },
+          "areaServed": "AU",
+          "serviceType": "Gym Management Software"
+        }}
       />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/fitdesk" }, { label: "FitDesk" }]} />
       <FitDeskHero />

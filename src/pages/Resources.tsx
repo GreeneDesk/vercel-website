@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Dumbbell, Users, Waves, GraduationCap, Trophy, MapPin, Puzzle } from "lucide-react";
@@ -18,6 +19,7 @@ const categories = [
 const Resources = () => {
   return (
     <Layout>
+      <SEO title="Resources – Guides & Best Practices" description="Guides, articles, and best practices for running gyms, swim schools, and recreation centres. Operational tips from the GreeneDesk team." canonical="/resources" />
       <Breadcrumbs items={[{ label: "Why GreeneDesk", href: "/resources" }, { label: "Resources" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

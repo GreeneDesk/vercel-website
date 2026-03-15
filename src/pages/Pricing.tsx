@@ -59,7 +59,18 @@ const pricingFactors = [
 const Pricing = () => {
   return (
     <Layout>
-      <SEO title="Pricing" description="Transparent pricing for GreeneDesk gym, swim school, and sports centre software. Plans for mid-size and large centres." canonical="/pricing" />
+      <SEO
+        title="Pricing – Plans for Gyms & Swim Schools"
+        description="Transparent pricing for GreeneDesk gym, swim school, and sports centre software. Flexible plans based on your centre size and needs."
+        canonical="/pricing"
+        faq={[
+          { question: "How is GreeneDesk priced?", answer: "GreeneDesk pricing is based on your centre size, number of active members, and which modules you use. We don't publish flat prices because centres vary — but we are fully transparent during the demo process." },
+          { question: "Is there a lock-in contract?", answer: "No. GreeneDesk offers flexible terms. We believe in earning your business through value, not contracts." },
+          { question: "Can I start with one module and add more later?", answer: "Yes. You can start with the modules that matter most and expand as your centre grows. The platform is modular by design." },
+          { question: "Where is my data stored?", answer: "All data is hosted exclusively on AWS Sydney (ap-southeast-2) in Australia. No data is processed or stored offshore." },
+          { question: "Do you offer a demo before purchasing?", answer: "Yes. We offer a short, practical walkthrough tailored to your specific centre operations. No pressure sales pitch." },
+        ]}
+      />
       <Breadcrumbs items={[{ label: "Pricing" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

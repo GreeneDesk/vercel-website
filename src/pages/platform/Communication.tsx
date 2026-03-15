@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { 
@@ -64,6 +65,7 @@ const automations = [
 const Communication = () => {
   return (
     <Layout>
+      <SEO title="Multi-Channel Communication & Automation" description="Automated SMS, email, WhatsApp and push notifications for gyms and swim schools. Empathy-first templates with AI-assisted drafting." canonical="/platform/communication" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/communication" }, { label: "Communication" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const PrivacyPolicy = () => {
   return (
     <Layout>
-      <SEO title="Privacy Policy" description="GreeneDesk privacy policy. Learn how we handle your data, our Australian data residency commitments, and your privacy rights." canonical="/privacy-policy" />
+      <SEO title="Privacy Policy – Data Handling & Your Rights" description="GreeneDesk privacy policy covering data collection, Australian data residency on AWS Sydney, security measures, and your rights under Australian law." canonical="/privacy-policy" />
       <Breadcrumbs items={[{ label: "Privacy Policy" }]} />
       <article className="section-padding">
         <div className="container-wide">

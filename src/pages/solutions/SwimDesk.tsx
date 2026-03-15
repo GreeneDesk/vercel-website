@@ -108,7 +108,20 @@ const comparisonItems = [
 const SwimDesk = () => {
   return (
     <Layout>
-      <SEO title="SwimDesk – Swim School Management Software" description="Complete swim school software for Australian aquatics centres. Lesson management, assessments, parent communication, and progress tracking." canonical="/solutions/swimdesk" />
+      <SEO
+        title="SwimDesk – Swim School Management Software"
+        description="Complete swim school software for Australian aquatics centres. Lesson management, assessments, parent communication, and progress tracking."
+        canonical="/solutions/swimdesk"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "SwimDesk",
+          "description": "Swim school management software for learn-to-swim programs. Lesson scheduling, skill assessments, parent portal, and digital certificates.",
+          "provider": { "@type": "Organization", "name": "GreeneDesk" },
+          "areaServed": "AU",
+          "serviceType": "Swim School Management Software"
+        }}
+      />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/swimdesk" }, { label: "SwimDesk" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

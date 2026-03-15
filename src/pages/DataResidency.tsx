@@ -23,7 +23,17 @@ const idealFor = [
 const DataResidency = () => {
   return (
     <Layout>
-      <SEO title="Australian Data Residency" description="GreeneDesk hosts all data on AWS Sydney. Full Australian data sovereignty for gyms, swim schools, and recreation centres." canonical="/data-residency" />
+      <SEO
+        title="Australian Data Residency – AWS Sydney Hosted"
+        description="All GreeneDesk data hosted exclusively on AWS Sydney. Role-based access, audit trails, and compliance with Australian Privacy Principles."
+        canonical="/data-residency"
+        faq={[
+          { question: "Where is GreeneDesk data hosted?", answer: "All customer data is hosted exclusively on AWS Sydney (ap-southeast-2) in Australia. No data leaves Australian borders." },
+          { question: "Does GreeneDesk share data with third parties?", answer: "No. GreeneDesk does not share, sell, or provide customer data to any third-party processors. All data handling is internal." },
+          { question: "Is GreeneDesk compliant with Australian Privacy Principles?", answer: "Yes. GreeneDesk is designed to comply with Australian Privacy Principles (APPs) including APP 8 regarding cross-border disclosure." },
+          { question: "Who can access my data?", answer: "Access is role-based and restricted to operational needs. All access is logged and monitored with complete audit trails." },
+        ]}
+      />
       <Breadcrumbs items={[{ label: "Why GreeneDesk", href: "/data-residency" }, { label: "Data Residency" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-secondary via-secondary to-surface-dark-elevated text-text-on-dark">

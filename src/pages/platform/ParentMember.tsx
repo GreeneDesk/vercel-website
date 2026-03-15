@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { 
@@ -56,6 +57,7 @@ const engagementPoints = [
 const ParentMember = () => {
   return (
     <Layout>
+      <SEO title="Parent & Member App Experience" description="Branded mobile app for families. Book classes, track progress, receive certificates, and manage payments. Self-service that reduces admin." canonical="/platform/parent-member" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/parent-member" }, { label: "Parent & Member Experience" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
