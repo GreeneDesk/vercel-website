@@ -464,6 +464,14 @@ const SwimDesk = () => {
           </div>
         </div>
       </section>
+      <RelatedPages
+        heading="Explore Related Solutions"
+        pages={[
+          { title: "School Programs", description: "End-to-end management for school swimming programs", href: "/solutions/school-programs" },
+          { title: "Squads", description: "Squad progression and competitive program management", href: "/solutions/squads" },
+          { title: "Communication", description: "Multi-channel automated messaging for families", href: "/platform/communication" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">

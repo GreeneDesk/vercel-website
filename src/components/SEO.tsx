@@ -18,7 +18,7 @@ interface SEOProps {
 const defaults = {
   title: "GreeneDesk – Software for Australian Gyms, Swim Schools & Recreation Centres",
   description: "GreeneDesk is unified software for gyms, swim schools, and sports centres. Reduce admin, improve retention, and get clearer visibility. Built and hosted in Australia.",
-  image: "https://lovable.dev/opengraph-image-p98pqg.png",
+  image: "https://www.greenedesk.com/og-image.png",
 };
 
 export function SEO({ title, description, canonical, type = "website", image, jsonLd, faq }: SEOProps) {
