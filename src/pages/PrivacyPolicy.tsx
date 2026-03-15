@@ -7,6 +7,7 @@ const PrivacyPolicy = () => {
   return (
     <Layout>
       <SEO title="Privacy Policy" description="GreeneDesk privacy policy. Learn how we handle your data, our Australian data residency commitments, and your privacy rights." canonical="/privacy-policy" />
+      <Breadcrumbs items={[{ label: "Privacy Policy" }]} />
       <article className="section-padding">
         <div className="container-wide">
           <motion.div

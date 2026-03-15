@@ -75,6 +75,7 @@ const Contact = () => {
   return (
     <Layout>
       <SEO title="Contact Us" description="Get in touch with GreeneDesk. Call 1 300 181 665 or email anita.w@greenedesk.com. Support available at support@greenedesk.com." canonical="/contact" />
+      <Breadcrumbs items={[{ label: "Contact" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />
