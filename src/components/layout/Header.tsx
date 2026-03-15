@@ -175,7 +175,7 @@ export function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-            <nav className="flex flex-col gap-4 mt-8">
+            <nav aria-label="Mobile navigation" className="flex flex-col gap-4 mt-8">
               <Link to="/" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
                 Home
               </Link>

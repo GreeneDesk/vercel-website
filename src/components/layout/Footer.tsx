@@ -88,8 +88,8 @@ export function Footer() {
           </nav>
 
           {/* Company */}
-          <div>
-            <h4 className="font-display font-semibold mb-4">Company</h4>
+          <nav aria-label="Company">
+            <p className="font-display font-semibold mb-4">Company</p>
             <ul className="space-y-2">
               {companyLinks.map((link) => (
                 <li key={link.href}>
@@ -99,7 +99,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         </div>
 
         <div className="mt-12 pt-8 border-t border-text-on-dark-muted/20">
