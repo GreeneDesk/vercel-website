@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Calendar, CheckCircle2, ArrowRight, Building2, Users, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
