@@ -49,8 +49,8 @@ export function Footer() {
           </div>
 
           {/* Solutions */}
-          <div>
-            <h4 className="font-display font-semibold mb-4">Solutions</h4>
+          <nav aria-label="Solutions">
+            <p className="font-display font-semibold mb-4">Solutions</p>
             <ul className="space-y-2">
               {solutionsLinks.map((link) => (
                 <li key={link.href}>
@@ -71,7 +71,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Platform */}
           <div>
