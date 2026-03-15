@@ -121,36 +121,15 @@ export function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
-              <Link to="/pricing">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none">
-                  Pricing
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Why GreeneDesk</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[320px] gap-3 p-4">
-                  {whyItems.map((item) => (
-                    <li key={item.href}>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          to={item.href}
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground"
-                        >
-                          <div className="text-sm font-medium leading-none">{item.title}</div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            {item.description}
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
+            {directLinks.map((item) => (
+              <NavigationMenuItem key={item.href}>
+                <Link to={item.href}>
+                  <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none">
+                    {item.title}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            ))}
           </NavigationMenuList>
         </NavigationMenu>
 
