@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Calendar, CheckCircle2, ArrowRight, Building2, Users, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -73,6 +74,7 @@ const Demo = () => {
   return (
     <Layout>
       <SEO title="Request a Demo" description="See GreeneDesk in action. Book a short, practical walkthrough tailored to your gym, swim school, or sports centre." canonical="/demo" />
+      <Breadcrumbs items={[{ label: "Request a Demo" }]} />
       <section className="section-padding">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">

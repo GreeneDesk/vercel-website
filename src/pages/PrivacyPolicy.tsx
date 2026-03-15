@@ -1,11 +1,13 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 
 const PrivacyPolicy = () => {
   return (
     <Layout>
       <SEO title="Privacy Policy" description="GreeneDesk privacy policy. Learn how we handle your data, our Australian data residency commitments, and your privacy rights." canonical="/privacy-policy" />
+      <Breadcrumbs items={[{ label: "Privacy Policy" }]} />
       <article className="section-padding">
         <div className="container-wide">
           <motion.div

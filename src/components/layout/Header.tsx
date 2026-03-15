@@ -33,6 +33,12 @@ const platformItems = [
   { title: "Analytics & Retention", href: "/platform/analytics", description: "Insights and retention tools" },
 ];
 
+const whyItems = [
+  { title: "Integrations", href: "/integrations", description: "Connect with your existing systems" },
+  { title: "Data Residency", href: "/data-residency", description: "Australian-hosted, AWS Sydney" },
+  { title: "Resources", href: "/resources", description: "Guides, articles, and best practices" },
+];
+
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -51,17 +57,6 @@ export function Header() {
         {/* Desktop Navigation */}
         <NavigationMenu className="hidden lg:flex" aria-label="Main navigation">
           <NavigationMenuList>
-            <NavigationMenuItem>
-              <Link to="/">
-                <NavigationMenuLink className={cn(
-                  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none",
-                  location.pathname === "/" && "text-primary"
-                )}>
-                  Home
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
             <NavigationMenuItem>
               <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -126,22 +121,6 @@ export function Header() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link to="/integrations">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none">
-                  Integrations
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link to="/data-residency">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none">
-                  Data Residency
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
               <Link to="/pricing">
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none">
                   Pricing
@@ -150,11 +129,26 @@ export function Header() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link to="/resources">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none">
-                  Resources
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuTrigger>Why GreeneDesk</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[320px] gap-3 p-4">
+                  {whyItems.map((item) => (
+                    <li key={item.href}>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          to={item.href}
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">{item.title}</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            {item.description}
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
@@ -221,18 +215,23 @@ export function Header() {
                 ))}
               </div>
 
-              <Link to="/integrations" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-                Integrations
-              </Link>
-              <Link to="/data-residency" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-                Data Residency
-              </Link>
               <Link to="/pricing" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
                 Pricing
               </Link>
-              <Link to="/resources" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-                Resources
-              </Link>
+
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-muted-foreground">Why GreeneDesk</p>
+                {whyItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="block pl-4 py-1 text-sm hover:text-primary"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
 
               <Button variant="cta" className="mt-4" asChild>
                 <Link to="/demo" onClick={() => setIsOpen(false)}>Request a Demo</Link>
