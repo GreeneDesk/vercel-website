@@ -35,7 +35,7 @@ const DataResidency = () => {
           { question: "Who can access my data?", answer: "Access is role-based and restricted to operational needs. All access is logged and monitored with complete audit trails." },
         ]}
       />
-      <Breadcrumbs items={[{ label: "Why GreeneDesk", href: "/data-residency" }, { label: "Data Residency" }]} />
+      <Breadcrumbs items={[{ label: "Data Residency" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-secondary via-secondary to-surface-dark-elevated text-text-on-dark">
         <div className="absolute inset-0 opacity-10">
