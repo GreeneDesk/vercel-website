@@ -33,10 +33,11 @@ const platformItems = [
   { title: "Analytics & Retention", href: "/platform/analytics", description: "Insights and retention tools" },
 ];
 
-const whyItems = [
-  { title: "Integrations", href: "/integrations", description: "Connect with your existing systems" },
-  { title: "Data Residency", href: "/data-residency", description: "Australian-hosted, AWS Sydney" },
-  { title: "Resources", href: "/resources", description: "Guides, articles, and best practices" },
+const directLinks = [
+  { title: "Integrations", href: "/integrations" },
+  { title: "Data Residency", href: "/data-residency" },
+  { title: "Pricing", href: "/pricing" },
+  { title: "Resources", href: "/resources" },
 ];
 
 export function Header() {
@@ -120,36 +121,15 @@ export function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
-              <Link to="/pricing">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none">
-                  Pricing
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Why GreeneDesk</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[320px] gap-3 p-4">
-                  {whyItems.map((item) => (
-                    <li key={item.href}>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          to={item.href}
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground"
-                        >
-                          <div className="text-sm font-medium leading-none">{item.title}</div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            {item.description}
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
+            {directLinks.map((item) => (
+              <NavigationMenuItem key={item.href}>
+                <Link to={item.href}>
+                  <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground focus:outline-none">
+                    {item.title}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            ))}
           </NavigationMenuList>
         </NavigationMenu>
 
@@ -215,23 +195,11 @@ export function Header() {
                 ))}
               </div>
 
-              <Link to="/pricing" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-                Pricing
-              </Link>
-
-              <div className="space-y-2">
-                <p className="text-sm font-semibold text-muted-foreground">Why GreeneDesk</p>
-                {whyItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    to={item.href}
-                    className="block pl-4 py-1 text-sm hover:text-primary"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.title}
-                  </Link>
-                ))}
-              </div>
+              {directLinks.map((item) => (
+                <Link key={item.href} to={item.href} className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
+                  {item.title}
+                </Link>
+              ))}
 
               <Button variant="cta" className="mt-4" asChild>
                 <Link to="/demo" onClick={() => setIsOpen(false)}>Request a Demo</Link>
