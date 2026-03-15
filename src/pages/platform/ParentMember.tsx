@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -290,6 +291,15 @@ const ParentMember = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Better Member Experience With"
+        pages={[
+          { title: "Communication", description: "Automated updates keep families informed without staff effort", href: "/platform/communication" },
+          { title: "Teacher & Trainer Tools", description: "Assessment data flows into parent-facing progress reports", href: "/platform/teacher-trainer" },
+          { title: "Payments & Billing", description: "In-app payment management reduces admin overhead", href: "/platform/payments" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">
@@ -301,12 +311,17 @@ const ParentMember = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
               Ready to improve your member experience?
             </h2>
-            <Button variant="cta" size="xl" asChild>
-              <Link to="/demo">
-                Request a Demo
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/demo">
+                  Request a Demo
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="xl" asChild>
+                <Link to="/pricing">View Pricing Plans</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>

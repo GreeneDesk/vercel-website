@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -255,7 +256,16 @@ const Managers = () => {
         </div>
       </section>
 
-      {/* Reality Check */}
+      <RelatedPages
+        heading="Manager Tools Work Best With"
+        pages={[
+          { title: "Analytics & Retention", description: "Deeper data insights to support operational decisions", href: "/platform/analytics" },
+          { title: "CEO & Owner Visibility", description: "Strategic reporting that rolls up from manager-level data", href: "/platform/ceos" },
+          { title: "Communication", description: "Act on at-risk alerts with automated outreach workflows", href: "/platform/communication" },
+        ]}
+      />
+
+      {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">
           <motion.div
@@ -271,12 +281,17 @@ const Managers = () => {
               GreeneDesk is designed to give managers clarity without creating more work. 
               The system does the heavy lifting — you make the decisions.
             </p>
-            <Button variant="cta" size="xl" asChild>
-              <Link to="/demo">
-                Request a Demo
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/demo">
+                  Request a Demo
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="xl" asChild>
+                <Link to="/data-residency">Australian Data Residency</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>

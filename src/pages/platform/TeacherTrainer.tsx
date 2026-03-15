@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -267,6 +268,15 @@ const TeacherTrainer = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Instructor Tools Work Best With"
+        pages={[
+          { title: "Roster & Scheduler", description: "Schedules sync directly to instructor views — no manual updates", href: "/platform/roster-scheduler" },
+          { title: "Parent & Member App", description: "Assessment results flow directly to parent progress views", href: "/platform/parent-member" },
+          { title: "Manager Dashboard", description: "Track instructor activity and assessment completion rates", href: "/platform/managers" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">
@@ -278,12 +288,17 @@ const TeacherTrainer = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
               Ready to empower your instructors?
             </h2>
-            <Button variant="cta" size="xl" asChild>
-              <Link to="/demo">
-                Request a Demo
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/demo">
+                  Request a Demo
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="xl" asChild>
+                <Link to="/integrations">View Integrations</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>

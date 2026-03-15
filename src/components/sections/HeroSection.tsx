@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -124,7 +124,7 @@ export function HeroSection() {
             >
               <div className="flex items-center gap-2">
                 <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-xs">🏊</span>
+                  <span className="text-xs" aria-hidden="true">🏊</span>
                 </div>
                 <div>
                   <p className="text-xs font-medium">Swim Assessment</p>
@@ -140,7 +140,7 @@ export function HeroSection() {
             >
               <div className="flex items-center gap-2">
                 <div className="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center">
-                  <span className="text-xs">📱</span>
+                  <span className="text-xs" aria-hidden="true">📱</span>
                 </div>
                 <div>
                   <p className="text-xs font-medium">Parent Notification</p>

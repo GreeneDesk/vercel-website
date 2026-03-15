@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -258,6 +259,15 @@ const CEOs = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Strategic Visibility Built On"
+        pages={[
+          { title: "Manager Dashboard", description: "Operational data that feeds into executive-level reporting", href: "/platform/managers" },
+          { title: "Analytics & Retention", description: "Deep retention analytics and trend analysis across programs", href: "/platform/analytics" },
+          { title: "Data Residency", description: "Australian-hosted infrastructure with full audit trails", href: "/data-residency" },
+        ]}
+      />
+
       {/* Final Message */}
       <section className="section-padding">
         <div className="container-wide text-center">
@@ -274,12 +284,17 @@ const CEOs = () => {
               GreeneDesk is designed for organisations that are serious about growth, 
               governance, and member experience. If that's you, let's talk.
             </p>
-            <Button variant="cta" size="xl" asChild>
-              <Link to="/demo">
-                Request a Demo
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/demo">
+                  Request a Demo
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="xl" asChild>
+                <Link to="/pricing">View Pricing Plans</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -246,6 +247,15 @@ const Communication = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Communication Works Best With"
+        pages={[
+          { title: "Parent & Member App", description: "Push notifications and in-app messaging reach families where they are", href: "/platform/parent-member" },
+          { title: "Analytics & Retention", description: "Track engagement metrics from your communication campaigns", href: "/platform/analytics" },
+          { title: "Roster & Scheduler", description: "Automated reminders and updates tied to class schedules", href: "/platform/roster-scheduler" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">
@@ -257,12 +267,17 @@ const Communication = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
               Ready to transform how you communicate?
             </h2>
-            <Button variant="cta" size="xl" asChild>
-              <Link to="/demo">
-                Request a Demo
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/demo">
+                  Request a Demo
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="xl" asChild>
+                <Link to="/pricing">View Pricing Plans</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>
