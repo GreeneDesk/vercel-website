@@ -49,7 +49,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <NavigationMenu className="hidden lg:flex">
+        <NavigationMenu className="hidden lg:flex" aria-label="Main navigation">
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link to="/">
