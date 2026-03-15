@@ -33,10 +33,11 @@ const platformItems = [
   { title: "Analytics & Retention", href: "/platform/analytics", description: "Insights and retention tools" },
 ];
 
-const whyItems = [
-  { title: "Integrations", href: "/integrations", description: "Connect with your existing systems" },
-  { title: "Data Residency", href: "/data-residency", description: "Australian-hosted, AWS Sydney" },
-  { title: "Resources", href: "/resources", description: "Guides, articles, and best practices" },
+const directLinks = [
+  { title: "Integrations", href: "/integrations" },
+  { title: "Data Residency", href: "/data-residency" },
+  { title: "Pricing", href: "/pricing" },
+  { title: "Resources", href: "/resources" },
 ];
 
 export function Header() {
