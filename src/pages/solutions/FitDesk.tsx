@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FitDeskHero } from "@/components/fitdesk/FitDeskHero";
 import { FitDeskAudience } from "@/components/fitdesk/FitDeskAudience";
@@ -37,6 +38,14 @@ const FitDesk = () => {
       <FitDeskCommunity />
       <FitDeskDataResidency />
       <FitDeskBenefits />
+      <RelatedPages
+        heading="Explore Related Solutions"
+        pages={[
+          { title: "SwimDesk", description: "Complete swim school management for learn-to-swim programs", href: "/solutions/swimdesk" },
+          { title: "SportDesk", description: "Structured sports and martial arts program management", href: "/solutions/sportdesk" },
+          { title: "Payments & Billing", description: "Integrated payment processing for centres", href: "/platform/payments" },
+        ]}
+      />
       <FitDeskCTA />
     </Layout>
   );

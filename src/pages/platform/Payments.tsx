@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -141,6 +142,15 @@ const Payments = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        heading="Payments Works Best With"
+        pages={[
+          { title: "Parent & Member App", description: "In-app payment management for families", href: "/platform/parent-member" },
+          { title: "Manager Dashboard", description: "Financial visibility and reporting", href: "/platform/managers" },
+          { title: "Pricing", description: "See GreeneDesk pricing plans", href: "/pricing" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -20,7 +21,7 @@ const Resources = () => {
   return (
     <Layout>
       <SEO title="Resources – Guides & Best Practices" description="Guides, articles, and best practices for running gyms, swim schools, and recreation centres. Operational tips from the GreeneDesk team." canonical="/resources" />
-      <Breadcrumbs items={[{ label: "Why GreeneDesk", href: "/resources" }, { label: "Resources" }]} />
+      <Breadcrumbs items={[{ label: "Resources" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />
@@ -81,6 +82,15 @@ const Resources = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        heading="Explore GreeneDesk"
+        pages={[
+          { title: "FitDesk for Gyms", description: "Complete gym management software", href: "/solutions/fitdesk" },
+          { title: "SwimDesk for Swim Schools", description: "Swim school management platform", href: "/solutions/swimdesk" },
+          { title: "Pricing", description: "Flexible plans for centres of all sizes", href: "/pricing" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding bg-surface-section">

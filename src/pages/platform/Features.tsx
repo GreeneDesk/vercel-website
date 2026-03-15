@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -85,6 +86,15 @@ const Features = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        heading="Dive Deeper Into the Platform"
+        pages={[
+          { title: "Communication", description: "Multi-channel automated messaging", href: "/platform/communication" },
+          { title: "Roster & Scheduler", description: "Visual scheduling and capacity management", href: "/platform/roster-scheduler" },
+          { title: "Analytics & Retention", description: "Data-driven insights for better decisions", href: "/platform/analytics" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding bg-surface-section">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -155,6 +156,15 @@ const Squads = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        heading="Explore Related Solutions"
+        pages={[
+          { title: "SwimDesk", description: "Complete swim school management platform", href: "/solutions/swimdesk" },
+          { title: "Analytics & Retention", description: "Data-driven insights for athlete progression", href: "/platform/analytics" },
+          { title: "Teacher & Trainer Tools", description: "Mobile tools for coaches and instructors", href: "/platform/teacher-trainer" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding">

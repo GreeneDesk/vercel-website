@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -188,6 +189,15 @@ const Pricing = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        heading="Learn More About GreeneDesk"
+        pages={[
+          { title: "Platform Features", description: "Explore the full range of platform capabilities", href: "/platform/features" },
+          { title: "Integrations", description: "Connect with your existing systems", href: "/integrations" },
+          { title: "Data Residency", description: "Australian-hosted data with full audit trails", href: "/data-residency" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding">

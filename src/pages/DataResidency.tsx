@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -34,7 +35,7 @@ const DataResidency = () => {
           { question: "Who can access my data?", answer: "Access is role-based and restricted to operational needs. All access is logged and monitored with complete audit trails." },
         ]}
       />
-      <Breadcrumbs items={[{ label: "Why GreeneDesk", href: "/data-residency" }, { label: "Data Residency" }]} />
+      <Breadcrumbs items={[{ label: "Data Residency" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-secondary via-secondary to-surface-dark-elevated text-text-on-dark">
         <div className="absolute inset-0 opacity-10">
@@ -137,6 +138,15 @@ const DataResidency = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        heading="Learn More About GreeneDesk"
+        pages={[
+          { title: "CEO & Owner Visibility", description: "Strategic dashboards with governance and compliance", href: "/platform/ceos" },
+          { title: "Pricing", description: "Flexible pricing for centres of all sizes", href: "/pricing" },
+          { title: "Integrations", description: "Connect with your existing systems", href: "/integrations" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -141,6 +142,15 @@ const Analytics = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        heading="Analytics Works Best With"
+        pages={[
+          { title: "Manager Dashboard", description: "Operational insights and at-risk member alerts", href: "/platform/managers" },
+          { title: "Communication", description: "Act on retention insights with automated outreach", href: "/platform/communication" },
+          { title: "CEO & Owner Visibility", description: "Strategic reporting and governance", href: "/platform/ceos" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding">

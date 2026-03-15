@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -29,7 +30,7 @@ const Integrations = () => {
   return (
     <Layout>
       <SEO title="Integrations – Connect Your Existing Systems" description="GreeneDesk integrates with leading payment, communication, and accounting platforms via their APIs. No rip-and-replace required." canonical="/integrations" />
-      <Breadcrumbs items={[{ label: "Why GreeneDesk", href: "/integrations" }, { label: "Integrations" }]} />
+      <Breadcrumbs items={[{ label: "Integrations" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />
@@ -129,6 +130,15 @@ const Integrations = () => {
           </div>
         </div>
       </section>
+
+      <RelatedPages
+        heading="Explore the Platform"
+        pages={[
+          { title: "Platform Features", description: "Full overview of GreeneDesk capabilities", href: "/platform/features" },
+          { title: "Payments & Billing", description: "Integrated payment processing for centres", href: "/platform/payments" },
+          { title: "Data Residency", description: "Australian-hosted infrastructure with audit trails", href: "/data-residency" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section-padding bg-surface-section">
