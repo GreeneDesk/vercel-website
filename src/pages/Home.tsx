@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProblemsSection } from "@/components/sections/ProblemsSection";
 import { DeploymentSection } from "@/components/sections/DeploymentSection";
@@ -9,6 +10,7 @@ import { FinalCTASection } from "@/components/sections/FinalCTASection";
 const Home = () => {
   return (
     <Layout>
+      <SEO canonical="/" />
       <HeroSection />
       <ProblemsSection />
       <DeploymentSection />
