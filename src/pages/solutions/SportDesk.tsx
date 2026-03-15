@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { 
   ArrowRight, 
@@ -94,6 +95,7 @@ const programTypes = [
 const SportDesk = () => {
   return (
     <Layout>
+      <SEO title="SportDesk – Sports Centre Software" description="Comprehensive sports centre management software for gymnastics, martial arts, dance, and multi-sport facilities in Australia." canonical="/solutions/sportdesk" />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />

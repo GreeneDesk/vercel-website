@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { 
   ArrowRight, 
@@ -106,6 +107,7 @@ const comparisonItems = [
 const SwimDesk = () => {
   return (
     <Layout>
+      <SEO title="SwimDesk – Swim School Management Software" description="Complete swim school software for Australian aquatics centres. Lesson management, assessments, parent communication, and progress tracking." canonical="/solutions/swimdesk" />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { ArrowRight, Puzzle, Check } from "lucide-react";
 
@@ -26,6 +27,7 @@ const benefits = [
 const Integrations = () => {
   return (
     <Layout>
+      <SEO title="Integrations" description="GreeneDesk integrates with leading payment, communication, and accounting platforms via their APIs." canonical="/integrations" />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, MapPin, Lock, Users, FileX, Check, Globe } from "lucide-react";
 
@@ -21,6 +22,7 @@ const idealFor = [
 const DataResidency = () => {
   return (
     <Layout>
+      <SEO title="Australian Data Residency" description="GreeneDesk hosts all data on AWS Sydney. Full Australian data sovereignty for gyms, swim schools, and recreation centres." canonical="/data-residency" />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-secondary via-secondary to-surface-dark-elevated text-text-on-dark">
         <div className="absolute inset-0 opacity-10">

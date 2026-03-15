@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { 
   ArrowRight, 
@@ -72,6 +73,7 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO title="Contact Us" description="Get in touch with GreeneDesk. Call 1 300 181 665 or email anita.w@greenedesk.com. Support available at support@greenedesk.com." canonical="/contact" />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />
