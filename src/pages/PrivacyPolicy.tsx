@@ -190,7 +190,7 @@ const PrivacyPolicy = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </article>
     </Layout>
   );
 };
