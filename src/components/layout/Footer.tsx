@@ -49,8 +49,8 @@ export function Footer() {
           </div>
 
           {/* Solutions */}
-          <div>
-            <h4 className="font-display font-semibold mb-4">Solutions</h4>
+          <nav aria-label="Solutions">
+            <p className="font-display font-semibold mb-4">Solutions</p>
             <ul className="space-y-2">
               {solutionsLinks.map((link) => (
                 <li key={link.href}>
@@ -71,11 +71,11 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Platform */}
-          <div>
-            <h4 className="font-display font-semibold mb-4">Platform</h4>
+          <nav aria-label="Platform">
+            <p className="font-display font-semibold mb-4">Platform</p>
             <ul className="space-y-2">
               {platformLinks.map((link) => (
                 <li key={link.href}>
@@ -85,11 +85,11 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Company */}
-          <div>
-            <h4 className="font-display font-semibold mb-4">Company</h4>
+          <nav aria-label="Company">
+            <p className="font-display font-semibold mb-4">Company</p>
             <ul className="space-y-2">
               {companyLinks.map((link) => (
                 <li key={link.href}>
@@ -99,7 +99,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         </div>
 
         <div className="mt-12 pt-8 border-t border-text-on-dark-muted/20">
