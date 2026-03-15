@@ -74,8 +74,8 @@ export function Footer() {
           </nav>
 
           {/* Platform */}
-          <div>
-            <h4 className="font-display font-semibold mb-4">Platform</h4>
+          <nav aria-label="Platform">
+            <p className="font-display font-semibold mb-4">Platform</p>
             <ul className="space-y-2">
               {platformLinks.map((link) => (
                 <li key={link.href}>
@@ -85,7 +85,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Company */}
           <div>
