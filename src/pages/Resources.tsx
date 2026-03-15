@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Dumbbell, Users, Waves, GraduationCap, Trophy, MapPin, Puzzle } from "lucide-react";
