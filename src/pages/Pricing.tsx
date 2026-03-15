@@ -58,6 +58,7 @@ const pricingFactors = [
 const Pricing = () => {
   return (
     <Layout>
+      <SEO title="Pricing" description="Transparent pricing for GreeneDesk gym, swim school, and sports centre software. Plans for mid-size and large centres." canonical="/pricing" />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />

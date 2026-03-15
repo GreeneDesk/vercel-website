@@ -71,6 +71,7 @@ const Demo = () => {
 
   return (
     <Layout>
+      <SEO title="Request a Demo" description="See GreeneDesk in action. Book a short, practical walkthrough tailored to your gym, swim school, or sports centre." canonical="/demo" />
       <section className="section-padding">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
