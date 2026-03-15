@@ -74,7 +74,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <SEO title="Contact Us" description="Get in touch with GreeneDesk. Call 1 300 181 665 or email anita.w@greenedesk.com. Support available at support@greenedesk.com." canonical="/contact" />
+      <SEO title="Contact Us – Get in Touch with GreeneDesk" description="Contact GreeneDesk for gym, swim school, or sports centre software enquiries. Call 1 300 181 665 or email anita.w@greenedesk.com." canonical="/contact" />
       <Breadcrumbs items={[{ label: "Contact" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

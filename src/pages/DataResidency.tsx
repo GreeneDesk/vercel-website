@@ -23,7 +23,7 @@ const idealFor = [
 const DataResidency = () => {
   return (
     <Layout>
-      <SEO title="Australian Data Residency" description="GreeneDesk hosts all data on AWS Sydney. Full Australian data sovereignty for gyms, swim schools, and recreation centres." canonical="/data-residency" />
+      <SEO title="Australian Data Residency – AWS Sydney Hosted" description="All GreeneDesk data hosted exclusively on AWS Sydney. Role-based access, audit trails, and compliance with Australian Privacy Principles." canonical="/data-residency" />
       <Breadcrumbs items={[{ label: "Why GreeneDesk", href: "/data-residency" }, { label: "Data Residency" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-secondary via-secondary to-surface-dark-elevated text-text-on-dark">

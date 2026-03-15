@@ -59,7 +59,7 @@ const pricingFactors = [
 const Pricing = () => {
   return (
     <Layout>
-      <SEO title="Pricing" description="Transparent pricing for GreeneDesk gym, swim school, and sports centre software. Plans for mid-size and large centres." canonical="/pricing" />
+      <SEO title="Pricing – Plans for Gyms & Swim Schools" description="Transparent pricing for GreeneDesk gym, swim school, and sports centre software. Flexible plans based on your centre size and needs." canonical="/pricing" />
       <Breadcrumbs items={[{ label: "Pricing" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
