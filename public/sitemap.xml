@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.greenedesk.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/solutions/fitdesk</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/solutions/swimdesk</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/solutions/sportdesk</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/solutions/school-programs</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/solutions/squads</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/features</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/communication</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/roster-scheduler</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/teacher-trainer</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/parent-member</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/managers</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/ceos</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/payments</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/platform/analytics</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/integrations</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/data-residency</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/pricing</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/resources</loc><priority>0.6</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/demo</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/contact</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.greenedesk.com/privacy-policy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+</urlset>
