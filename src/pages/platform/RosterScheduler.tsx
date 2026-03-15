@@ -252,6 +252,15 @@ const RosterScheduler = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Scheduling Works Best With"
+        pages={[
+          { title: "Teacher & Trainer Tools", description: "Instructors see their schedules and class lists in real-time", href: "/platform/teacher-trainer" },
+          { title: "Parent & Member App", description: "Families book, reschedule, and manage classes from their phone", href: "/platform/parent-member" },
+          { title: "Communication", description: "Automated reminders and updates tied to scheduling changes", href: "/platform/communication" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">
@@ -263,12 +272,17 @@ const RosterScheduler = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
               Ready to simplify your scheduling?
             </h2>
-            <Button variant="cta" size="xl" asChild>
-              <Link to="/demo">
-                Request a Demo
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/demo">
+                  Request a Demo
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="xl" asChild>
+                <Link to="/data-residency">Australian Data Residency</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>
