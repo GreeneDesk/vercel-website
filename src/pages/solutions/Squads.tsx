@@ -33,6 +33,7 @@ const benefits = [
 const Squads = () => {
   return (
     <Layout>
+      <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/squads" }, { label: "Squads" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />
