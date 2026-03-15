@@ -34,7 +34,20 @@ const benefits = [
 const Squads = () => {
   return (
     <Layout>
-      <SEO title="Squad Management for Competitive Programs" description="Manage competitive squads with progression tracking, attendance monitoring, and performance analytics for swim, gymnastics, and sports programs." canonical="/solutions/squads" />
+      <SEO
+        title="Squad Management for Competitive Programs"
+        description="Manage competitive squads with progression tracking, attendance monitoring, and performance analytics for swim, gymnastics, and sports programs."
+        canonical="/solutions/squads"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "GreeneDesk Squads",
+          "description": "Competitive squad management with progression tracking, attendance monitoring, and performance analytics.",
+          "provider": { "@type": "Organization", "name": "GreeneDesk" },
+          "areaServed": "AU",
+          "serviceType": "Squad Management Software"
+        }}
+      />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/squads" }, { label: "Squads" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
