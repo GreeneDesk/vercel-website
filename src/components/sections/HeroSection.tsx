@@ -140,7 +140,7 @@ export function HeroSection() {
             >
               <div className="flex items-center gap-2">
                 <div className="h-8 w-8 rounded-full bg-accent/10 flex items-center justify-center">
-                  <span className="text-xs">📱</span>
+                  <span className="text-xs" aria-hidden="true">📱</span>
                 </div>
                 <div>
                   <p className="text-xs font-medium">Parent Notification</p>
