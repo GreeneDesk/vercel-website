@@ -143,6 +143,15 @@ const Analytics = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Analytics Works Best With"
+        pages={[
+          { title: "Manager Dashboard", description: "Operational insights and at-risk member alerts", href: "/platform/managers" },
+          { title: "Communication", description: "Act on retention insights with automated outreach", href: "/platform/communication" },
+          { title: "CEO & Owner Visibility", description: "Strategic reporting and governance", href: "/platform/ceos" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">

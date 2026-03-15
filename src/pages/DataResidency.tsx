@@ -139,6 +139,15 @@ const DataResidency = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Learn More About GreeneDesk"
+        pages={[
+          { title: "CEO & Owner Visibility", description: "Strategic dashboards with governance and compliance", href: "/platform/ceos" },
+          { title: "Pricing", description: "Flexible pricing for centres of all sizes", href: "/pricing" },
+          { title: "Integrations", description: "Connect with your existing systems", href: "/integrations" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">

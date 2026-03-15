@@ -143,6 +143,15 @@ const Payments = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Payments Works Best With"
+        pages={[
+          { title: "Parent & Member App", description: "In-app payment management for families", href: "/platform/parent-member" },
+          { title: "Manager Dashboard", description: "Financial visibility and reporting", href: "/platform/managers" },
+          { title: "Pricing", description: "See GreeneDesk pricing plans", href: "/pricing" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">

@@ -131,6 +131,15 @@ const Integrations = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Explore the Platform"
+        pages={[
+          { title: "Platform Features", description: "Full overview of GreeneDesk capabilities", href: "/platform/features" },
+          { title: "Payments & Billing", description: "Integrated payment processing for centres", href: "/platform/payments" },
+          { title: "Data Residency", description: "Australian-hosted infrastructure with audit trails", href: "/data-residency" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding bg-surface-section">
         <div className="container-wide text-center">

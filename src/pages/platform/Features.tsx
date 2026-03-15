@@ -87,6 +87,15 @@ const Features = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Dive Deeper Into the Platform"
+        pages={[
+          { title: "Communication", description: "Multi-channel automated messaging", href: "/platform/communication" },
+          { title: "Roster & Scheduler", description: "Visual scheduling and capacity management", href: "/platform/roster-scheduler" },
+          { title: "Analytics & Retention", description: "Data-driven insights for better decisions", href: "/platform/analytics" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding bg-surface-section">
         <div className="container-wide text-center">

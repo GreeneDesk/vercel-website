@@ -157,6 +157,15 @@ const Squads = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Explore Related Solutions"
+        pages={[
+          { title: "SwimDesk", description: "Complete swim school management platform", href: "/solutions/swimdesk" },
+          { title: "Analytics & Retention", description: "Data-driven insights for athlete progression", href: "/platform/analytics" },
+          { title: "Teacher & Trainer Tools", description: "Mobile tools for coaches and instructors", href: "/platform/teacher-trainer" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding">
         <div className="container-wide text-center">

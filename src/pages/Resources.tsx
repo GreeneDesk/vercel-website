@@ -83,6 +83,15 @@ const Resources = () => {
         </div>
       </section>
 
+      <RelatedPages
+        heading="Explore GreeneDesk"
+        pages={[
+          { title: "FitDesk for Gyms", description: "Complete gym management software", href: "/solutions/fitdesk" },
+          { title: "SwimDesk for Swim Schools", description: "Swim school management platform", href: "/solutions/swimdesk" },
+          { title: "Pricing", description: "Flexible plans for centres of all sizes", href: "/pricing" },
+        ]}
+      />
+
       {/* CTA */}
       <section className="section-padding bg-surface-section">
         <div className="container-wide text-center">
