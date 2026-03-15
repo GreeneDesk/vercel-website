@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FitDeskHero } from "@/components/fitdesk/FitDeskHero";
 import { FitDeskAudience } from "@/components/fitdesk/FitDeskAudience";
 import { FitDeskProblems } from "@/components/fitdesk/FitDeskProblems";
@@ -18,6 +19,7 @@ const FitDesk = () => {
         description="Complete gym management software for Australian fitness centres. Member management, class scheduling, payments, and retention tools. Data hosted in Australia."
         canonical="/solutions/fitdesk"
       />
+      <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/fitdesk" }, { label: "FitDesk" }]} />
       <FitDeskHero />
       <FitDeskAudience />
       <FitDeskProblems />
