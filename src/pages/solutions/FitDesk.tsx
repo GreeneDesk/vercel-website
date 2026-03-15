@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FitDeskHero } from "@/components/fitdesk/FitDeskHero";
 import { FitDeskAudience } from "@/components/fitdesk/FitDeskAudience";
