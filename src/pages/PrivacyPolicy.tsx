@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 
 const PrivacyPolicy = () => {
