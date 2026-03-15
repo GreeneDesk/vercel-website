@@ -195,23 +195,11 @@ export function Header() {
                 ))}
               </div>
 
-              <Link to="/pricing" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-                Pricing
-              </Link>
-
-              <div className="space-y-2">
-                <p className="text-sm font-semibold text-muted-foreground">Why GreeneDesk</p>
-                {whyItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    to={item.href}
-                    className="block pl-4 py-1 text-sm hover:text-primary"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.title}
-                  </Link>
-                ))}
-              </div>
+              {directLinks.map((item) => (
+                <Link key={item.href} to={item.href} className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
+                  {item.title}
+                </Link>
+              ))}
 
               <Button variant="cta" className="mt-4" asChild>
                 <Link to="/demo" onClick={() => setIsOpen(false)}>Request a Demo</Link>
