@@ -33,6 +33,7 @@ const insights = [
 const Analytics = () => {
   return (
     <Layout>
+      <SEO title="Analytics & Retention Insights" description="Data-driven retention tools for gyms, swim schools, and sports centres. Attendance trends, churn prediction, and custom reporting." canonical="/platform/analytics" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/analytics" }, { label: "Analytics & Retention" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

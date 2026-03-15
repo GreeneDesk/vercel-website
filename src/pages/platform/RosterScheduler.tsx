@@ -58,6 +58,7 @@ const workflowBenefits = [
 const RosterScheduler = () => {
   return (
     <Layout>
+      <SEO title="Roster & Scheduler – Visual Timetabling" description="Drag-and-drop scheduling for gyms, swim schools, and sports centres. Multi-location capacity management with conflict detection." canonical="/platform/roster-scheduler" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/roster-scheduler" }, { label: "Roster & Scheduler" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

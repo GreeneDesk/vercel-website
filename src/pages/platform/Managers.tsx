@@ -68,6 +68,7 @@ const managerBenefits = [
 const Managers = () => {
   return (
     <Layout>
+      <SEO title="Manager Dashboard – Retention & Operations" description="Real-time operational dashboards for centre managers. At-risk member alerts, staff performance tracking, and utilisation reports." canonical="/platform/managers" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/managers" }, { label: "For Managers" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

@@ -115,6 +115,7 @@ const challenges = [
 const SchoolPrograms = () => {
   return (
     <Layout>
+      <SEO title="School Swimming Program Management" description="Manage school swimming and sports programs end-to-end. Automated compliance reporting, instructor scheduling, and school portal access." canonical="/solutions/school-programs" />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/school-programs" }, { label: "School Programs" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

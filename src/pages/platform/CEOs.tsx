@@ -68,6 +68,7 @@ const trustIndicators = [
 const CEOs = () => {
   return (
     <Layout>
+      <SEO title="CEO & Owner Strategic Visibility" description="Strategic dashboards for centre owners. Multi-location oversight, governance, compliance, and Australian data residency on AWS Sydney." canonical="/platform/ceos" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/ceos" }, { label: "For CEOs" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

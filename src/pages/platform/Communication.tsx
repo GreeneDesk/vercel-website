@@ -65,6 +65,7 @@ const automations = [
 const Communication = () => {
   return (
     <Layout>
+      <SEO title="Multi-Channel Communication & Automation" description="Automated SMS, email, WhatsApp and push notifications for gyms and swim schools. Empathy-first templates with AI-assisted drafting." canonical="/platform/communication" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/communication" }, { label: "Communication" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

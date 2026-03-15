@@ -19,6 +19,7 @@ const categories = [
 const Resources = () => {
   return (
     <Layout>
+      <SEO title="Resources – Guides & Best Practices" description="Guides, articles, and best practices for running gyms, swim schools, and recreation centres. Operational tips from the GreeneDesk team." canonical="/resources" />
       <Breadcrumbs items={[{ label: "Why GreeneDesk", href: "/resources" }, { label: "Resources" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

@@ -58,6 +58,7 @@ const philosophy = [
 const TeacherTrainer = () => {
   return (
     <Layout>
+      <SEO title="Teacher & Trainer Tools – Mobile-First" description="Mobile-first tools for swim teachers, gym trainers, and sports instructors. Digital assessments, offline sync, and one-tap attendance." canonical="/platform/teacher-trainer" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/teacher-trainer" }, { label: "Teacher & Trainer Tools" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

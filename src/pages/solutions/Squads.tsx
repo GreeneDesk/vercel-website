@@ -34,6 +34,7 @@ const benefits = [
 const Squads = () => {
   return (
     <Layout>
+      <SEO title="Squad Management for Competitive Programs" description="Manage competitive squads with progression tracking, attendance monitoring, and performance analytics for swim, gymnastics, and sports programs." canonical="/solutions/squads" />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/squads" }, { label: "Squads" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
