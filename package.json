@@ -89,5 +89,41 @@
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19",
     "vitest": "^3.2.4"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "include": [
+      "/",
+      "/solutions/fitdesk",
+      "/solutions/swimdesk",
+      "/solutions/sportdesk",
+      "/solutions/school-programs",
+      "/solutions/squads",
+      "/solutions/council",
+      "/platform/features",
+      "/platform/communication",
+      "/platform/roster-scheduler",
+      "/platform/teacher-trainer",
+      "/platform/parent-member",
+      "/platform/managers",
+      "/platform/ceos",
+      "/platform/payments",
+      "/platform/analytics",
+      "/integrations",
+      "/data-residency",
+      "/pricing",
+      "/resources",
+      "/partners",
+      "/demo",
+      "/contact",
+      "/privacy-policy",
+      "/leisure-centre-software-australia",
+      "/swim-school-software-australia",
+      "/fitness-wellness-software-australia",
+      "/sports-facility-software"
+    ],
+    "minifyHtml": { "collapseWhitespace": false, "removeComments": false },
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "skipThirdPartyRequests": true
   }
 }

@@ -32,3 +32,6 @@ User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://www.greenedesk.com/sitemap.xml
+
+# LLM-readable summary
+# https://www.greenedesk.com/llms.txt
