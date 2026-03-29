@@ -3,9 +3,12 @@ import { SEO } from "@/components/SEO";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProblemsSection } from "@/components/sections/ProblemsSection";
 import { DeploymentSection } from "@/components/sections/DeploymentSection";
+import { ProductsSection } from "@/components/sections/ProductsSection";
 import { ValueSection } from "@/components/sections/ValueSection";
 import { DataResidencyTeaser } from "@/components/sections/DataResidencyTeaser";
+import { WhoItsForSection } from "@/components/sections/WhoItsForSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import { DifferentiatorBlock } from "@/components/shared/DifferentiatorBlock";
 
 const Home = () => {
   return (
@@ -19,7 +22,7 @@ const Home = () => {
             "name": "GreeneDesk",
             "url": "https://www.greenedesk.com",
             "logo": "https://www.greenedesk.com/og-image.png",
-            "description": "GreeneDesk is unified software for gyms, swim schools, and sports centres. Reduce admin, improve retention, and get clearer visibility. Built and hosted in Australia.",
+            "description": "GreeneDesk is a multi-sport operations platform that works alongside your current management software. Built and hosted in Australia.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "36 Catherine Avenue",
@@ -38,7 +41,7 @@ const Home = () => {
             "name": "GreeneDesk",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
-            "description": "Unified software platform for gyms, swim schools, and sports centres. Scheduling, payments, communication, assessments, analytics, and member management.",
+            "description": "Multi-sport operations platform for gyms, swim schools, and sports centres. Scheduling, assessments, engagement, performance tracking, and member management.",
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
@@ -48,13 +51,13 @@ const Home = () => {
               "@type": "Organization",
               "name": "GreeneDesk"
             },
-            "featureList": "Scheduling, Payments, Communication, Assessments, Analytics, Member Management, Parent Portal, Data Residency"
+            "featureList": "Scheduling, Assessments, Engagement, Performance Tracking, Member Management, Parent Portal, Data Residency"
           },
           {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "GreeneDesk",
-            "description": "Software for gyms, swim schools, and sports centres. Built and hosted in Australia.",
+            "description": "Multi-sport operations platform for gyms, swim schools, and sports centres. Built and hosted in Australia.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "36 Catherine Avenue",
@@ -73,8 +76,11 @@ const Home = () => {
       <HeroSection />
       <ProblemsSection />
       <DeploymentSection />
+      <ProductsSection />
       <ValueSection />
       <DataResidencyTeaser />
+      <WhoItsForSection />
+      <DifferentiatorBlock />
       <FinalCTASection />
     </Layout>
   );
