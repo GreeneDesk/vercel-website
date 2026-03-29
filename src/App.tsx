@@ -7,12 +7,12 @@ import { HelmetProvider } from "react-helmet-async";
 import { lazy, Suspense } from "react";
 import Home from "./pages/Home";
 
-// Lazy load all non-homepage routes for smaller initial bundle
 const FitDesk = lazy(() => import("./pages/solutions/FitDesk"));
 const SwimDesk = lazy(() => import("./pages/solutions/SwimDesk"));
 const SportDesk = lazy(() => import("./pages/solutions/SportDesk"));
 const SchoolPrograms = lazy(() => import("./pages/solutions/SchoolPrograms"));
 const Squads = lazy(() => import("./pages/solutions/Squads"));
+const Council = lazy(() => import("./pages/solutions/Council"));
 const Features = lazy(() => import("./pages/platform/Features"));
 const Communication = lazy(() => import("./pages/platform/Communication"));
 const RosterScheduler = lazy(() => import("./pages/platform/RosterScheduler"));
@@ -26,10 +26,17 @@ const Integrations = lazy(() => import("./pages/Integrations"));
 const DataResidency = lazy(() => import("./pages/DataResidency"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Resources = lazy(() => import("./pages/Resources"));
+const Partners = lazy(() => import("./pages/Partners"));
 const Demo = lazy(() => import("./pages/Demo"));
 const Contact = lazy(() => import("./pages/Contact"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+
+// SEO Pages
+const LeisureCentreSoftware = lazy(() => import("./pages/seo/LeisureCentreSoftware"));
+const SwimSchoolSoftware = lazy(() => import("./pages/seo/SwimSchoolSoftware"));
+const FitnessWellnessSoftware = lazy(() => import("./pages/seo/FitnessWellnessSoftware"));
+const SportsFacilitySoftware = lazy(() => import("./pages/seo/SportsFacilitySoftware"));
 
 const queryClient = new QueryClient();
 
@@ -58,6 +65,7 @@ const App = () => (
             <Route path="/solutions/sportdesk" element={<SportDesk />} />
             <Route path="/solutions/school-programs" element={<SchoolPrograms />} />
             <Route path="/solutions/squads" element={<Squads />} />
+            <Route path="/solutions/council" element={<Council />} />
             <Route path="/solutions" element={<Home />} />
             
             {/* Platform */}
@@ -76,9 +84,16 @@ const App = () => (
             <Route path="/data-residency" element={<DataResidency />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/partners" element={<Partners />} />
             <Route path="/demo" element={<Demo />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            
+            {/* SEO Landing Pages */}
+            <Route path="/leisure-centre-software-australia" element={<LeisureCentreSoftware />} />
+            <Route path="/swim-school-software-australia" element={<SwimSchoolSoftware />} />
+            <Route path="/fitness-wellness-software-australia" element={<FitnessWellnessSoftware />} />
+            <Route path="/sports-facility-software" element={<SportsFacilitySoftware />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
