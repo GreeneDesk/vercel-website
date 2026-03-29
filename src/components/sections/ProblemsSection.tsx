@@ -1,54 +1,5 @@
 import { motion } from "framer-motion";
-import { 
-  Clock, 
-  HelpCircle, 
-  TrendingDown, 
-  Unplug, 
-  FileSpreadsheet, 
-  Globe 
-} from "lucide-react";
-
-const problems = [
-  {
-    icon: Clock,
-    text: "Staff spending too much time on admin instead of members",
-  },
-  {
-    icon: HelpCircle,
-    text: 'Parents asking, "How is my child actually progressing?"',
-  },
-  {
-    icon: TrendingDown,
-    text: "Attendance slowly dropping — noticed too late",
-  },
-  {
-    icon: Unplug,
-    text: "Multiple systems that don't talk to each other",
-  },
-  {
-    icon: FileSpreadsheet,
-    text: "School and squad reporting that takes days, not minutes",
-  },
-  {
-    icon: Globe,
-    text: "Overseas software with unclear data hosting",
-  },
-];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0 },
-};
+import { Monitor, Dumbbell, ArrowRight } from "lucide-react";
 
 export function ProblemsSection() {
   return (
@@ -59,37 +10,48 @@ export function ProblemsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="max-w-4xl mx-auto"
         >
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Sound familiar?
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 text-center">
+            Why GreeneDesk
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            These challenges are common across Australian gyms, swim schools, and recreation centres.
-          </p>
-        </motion.div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          {problems.map((problem, index) => (
+          <div className="grid md:grid-cols-2 gap-8 mb-10">
             <motion.div
-              key={index}
-              variants={itemVariants}
-              className="flex items-start gap-4 p-6 rounded-xl bg-background border border-border hover:border-primary/30 hover:shadow-md transition-all duration-300"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="rounded-2xl border border-border bg-background p-6 md:p-8"
             >
-              <div className="flex-shrink-0 h-12 w-12 rounded-lg bg-destructive/10 flex items-center justify-center">
-                <problem.icon className="h-6 w-6 text-destructive" />
+              <div className="h-12 w-12 rounded-xl bg-muted flex items-center justify-center mb-4">
+                <Monitor className="h-6 w-6 text-muted-foreground" />
               </div>
-              <p className="text-foreground font-medium leading-relaxed">
-                {problem.text}
+              <h3 className="font-display text-xl font-semibold mb-4">Most management systems are built for the front desk.</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li>Memberships</li>
+                <li>Billing</li>
+                <li>Check-ins</li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="rounded-2xl border-2 border-primary bg-primary/5 p-6 md:p-8"
+            >
+              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Dumbbell className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-display text-xl font-semibold mb-4">But real value is created on the floor, in the pool, and during training.</h3>
+              <p className="text-muted-foreground mb-4">
+                GreeneDesk fills that gap.
+              </p>
+              <p className="text-foreground">
+                It powers trainers, instructors, and coaches with the tools they need to deliver better programs, track progress, and engage members consistently.
               </p>
             </motion.div>
-          ))}
+          </div>
         </motion.div>
       </div>
     </section>

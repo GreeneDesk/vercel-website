@@ -1,13 +1,5 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Shield, MapPin, Lock, Users, Check, Globe } from "lucide-react";
-
-const dataPoints = [
-  { icon: MapPin, text: "Hosted on AWS Sydney (ap-southeast-2)" },
-  { icon: Lock, text: "Role-based access, restricted to operational needs" },
-  { icon: Shield, text: "All access logged and monitored" },
-  { icon: Check, text: "No third-party providers for data processing" },
-];
+import { Shield, MapPin, Lock } from "lucide-react";
 
 export function FitDeskDataResidency() {
   return (
@@ -19,40 +11,27 @@ export function FitDeskDataResidency() {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto rounded-2xl border-2 border-primary bg-gradient-to-br from-primary/5 to-background p-8 md:p-12"
         >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-12 w-12 rounded-xl bg-primary flex items-center justify-center">
-              <Shield className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <div>
-              <span className="text-sm font-medium text-primary">Built in Australia for the World.</span>
-              <h2 className="font-display text-2xl md:text-3xl font-bold">
-                Australian data hosting with global reach
-              </h2>
-            </div>
-          </div>
+          <div className="text-center">
+            <Shield className="h-12 w-12 text-primary mx-auto mb-6" />
+            <h2 className="font-display text-2xl md:text-3xl font-bold mb-6">
+              Data & Deployment
+            </h2>
 
-          <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            {dataPoints.map((point, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <point.icon className="h-4 w-4 text-primary" />
-                </div>
-                <span className="pt-1">{point.text}</span>
+            <div className="space-y-4 max-w-lg mx-auto">
+              <div className="flex items-center justify-center gap-3">
+                <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
+                <span>Hosted in Sydney, Australia</span>
               </div>
-            ))}
+              <div className="flex items-center justify-center gap-3">
+                <Lock className="h-5 w-5 text-primary flex-shrink-0" />
+                <span>Designed for secure and compliant operations</span>
+              </div>
+              <div className="flex items-center justify-center gap-3">
+                <Shield className="h-5 w-5 text-primary flex-shrink-0" />
+                <span>Works across devices and environments</span>
+              </div>
+            </div>
           </div>
-
-          <p className="text-sm text-muted-foreground mb-6">
-            Where authorised support personnel located outside Australia access systems for maintenance purposes, such access is performed under strict contractual confidentiality obligations and technical safeguards — without offshore storage or processing of customer data.
-          </p>
-
-          <Link
-            to="/data-residency"
-            className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
-          >
-            Learn more about our data practices
-            <span aria-hidden>→</span>
-          </Link>
         </motion.div>
       </div>
     </section>

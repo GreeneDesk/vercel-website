@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar, CheckCircle2 } from "lucide-react";
-
-const benefits = [
-  "Short, practical walkthrough",
-  "No pressure sales pitch",
-  "We'll map your programs, setup and integrations",
-];
+import { ArrowRight, Calendar } from "lucide-react";
 
 export function FinalCTASection() {
   return (
@@ -25,21 +19,12 @@ export function FinalCTASection() {
           </div>
           
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            See how GreeneDesk would work in your centre
+            See how GreeneDesk fits into your existing setup
           </h2>
-          
-          <ul className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-8">
-            {benefits.map((benefit, index) => (
-              <li key={index} className="flex items-center gap-2 text-muted-foreground">
-                <CheckCircle2 className="h-5 w-5 text-primary" />
-                <span>{benefit}</span>
-              </li>
-            ))}
-          </ul>
           
           <Button variant="cta" size="xl" asChild>
             <Link to="/demo">
-              Request a Demo
+              Book a Demo
               <ArrowRight className="h-5 w-5" />
             </Link>
           </Button>

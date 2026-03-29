@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { DifferentiatorBlock } from "@/components/shared/DifferentiatorBlock";
 import { FitDeskHero } from "@/components/fitdesk/FitDeskHero";
 import { FitDeskAudience } from "@/components/fitdesk/FitDeskAudience";
 import { FitDeskProblems } from "@/components/fitdesk/FitDeskProblems";
@@ -17,13 +18,13 @@ const FitDesk = () => {
     <Layout>
       <SEO
         title="FitDesk – Gym & Fitness Centre Software"
-        description="Complete gym management software for Australian fitness centres. Member management, class scheduling, payments, and retention tools. Data hosted in Australia."
+        description="FitDesk powers what happens beyond the front desk. Scheduling, assessments, engagement, and exercise programming for leisure centres and wellness facilities."
         canonical="/solutions/fitdesk"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",
           "name": "FitDesk",
-          "description": "Complete gym and fitness centre management software. Member management, class scheduling, payments, communication, and retention tools.",
+          "description": "Operations platform for leisure centres, wellness facilities, and rehab programs. Scheduling, assessments, engagement, and exercise programming.",
           "provider": { "@type": "Organization", "name": "GreeneDesk" },
           "areaServed": "AU",
           "serviceType": "Gym Management Software"
@@ -31,13 +32,13 @@ const FitDesk = () => {
       />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/fitdesk" }, { label: "FitDesk" }]} />
       <FitDeskHero />
-      <FitDeskAudience />
       <FitDeskProblems />
-      <FitDeskOverview />
-      <FitDeskModules />
       <FitDeskCommunity />
-      <FitDeskDataResidency />
+      <FitDeskModules />
+      <FitDeskAudience />
       <FitDeskBenefits />
+      <FitDeskDataResidency />
+      <FitDeskOverview />
       <RelatedPages
         heading="Explore Related Solutions"
         pages={[

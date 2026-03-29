@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
-import { Briefcase, UserCheck } from "lucide-react";
+import { Monitor, Dumbbell, Check, X } from "lucide-react";
 
-const managerProblems = [
-  "It's hard to see what's actually happening on the floor.",
-  "Attendance drops quietly until members cancel.",
-  "Reporting takes too long to be useful.",
+const traditionalFocus = [
+  "Memberships",
+  "Billing",
+  "Check-ins",
 ];
 
-const trainerProblems = [
-  "I don't want more admin.",
-  "I need better tools to coach properly.",
-  "Members don't remember exercises between sessions.",
+const centreStruggles = [
+  "Trainer scheduling",
+  "Member engagement",
+  "Assessments and progress tracking",
+  "Program delivery",
 ];
 
 export function FitDeskProblems() {
@@ -24,52 +25,40 @@ export function FitDeskProblems() {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            What we consistently hear from Australian centres
+            The gap in traditional systems
           </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* Managers */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="rounded-2xl border border-border bg-background p-6 md:p-8"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-12 w-12 rounded-xl bg-secondary flex items-center justify-center">
-                <Briefcase className="h-6 w-6 text-secondary-foreground" />
-              </div>
-              <h3 className="font-display text-xl font-semibold">Managers say:</h3>
-            </div>
-            <ul className="space-y-4">
-              {managerProblems.map((problem, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <span className="text-2xl text-muted-foreground">"</span>
-                  <p className="text-muted-foreground italic pt-1">{problem}</p>
+            <h3 className="font-display text-xl font-semibold mb-6">Most systems focus on:</h3>
+            <ul className="space-y-3">
+              {traditionalFocus.map((item, index) => (
+                <li key={index} className="flex items-center gap-3 text-muted-foreground">
+                  <X className="h-4 w-4 text-muted-foreground/50 flex-shrink-0" />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
           </motion.div>
 
-          {/* Trainers */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="rounded-2xl border border-border bg-background p-6 md:p-8"
+            className="rounded-2xl border-2 border-destructive/30 bg-destructive/5 p-6 md:p-8"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-12 w-12 rounded-xl bg-primary flex items-center justify-center">
-                <UserCheck className="h-6 w-6 text-primary-foreground" />
-              </div>
-              <h3 className="font-display text-xl font-semibold">Trainers say:</h3>
-            </div>
-            <ul className="space-y-4">
-              {trainerProblems.map((problem, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <span className="text-2xl text-muted-foreground">"</span>
-                  <p className="text-muted-foreground italic pt-1">{problem}</p>
+            <h3 className="font-display text-xl font-semibold mb-6">But centres struggle with:</h3>
+            <ul className="space-y-3">
+              {centreStruggles.map((item, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="font-medium">{item}</span>
                 </li>
               ))}
             </ul>
@@ -80,9 +69,9 @@ export function FitDeskProblems() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center text-lg font-medium mt-10 text-primary"
+          className="text-center text-xl font-semibold mt-10 text-primary"
         >
-          FitDesk was built to solve both sides — management and delivery.
+          FitDesk is built to solve this.
         </motion.p>
       </div>
     </section>

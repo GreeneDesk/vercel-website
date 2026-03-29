@@ -1,43 +1,43 @@
 import { motion } from "framer-motion";
 import { 
-  Zap, 
-  Eye, 
-  MessageCircle, 
+  Calendar, 
+  MessageSquare, 
   TrendingUp, 
-  Users 
+  FileText, 
+  CreditCard 
 } from "lucide-react";
 
-const values = [
+const capabilities = [
   {
-    icon: Zap,
-    title: "Automate day-to-day operations",
-    description: "Reduce manual tasks and free up your staff for what matters",
+    icon: Calendar,
+    title: "Scheduling Engine",
+    description: "Manage classes, trainers, facilities, schools, and squads in one system",
   },
   {
-    icon: Eye,
-    title: "Identify retention risks earlier",
-    description: "Spot attendance drops before they become cancellations",
-  },
-  {
-    icon: MessageCircle,
-    title: "Improve member and parent communication",
-    description: "Keep everyone informed with automated updates",
+    icon: MessageSquare,
+    title: "Engagement & Communication",
+    description: "Connect trainers, instructors, parents, and members through apps and notifications",
   },
   {
     icon: TrendingUp,
-    title: "Understand utilisation and capacity",
-    description: "Make data-driven decisions about classes and facilities",
+    title: "Skills & Progress Tracking",
+    description: "Track development, performance, and certifications over time",
   },
   {
-    icon: Users,
-    title: "Support growth without adding headcount",
-    description: "Scale your operations efficiently",
+    icon: FileText,
+    title: "Digital Operations",
+    description: "Replace paperwork with structured digital workflows and history",
+  },
+  {
+    icon: CreditCard,
+    title: "Payments & Pricing",
+    description: "Support flexible pricing, discounts, and billing workflows",
   },
 ];
 
 export function ValueSection() {
   return (
-    <section className="section-padding bg-surface-section">
+    <section className="section-padding">
       <div className="container-wide">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,15 +47,12 @@ export function ValueSection() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Less admin. Better visibility. Fewer surprises.
+            Core Capabilities
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            GreeneDesk helps you run your centre more effectively.
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {values.map((value, index) => (
+          {capabilities.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -65,13 +62,13 @@ export function ValueSection() {
               className="text-center p-6"
             >
               <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-glow mb-6">
-                <value.icon className="h-8 w-8 text-primary-foreground" />
+                <item.icon className="h-8 w-8 text-primary-foreground" />
               </div>
               <h3 className="font-display text-xl font-semibold mb-2">
-                {value.title}
+                {item.title}
               </h3>
               <p className="text-muted-foreground">
-                {value.description}
+                {item.description}
               </p>
             </motion.div>
           ))}
