@@ -1,18 +1,16 @@
 import { motion } from "framer-motion";
 import { 
   UserCheck, 
-  Lightbulb, 
-  Heart, 
+  TrendingUp, 
   Clock, 
-  TrendingUp 
+  Layers
 } from "lucide-react";
 
-const benefits = [
-  { icon: UserCheck, text: "Trainers engage more with the system" },
-  { icon: Lightbulb, text: "Members understand what they're doing" },
-  { icon: Heart, text: "Seniors feel supported, not confused" },
-  { icon: Clock, text: "Managers spend less time chasing information" },
-  { icon: TrendingUp, text: "Decisions are based on insight, not guesswork" },
+const outcomes = [
+  { icon: UserCheck, text: "Improve member engagement" },
+  { icon: TrendingUp, text: "Increase retention" },
+  { icon: Clock, text: "Reduce administrative workload" },
+  { icon: Layers, text: "Deliver structured programs at scale" },
 ];
 
 export function FitDeskBenefits() {
@@ -26,15 +24,12 @@ export function FitDeskBenefits() {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Why mid and large centres choose FitDesk
+            Outcomes
           </h2>
-          <p className="text-lg text-muted-foreground">
-            The difference a comprehensive, purpose-built system makes
-          </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {benefits.map((benefit, index) => (
+        <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          {outcomes.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -44,9 +39,9 @@ export function FitDeskBenefits() {
               className="flex items-center gap-4 p-5 rounded-xl bg-background border border-border"
             >
               <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center flex-shrink-0">
-                <benefit.icon className="h-6 w-6 text-primary-foreground" />
+                <item.icon className="h-6 w-6 text-primary-foreground" />
               </div>
-              <p className="font-medium">{benefit.text}</p>
+              <p className="font-medium">{item.text}</p>
             </motion.div>
           ))}
         </div>

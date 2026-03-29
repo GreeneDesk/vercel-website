@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Activity } from "lucide-react";
+import { ArrowRight, Activity } from "lucide-react";
 
 export function FitDeskHero() {
   return (
@@ -17,29 +17,23 @@ export function FitDeskHero() {
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
               <Activity className="h-4 w-4" />
-              Complete Gym & Recreation Management
+              Leisure, Wellness & Rehab
             </div>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              FitDesk — the complete system for{" "}
-              <span className="text-gradient-primary">mid and large fitness centres</span>
+              FitDesk powers what happens{" "}
+              <span className="text-gradient-primary">beyond the front desk</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl">
-              A comprehensive platform covering scheduling, engagement, coaching tools, retention analytics and reporting — built specifically for how gyms, leisure centres and community recreation facilities actually operate.
+              Designed for leisure centres, wellness facilities, and rehab programs, FitDesk brings scheduling, assessments, engagement, and exercise programming into one platform — while working with your existing management software.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="cta" size="xl" asChild>
                 <Link to="/demo">
-                  Request a FitDesk Demo
+                  Book a Demo
                   <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
-              <Button variant="outline" size="xl" asChild>
-                <Link to="#how-it-works">
-                  <Play className="h-5 w-5" />
-                  See How FitDesk Works
                 </Link>
               </Button>
             </div>
