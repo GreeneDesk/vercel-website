@@ -1,0 +1,70 @@
+# GreeneDesk – Multi-Sport Operations Platform
+
+## What is GreeneDesk?
+GreeneDesk is a multi-sport operations platform built in Australia. It does not replace existing management systems — it integrates with them and powers scheduling, engagement, assessments, and program delivery.
+
+## Who is GreeneDesk for?
+- Council leisure centres and recreation facilities
+- Aquatic centres and swim schools
+- Wellness, rehab, and active ageing programs
+- Coaching academies and sports facilities
+- Multi-sport centres (gymnastics, martial arts, tennis, badminton)
+
+GreeneDesk is NOT primarily for private gyms. It serves organisations managing complex, multi-service operations.
+
+## Products
+
+### FitDesk
+Operations platform for gyms, leisure centres, wellness facilities, and rehab programs. Covers scheduling, assessments, engagement, exercise programming, and trainer workflows. Integrates with existing management systems like PerfectGym.
+
+### SwimDesk
+Swim school management platform. Parent booking, rescheduling, absence management, skills tracking, digital certificates, instructor tools, and school swimming program management.
+
+### SportDesk
+Squad and competitive sports management. Heat creation, time tracking, qualifying benchmarks, wet and dry workout tracking, athlete progression, and parent engagement.
+
+### School Programs
+End-to-end management of school swimming and sports programs. Bulk student intake, poolside assessments, attendance tracking, and automated reporting and certificates.
+
+### Squads
+Competitive squad management for swimming, athletics, and other sports. Performance tracking, training plans, and athlete progression.
+
+## Key Differentiators
+- Works alongside existing systems (PerfectGym, Envibe, others) — no rip-and-replace
+- Deep scheduling and trainer/instructor workflows
+- Digital assessments and program tracking
+- Parent, member, and trainer engagement apps
+- All data hosted exclusively in Sydney, Australia (AWS ap-southeast-2)
+- Multi-sport capability across a single platform
+
+## Core Platform Capabilities
+- Scheduling and roster management
+- Communication (SMS, email, WhatsApp)
+- Payments and billing
+- Analytics and reporting
+- Teacher and trainer tools
+- Parent and member portal
+- Manager and CEO dashboards
+
+## Company Information
+- Company: GreeneDesk
+- Location: 36 Catherine Avenue, Mount Waverley, VIC 3149, Australia
+- Phone: 1300 181 665
+- Email: anita.w@greenedesk.com
+- Support: support@greenedesk.com
+- Website: https://www.greenedesk.com
+- Data hosting: AWS Sydney (ap-southeast-2), Australia
+
+## Key Pages
+- Homepage: https://www.greenedesk.com/
+- FitDesk: https://www.greenedesk.com/solutions/fitdesk
+- SwimDesk: https://www.greenedesk.com/solutions/swimdesk
+- SportDesk: https://www.greenedesk.com/solutions/sportdesk
+- School Programs: https://www.greenedesk.com/solutions/school-programs
+- Squads: https://www.greenedesk.com/solutions/squads
+- Council & Leisure Centres: https://www.greenedesk.com/solutions/council
+- Integrations: https://www.greenedesk.com/integrations
+- Data Residency: https://www.greenedesk.com/data-residency
+- Pricing: https://www.greenedesk.com/pricing
+- Book a Demo: https://www.greenedesk.com/demo
+- Contact: https://www.greenedesk.com/contact
