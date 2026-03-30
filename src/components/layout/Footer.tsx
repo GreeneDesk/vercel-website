@@ -43,10 +43,14 @@ export function Footer() {
             <p className="text-text-on-dark-muted max-w-sm mb-4">
               Multi-sport operations platform that works alongside your existing management software. Scheduling, engagement, and program delivery for sports and leisure centres.
             </p>
-            <div className="flex items-center gap-2 text-sm text-text-on-dark-muted">
+            <div className="flex items-center gap-2 text-sm text-text-on-dark-muted mb-2">
               <MapPin className="h-4 w-4 text-primary" />
-              <span>Built and hosted in Australia.</span>
+              <span>Built and hosted in Australia. Serving AU, NZ & beyond.</span>
             </div>
+            <a href="tel:1300181665" className="flex items-center gap-2 text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
+              <span className="text-primary">📞</span>
+              <span>1 300 181 665</span>
+            </a>
           </div>
 
           <nav aria-label="Solutions">
