@@ -3,7 +3,8 @@ import {
   UserCheck, 
   TrendingUp, 
   Clock, 
-  Layers
+  Layers,
+  Heart
 } from "lucide-react";
 
 const outcomes = [
@@ -11,6 +12,7 @@ const outcomes = [
   { icon: TrendingUp, text: "Increase retention" },
   { icon: Clock, text: "Reduce administrative workload" },
   { icon: Layers, text: "Deliver structured programs at scale" },
+  { icon: Heart, text: "Support active ageing and senior wellness programs" },
 ];
 
 export function FitDeskBenefits() {

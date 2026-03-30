@@ -5,6 +5,7 @@ import {
   Heart, 
   Stethoscope, 
   Trophy,
+  Users,
   Check
 } from "lucide-react";
 
@@ -14,6 +15,7 @@ const audiences = [
   { icon: Heart, text: "Wellness and active ageing programs" },
   { icon: Stethoscope, text: "Rehab and exercise-based services" },
   { icon: Trophy, text: "Coaching and competitive sports programs" },
+  { icon: Users, text: "Senior citizen fitness and falls prevention" },
 ];
 
 export function WhoItsForSection() {
