@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { TrustedBySection } from "@/components/sections/TrustedBySection";
 import { ProblemsSection } from "@/components/sections/ProblemsSection";
 import { DeploymentSection } from "@/components/sections/DeploymentSection";
 import { ProductsSection } from "@/components/sections/ProductsSection";
@@ -74,6 +75,7 @@ const Home = () => {
         ]}
       />
       <HeroSection />
+      <TrustedBySection />
       <ProblemsSection />
       <DeploymentSection />
       <ProductsSection />
