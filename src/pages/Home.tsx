@@ -10,6 +10,8 @@ import { DataResidencyTeaser } from "@/components/sections/DataResidencyTeaser";
 import { WhoItsForSection } from "@/components/sections/WhoItsForSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import { DifferentiatorBlock } from "@/components/shared/DifferentiatorBlock";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { TrustBanner } from "@/components/sections/TrustBanner";
 
 const Home = () => {
   return (
@@ -42,16 +44,13 @@ const Home = () => {
             "name": "GreeneDesk",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
-            "description": "Multi-sport operations platform for gyms, swim schools, and sports centres. Scheduling, assessments, engagement, performance tracking, and member management.",
+            "description": "Multi-sport operations platform for gyms, swim schools, and sports centres.",
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
               "priceCurrency": "AUD"
             },
-            "provider": {
-              "@type": "Organization",
-              "name": "GreeneDesk"
-            },
+            "provider": { "@type": "Organization", "name": "GreeneDesk" },
             "featureList": "Scheduling, Assessments, Engagement, Performance Tracking, Member Management, Parent Portal, Data Residency"
           },
           {
@@ -76,10 +75,12 @@ const Home = () => {
       />
       <HeroSection />
       <TrustedBySection />
+      <TrustBanner />
       <ProblemsSection />
       <DeploymentSection />
       <ProductsSection />
       <ValueSection />
+      <TestimonialsSection />
       <DataResidencyTeaser />
       <WhoItsForSection />
       <DifferentiatorBlock />
