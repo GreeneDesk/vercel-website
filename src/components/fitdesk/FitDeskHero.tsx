@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Activity } from "lucide-react";
+import fitdeskHand from "@/assets/fitdesk/fitdesk-hand.png";
 
 export function FitDeskHero() {
   return (
@@ -9,7 +10,7 @@ export function FitDeskHero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />
       
       <div className="container-wide section-padding relative">
-        <div className="max-w-4xl">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,6 +38,20 @@ export function FitDeskHero() {
                 </Link>
               </Button>
             </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="hidden lg:flex justify-center"
+          >
+            <img
+              src={fitdeskHand}
+              alt="FitDesk workout programming interface on a tablet device"
+              className="max-h-[500px] w-auto object-contain drop-shadow-2xl"
+              loading="eager"
+            />
           </motion.div>
         </div>
       </div>

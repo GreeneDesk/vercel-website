@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
+import heroIpad from "@/assets/fitdesk/hero-ipad.png";
 
 export function HeroSection() {
   return (
@@ -10,7 +11,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--accent)/0.05)_0%,transparent_50%)]" />
       
       <div className="container-wide section-padding relative">
-        <div className="max-w-4xl">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,6 +48,20 @@ export function HeroSection() {
                 </Link>
               </Button>
             </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="hidden lg:flex justify-center"
+          >
+            <img
+              src={heroIpad}
+              alt="GreeneDesk exercise library interface on an iPad showing workout management"
+              className="max-h-[480px] w-auto object-contain drop-shadow-2xl"
+              loading="eager"
+            />
           </motion.div>
         </div>
       </div>
