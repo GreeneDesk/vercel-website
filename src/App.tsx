@@ -23,6 +23,7 @@ const Managers = lazy(() => import("./pages/platform/Managers"));
 const CEOs = lazy(() => import("./pages/platform/CEOs"));
 const Payments = lazy(() => import("./pages/platform/Payments"));
 const Analytics = lazy(() => import("./pages/platform/Analytics"));
+const WorkoutProgramming = lazy(() => import("./pages/platform/WorkoutProgramming"));
 const Integrations = lazy(() => import("./pages/Integrations"));
 const DataResidency = lazy(() => import("./pages/DataResidency"));
 const Pricing = lazy(() => import("./pages/Pricing"));
@@ -81,6 +82,7 @@ const App = () => (
             <Route path="/platform/ceos" element={<CEOs />} />
             <Route path="/platform/payments" element={<Payments />} />
             <Route path="/platform/analytics" element={<Analytics />} />
+            <Route path="/platform/workout-programming" element={<WorkoutProgramming />} />
             
             {/* Other Pages */}
             <Route path="/integrations" element={<Integrations />} />

@@ -17,7 +17,7 @@ const useCases = [
   { icon: Stethoscope, text: "Rehab and recovery services" },
   { icon: Activity, text: "Exercise physiology setups" },
   { icon: Dumbbell, text: "Physio-adjacent businesses" },
-  { icon: Accessibility, text: "Senior citizen fitness & falls prevention" },
+  { icon: Accessibility, text: "Senior citizen fitness & wellness programs" },
 ];
 
 export function FitDeskAudience() {
