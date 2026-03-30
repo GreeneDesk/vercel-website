@@ -102,7 +102,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-text-on-dark-muted/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-text-on-dark-muted">
-              © {new Date().getFullYear()} GreeneDesk. All rights reserved.
+              © {new Date().getFullYear()} GreeneDesk Pty. Ltd. (ABN 13 958 181 688), Victoria, Australia. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link to="/privacy-policy" className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
