@@ -28,6 +28,7 @@ const moreLinks = [
   { title: "Resources", href: "/resources" },
   { title: "Partners", href: "/partners" },
   { title: "Contact", href: "/contact" },
+  { title: "SooperVision", href: "https://soopervision.com", external: true },
 ];
 
 export function Footer() {
@@ -79,9 +80,15 @@ export function Footer() {
             <ul className="space-y-2">
               {moreLinks.map((link) => (
                 <li key={link.href}>
-                  <Link to={link.href} className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
-                    {link.title}
-                  </Link>
+                  {'external' in link && link.external ? (
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
+                      {link.title} ↗
+                    </a>
+                  ) : (
+                    <Link to={link.href} className="text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
+                      {link.title}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
