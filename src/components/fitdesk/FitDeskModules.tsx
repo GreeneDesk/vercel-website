@@ -61,6 +61,8 @@ const features = [
   {
     icon: Smartphone,
     title: "Mobile Apps",
+    image: memberAppExercise,
+    imageAlt: "FitDesk member app showing workout exercises with video guidance on a smartphone",
     items: [
       "Trainer app for on-floor usage",
       "Member app for tracking and engagement",
