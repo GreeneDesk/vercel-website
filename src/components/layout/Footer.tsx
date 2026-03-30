@@ -28,6 +28,7 @@ const moreLinks = [
   { title: "Resources", href: "/resources" },
   { title: "Partners", href: "/partners" },
   { title: "Contact", href: "/contact" },
+  { title: "SooperVision", href: "https://soopervision.com", external: true },
 ];
 
 export function Footer() {
