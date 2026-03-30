@@ -24,42 +24,55 @@ export function TestimonialsSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {TESTIMONIALS.map((t, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-background rounded-2xl border border-border p-8 flex flex-col gap-5 hover:shadow-lg hover:-translate-y-1 transition-all"
-            >
-              <div className="flex gap-0.5">
-                {[...Array(5)].map((_, s) => (
-                  <Star key={s} className="h-4 w-4 fill-accent text-accent" />
-                ))}
-              </div>
+        {/* First row: 3 cards */}
+        <div className="grid md:grid-cols-3 gap-6 mb-6">
+          {TESTIMONIALS.slice(0, 3).map((t, i) => (
+            <TestimonialCard key={i} t={t} delay={i * 0.1} />
+          ))}
+        </div>
 
-              <span className="font-display text-4xl font-bold text-primary leading-none">"</span>
-
-              <p className="text-muted-foreground italic leading-relaxed flex-1">
-                {t.quote}
-              </p>
-
-              <div className="flex items-center gap-3 pt-4 border-t border-border">
-                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center font-display font-bold text-primary text-sm flex-shrink-0">
-                  {t.initials}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="font-display font-bold text-sm">{t.name}</p>
-                  <p className="text-xs text-muted-foreground">{t.role}</p>
-                </div>
-                <span className="text-xl">{t.flag}</span>
-              </div>
-            </motion.div>
+        {/* Second row: 4 cards on lg, 2-col on md */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {TESTIMONIALS.slice(3).map((t, i) => (
+            <TestimonialCard key={i + 3} t={t} delay={(i + 3) * 0.1} />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function TestimonialCard({ t, delay }: { t: typeof TESTIMONIALS[number]; delay: number }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay }}
+      className="bg-background rounded-2xl border border-border p-8 flex flex-col gap-5 hover:shadow-lg hover:-translate-y-1 transition-all"
+    >
+      <div className="flex gap-0.5">
+        {[...Array(5)].map((_, s) => (
+          <Star key={s} className="h-4 w-4 fill-accent text-accent" />
+        ))}
+      </div>
+
+      <span className="font-display text-4xl font-bold text-primary leading-none">"</span>
+
+      <p className="text-muted-foreground italic leading-relaxed flex-1 text-sm">
+        {t.quote}
+      </p>
+
+      <div className="flex items-center gap-3 pt-4 border-t border-border">
+        <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center font-display font-bold text-primary text-sm flex-shrink-0">
+          {t.initials}
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="font-display font-bold text-sm">{t.name}</p>
+          <p className="text-xs text-muted-foreground">{t.role}</p>
+        </div>
+        <span className="text-xl">{t.flag}</span>
+      </div>
+    </motion.div>
   );
 }
