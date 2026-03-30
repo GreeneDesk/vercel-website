@@ -42,9 +42,10 @@ const features = [
     image: workoutPrograms,
     imageAlt: "FitDesk exercise programming interface with video library and workout builder",
     items: [
-      "Thousands of exercises with instructional videos",
-      "Build structured programs",
-      "Custom templates",
+      "4,000+ exercises with instructional videos and GIFs",
+      "Build structured workout programs with sets, reps, and tempo",
+      "Save and reuse custom templates across trainers",
+      "Members access programs on the GreeneDesk app or browser",
     ],
   },
   {

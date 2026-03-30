@@ -23,6 +23,7 @@ const Managers = lazy(() => import("./pages/platform/Managers"));
 const CEOs = lazy(() => import("./pages/platform/CEOs"));
 const Payments = lazy(() => import("./pages/platform/Payments"));
 const Analytics = lazy(() => import("./pages/platform/Analytics"));
+const WorkoutProgramming = lazy(() => import("./pages/platform/WorkoutProgramming"));
 const Integrations = lazy(() => import("./pages/Integrations"));
 const DataResidency = lazy(() => import("./pages/DataResidency"));
 const Pricing = lazy(() => import("./pages/Pricing"));
