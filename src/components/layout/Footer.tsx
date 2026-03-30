@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
+import logoWhite from "@/assets/brand/logo-white-horizontal.png";
 
 const solutionsLinks = [
   { title: "FitDesk", href: "/solutions/fitdesk" },
@@ -35,11 +36,8 @@ export function Footer() {
       <div className="container-wide py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">G</span>
-              </div>
-              <span className="font-display text-xl font-bold">GreeneDesk</span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={logoWhite} alt="GreeneDesk" className="h-8 w-auto" />
             </Link>
             <p className="text-text-on-dark-muted max-w-sm mb-4">
               Multi-sport operations platform that works alongside your existing management software. Scheduling, engagement, and program delivery for sports and leisure centres.
