@@ -11,6 +11,7 @@ import trainerScheduler from "@/assets/fitdesk/trainer-scheduler.png";
 import workoutPrograms from "@/assets/fitdesk/workout-programs.png";
 import parqAssessment from "@/assets/fitdesk/parq-assessment.png";
 import memberGoals from "@/assets/fitdesk/member-goals.png";
+import memberAppExercise from "@/assets/fitdesk/member-app-exercise.png";
 
 const features = [
   {
@@ -60,6 +61,8 @@ const features = [
   {
     icon: Smartphone,
     title: "Mobile Apps",
+    image: memberAppExercise,
+    imageAlt: "FitDesk member app showing workout exercises with video guidance on a smartphone",
     items: [
       "Trainer app for on-floor usage",
       "Member app for tracking and engagement",
