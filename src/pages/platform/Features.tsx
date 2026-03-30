@@ -14,17 +14,21 @@ import {
   MessageSquare,
   BarChart3,
   Puzzle,
+  Dumbbell,
+  Heart,
   Check
 } from "lucide-react";
 
 const capabilities = [
-  { icon: Calendar, title: "Scheduling & calendars", description: "Flexible class and appointment management" },
-  { icon: ClipboardCheck, title: "Assessments & progression", description: "Track member progress and skill development" },
+  { icon: Calendar, title: "Scheduling & calendars", description: "Flexible class, appointment, and PT session management" },
+  { icon: ClipboardCheck, title: "Assessments & progression", description: "Digital health consultations (PARQ), skill tracking, and outcome recording" },
   { icon: CreditCard, title: "Payments & billing", description: "Integrated payment processing and invoicing" },
-  { icon: Smartphone, title: "Member and parent apps", description: "Mobile apps for members and parents" },
-  { icon: MessageSquare, title: "Communications", description: "SMS, email, and push notifications" },
-  { icon: BarChart3, title: "Retention and utilisation analytics", description: "Data-driven insights for better decisions" },
-  { icon: Puzzle, title: "Integrations and API access", description: "Connect with your existing systems" },
+  { icon: Smartphone, title: "Member and parent apps", description: "Mobile apps for members, parents, and trainers" },
+  { icon: MessageSquare, title: "Communications", description: "SMS, email, WhatsApp, and AI-generated messaging" },
+  { icon: BarChart3, title: "Retention and utilisation analytics", description: "Milestone tracking, at-risk alerts, and KPI dashboards" },
+  { icon: Dumbbell, title: "Exercise programming", description: "4,000+ exercise library with video, personalised workout plans, and progress logs" },
+  { icon: Heart, title: "Active ageing & wellness", description: "Tailored programs for seniors, rehab, and community wellness" },
+  { icon: Puzzle, title: "Integrations and API access", description: "Connect with existing leisure management and accounting systems" },
 ];
 
 const Features = () => {

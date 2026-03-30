@@ -6,16 +6,18 @@ import {
   Activity,
   Users,
   Dumbbell,
+  Accessibility,
   Check
 } from "lucide-react";
 
 const useCases = [
-  { icon: Building2, text: "Leisure centres" },
+  { icon: Building2, text: "Leisure centres & health clubs" },
   { icon: Heart, text: "Community wellness programs" },
-  { icon: Users, text: "Active ageing programs" },
+  { icon: Users, text: "Active ageing & seniors programs" },
   { icon: Stethoscope, text: "Rehab and recovery services" },
   { icon: Activity, text: "Exercise physiology setups" },
   { icon: Dumbbell, text: "Physio-adjacent businesses" },
+  { icon: Accessibility, text: "Senior citizen fitness & falls prevention" },
 ];
 
 export function FitDeskAudience() {
