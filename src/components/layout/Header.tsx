@@ -33,6 +33,7 @@ const platformItems = [
   { title: "For CEOs", href: "/platform/ceos", description: "Strategic visibility" },
   { title: "Payments & Billing", href: "/platform/payments", description: "Payment processing" },
   { title: "Analytics & Retention", href: "/platform/analytics", description: "Insights & retention" },
+  { title: "Workout Programming", href: "/platform/workout-programming", description: "Exercise library & programs" },
 ];
 
 const directLinks = [
