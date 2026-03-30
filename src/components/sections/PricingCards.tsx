@@ -107,13 +107,25 @@ export function PricingCards() {
               </p>
 
               <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-sm text-text-on-dark-muted">A$</span>
-                <span className="font-display text-5xl font-bold text-text-on-dark leading-none">
-                  {annual ? plan.annual : plan.monthly}
-                </span>
-                <span className="text-sm text-text-on-dark-muted">/mo</span>
+                {plan.enterprise ? (
+                  <span className="font-display text-3xl font-bold text-text-on-dark leading-none">
+                    Custom
+                  </span>
+                ) : plan.price === "—" ? (
+                  <span className="font-display text-4xl font-bold text-text-on-dark leading-none">
+                    —
+                  </span>
+                ) : (
+                  <>
+                    <span className="text-sm text-text-on-dark-muted">A$</span>
+                    <span className="font-display text-5xl font-bold text-text-on-dark leading-none">
+                      {plan.price}
+                    </span>
+                    <span className="text-sm text-text-on-dark-muted">/mo</span>
+                  </>
+                )}
               </div>
-              <p className="text-xs text-text-on-dark-muted mb-6">{plan.students}</p>
+              <p className="text-xs text-text-on-dark-muted mb-6">{plan.capacity}</p>
 
               <div className="h-px bg-border/20 mb-6" />
 
@@ -132,9 +144,9 @@ export function PricingCards() {
                 ))}
               </ul>
 
-              <Button variant="cta" className="w-full" asChild>
-                <Link to="/demo">
-                  Start Free Trial
+              <Button variant={plan.enterprise ? "secondary" : "cta"} className="w-full" asChild>
+                <Link to={plan.enterprise ? "/contact" : "/demo"}>
+                  {plan.enterprise ? "Contact Us" : "Start Free Trial"}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>

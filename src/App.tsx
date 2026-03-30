@@ -31,6 +31,7 @@ const Partners = lazy(() => import("./pages/Partners"));
 const Demo = lazy(() => import("./pages/Demo"));
 const Contact = lazy(() => import("./pages/Contact"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const FAQ = lazy(() => import("./pages/FAQ"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // SEO Pages
@@ -90,6 +91,7 @@ const App = () => (
             <Route path="/demo" element={<Demo />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/faq" element={<FAQ />} />
             
             {/* SEO Landing Pages */}
             <Route path="/leisure-centre-software-australia" element={<LeisureCentreSoftware />} />
