@@ -19,6 +19,7 @@ const platformLinks = [
   { title: "Parent & Member Experience", href: "/platform/parent-member" },
   { title: "Payments & Billing", href: "/platform/payments" },
   { title: "Analytics & Retention", href: "/platform/analytics" },
+  { title: "Workout Programming", href: "/platform/workout-programming" },
 ];
 
 const moreLinks = [
