@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { number: "50+", label: "Active centres\nAU & NZ" },
+  { number: "50+", label: "Active centres\nAU, NZ & growing" },
   { number: "2010", label: "Trusted since\n15+ years" },
   { number: "AU", label: "Data residency\nAWS Sydney" },
-  { number: "7am–7pm", label: "AU/NZ support\nMon–Fri AEST" },
+  { number: "1300 181 665", label: "AU support\nMon–Fri 7am–7pm AEST" },
 ];
 
 export function TrustBanner() {
