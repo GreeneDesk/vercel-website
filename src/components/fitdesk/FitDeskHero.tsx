@@ -17,10 +17,12 @@ export function FitDeskHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
-              <Activity className="h-4 w-4" />
-              Leisure, Wellness & Rehab
+            <div className="mb-6">
+              <img src={fitdeskLogo} alt="FitDesk" className="h-10 w-auto" />
             </div>
+            <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
+              Leisure, Wellness & Rehab
+            </p>
             
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               FitDesk powers what happens{" "}
