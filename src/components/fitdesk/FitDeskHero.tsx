@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Activity } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import fitdeskLogo from "@/assets/brand/fitdesk-color-horizontal.png";
 import fitdeskHand from "@/assets/fitdesk/fitdesk-hand.png";
 
 export function FitDeskHero() {
