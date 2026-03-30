@@ -11,6 +11,7 @@ import trainerScheduler from "@/assets/fitdesk/trainer-scheduler.png";
 import workoutPrograms from "@/assets/fitdesk/workout-programs.png";
 import parqAssessment from "@/assets/fitdesk/parq-assessment.png";
 import memberGoals from "@/assets/fitdesk/member-goals.png";
+import memberAppExercise from "@/assets/fitdesk/member-app-exercise.png";
 
 const features = [
   {
