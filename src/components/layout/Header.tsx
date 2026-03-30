@@ -39,6 +39,8 @@ const directLinks = [
   { title: "Integrations", href: "/integrations" },
   { title: "Data Residency", href: "/data-residency" },
   { title: "Pricing", href: "/pricing" },
+  { title: "Compare", href: "/compare" },
+  { title: "FAQ", href: "/faq" },
   { title: "Resources", href: "/resources" },
 ];
 
