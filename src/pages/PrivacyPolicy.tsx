@@ -174,9 +174,9 @@ const PrivacyPolicy = () => {
               <h2 className="font-display text-2xl font-bold text-foreground mt-12 mb-4">Schedule</h2>
               <p>
                 Where used in this privacy policy, "we" and "us" means:<br />
-                <strong>GreeneDesk Pty Ltd</strong><br />
-                ABN 80 161 808 144<br />
-                36 Catherine Avenue, Mount Waverley, VIC 3149
+                <strong>GreeneDesk Pty. Ltd.</strong><br />
+                ABN 13 958 181 688<br />
+                VIC, Australia
               </p>
 
               <h2 className="font-display text-2xl font-bold text-foreground mt-12 mb-4">Contact Details</h2>

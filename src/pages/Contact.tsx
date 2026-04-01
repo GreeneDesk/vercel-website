@@ -390,11 +390,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Head Office</h3>
                       <p className="text-muted-foreground text-sm">
-                        36 Catherine Avenue
+                        GreeneDesk Pty. Ltd.
                         <br />
-                        Mount Waverley, VIC 3149
-                        <br />
-                        Australia
+                        VIC, Australia
                       </p>
                     </div>
                   </div>

@@ -48,7 +48,7 @@ Competitive squad management for swimming, athletics, and other sports. Performa
 
 ## Company Information
 - Company: GreeneDesk
-- Location: 36 Catherine Avenue, Mount Waverley, VIC 3149, Australia
+- Location: VIC, Australia
 - Phone: 1300 181 665
 - Email: anita.w@greenedesk.com
 - Support: support@greenedesk.com
