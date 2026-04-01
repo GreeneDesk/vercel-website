@@ -60,7 +60,6 @@ const Home = () => {
               "addressRegion": "VIC",
               "addressCountry": "AU"
             },
-            },
             "telephone": "+611300181665",
             "email": "anita.w@greenedesk.com",
             "url": "https://www.greenedesk.com",
