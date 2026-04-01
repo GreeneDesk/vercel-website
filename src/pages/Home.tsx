@@ -57,11 +57,9 @@ const Home = () => {
             "description": "Multi-sport operations platform for gyms, swim schools, and sports centres. Built and hosted in Australia.",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "36 Catherine Avenue",
-              "addressLocality": "Mount Waverley",
               "addressRegion": "VIC",
-              "postalCode": "3149",
               "addressCountry": "AU"
+            },
             },
             "telephone": "+611300181665",
             "email": "anita.w@greenedesk.com",
