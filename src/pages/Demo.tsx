@@ -214,14 +214,9 @@ const Demo = () => {
                       <CheckCircle2 className="h-8 w-8 text-primary-foreground" />
                     </div>
                     <h2 className="font-display text-2xl font-bold mb-4">Thanks! We'll tailor the demo to your setup.</h2>
-                    <p className="text-muted-foreground mb-6">
-                      You can also pick a time now to speed things up.
+                    <p className="text-muted-foreground">
+                      We'll be in touch shortly to schedule a time that works for you.
                     </p>
-                    <Button variant="cta" size="xl" asChild>
-                      <a href="https://calendly.com/greenedesk" target="_blank" rel="noopener noreferrer">
-                        Pick a Time <Calendar className="h-5 w-5" />
-                      </a>
-                    </Button>
                   </div>
                 )}
 
