@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Calendar, CheckCircle2, ArrowRight, Building2, Users, MapPin, ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import {
   Select,
   SelectContent,
@@ -69,10 +70,50 @@ const Demo = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    toast({ title: "Demo request submitted!", description: "We'll tailor the demo to your setup." });
-    setIsSubmitting(false);
-    setStep(3);
+
+    try {
+      // 1. Save to database first so we don't lose the lead
+      const id = crypto.randomUUID();
+      const { error: dbError } = await supabase.from("demo_leads").insert({
+        id,
+        org_type: formData.orgType,
+        current_system: formData.currentSystem,
+        locations: formData.locations,
+        email: formData.email,
+        phone: formData.phone || null,
+      });
+
+      if (dbError) {
+        console.error("Failed to save demo lead:", dbError);
+        toast({ title: "Something went wrong", description: "Please try again or contact us directly.", variant: "destructive" });
+        setIsSubmitting(false);
+        return;
+      }
+
+      // 2. Send notification email (non-blocking — lead is already saved)
+      supabase.functions.invoke("send-transactional-email", {
+        body: {
+          templateName: "demo-request-notification",
+          recipientEmail: "anita.w@greenedesk.com",
+          idempotencyKey: `demo-notify-${id}`,
+          templateData: {
+            orgType: formData.orgType,
+            currentSystem: formData.currentSystem,
+            locations: formData.locations,
+            email: formData.email,
+            phone: formData.phone || "Not provided",
+          },
+        },
+      }).catch(err => console.error("Email send failed:", err));
+
+      toast({ title: "Demo request submitted!", description: "We'll tailor the demo to your setup." });
+      setStep(3);
+    } catch (err) {
+      console.error("Demo submission error:", err);
+      toast({ title: "Something went wrong", description: "Please try again or contact us directly.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const canProceed = step === 1 ? formData.orgType && formData.currentSystem && formData.locations : true;
