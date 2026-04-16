@@ -40,7 +40,7 @@ const Unsubscribe = () => {
 
   return (
     <Layout>
-      <SEO title="Unsubscribe – GreeneDesk" description="Manage your email preferences." noindex />
+      <SEO title="Unsubscribe – GreeneDesk" description="Manage your email preferences." />
       <section className="section-padding">
         <div className="container-wide max-w-lg mx-auto text-center">
           {status === "loading" && <Loader2 className="h-8 w-8 animate-spin mx-auto text-primary" />}
