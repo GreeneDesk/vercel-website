@@ -102,6 +102,7 @@ const App = () => (
             <Route path="/fitness-wellness-software-australia" element={<FitnessWellnessSoftware />} />
             <Route path="/sports-facility-software" element={<SportsFacilitySoftware />} />
             
+            <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
