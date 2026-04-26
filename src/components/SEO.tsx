@@ -16,9 +16,9 @@ interface SEOProps {
 }
 
 const defaults = {
-  title: "GreeneDesk – Software for Australian Gyms, Swim Schools & Recreation Centres",
-  description: "GreeneDesk is unified software for gyms, swim schools, and sports centres. Reduce admin, improve retention, and get clearer visibility. Built and hosted in Australia.",
-  image: "https://www.greenedesk.com/og-image.png",
+  title: "GreeneDesk – Software for Australian & NZ Gyms, Swim Schools & Leisure Centres",
+  description: "GreeneDesk is unified software for gyms, swim schools, leisure centres and sports facilities across Australia and New Zealand. Built in Australia. Data hosted in Sydney.",
+  image: "https://www.greenedesk.com/og-image.jpg",
 };
 
 export function SEO({ title, description, canonical, type = "website", image, jsonLd, faq }: SEOProps) {
@@ -67,7 +67,20 @@ export function SEO({ title, description, canonical, type = "website", image, js
       <meta property="og:url" content={url} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:locale" content="en_AU" />
+      <meta property="og:locale:alternate" content="en_NZ" />
       <meta property="og:site_name" content="GreeneDesk" />
+
+      {/* Geo targeting: Australia & New Zealand */}
+      <meta name="geo.region" content="AU" />
+      <meta name="geo.placename" content="Victoria, Australia" />
+      <meta name="coverage" content="Australia, New Zealand" />
+      <meta name="target_country" content="AU, NZ" />
+
+      {/* hreflang */}
+      <link rel="alternate" hrefLang="en-au" href={url} />
+      <link rel="alternate" hrefLang="en-nz" href={url} />
+      <link rel="alternate" hrefLang="en" href={url} />
+      <link rel="alternate" hrefLang="x-default" href={url} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
