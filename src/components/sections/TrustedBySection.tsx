@@ -59,18 +59,21 @@ export function TrustedBySection() {
         <p className="text-center text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-10">
           Trusted by leisure centres, councils &amp; aquatic facilities
         </p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6 items-center justify-items-center">
+        <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 max-w-6xl mx-auto">
           {logos.map((logo) => (
-            <div key={logo.alt} className="flex items-center justify-center h-16 w-full">
+            <div key={logo.alt} className="flex items-center justify-center h-16 w-[110px] sm:w-[120px]">
               <img
                 src={logo.src}
                 alt={logo.alt}
                 loading="lazy"
-                className="max-h-14 max-w-[120px] object-contain opacity-75 hover:opacity-100 transition-opacity duration-200"
+                className="max-h-14 max-w-full object-contain opacity-75 hover:opacity-100 transition-opacity duration-200"
               />
             </div>
           ))}
         </div>
+        <p className="text-center text-sm text-muted-foreground mt-8 italic">
+          A sample of the leisure centres, councils &amp; aquatic facilities we work with across Australia and New Zealand.
+        </p>
       </div>
     </section>
   );
