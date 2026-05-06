@@ -23,6 +23,7 @@ import aquadome from "@/assets/logos/aquadome.png";
 import bassCoast from "@/assets/logos/bass-coast.png";
 import leisurelink from "@/assets/logos/leisurelink.png";
 import greaterGeelong from "@/assets/logos/greater-geelong.png";
+import northcoteDarebin from "@/assets/logos/northcote-darebin.png";
 
 const logos = [
   { src: theY, alt: "The Y (YMCA)" },
@@ -50,6 +51,7 @@ const logos = [
   { src: bassCoast, alt: "Bass Coast Aquatic & Leisure Centre" },
   { src: leisurelink, alt: "Leisurelink Aquatic & Recreation Centre" },
   { src: greaterGeelong, alt: "City of Greater Geelong" },
+  { src: northcoteDarebin, alt: "Northcote Aquatic & Recreation Centre (City of Darebin)" },
 ];
 
 export function TrustedBySection() {
@@ -74,9 +76,6 @@ export function TrustedBySection() {
             </div>
           ))}
         </div>
-        <p className="text-center text-sm text-muted-foreground mt-8 italic">
-          A sample of the leisure centres, councils &amp; aquatic facilities we work with across Australia and New Zealand.
-        </p>
         <p className="text-center text-sm text-muted-foreground mt-8 italic">
           A sample of the leisure centres, councils &amp; aquatic facilities we work with across Australia and New Zealand.
         </p>
