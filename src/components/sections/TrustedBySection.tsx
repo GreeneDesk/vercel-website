@@ -19,6 +19,9 @@ import ballarat from "@/assets/logos/ballarat-aquatic.png";
 import leisureCity from "@/assets/logos/leisure-city.png";
 import joondalup from "@/assets/logos/joondalup.png";
 import waves from "@/assets/logos/waves.png";
+import aquadome from "@/assets/logos/aquadome.png";
+import bassCoast from "@/assets/logos/bass-coast.png";
+import leisurelink from "@/assets/logos/leisurelink.png";
 
 const logos = [
   { src: theY, alt: "The Y (YMCA)" },
@@ -42,6 +45,9 @@ const logos = [
   { src: leisureCity, alt: "Leisure City" },
   { src: joondalup, alt: "City of Joondalup" },
   { src: waves, alt: "Waves Leisure Centre" },
+  { src: aquadome, alt: "AquaDome" },
+  { src: bassCoast, alt: "Bass Coast Aquatic & Leisure Centre" },
+  { src: leisurelink, alt: "Leisurelink Aquatic & Recreation Centre" },
 ];
 
 export function TrustedBySection() {
