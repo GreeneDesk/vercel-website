@@ -16,7 +16,18 @@ import {
   Puzzle,
   Dumbbell,
   Heart,
-  Check
+  Check,
+  Users,
+  CalendarDays,
+  Wallet,
+  Fingerprint,
+  LineChart,
+  Building2,
+  UserCog,
+  Send,
+  ShieldCheck,
+  Cloud,
+  Waves,
 } from "lucide-react";
 
 const capabilities = [
@@ -30,6 +41,168 @@ const capabilities = [
   { icon: Heart, title: "Active ageing & wellness", description: "Tailored programs for seniors, rehab, and community wellness" },
   { icon: Puzzle, title: "Integrations and API access", description: "Connect with existing leisure management and accounting systems" },
 ];
+
+const capabilityGroups = [
+  {
+    icon: Users,
+    title: "Membership management",
+    items: [
+      "Membership creation & renewals",
+      "Family & group memberships",
+      "Direct debits & recurring billing",
+      "Suspensions & freezes",
+      "Casual vs recurring memberships",
+      "Concessions, seniors & student pricing",
+      "Multi-site memberships",
+      "Waivers & terms acceptance",
+    ],
+  },
+  {
+    icon: CalendarDays,
+    title: "Booking & scheduling",
+    items: [
+      "Class & swim lesson bookings",
+      "Court & facility hire",
+      "Event & casual visit bookings",
+      "Capacity management & waitlists",
+      "Instructor & resource allocation",
+      "Cross-venue bookings",
+      "Dynamic capacity handling",
+      "Automated rescheduling & self-service",
+    ],
+  },
+  {
+    icon: Smartphone,
+    title: "Customer portal & mobile",
+    items: [
+      "Mobile bookings & cancellations",
+      "Membership self-management",
+      "Attendance history",
+      "Make-up lessons",
+      "Push notifications",
+      "In-app payments",
+      "Two-way communication",
+      "Family & dependant profiles",
+    ],
+  },
+  {
+    icon: Wallet,
+    title: "Payments & billing",
+    items: [
+      "Recurring billing & payment plans",
+      "Failed payment handling & retries",
+      "Tokenised cards via gateway",
+      "Online payment gateways",
+      "Refunds, credits & invoicing",
+      "Debt management",
+      "Automated payment reminders",
+      "Accounting system integrations",
+    ],
+  },
+  {
+    icon: Fingerprint,
+    title: "Attendance & access control",
+    items: [
+      "Kiosk & mobile check-in",
+      "Turnstile & door integrations",
+      "Facial recognition access",
+      "Class attendance tracking",
+      "Instructor attendance marking",
+      "Real-time occupancy monitoring",
+      "Capacity alerts",
+      "Audit trail of entries",
+    ],
+  },
+  {
+    icon: LineChart,
+    title: "Reporting & analytics",
+    items: [
+      "Revenue & cancellation reporting",
+      "Attendance & utilisation trends",
+      "Retention & churn analysis",
+      "Membership growth dashboards",
+      "Instructor performance",
+      "Program profitability",
+      "CSV exports & API access",
+      "Power BI integration",
+    ],
+  },
+  {
+    icon: Building2,
+    title: "Multi-site & multi-venue",
+    items: [
+      "Centralised control & reporting",
+      "Venue-level flexibility",
+      "Unified customer database",
+      "Local role-based permissions",
+      "Shared memberships across sites",
+      "Cross-site visibility",
+    ],
+  },
+  {
+    icon: UserCog,
+    title: "Staff & instructor management",
+    items: [
+      "Instructor allocation & rosters",
+      "Shift management",
+      "Substitute handling",
+      "Coaching notes",
+      "Performance tracking",
+      "Payroll-ready exports",
+    ],
+  },
+  {
+    icon: Send,
+    title: "Communications & automation",
+    items: [
+      "SMS, email & WhatsApp automation",
+      "Booking & payment reminders",
+      "Failed payment alerts",
+      "Marketing & retention campaigns",
+      "Onboarding journeys",
+      "Birthday & milestone campaigns",
+      "Waitlist notifications",
+      "CRM-style engagement",
+    ],
+  },
+  {
+    icon: ShieldCheck,
+    title: "Security & compliance",
+    items: [
+      "Role-based permissions",
+      "Audit logs",
+      "PCI-compliant gateways",
+      "Australian Privacy Principles aligned",
+      "Data sovereignty (AWS Sydney)",
+      "Automated backups",
+    ],
+  },
+  {
+    icon: Cloud,
+    title: "Scalability & reliability",
+    items: [
+      "High uptime SLAs",
+      "Performance under peak load",
+      "Cloud-native architecture",
+      "Disaster recovery",
+      "Responsive AU-based support",
+      "Active product roadmap",
+    ],
+  },
+  {
+    icon: Waves,
+    title: "Program-specific features",
+    items: [
+      "Learn-to-swim progression",
+      "Lane & squad management",
+      "Make-up classes & assessments",
+      "Room hire & community events",
+      "Casual venue bookings",
+      "Gym memberships, PT & assessments",
+    ],
+  },
+];
+
 
 const Features = () => {
   return (
