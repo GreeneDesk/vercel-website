@@ -55,16 +55,31 @@ Competitive squad management for swimming, athletics, and other sports. Performa
 - Website: https://www.greenedesk.com
 - Data hosting: AWS Sydney (ap-southeast-2), Australia
 
-## Key Pages
-- Homepage: https://www.greenedesk.com/
-- FitDesk: https://www.greenedesk.com/solutions/fitdesk
-- SwimDesk: https://www.greenedesk.com/solutions/swimdesk
-- SportDesk: https://www.greenedesk.com/solutions/sportdesk
-- School Programs: https://www.greenedesk.com/solutions/school-programs
-- Squads: https://www.greenedesk.com/solutions/squads
-- Council & Leisure Centres: https://www.greenedesk.com/solutions/council
-- Integrations: https://www.greenedesk.com/integrations
-- Data Residency: https://www.greenedesk.com/data-residency
-- Pricing: https://www.greenedesk.com/pricing
-- Book a Demo: https://www.greenedesk.com/demo
-- Contact: https://www.greenedesk.com/contact
+## Pages
+- [Homepage](/): Multi-sport operations platform overview for AU & NZ.
+- [FitDesk](/solutions/fitdesk): Gym, leisure & wellness operations beyond the front desk.
+- [SwimDesk](/solutions/swimdesk): Swim school management for aquatic centres.
+- [SportDesk](/solutions/sportdesk): Squad and competitive sports management.
+- [School Programs](/solutions/school-programs): School swimming and sports program delivery.
+- [Squads](/solutions/squads): Competitive squad management and athlete progression.
+- [Council & Leisure](/solutions/council): Multi-service council and leisure facilities.
+- [Platform Features](/platform/features): Full capability overview.
+- [Communication](/platform/communication): SMS, email and WhatsApp messaging.
+- [Roster & Scheduler](/platform/roster-scheduler): Staff and class scheduling.
+- [Teacher & Trainer](/platform/teacher-trainer): Instructor mobile tools.
+- [Parent & Member](/platform/parent-member): Parent and member experience.
+- [Managers](/platform/managers): Operational manager dashboards.
+- [CEOs](/platform/ceos): Executive visibility and reporting.
+- [Payments](/platform/payments): Integrated billing and payments.
+- [Analytics](/platform/analytics): Reporting and insight tooling.
+- [Workout Programming](/platform/workout-programming): Exercise programming library.
+- [Integrations](/integrations): Systems we integrate with (PerfectGym, Envibe, more).
+- [Data Residency](/data-residency): AWS Sydney hosting and APP 8 compliance.
+- [Pricing](/pricing): Tiered pricing in AUD with annual discount.
+- [Compare](/compare): How GreeneDesk compares to alternatives.
+- [Resources](/resources): Articles, guides and case studies.
+- [Partners](/partners): Partner ecosystem and integrations.
+- [Book a Demo](/demo): Request a personalised demo.
+- [Contact](/contact): Get in touch with the team.
+- [FAQ](/faq): Frequently asked questions.
+- [Privacy Policy](/privacy-policy): Privacy and data handling.

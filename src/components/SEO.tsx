@@ -16,8 +16,8 @@ interface SEOProps {
 }
 
 const defaults = {
-  title: "GreeneDesk – Software for Australian & NZ Gyms, Swim Schools & Leisure Centres",
-  description: "GreeneDesk is unified software for gyms, swim schools, leisure centres and sports facilities across Australia and New Zealand. Built in Australia. Data hosted in Sydney.",
+  title: "GreeneDesk – AU & NZ Gym, Swim School & Leisure Software",
+  description: "Unified software for gyms, swim schools, leisure centres and sports facilities across Australia & New Zealand. Built in AU, hosted in Sydney.",
   image: "https://www.greenedesk.com/og-image.jpg",
 };
 

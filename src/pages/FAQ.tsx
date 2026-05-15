@@ -7,7 +7,7 @@ const FAQ = () => {
   return (
     <Layout>
       <SEO
-        title="FAQ – Frequently Asked Questions about GreeneDesk"
+        title="FAQ – Common Questions"
         description="Find answers about SwimDesk, FitDesk, pricing, data residency, onboarding, support and integrations. All your GreeneDesk questions answered."
         canonical="/faq"
       />
