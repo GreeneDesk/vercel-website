@@ -31,7 +31,7 @@ export function HeroSection() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl">
-              GreeneDesk is a multi-sport operations platform that works alongside your current management software. From scheduling and assessments to engagement and performance tracking, everything your team and members need in one place.
+              GreeneDesk is a multi-sport operations platform that works alongside your current management software. From scheduling and assessments to engagement and performance tracking, everything your team and members need in one place. The platform can operate either as a standalone leisure management system or alongside enterprise leisure management systems.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
