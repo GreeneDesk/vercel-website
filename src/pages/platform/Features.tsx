@@ -16,7 +16,18 @@ import {
   Puzzle,
   Dumbbell,
   Heart,
-  Check
+  Check,
+  Users,
+  CalendarDays,
+  Wallet,
+  Fingerprint,
+  LineChart,
+  Building2,
+  UserCog,
+  Send,
+  ShieldCheck,
+  Cloud,
+  Waves,
 } from "lucide-react";
 
 const capabilities = [
@@ -30,6 +41,168 @@ const capabilities = [
   { icon: Heart, title: "Active ageing & wellness", description: "Tailored programs for seniors, rehab, and community wellness" },
   { icon: Puzzle, title: "Integrations and API access", description: "Connect with existing leisure management and accounting systems" },
 ];
+
+const capabilityGroups = [
+  {
+    icon: Users,
+    title: "Membership management",
+    items: [
+      "Membership creation & renewals",
+      "Family & group memberships",
+      "Direct debits & recurring billing",
+      "Suspensions & freezes",
+      "Casual vs recurring memberships",
+      "Concessions, seniors & student pricing",
+      "Multi-site memberships",
+      "Waivers & terms acceptance",
+    ],
+  },
+  {
+    icon: CalendarDays,
+    title: "Booking & scheduling",
+    items: [
+      "Class & swim lesson bookings",
+      "Court & facility hire",
+      "Event & casual visit bookings",
+      "Capacity management & waitlists",
+      "Instructor & resource allocation",
+      "Cross-venue bookings",
+      "Dynamic capacity handling",
+      "Automated rescheduling & self-service",
+    ],
+  },
+  {
+    icon: Smartphone,
+    title: "Customer portal & mobile",
+    items: [
+      "Mobile bookings & cancellations",
+      "Membership self-management",
+      "Attendance history",
+      "Make-up lessons",
+      "Push notifications",
+      "In-app payments",
+      "Two-way communication",
+      "Family & dependant profiles",
+    ],
+  },
+  {
+    icon: Wallet,
+    title: "Payments & billing",
+    items: [
+      "Recurring billing & payment plans",
+      "Failed payment handling & retries",
+      "Tokenised cards via gateway",
+      "Online payment gateways",
+      "Refunds, credits & invoicing",
+      "Debt management",
+      "Automated payment reminders",
+      "Accounting system integrations",
+    ],
+  },
+  {
+    icon: Fingerprint,
+    title: "Attendance & access control",
+    items: [
+      "Kiosk & mobile check-in",
+      "Turnstile & door integrations",
+      "Facial recognition access",
+      "Class attendance tracking",
+      "Instructor attendance marking",
+      "Real-time occupancy monitoring",
+      "Capacity alerts",
+      "Audit trail of entries",
+    ],
+  },
+  {
+    icon: LineChart,
+    title: "Reporting & analytics",
+    items: [
+      "Revenue & cancellation reporting",
+      "Attendance & utilisation trends",
+      "Retention & churn analysis",
+      "Membership growth dashboards",
+      "Instructor performance",
+      "Program profitability",
+      "CSV exports & API access",
+      "Power BI integration",
+    ],
+  },
+  {
+    icon: Building2,
+    title: "Multi-site & multi-venue",
+    items: [
+      "Centralised control & reporting",
+      "Venue-level flexibility",
+      "Unified customer database",
+      "Local role-based permissions",
+      "Shared memberships across sites",
+      "Cross-site visibility",
+    ],
+  },
+  {
+    icon: UserCog,
+    title: "Staff & instructor management",
+    items: [
+      "Instructor allocation & rosters",
+      "Shift management",
+      "Substitute handling",
+      "Coaching notes",
+      "Performance tracking",
+      "Payroll-ready exports",
+    ],
+  },
+  {
+    icon: Send,
+    title: "Communications & automation",
+    items: [
+      "SMS, email & WhatsApp automation",
+      "Booking & payment reminders",
+      "Failed payment alerts",
+      "Marketing & retention campaigns",
+      "Onboarding journeys",
+      "Birthday & milestone campaigns",
+      "Waitlist notifications",
+      "CRM-style engagement",
+    ],
+  },
+  {
+    icon: ShieldCheck,
+    title: "Security & compliance",
+    items: [
+      "Role-based permissions",
+      "Audit logs",
+      "PCI-compliant gateways",
+      "Australian Privacy Principles aligned",
+      "Data sovereignty (AWS Sydney)",
+      "Automated backups",
+    ],
+  },
+  {
+    icon: Cloud,
+    title: "Scalability & reliability",
+    items: [
+      "High uptime SLAs",
+      "Performance under peak load",
+      "Cloud-native architecture",
+      "Disaster recovery",
+      "Responsive AU-based support",
+      "Active product roadmap",
+    ],
+  },
+  {
+    icon: Waves,
+    title: "Program-specific features",
+    items: [
+      "Learn-to-swim progression",
+      "Lane & squad management",
+      "Make-up classes & assessments",
+      "Room hire & community events",
+      "Casual venue bookings",
+      "Gym memberships, PT & assessments",
+    ],
+  },
+];
+
 
 const Features = () => {
   return (
@@ -88,6 +261,57 @@ const Features = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Detailed capability groups */}
+      <section className="section-padding bg-surface-section">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12 max-w-3xl mx-auto"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              Full capability checklist
+            </h2>
+            <p className="text-muted-foreground">
+              Everything aquatic centres, leisure facilities, gyms and multi-sport venues need — delivered by GreeneDesk natively, or through our integrations with PerfectGym, Envibe and other leisure management systems.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {capabilityGroups.map((group, gi) => (
+              <motion.div
+                key={gi}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: gi * 0.05 }}
+                className="p-6 rounded-2xl border border-border bg-background"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">
+                    <group.icon className="h-5 w-5 text-primary-foreground" />
+                  </div>
+                  <h3 className="font-display text-lg font-semibold">{group.title}</h3>
+                </div>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
+                  {group.items.map((item, ii) => (
+                    <li key={ii} className="flex items-start gap-2 text-sm text-foreground">
+                      <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+
+          <p className="text-sm text-muted-foreground text-center mt-8 max-w-2xl mx-auto">
+            GreeneDesk works alongside your existing membership and billing system where you already have one. Capabilities such as direct debits, PCI-compliant card storage and turnstile/door access are delivered through deep integrations with platforms like PerfectGym and Envibe.
+          </p>
         </div>
       </section>
 
