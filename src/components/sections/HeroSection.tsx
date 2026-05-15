@@ -60,7 +60,12 @@ export function HeroSection() {
               src={heroIpad}
               alt="GreeneDesk exercise library interface on an iPad showing workout management"
               className="max-h-[480px] w-auto object-contain drop-shadow-2xl"
+              width={471}
+              height={420}
               loading="eager"
+              decoding="async"
+              // @ts-expect-error fetchpriority is a valid HTML attribute
+              fetchpriority="high"
             />
           </motion.div>
         </div>
