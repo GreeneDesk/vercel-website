@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Home } from "lucide-react";
 
 const NotFound = () => {
@@ -13,6 +14,10 @@ const NotFound = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Page Not Found"
+        description="The page you're looking for doesn't exist or has been moved. Return to the GreeneDesk homepage or request a demo."
+      />
       <section className="section-padding">
         <div className="container-wide text-center">
           <div className="max-w-md mx-auto">

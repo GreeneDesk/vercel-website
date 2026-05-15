@@ -81,7 +81,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact Us – Get in Touch with GreeneDesk"
-        description="Contact GreeneDesk for gym, swim school, or sports centre software enquiries. Call 1 300 181 665 or email support@greenedesk.com. Serving Australia, New Zealand, and beyond."
+        description="Contact GreeneDesk for gym, swim school or sports centre software enquiries. Call 1 300 181 665 or email support@greenedesk.com."
         canonical="/contact"
       />
       <Breadcrumbs items={[{ label: "Contact" }]} />

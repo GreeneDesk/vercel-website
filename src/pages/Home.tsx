@@ -17,6 +17,8 @@ const Home = () => {
   return (
     <Layout>
       <SEO
+        title="Multi-Sport Operations Platform for AU & NZ Centres"
+        description="GreeneDesk is the multi-sport operations platform for gyms, swim schools, leisure centres & sports facilities across Australia & New Zealand."
         canonical="/"
         jsonLd={[
           {
