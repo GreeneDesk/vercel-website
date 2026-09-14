@@ -2,32 +2,31 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { TrustedBySection } from "@/components/sections/TrustedBySection";
-import { ProblemsSection } from "@/components/sections/ProblemsSection";
+import { PathwaysSection } from "@/components/sections/PathwaysSection";
+import { FitDeskGapSection } from "@/components/sections/FitDeskGapSection";
+import { FitDeskCapabilities } from "@/components/sections/FitDeskCapabilities";
 import { DeploymentSection } from "@/components/sections/DeploymentSection";
-import { ProductsSection } from "@/components/sections/ProductsSection";
-import { ValueSection } from "@/components/sections/ValueSection";
+import { FitDeskScreenshots } from "@/components/sections/FitDeskScreenshots";
 import { DataResidencyTeaser } from "@/components/sections/DataResidencyTeaser";
-import { WhoItsForSection } from "@/components/sections/WhoItsForSection";
-import { FinalCTASection } from "@/components/sections/FinalCTASection";
-import { DifferentiatorBlock } from "@/components/shared/DifferentiatorBlock";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { TrustBanner } from "@/components/sections/TrustBanner";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import { MoreFromGreeneDesk } from "@/components/sections/MoreFromGreeneDesk";
 
 const Home = () => {
   return (
     <Layout>
       <SEO
-        title="Multi-Sport Operations Platform for AU & NZ Centres"
-        description="GreeneDesk is the multi-sport operations platform for gyms, swim schools, leisure centres & sports facilities across Australia & New Zealand."
+        title="FitDesk – Fitness Operations Software for AU & NZ Leisure Centres"
+        description="Complete PerfectGym or replace Mywellness with FitDesk. Australian-hosted assessments, workout programming, trainer scheduling and member engagement."
         canonical="/"
         jsonLd={[
           {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "GreeneDesk",
-            "url": "https://www.greenedesk.com",
-            "logo": "https://www.greenedesk.com/og-image.png",
-            "description": "GreeneDesk is a multi-sport operations platform for gyms, swim schools, leisure centres and sports facilities across Australia and New Zealand. Built and hosted in Australia.",
+            "url": "https://greenedesk.com.au",
+            "logo": "https://greenedesk.com.au/og-image.png",
+            "description": "GreeneDesk is an Australian software company for leisure centres, aquatic and recreation facilities and sports programs across Australia and New Zealand. Built and hosted in Australia.",
             "address": {
               "@type": "PostalAddress",
               "addressRegion": "VIC",
@@ -44,10 +43,10 @@ const Home = () => {
           {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            "name": "GreeneDesk",
+            "name": "FitDesk by GreeneDesk",
             "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web",
-            "description": "Multi-sport operations platform for gyms, swim schools, leisure centres and sports facilities. Serving Australia and New Zealand.",
+            "operatingSystem": "Web, iOS, Android",
+            "description": "FitDesk gives leisure centres specialist tools for digital assessments, workout programming, trainer scheduling, progress tracking and member engagement. Use it alongside PerfectGym or as an alternative to Mywellness software.",
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
@@ -58,13 +57,13 @@ const Home = () => {
               { "@type": "Country", "name": "Australia" },
               { "@type": "Country", "name": "New Zealand" }
             ],
-            "featureList": "Scheduling, Assessments, Engagement, Performance Tracking, Member Management, Parent Portal, Data Residency"
+            "featureList": "Digital assessments, Workout programming, Exercise video library, Trainer scheduling, Member goals and progress tracking, Member engagement, Australian data residency"
           },
           {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "GreeneDesk",
-            "description": "Multi-sport operations platform for gyms, swim schools, and sports centres. Built in Australia, serving Australia and New Zealand.",
+            "description": "Australian software company behind FitDesk, SwimDesk and SportDesk. Serving Australia and New Zealand.",
             "address": {
               "@type": "PostalAddress",
               "addressRegion": "VIC",
@@ -76,23 +75,22 @@ const Home = () => {
             ],
             "telephone": "+611300181665",
             "email": "anita.w@greenedesk.com",
-            "url": "https://www.greenedesk.com",
-            "image": "https://www.greenedesk.com/og-image.png"
+            "url": "https://greenedesk.com.au",
+            "image": "https://greenedesk.com.au/og-image.png"
           }
         ]}
       />
       <HeroSection />
       <TrustedBySection />
-      <TrustBanner />
-      <ProblemsSection />
+      <PathwaysSection />
+      <FitDeskGapSection />
+      <FitDeskCapabilities />
       <DeploymentSection />
-      <ProductsSection />
-      <ValueSection />
-      <TestimonialsSection />
+      <FitDeskScreenshots />
       <DataResidencyTeaser />
-      <WhoItsForSection />
-      <DifferentiatorBlock />
+      <TrustBanner />
       <FinalCTASection />
+      <MoreFromGreeneDesk />
     </Layout>
   );
 };

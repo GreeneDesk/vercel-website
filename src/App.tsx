@@ -25,6 +25,8 @@ const Payments = lazy(() => import("./pages/platform/Payments"));
 const Analytics = lazy(() => import("./pages/platform/Analytics"));
 const WorkoutProgramming = lazy(() => import("./pages/platform/WorkoutProgramming"));
 const Integrations = lazy(() => import("./pages/Integrations"));
+const PerfectGymIntegration = lazy(() => import("./pages/integrations/PerfectGym"));
+const MywellnessAlternative = lazy(() => import("./pages/MywellnessAlternative"));
 const DataResidency = lazy(() => import("./pages/DataResidency"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Resources = lazy(() => import("./pages/Resources"));
@@ -87,6 +89,8 @@ const App = () => (
             
             {/* Other Pages */}
             <Route path="/integrations" element={<Integrations />} />
+            <Route path="/integrations/perfectgym" element={<PerfectGymIntegration />} />
+            <Route path="/technogym-mywellness-alternative" element={<MywellnessAlternative />} />
             <Route path="/data-residency" element={<DataResidency />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/resources" element={<Resources />} />
