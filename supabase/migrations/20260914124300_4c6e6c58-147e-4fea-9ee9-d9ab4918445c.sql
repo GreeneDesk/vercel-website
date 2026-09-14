@@ -1,0 +1,1 @@
+ALTER TABLE public.demo_leads ADD COLUMN IF NOT EXISTS lead_source TEXT NOT NULL DEFAULT 'website';

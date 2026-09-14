@@ -20,6 +20,7 @@ export type Database = {
           current_system: string
           email: string
           id: string
+          lead_source: string
           locations: string
           org_type: string
           phone: string | null
@@ -29,6 +30,7 @@ export type Database = {
           current_system: string
           email: string
           id?: string
+          lead_source?: string
           locations: string
           org_type: string
           phone?: string | null
@@ -38,6 +40,7 @@ export type Database = {
           current_system?: string
           email?: string
           id?: string
+          lead_source?: string
           locations?: string
           org_type?: string
           phone?: string | null

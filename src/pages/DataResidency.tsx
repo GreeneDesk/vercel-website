@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 import { ArrowRight, Shield, MapPin, Lock, Users, FileX, Check, Globe } from "lucide-react";
 
 const keyPoints = [
-  { icon: MapPin, title: "Hosted exclusively on AWS Sydney (ap-southeast-2)" },
+  { icon: MapPin, title: "Stored in Australia using AWS infrastructure in the Sydney region (ap-southeast-2)" },
   { icon: Lock, title: "Role-based access, restricted to operational needs" },
   { icon: Shield, title: "All access logged and monitored" },
-  { icon: FileX, title: "No third-party providers for data processing or storage" },
+  { icon: FileX, title: "Named infrastructure providers and subprocessors only — customer data is never sold or shared for marketing" },
 ];
 
 const idealFor = [
@@ -26,13 +26,13 @@ const DataResidency = () => {
     <Layout>
       <SEO
         title="Australian Data Residency – AWS Sydney Hosted"
-        description="All GreeneDesk data hosted exclusively on AWS Sydney. Role-based access, audit trails, and compliance with Australian Privacy Principles."
+        description="GreeneDesk customer data is stored in Australia using AWS infrastructure in the Sydney region, with role-based access, audit trails and Australian Privacy Principles alignment."
         canonical="/data-residency"
         faq={[
-          { question: "Where is GreeneDesk data hosted?", answer: "All customer data is hosted exclusively on AWS Sydney (ap-southeast-2) in Australia. No data leaves Australian borders." },
-          { question: "Does GreeneDesk share data with third parties?", answer: "No. GreeneDesk does not share, sell, or provide customer data to any third-party processors. All data handling is internal." },
+          { question: "Where is GreeneDesk customer data stored?", answer: "GreeneDesk customer data is stored in Australia using AWS infrastructure in the Sydney region (ap-southeast-2)." },
+          { question: "Which providers are involved in storing our data?", answer: "Amazon Web Services provides the underlying infrastructure in the Sydney region. GreeneDesk uses a limited set of subprocessors for services such as transactional email, and does not sell customer data or share it for marketing purposes." },
           { question: "Is GreeneDesk compliant with Australian Privacy Principles?", answer: "Yes. GreeneDesk is designed to comply with Australian Privacy Principles (APPs) including APP 8 regarding cross-border disclosure." },
-          { question: "Who can access my data?", answer: "Access is role-based and restricted to operational needs. All access is logged and monitored with complete audit trails." },
+          { question: "Who can access our data?", answer: "Access is role-based and restricted to operational needs, and all access is logged and monitored. Where authorised support personnel outside Australia access systems for maintenance or support, that access is governed by contractual confidentiality obligations and technical safeguards." },
         ]}
       />
       <Breadcrumbs items={[{ label: "Data Residency" }]} />
@@ -61,7 +61,7 @@ const DataResidency = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-text-on-dark-muted mb-8">
-                GreeneDesk customer data is hosted exclusively in Australia on AWS Sydney (ap-southeast-2). Access is role-based, logged, and monitored — with no third-party providers involved.
+                GreeneDesk customer data is stored in Australia using AWS infrastructure in the Sydney region (ap-southeast-2). Access is role-based, logged and monitored.
               </p>
             </motion.div>
           </div>
@@ -95,10 +95,33 @@ const DataResidency = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto mt-8 p-6 rounded-xl bg-surface-section border border-border"
           >
-            <h3 className="font-display text-lg font-semibold mb-3">Cross-Border Access & Privacy Compliance</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Where authorised support personnel located outside Australia access systems for maintenance or support purposes, such access is performed under strict contractual confidentiality obligations and technical safeguards, and does not involve offshore storage or processing of customer data. This model is designed to align with the Australian Privacy Principles, including APP 8 (Cross-border Disclosure).
-            </p>
+            <h3 className="font-display text-lg font-semibold mb-3">How this works in practice</h3>
+            <dl className="space-y-4 text-sm leading-relaxed">
+              <div>
+                <dt className="font-semibold">Data storage location</dt>
+                <dd className="text-muted-foreground">Customer data is stored in Australia, in the AWS Sydney region (ap-southeast-2).</dd>
+              </div>
+              <div>
+                <dt className="font-semibold">Infrastructure provider</dt>
+                <dd className="text-muted-foreground">Amazon Web Services provides the hosting, storage and backup infrastructure used by GreeneDesk.</dd>
+              </div>
+              <div>
+                <dt className="font-semibold">Subprocessors</dt>
+                <dd className="text-muted-foreground">GreeneDesk uses a limited set of subprocessors for supporting services such as transactional email and system monitoring. A current list is available on request.</dd>
+              </div>
+              <div>
+                <dt className="font-semibold">Authorised support access</dt>
+                <dd className="text-muted-foreground">Access by GreeneDesk personnel is role-based, restricted to operational needs, logged and monitored.</dd>
+              </div>
+              <div>
+                <dt className="font-semibold">Cross-border access</dt>
+                <dd className="text-muted-foreground">Where authorised support personnel located outside Australia access systems for maintenance or support purposes, that access is governed by contractual confidentiality obligations and technical safeguards. Customer data continues to be stored in the Sydney region. This model is designed to align with the Australian Privacy Principles, including APP 8 (Cross-border Disclosure).</dd>
+              </div>
+              <div>
+                <dt className="font-semibold">Security and audit controls</dt>
+                <dd className="text-muted-foreground">Encryption in transit, role-based permissions, access logging and audit trails apply across the platform. Final privacy and data-processing wording should be confirmed with your own privacy officer before contract.</dd>
+              </div>
+            </dl>
           </motion.div>
         </div>
       </section>
