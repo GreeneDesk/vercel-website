@@ -10,7 +10,11 @@ import { ArrowRight, Puzzle, Check } from "lucide-react";
 const integrations = [
   {
     name: "PerfectGym",
-    description: "Keep your existing billing and member management while adding deeper scheduling and engagement.",
+    label: "Independent integration",
+    description:
+      "Keep PerfectGym for memberships, billing and access. Add FitDesk for assessments, workout programming, trainer scheduling, progress tracking and engagement through a customer-authorised API connection.",
+    cta: "Explore the PerfectGym integration",
+    href: "/integrations/perfectgym",
   },
   {
     name: "Envibe",
@@ -121,10 +125,25 @@ const Integrations = () => {
                 className="p-8 rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
               >
                 <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary-glow mb-4 flex items-center justify-center">
-                  <Puzzle className="h-6 w-6 text-primary-foreground" />
+                  <Puzzle className="h-6 w-6 text-primary-foreground" aria-hidden="true" />
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-3">{integration.name}</h3>
+                <div className="flex flex-wrap items-center gap-3 mb-3">
+                  <h3 className="font-display text-xl font-semibold">{integration.name}</h3>
+                  {integration.label && (
+                    <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-primary">
+                      {integration.label}
+                    </span>
+                  )}
+                </div>
                 <p className="text-muted-foreground">{integration.description}</p>
+                {integration.cta && integration.href && (
+                  <Button asChild variant="outline" className="mt-6">
+                    <Link to={integration.href}>
+                      {integration.cta}
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    </Link>
+                  </Button>
+                )}
               </motion.div>
             ))}
           </div>

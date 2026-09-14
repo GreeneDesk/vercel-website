@@ -75,25 +75,36 @@ export function ComparisonTable() {
                   key={i}
                   className="border-b border-border last:border-b-0 hover:bg-surface-section transition-colors"
                 >
-                  <td className="px-6 py-4 text-sm font-medium">{row.feature}</td>
+                  <th scope="row" className="px-6 py-4 text-left text-sm font-medium">
+                    {row.feature}
+                  </th>
                   <td className="px-6 py-4">
                     {row.gd === "yes" ? (
-                      <Check className="h-5 w-5 text-primary" />
+                      <span className="inline-flex items-center gap-2 text-sm font-medium text-primary">
+                        <Check className="h-5 w-5" aria-hidden="true" /> Yes
+                      </span>
                     ) : row.gd === "no" ? (
-                      <X className="h-5 w-5 text-muted-foreground/30" />
+                      <span className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                        <X className="h-5 w-5" aria-hidden="true" /> No
+                      </span>
                     ) : (
                       <span className="inline-flex items-center gap-1 rounded-full bg-accent/10 text-accent text-xs font-bold px-2.5 py-1">
-                        <AlertTriangle className="h-3 w-3" /> Partial
+                        <AlertTriangle className="h-3 w-3" aria-hidden="true" /> Partial
                       </span>
                     )}
                   </td>
                   <td className="px-6 py-4">
                     {row.comp === "yes" ? (
-                      <Check className="h-5 w-5 text-primary" />
+                      <span className="inline-flex items-center gap-2 text-sm font-medium text-primary">
+                        <Check className="h-5 w-5" aria-hidden="true" /> Yes
+                      </span>
                     ) : row.comp === "no" ? (
-                      <X className="h-5 w-5 text-muted-foreground/30" />
+                      <span className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                        <X className="h-5 w-5" aria-hidden="true" /> No
+                      </span>
                     ) : (
                       <span className="inline-flex items-center gap-1 rounded-full bg-destructive/10 text-destructive text-xs font-bold px-2.5 py-1">
+                        <AlertTriangle className="h-3 w-3" aria-hidden="true" />{" "}
                         {row.compNote || "Partial"}
                       </span>
                     )}
