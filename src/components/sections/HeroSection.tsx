@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Puzzle } from "lucide-react";
-import fitdeskLogo from "@/assets/brand/fitdesk-color-horizontal.png";
+import { ArrowRight } from "lucide-react";
 import heroIpad from "@/assets/fitdesk/hero-ipad.png";
 
 export function HeroSection() {
@@ -11,57 +10,41 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08)_0%,transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--accent)/0.05)_0%,transparent_50%)]" />
 
-      <div className="container-wide section-padding relative">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container-wide relative py-10 md:py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="mb-5">
-              <img src={fitdeskLogo} alt="FitDesk by GreeneDesk" className="h-9 w-auto" />
-            </div>
-
-            <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-6">
-              FitDesk by GreeneDesk · Built and hosted in Australia
+            <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[11px] md:text-xs font-bold uppercase tracking-widest text-primary mb-4">
+              🇦🇺 🇳🇿 Built in Australia · Trusted across AU &amp; NZ
             </p>
 
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              FitDesk powers what happens{" "}
-              <span className="text-gradient-primary">beyond the front desk</span>
+            <h1 className="font-display text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-5xl font-bold mb-4">
+              Run better programs without{" "}
+              <span className="text-gradient-primary">replacing your management system</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              Complete PerfectGym or replace Mywellness with digital assessments, workout
-              programming, trainer scheduling, progress tracking and member engagement—without
-              disrupting your core management system.
+            <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-2xl">
+              GreeneDesk adds scheduling, assessments, workout programming, engagement and
+              performance tracking to your existing technology—including PerfectGym.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-4">
-              <Button variant="cta" size="xl" asChild>
+            <div className="flex flex-col sm:flex-row gap-3 mb-5">
+              <Button variant="cta" size="lg" className="md:h-14 md:px-8 md:text-base" asChild>
                 <Link to="/demo">
-                  Book a FitDesk Demo
+                  Book a Demo
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="outline" size="xl" asChild>
-                <Link to="/integrations/perfectgym">
-                  <Puzzle className="h-5 w-5" />
-                  See FitDesk with PerfectGym
-                </Link>
+              <Button variant="outline" size="lg" className="md:h-14 md:px-8 md:text-base" asChild>
+                <Link to="/solutions/fitdesk">Explore FitDesk</Link>
               </Button>
             </div>
 
-            <Link
-              to="/technogym-mywellness-alternative"
-              className="inline-block text-sm font-medium text-primary hover:underline mb-8"
-            >
-              Considering replacing Mywellness?
-            </Link>
-
-            <p className="text-sm text-muted-foreground">
-              Customer data hosted on AWS Sydney · AU-based support · Trusted across Australia and
-              New Zealand
+            <p className="text-xs md:text-sm text-muted-foreground">
+              Australian-built · Data hosted on AWS Sydney · AU-based support
             </p>
           </motion.div>
 
@@ -73,8 +56,8 @@ export function HeroSection() {
           >
             <img
               src={heroIpad}
-              alt="FitDesk exercise library and workout programming on an iPad"
-              className="max-h-[480px] w-auto object-contain drop-shadow-2xl"
+              alt="GreeneDesk exercise library and workout programming on an iPad"
+              className="max-h-[440px] w-auto object-contain drop-shadow-2xl"
               width={471}
               height={420}
               loading="eager"
