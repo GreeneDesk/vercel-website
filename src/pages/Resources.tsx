@@ -5,16 +5,19 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Dumbbell, Users, Waves, GraduationCap, Trophy, MapPin, Puzzle } from "lucide-react";
+import { ArrowRight, BookOpen, Dumbbell, Users, Waves, HeartPulse, Trophy, MapPin, Puzzle, ClipboardList, CalendarClock, RefreshCw } from "lucide-react";
 
 const categories = [
-  { icon: Dumbbell, title: "Gym operations", href: "/resources/gym-operations" },
-  { icon: Users, title: "Retention & engagement", href: "/resources/retention" },
-  { icon: Waves, title: "Swim school management", href: "/resources/swim-schools" },
-  { icon: GraduationCap, title: "School programs", href: "/resources/school-programs" },
-  { icon: Trophy, title: "Squads", href: "/resources/squads" },
-  { icon: MapPin, title: "Data residency in Australia", href: "/resources/data-residency" },
-  { icon: Puzzle, title: "Integrations", href: "/resources/integrations" },
+  { icon: Puzzle, title: "PerfectGym integrations", href: "/integrations/perfectgym" },
+  { icon: RefreshCw, title: "Mywellness alternatives and migration", href: "/technogym-mywellness-alternative" },
+  { icon: Dumbbell, title: "Workout programming", href: "/platform/workout-programming" },
+  { icon: ClipboardList, title: "Digital health assessments", href: "/platform/teacher-trainer" },
+  { icon: Users, title: "Member engagement and retention", href: "/platform/analytics" },
+  { icon: CalendarClock, title: "Trainer scheduling", href: "/platform/roster-scheduler" },
+  { icon: HeartPulse, title: "Active ageing and rehabilitation", href: "/solutions/fitdesk" },
+  { icon: MapPin, title: "Australian data residency", href: "/data-residency" },
+  { icon: Waves, title: "Swim-school management", href: "/solutions/swimdesk" },
+  { icon: Trophy, title: "Sports and squad management", href: "/solutions/sportdesk" },
 ];
 
 const Resources = () => {
