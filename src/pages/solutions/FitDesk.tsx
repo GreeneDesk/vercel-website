@@ -13,6 +13,7 @@ import { FitDeskCommunity } from "@/components/fitdesk/FitDeskCommunity";
 import { FitDeskDataResidency } from "@/components/fitdesk/FitDeskDataResidency";
 import { FitDeskBenefits } from "@/components/fitdesk/FitDeskBenefits";
 import { FitDeskCTA } from "@/components/fitdesk/FitDeskCTA";
+import { FitDeskAppDownload } from "@/components/fitdesk/FitDeskAppDownload";
 
 const FitDesk = () => {
   return (
