@@ -16,15 +16,15 @@ interface SEOProps {
 }
 
 const defaults = {
-  title: "GreeneDesk – AU & NZ Gym, Swim School & Leisure Software",
-  description: "Unified software for gyms, swim schools, leisure centres and sports facilities across Australia & New Zealand. Built in AU, hosted in Sydney.",
-  image: "https://www.greenedesk.com/og-image.jpg",
+  title: "FitDesk by GreeneDesk – Fitness Operations Software AU & NZ",
+  description: "Australian-hosted assessments, workout programming, trainer scheduling and member engagement for leisure centres across Australia and New Zealand.",
+  image: "https://greenedesk.com.au/og-image.jpg",
 };
 
 export function SEO({ title, description, canonical, type = "website", image, jsonLd, faq }: SEOProps) {
   const fullTitle = title ? `${title} | GreeneDesk` : defaults.title;
   const desc = description || defaults.description;
-  const url = canonical ? `https://www.greenedesk.com${canonical}` : "https://www.greenedesk.com";
+  const url = canonical ? `https://greenedesk.com.au${canonical}` : "https://greenedesk.com.au";
   const ogImage = image || defaults.image;
 
   const schemas: Record<string, unknown>[] = [];

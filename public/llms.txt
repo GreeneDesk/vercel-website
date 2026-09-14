@@ -57,6 +57,8 @@ Competitive squad management for swimming, athletics, and other sports. Performa
 
 ## Pages
 - [Homepage](/): Multi-sport operations platform overview for AU & NZ.
+- [FitDesk with PerfectGym](https://greenedesk.com.au/integrations/perfectgym): Independent customer-authorised API integration adding assessments, programming, scheduling and engagement alongside PerfectGym.
+- [Mywellness Alternative](https://greenedesk.com.au/technogym-mywellness-alternative): Australian-hosted alternative to Mywellness software, keeping PerfectGym as the core management system.
 - [FitDesk](/solutions/fitdesk): Gym, leisure & wellness operations beyond the front desk.
 - [SwimDesk](/solutions/swimdesk): Swim school management for aquatic centres.
 - [SportDesk](/solutions/sportdesk): Squad and competitive sports management.

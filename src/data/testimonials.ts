@@ -5,6 +5,7 @@ export interface Testimonial {
   initials: string;
   flag: string;
   country: string;
+  product: "SwimDesk" | "FitDesk" | "GreeneDesk";
 }
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -14,6 +15,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Independent Swim School",
     initials: "SO",
     flag: "🇦🇺",
+    product: "SwimDesk",
     country: "Australia",
   },
   {
@@ -22,6 +24,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Aquatic Centre",
     initials: "AC",
     flag: "🇦🇺",
+    product: "SwimDesk",
     country: "Australia",
   },
   {
@@ -30,6 +33,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "SwimDesk Parent Portal User",
     initials: "SP",
     flag: "🇦🇺",
+    product: "SwimDesk",
     country: "Australia",
   },
   {
@@ -38,6 +42,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "District Council Aquatic Centre",
     initials: "CM",
     flag: "🇳🇿",
+    product: "SwimDesk",
     country: "New Zealand",
   },
   {
@@ -46,6 +51,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Multi-Sport Leisure Centre",
     initials: "OD",
     flag: "🇦🇺",
+    product: "SwimDesk",
     country: "Australia",
   },
   {
@@ -54,6 +60,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Community Leisure Centre",
     initials: "AM",
     flag: "🇦🇺",
+    product: "GreeneDesk",
     country: "Australia",
   },
   {
@@ -62,6 +69,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Regional Aquatic Centre",
     initials: "PD",
     flag: "🇳🇿",
+    product: "SwimDesk",
     country: "New Zealand",
   },
 ];

@@ -13,8 +13,8 @@ const Pricing = () => {
   return (
     <Layout>
       <SEO
-        title="Pricing – Plans for Swim Schools, Gyms & Sports Centres"
-        description="Transparent pricing for SwimDesk, FitDesk, and SportDesk. Plans from A$144/month. No hidden fees, no per-transaction charges. All data hosted in Australia."
+        title="FitDesk Pricing for Leisure & Fitness Facilities"
+        description="FitDesk pricing is based on facility size, member volume, required modules and integration scope. SwimDesk and SportDesk pricing also available. All data hosted in Australia."
         canonical="/pricing"
         faq={[
           { question: "How much does GreeneDesk cost?", answer: "Pricing is based on enrolment or membership volume. SwimDesk starts from A$144/month (annual) for up to 300 students. FitDesk starts from A$254/month (annual)." },
@@ -36,11 +36,11 @@ const Pricing = () => {
               transition={{ duration: 0.6 }}
             >
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Simple, transparent{" "}
-                <span className="text-gradient-primary">pricing</span>
+                FitDesk pricing for leisure and{" "}
+                <span className="text-gradient-primary">fitness facilities</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Pay for what you use. No per-transaction fees. No surprise invoices. All pricing in AUD.
+                Pricing is based on facility size, member volume, required modules and integration scope. No per-transaction fees. All pricing in AUD.
               </p>
             </motion.div>
           </div>
@@ -64,7 +64,7 @@ const Pricing = () => {
             </h2>
             <Button variant="cta" size="xl" asChild>
               <Link to="/demo">
-                Start Your Free Trial
+                Request FitDesk Pricing
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>

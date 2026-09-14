@@ -1,8 +1,18 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { TESTIMONIALS } from "@/data/testimonials";
+import { TESTIMONIALS, type Testimonial } from "@/data/testimonials";
 
-export function TestimonialsSection() {
+interface TestimonialsSectionProps {
+  product?: Testimonial["product"];
+  heading?: string;
+  subheading?: string;
+}
+
+export function TestimonialsSection({ product, heading, subheading }: TestimonialsSectionProps) {
+  const items = product ? TESTIMONIALS.filter((t) => t.product === product) : TESTIMONIALS;
+
+  if (items.length === 0) return null;
+
   return (
     <section className="section-padding bg-surface-section">
       <div className="container-wide">
@@ -16,33 +26,38 @@ export function TestimonialsSection() {
             Customer Stories
           </span>
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Trusted by centres across{" "}
-            <span className="text-gradient-primary">Australia & New Zealand</span>
+            {heading ?? (
+              <>
+                Trusted by centres across{" "}
+                <span className="text-gradient-primary">Australia &amp; New Zealand</span>
+              </>
+            )}
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Real operators. Real results. From private swim schools to council-run aquatic centres.
+            {subheading ??
+              "Real operators. Real results. From private swim schools to council-run aquatic centres."}
           </p>
         </motion.div>
 
-        {/* First row: 3 cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-6">
-          {TESTIMONIALS.slice(0, 3).map((t, i) => (
+          {items.slice(0, 3).map((t, i) => (
             <TestimonialCard key={i} t={t} delay={i * 0.1} />
           ))}
         </div>
 
-        {/* Second row: 4 cards on lg, 2-col on md */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {TESTIMONIALS.slice(3).map((t, i) => (
-            <TestimonialCard key={i + 3} t={t} delay={(i + 3) * 0.1} />
-          ))}
-        </div>
+        {items.length > 3 && (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {items.slice(3).map((t, i) => (
+              <TestimonialCard key={i + 3} t={t} delay={(i + 3) * 0.1} />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
 }
 
-function TestimonialCard({ t, delay }: { t: typeof TESTIMONIALS[number]; delay: number }) {
+function TestimonialCard({ t, delay }: { t: Testimonial; delay: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -59,19 +74,18 @@ function TestimonialCard({ t, delay }: { t: typeof TESTIMONIALS[number]; delay: 
 
       <span className="font-display text-4xl font-bold text-primary leading-none">"</span>
 
-      <p className="text-muted-foreground italic leading-relaxed flex-1 text-sm">
-        {t.quote}
-      </p>
+      <p className="text-muted-foreground italic leading-relaxed flex-1 text-sm">{t.quote}</p>
 
-      <div className="flex items-center gap-3 pt-4 border-t border-border">
-        <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center font-display font-bold text-primary text-sm flex-shrink-0">
+      <div className="flex items-center gap-3 pt-2 border-t border-border">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 font-display text-sm font-bold text-primary">
           {t.initials}
         </div>
-        <div className="flex-1 min-w-0">
-          <p className="font-display font-bold text-sm">{t.name}</p>
-          <p className="text-xs text-muted-foreground">{t.role}</p>
+        <div>
+          <p className="font-display text-sm font-bold">{t.name}</p>
+          <p className="text-xs text-muted-foreground">
+            {t.role} · {t.flag} {t.country}
+          </p>
         </div>
-        <span className="text-xl">{t.flag}</span>
       </div>
     </motion.div>
   );

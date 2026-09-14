@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { PLANS, PRODUCTS, type Product } from "@/data/pricing";
 
 export function PricingCards() {
-  const [product, setProduct] = useState<Product>("SwimDesk");
+  const [product, setProduct] = useState<Product>("FitDesk");
   const [annual, setAnnual] = useState(false);
   const plans = PLANS[product];
 

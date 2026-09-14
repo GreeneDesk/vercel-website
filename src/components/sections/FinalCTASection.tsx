@@ -17,17 +17,22 @@ export function FinalCTASection() {
           <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent-hover mb-8">
             <Calendar className="h-8 w-8 text-accent-foreground" />
           </div>
-          
+
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            See how GreeneDesk fits into your existing setup
+            See how FitDesk fits into your existing setup
           </h2>
-          
-          <Button variant="cta" size="xl" asChild>
-            <Link to="/demo">
-              Book a Demo
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-          </Button>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="cta" size="xl" asChild>
+              <Link to="/demo">
+                Book a FitDesk Demo
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
+            <Button variant="outline" size="xl" asChild>
+              <Link to="/integrations/perfectgym">See FitDesk with PerfectGym</Link>
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>

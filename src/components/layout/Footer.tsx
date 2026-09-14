@@ -4,6 +4,8 @@ import logoWhite from "@/assets/brand/logo-white-horizontal.png";
 
 const solutionsLinks = [
   { title: "FitDesk", href: "/solutions/fitdesk" },
+  { title: "FitDesk with PerfectGym", href: "/integrations/perfectgym" },
+  { title: "Mywellness Alternative", href: "/technogym-mywellness-alternative" },
   { title: "SwimDesk", href: "/solutions/swimdesk" },
   { title: "SportDesk", href: "/solutions/sportdesk" },
   { title: "School Programs", href: "/solutions/school-programs" },

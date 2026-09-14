@@ -55,7 +55,7 @@ export function TrustedBySection() {
     <section className="py-12 md:py-16 bg-surface-section">
       <div className="container-wide">
         <p className="text-center text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-10">
-          Trusted by leisure centres, councils &amp; aquatic facilities
+          Organisations using GreeneDesk products across Australia and New Zealand
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 max-w-6xl mx-auto">
           {logos.map((logo) => (
@@ -73,7 +73,7 @@ export function TrustedBySection() {
           ))}
         </div>
         <p className="text-center text-sm text-muted-foreground mt-8 italic">
-          A sample of the leisure centres, councils &amp; aquatic facilities we work with across Australia and New Zealand.
+          A sample of the organisations using GreeneDesk products. Product usage varies by facility.
         </p>
       </div>
     </section>

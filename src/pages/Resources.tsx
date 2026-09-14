@@ -5,22 +5,25 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Dumbbell, Users, Waves, GraduationCap, Trophy, MapPin, Puzzle } from "lucide-react";
+import { ArrowRight, BookOpen, Dumbbell, Users, Waves, HeartPulse, Trophy, MapPin, Puzzle, ClipboardList, CalendarClock, RefreshCw } from "lucide-react";
 
 const categories = [
-  { icon: Dumbbell, title: "Gym operations", href: "/resources/gym-operations" },
-  { icon: Users, title: "Retention & engagement", href: "/resources/retention" },
-  { icon: Waves, title: "Swim school management", href: "/resources/swim-schools" },
-  { icon: GraduationCap, title: "School programs", href: "/resources/school-programs" },
-  { icon: Trophy, title: "Squads", href: "/resources/squads" },
-  { icon: MapPin, title: "Data residency in Australia", href: "/resources/data-residency" },
-  { icon: Puzzle, title: "Integrations", href: "/resources/integrations" },
+  { icon: Puzzle, title: "PerfectGym integrations", href: "/integrations/perfectgym" },
+  { icon: RefreshCw, title: "Mywellness alternatives and migration", href: "/technogym-mywellness-alternative" },
+  { icon: Dumbbell, title: "Workout programming", href: "/platform/workout-programming" },
+  { icon: ClipboardList, title: "Digital health assessments", href: "/platform/teacher-trainer" },
+  { icon: Users, title: "Member engagement and retention", href: "/platform/analytics" },
+  { icon: CalendarClock, title: "Trainer scheduling", href: "/platform/roster-scheduler" },
+  { icon: HeartPulse, title: "Active ageing and rehabilitation", href: "/solutions/fitdesk" },
+  { icon: MapPin, title: "Australian data residency", href: "/data-residency" },
+  { icon: Waves, title: "Swim-school management", href: "/solutions/swimdesk" },
+  { icon: Trophy, title: "Sports and squad management", href: "/solutions/sportdesk" },
 ];
 
 const Resources = () => {
   return (
     <Layout>
-      <SEO title="Resources – Guides & Best Practices" description="Guides, articles, and best practices for running gyms, swim schools, and recreation centres. Operational tips from the GreeneDesk team." canonical="/resources" />
+      <SEO title="Resources – Guides & Best Practices" description="Guides on PerfectGym integrations, Mywellness alternatives, workout programming, assessments, member engagement and Australian data residency." canonical="/resources" />
       <Breadcrumbs items={[{ label: "Resources" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
@@ -43,7 +46,7 @@ const Resources = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Guides, best practices, and insights for running better sports and recreation centres.
+                Guides for improving fitness-floor operations, member engagement and program delivery—without replacing your core management system.
               </p>
             </motion.div>
           </div>
@@ -73,7 +76,7 @@ const Resources = () => {
                     {category.title}
                   </h3>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary transition-colors">
-                    <span>Browse articles</span>
+                    <span>Learn more</span>
                     <ArrowRight className="h-4 w-4" />
                   </div>
                 </Link>
@@ -86,7 +89,7 @@ const Resources = () => {
       <RelatedPages
         heading="Explore GreeneDesk"
         pages={[
-          { title: "FitDesk for Gyms", description: "Complete gym management software", href: "/solutions/fitdesk" },
+          { title: "FitDesk", description: "Fitness operations and member engagement software", href: "/solutions/fitdesk" },
           { title: "SwimDesk for Swim Schools", description: "Swim school management platform", href: "/solutions/swimdesk" },
           { title: "Pricing", description: "Flexible plans for centres of all sizes", href: "/pricing" },
         ]}
@@ -104,11 +107,11 @@ const Resources = () => {
               Can't find what you're looking for?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Book a demo and our team will walk you through how GreeneDesk can help your specific situation.
+              Book a demo and our team will walk you through how FitDesk fits your facility and existing systems.
             </p>
             <Button variant="cta" size="xl" asChild>
               <Link to="/demo">
-                Request a Demo
+                Book a FitDesk Demo
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>

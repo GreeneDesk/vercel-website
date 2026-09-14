@@ -5,6 +5,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { DifferentiatorBlock } from "@/components/shared/DifferentiatorBlock";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 
@@ -211,6 +212,12 @@ const SwimDesk = () => {
           </div>
         </section>
       ))}
+
+      <TestimonialsSection
+        product="SwimDesk"
+        heading="What swim schools say about SwimDesk"
+        subheading="Feedback from swim schools and aquatic centres across Australia and New Zealand."
+      />
 
       <DifferentiatorBlock />
 
