@@ -45,7 +45,7 @@ const features = [
       "4,000+ exercises with instructional videos and GIFs",
       "Build structured workout programs with sets, reps, and tempo",
       "Save and reuse custom templates across trainers",
-      "Members access programs on the GreeneDesk app or browser",
+      "Members access programs on the FitDesk app or browser",
     ],
   },
   {

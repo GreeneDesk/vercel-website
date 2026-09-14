@@ -84,7 +84,7 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "Can members access their workout program at home or on their phone?",
-      a: "Yes. Members log in via the GreeneDesk app (iOS and Android) or any browser to view their personalised workout program, track results, and communicate with their trainer. They can also create and log their own workouts.",
+      a: "Yes. Members log in via the FitDesk app (iOS and Android) or any browser to view their personalised workout program, track results, and communicate with their trainer. They can also create and log their own workouts.",
     },
     {
       q: "How does FitDesk improve member retention?",
