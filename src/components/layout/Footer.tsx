@@ -42,7 +42,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center mb-4">
-              <img src={logoWhite} alt="GreeneDesk" className="h-8 w-auto" />
+              <img src={logoWhite} alt="GreeneDesk" width={142} height={32} className="h-8 w-auto" />
             </Link>
             <p className="text-text-on-dark-muted max-w-sm mb-4">
               Multi-sport operations platform that works alongside your existing management software. Scheduling, engagement, and program delivery for sports and leisure centres.

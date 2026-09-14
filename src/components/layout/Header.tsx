@@ -59,7 +59,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container-wide flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src={logoColor} alt="GreeneDesk" className="h-8 w-auto" />
+          <img src={logoColor} alt="GreeneDesk" width={142} height={32} className="h-8 w-auto" />
         </Link>
 
         <NavigationMenu className="hidden lg:flex" aria-label="Main navigation">
