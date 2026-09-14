@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,6 +10,7 @@ import { motion } from "framer-motion";
 import { Calendar, CheckCircle2, ArrowRight, Building2, Users, MapPin, ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import { trackEvent } from "@/lib/analytics";
 import {
   Select,
   SelectContent,
@@ -55,8 +57,22 @@ const demoTracks = [
   },
 ];
 
+const PAGE_VARIANTS: Record<string, { leadSource: string; heading: string }> = {
+  "perfectgym-integration": {
+    leadSource: "perfectgym-integration",
+    heading: "See FitDesk with PerfectGym",
+  },
+  "mywellness-alternative": {
+    leadSource: "mywellness-alternative",
+    heading: "Discuss replacing Mywellness",
+  },
+};
+
 const Demo = () => {
   const { toast } = useToast();
+  const [searchParams] = useSearchParams();
+  const variant = PAGE_VARIANTS[searchParams.get("source") ?? ""];
+  const leadSource = variant?.leadSource ?? "website";
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -81,6 +97,7 @@ const Demo = () => {
         locations: formData.locations,
         email: formData.email,
         phone: formData.phone || null,
+        lead_source: leadSource,
       });
 
       if (dbError) {
@@ -102,9 +119,17 @@ const Demo = () => {
             locations: formData.locations,
             email: formData.email,
             phone: formData.phone || "Not provided",
+            leadSource,
           },
         },
       }).catch(err => console.error("Email send failed:", err));
+
+      trackEvent("demo_form_submit", { lead_source: leadSource });
+      if (leadSource === "perfectgym-integration") {
+        trackEvent("perfectgym_form_submit", { lead_source: leadSource });
+      } else if (leadSource === "mywellness-alternative") {
+        trackEvent("mywellness_form_submit", { lead_source: leadSource });
+      }
 
       toast({ title: "Demo request submitted!", description: "We'll tailor the demo to your setup." });
       setStep(3);
@@ -130,9 +155,15 @@ const Demo = () => {
               <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent-hover mb-8">
                 <Calendar className="h-8 w-8 text-accent-foreground" />
               </div>
-              <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">
-                See how GreeneDesk would work in{" "}
-                <span className="text-gradient-primary">your centre</span>
+              <h1 className="font-display text-3xl md:text-5xl font-bold leading-tight mb-6">
+                {variant ? (
+                  variant.heading
+                ) : (
+                  <>
+                    See how GreeneDesk would work in{" "}
+                    <span className="text-gradient-primary">your centre</span>
+                  </>
+                )}
               </h1>
               <ul className="space-y-4 mb-8">
                 {benefits.map((benefit, i) => (
@@ -232,6 +263,7 @@ const Demo = () => {
                       <ArrowLeft className="h-4 w-4" /> Back
                     </button>
                     <h2 className="font-display text-2xl font-bold mb-6">Your contact details</h2>
+                    <input type="hidden" name="lead_source" value={leadSource} readOnly />
                     <div className="space-y-6">
                       <div className="space-y-2">
                         <Label htmlFor="email">Email *</Label>
