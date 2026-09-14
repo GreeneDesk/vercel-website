@@ -7,7 +7,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
-import { Calendar, CheckCircle2, ArrowRight, Building2, Users, MapPin, ArrowLeft } from "lucide-react";
+import { Calendar, CheckCircle2, ArrowRight, Building2, Users, Activity, ArrowLeft } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { trackEvent } from "@/lib/analytics";
@@ -176,15 +176,15 @@ const Demo = () => {
               <div className="grid sm:grid-cols-3 gap-4 p-6 rounded-xl bg-surface-section mb-8">
                 <div className="text-center">
                   <Building2 className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <p className="text-sm text-muted-foreground">100+ Centres</p>
+                  <p className="text-sm text-muted-foreground">50+ Centres</p>
                 </div>
                 <div className="text-center">
                   <Users className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <p className="text-sm text-muted-foreground">50,000+ Members</p>
+                  <p className="text-sm text-muted-foreground">500,000+ Members</p>
                 </div>
                 <div className="text-center">
-                  <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <p className="text-sm text-muted-foreground">Australian Hosted</p>
+                  <Activity className="h-8 w-8 text-primary mx-auto mb-2" />
+                  <p className="text-sm text-muted-foreground">1.5M+ Workouts Done</p>
                 </div>
               </div>
 
