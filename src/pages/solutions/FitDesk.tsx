@@ -3,7 +3,7 @@ import { SEO } from "@/components/SEO";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { DifferentiatorBlock } from "@/components/shared/DifferentiatorBlock";
-import { PathwaysSection } from "@/components/sections/PathwaysSection";
+import { FitDeskPathwayCards } from "@/components/fitdesk/FitDeskPathwayCards";
 import { FitDeskHero } from "@/components/fitdesk/FitDeskHero";
 import { FitDeskAudience } from "@/components/fitdesk/FitDeskAudience";
 import { FitDeskProblems } from "@/components/fitdesk/FitDeskProblems";
@@ -38,7 +38,7 @@ const FitDesk = () => {
       />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/fitdesk" }, { label: "FitDesk" }]} />
       <FitDeskHero />
-      <PathwaysSection />
+      <FitDeskPathwayCards />
       <FitDeskProblems />
       <FitDeskCommunity />
       <FitDeskModules />
