@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { FAQ_CATEGORIES, FAQS, type FAQCategory } from "@/data/faqs";
@@ -84,6 +85,14 @@ export function FAQSection() {
                         <p className="text-sm text-muted-foreground leading-relaxed pt-4">
                           {item.a}
                         </p>
+                        {item.link && (
+                          <Link
+                            to={item.link.href}
+                            className="inline-block mt-3 text-sm font-semibold text-primary underline underline-offset-4"
+                          >
+                            {item.link.label}
+                          </Link>
+                        )}
                       </div>
                     </motion.div>
                   )}

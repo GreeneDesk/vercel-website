@@ -12,6 +12,17 @@ const FAQ = () => {
         canonical="/faq"
       />
       <Breadcrumbs items={[{ label: "FAQ" }]} />
+      <section className="pt-10 md:pt-14">
+        <div className="container-wide max-w-3xl">
+          <h1 className="font-display text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-5xl font-bold mb-4">
+            Frequently asked <span className="text-gradient-primary">questions</span>
+          </h1>
+          <p className="text-base md:text-lg text-muted-foreground">
+            Pricing, data residency, onboarding, support and integrations — including how FitDesk
+            works alongside PerfectGym.
+          </p>
+        </div>
+      </section>
       <FAQSection />
     </Layout>
   );
