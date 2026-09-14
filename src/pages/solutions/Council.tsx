@@ -195,7 +195,8 @@ const Council = () => {
         pages={[
           { title: "FitDesk", description: "Gym, wellness, and active ageing operations", href: "/solutions/fitdesk" },
           { title: "SwimDesk", description: "Swim school and aquatic centre management", href: "/solutions/swimdesk" },
-          { title: "Integrations", description: "Connect with PerfectGym and others", href: "/integrations" },
+          { title: "PerfectGym Integration", description: "Add FitDesk as a PerfectGym add-on for programming and engagement", href: "/integrations/perfectgym" },
+          { title: "Mywellness Alternative", description: "Replace Mywellness while keeping PerfectGym", href: "/technogym-mywellness-alternative" },
         ]}
       />
 

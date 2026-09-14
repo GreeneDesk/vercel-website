@@ -1,6 +1,7 @@
 export interface FAQItem {
   q: string;
   a: string;
+  link?: { label: string; href: string };
 }
 
 export const FAQ_CATEGORIES = [
@@ -160,6 +161,12 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     {
       q: "Does FitDesk integrate with our existing membership management system?",
       a: "Yes. FitDesk integrates with several popular leisure management systems — it can bolt on to your existing system to add assessment, workout, and retention functionality without replacing your core platform. Contact us with your current system and we'll confirm the integration path.",
+      link: { label: "Explore the PerfectGym integration", href: "/integrations/perfectgym" },
+    },
+    {
+      q: "How does FitDesk work alongside PerfectGym?",
+      a: "PerfectGym stays your core system for memberships, billing and access. FitDesk connects independently through the PerfectGym API — a connection your facility authorises and supplies credentials for — and adds assessments, workout programming, trainer scheduling, progress tracking and member engagement. GreeneDesk is not a PerfectGym partner or reseller.",
+      link: { label: "Explore the PerfectGym integration", href: "/integrations/perfectgym" },
     },
   ],
 };

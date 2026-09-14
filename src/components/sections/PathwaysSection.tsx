@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Puzzle, Repeat } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 export function PathwaysSection() {
   return (
@@ -30,21 +31,26 @@ export function PathwaysSection() {
             className="rounded-2xl border border-border bg-background p-8 flex flex-col"
           >
             <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary-glow mb-5 flex items-center justify-center">
-              <Puzzle className="h-6 w-6 text-primary-foreground" />
+              <Puzzle className="h-6 w-6 text-primary-foreground" aria-hidden="true" />
             </div>
             <h3 className="font-display text-2xl font-bold mb-3">Complete PerfectGym</h3>
             <p className="text-muted-foreground mb-6 flex-1">
-              Keep PerfectGym for memberships, billing and access. Add FitDesk for assessments,
-              workout programming, trainer scheduling, progress tracking and member engagement.
+              Keep PerfectGym for memberships, billing and access. Add FitDesk for digital
+              assessments, workout programming, trainer scheduling, progress tracking and member
+              engagement.
             </p>
-            <Button asChild className="self-start">
+            <Button
+              asChild
+              className="self-start"
+              onClick={() => trackEvent("home_pathway_perfectgym_click", { pathway: "complete-perfectgym" })}
+            >
               <Link to="/integrations/perfectgym">
-                Explore FitDesk with PerfectGym
-                <ArrowRight className="h-4 w-4" />
+                Explore the PerfectGym integration
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>
             <p className="text-xs text-muted-foreground mt-4">
-              Independent customer-authorised API integration
+              Independent, customer-authorised API integration
             </p>
           </motion.div>
 
@@ -56,17 +62,21 @@ export function PathwaysSection() {
             className="rounded-2xl border border-border bg-background p-8 flex flex-col"
           >
             <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-accent to-accent-hover mb-5 flex items-center justify-center">
-              <Repeat className="h-6 w-6 text-accent-foreground" />
+              <Repeat className="h-6 w-6 text-accent-foreground" aria-hidden="true" />
             </div>
             <h3 className="font-display text-2xl font-bold mb-3">Replace Mywellness</h3>
             <p className="text-muted-foreground mb-6 flex-1">
-              Move programming, assessments and member engagement to an Australian-hosted platform
-              while retaining PerfectGym as your core management system.
+              Move your programming and member-engagement workflows to an Australian-hosted platform
+              without replacing PerfectGym.
             </p>
-            <Button asChild className="self-start">
+            <Button
+              asChild
+              className="self-start"
+              onClick={() => trackEvent("home_pathway_mywellness_click", { pathway: "replace-mywellness" })}
+            >
               <Link to="/technogym-mywellness-alternative">
                 Explore the Mywellness alternative
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>
             <p className="text-xs text-muted-foreground mt-4">

@@ -1,3 +1,4 @@
+import { trackEvent } from "@/lib/analytics";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -313,6 +314,7 @@ const Contact = () => {
                   at:{" "}
                   <a
                     href="mailto:support@greenedesk.com"
+                    onClick={() => trackEvent("email_link_click", { location: "contact" })}
                     className="text-primary hover:underline font-medium"
                   >
                     support@greenedesk.com
@@ -342,6 +344,7 @@ const Contact = () => {
                       <h3 className="font-semibold mb-1">Phone (Australia)</h3>
                       <a
                         href="tel:1300181665"
+                        onClick={() => trackEvent("phone_link_click", { location: "contact" })}
                         className="text-muted-foreground hover:text-primary transition-colors text-lg"
                       >
                         1 300 181 665
@@ -357,6 +360,7 @@ const Contact = () => {
                       <h3 className="font-semibold mb-1">Email</h3>
                       <a
                         href="mailto:anita.w@greenedesk.com"
+                        onClick={() => trackEvent("email_link_click", { location: "contact-sales" })}
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
                         anita.w@greenedesk.com

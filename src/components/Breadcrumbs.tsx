@@ -21,7 +21,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.label,
-      ...(item.href ? { item: `https://www.greenedesk.com${item.href}` } : {}),
+      ...(item.href ? { item: `https://greenedesk.com.au${item.href}` } : {}),
     })),
   };
 

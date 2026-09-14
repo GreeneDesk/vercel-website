@@ -52,7 +52,7 @@ Competitive squad management for swimming, athletics, and other sports. Performa
 - Phone: 1300 181 665
 - Email: anita.w@greenedesk.com
 - Support: support@greenedesk.com
-- Website: https://www.greenedesk.com
+- Website: https://greenedesk.com.au
 - Data hosting: AWS Sydney (ap-southeast-2), Australia
 
 ## Pages

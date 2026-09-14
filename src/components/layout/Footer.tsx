@@ -1,3 +1,4 @@
+import { trackEvent } from "@/lib/analytics";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 import logoWhite from "@/assets/brand/logo-white-horizontal.png";
@@ -50,7 +51,7 @@ export function Footer() {
               <MapPin className="h-4 w-4 text-primary" />
               <span>Built and hosted in Australia. Serving AU, NZ & beyond.</span>
             </div>
-            <a href="tel:1300181665" className="flex items-center gap-2 text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
+            <a href="tel:1300181665" onClick={() => trackEvent("phone_link_click", { location: "footer" })} className="flex items-center gap-2 text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
               <span className="text-primary">📞</span>
               <span>1 300 181 665</span>
             </a>
