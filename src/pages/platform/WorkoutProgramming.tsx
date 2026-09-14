@@ -250,6 +250,12 @@ const WorkoutProgramming = () => {
             href: "/solutions/fitdesk",
           },
           {
+            title: "Mywellness Alternative",
+            description:
+              "Australian-hosted workout programming software as a Mywellness alternative",
+            href: "/technogym-mywellness-alternative",
+          },
+          {
             title: "Teacher & Trainer Tools",
             description: "Mobile-first tools for on-floor delivery",
             href: "/platform/teacher-trainer",
