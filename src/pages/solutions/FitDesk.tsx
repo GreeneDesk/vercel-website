@@ -45,6 +45,7 @@ const FitDesk = () => {
       <FitDeskModules />
       <FitDeskAudience />
       <FitDeskBenefits />
+      <FitDeskAppDownload />
       <FitDeskDataResidency />
       <FitDeskOverview />
 
