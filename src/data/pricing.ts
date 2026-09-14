@@ -87,7 +87,7 @@ export const PLANS: Record<Product, Plan[]> = {
         { text: "Electronic health consultations (PARQ)", included: true },
         { text: "Digital workout programs with exercise GIFs & video", included: true },
         { text: "4,000+ exercise library (customisable)", included: true },
-        { text: "Member portal & GreeneDesk app (iOS + Android)", included: true },
+        { text: "Member portal & FitDesk app (iOS + Android)", included: true },
         { text: "Workout history tracking & progress logs", included: true },
         { text: "Document storage (medical certs, physio notes)", included: true },
         { text: "PT appointment booking & scheduling", included: false },

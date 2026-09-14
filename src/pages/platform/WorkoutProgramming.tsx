@@ -55,7 +55,7 @@ const capabilities = [
     icon: Smartphone,
     title: "Member App Access",
     description:
-      "Members view their personalised program on the GreeneDesk app (iOS & Android) or any browser. Log results, track history, and communicate with their trainer.",
+      "Members view their personalised program on the FitDesk app (iOS & Android) or any browser. Log results, track history, and communicate with their trainer.",
   },
   {
     icon: BarChart3,

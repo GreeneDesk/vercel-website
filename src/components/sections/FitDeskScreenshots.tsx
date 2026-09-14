@@ -23,7 +23,7 @@ const shots = [
   {
     src: memberAppExercise,
     alt: "FitDesk member app showing an assigned exercise with instructional video",
-    caption: "Members follow their program on the GreeneDesk app.",
+    caption: "Members follow their program on the FitDesk app.",
   },
 ];
 
