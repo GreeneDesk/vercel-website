@@ -22,7 +22,6 @@ import {
 const channels = [
   { icon: MessageSquare, title: "SMS", description: "Direct, high-open-rate messaging" },
   { icon: Mail, title: "Email", description: "Rich content and attachments" },
-  { icon: Smartphone, title: "WhatsApp", description: "Where families already are" },
   { icon: Bell, title: "Push notifications", description: "Instant mobile alerts" },
 ];
 
@@ -66,7 +65,7 @@ const automations = [
 const Communication = () => {
   return (
     <Layout>
-      <SEO title="Multi-Channel Communication & Automation" description="Automated SMS, email, WhatsApp and push notifications for gyms and swim schools. Empathy-first templates with AI-assisted drafting." canonical="/platform/communication" />
+      <SEO title="Multi-Channel Communication & Automation" description="Automated SMS, email and push notifications for gyms and swim schools. Empathy-first templates with AI-assisted drafting." canonical="/platform/communication" />
       <Breadcrumbs items={[{ label: "Platform", href: "/platform/communication" }, { label: "Communication" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
