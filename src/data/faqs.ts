@@ -27,8 +27,8 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
       a: "No hidden setup fees. All plans include onboarding support, data migration assistance, and initial training sessions. Enterprise plans include a custom onboarding program with a dedicated specialist.",
     },
     {
-      q: "Do you charge extra for SMS or WhatsApp messaging?",
-      a: "SMS and WhatsApp messaging is included from the Professional tier onwards. There are no per-message surcharges within reasonable usage limits.",
+      q: "Do you charge extra for SMS messaging?",
+      a: "SMS messaging is included from the Professional tier onwards. There are no per-message surcharges within reasonable usage limits.",
     },
     {
       q: "Is there a free trial?",
