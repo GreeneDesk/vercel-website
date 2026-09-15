@@ -33,7 +33,7 @@ export const PLANS: Record<Product, Plan[]> = {
         { text: "Online bookings, waitlists & makeup lessons", included: true },
         { text: "Online payments & automated payment follow-up", included: true },
         { text: "KPI dashboards & retention reporting", included: true },
-        { text: "SMS & WhatsApp messaging", included: false },
+        { text: "SMS messaging", included: false },
         { text: "AI communication generator", included: false },
         { text: "Voice notes to parents via app", included: false },
         { text: "Schools program module", included: false },
@@ -48,7 +48,7 @@ export const PLANS: Record<Product, Plan[]> = {
       featured: true,
       features: [
         { text: "Everything in Essentials", included: true },
-        { text: "SMS & WhatsApp messaging", included: true },
+        { text: "SMS messaging", included: true },
         { text: "AI communication generator (10+ years of training data)", included: true },
         { text: "Voice notes — record & send audio to parents via app", included: true },
         { text: "Schools program module (bulk upload, auto-reports)", included: true },

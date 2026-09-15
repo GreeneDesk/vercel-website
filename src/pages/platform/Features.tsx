@@ -35,7 +35,7 @@ const capabilities = [
   { icon: ClipboardCheck, title: "Assessments & progression", description: "Digital health consultations (PARQ), skill tracking, and outcome recording" },
   { icon: CreditCard, title: "Payments & billing", description: "Integrated payment processing and invoicing" },
   { icon: Smartphone, title: "Member and parent apps", description: "Mobile apps for members, parents, and trainers" },
-  { icon: MessageSquare, title: "Communications", description: "SMS, email, WhatsApp, and AI-generated messaging" },
+  { icon: MessageSquare, title: "Communications", description: "SMS, email, and AI-generated messaging" },
   { icon: BarChart3, title: "Retention and utilisation analytics", description: "Milestone tracking, at-risk alerts, and KPI dashboards" },
   { icon: Dumbbell, title: "Exercise programming", description: "4,000+ exercise library with video, personalised workout plans, and progress logs" },
   { icon: Heart, title: "Active ageing & wellness", description: "Tailored programs for seniors, rehab, and community wellness" },
@@ -155,7 +155,7 @@ const capabilityGroups = [
     icon: Send,
     title: "Communications & automation",
     items: [
-      "SMS, email & WhatsApp automation",
+      "SMS & email automation",
       "Booking & payment reminders",
       "Failed payment alerts",
       "Marketing & retention campaigns",
