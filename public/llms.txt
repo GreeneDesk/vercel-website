@@ -18,7 +18,7 @@ GreeneDesk is NOT primarily for private gyms. It serves organisations managing c
 Operations platform for gyms, leisure centres, wellness facilities, and rehab programs. Covers scheduling, assessments, engagement, exercise programming, and trainer workflows. Integrates with existing management systems like PerfectGym.
 
 ### SwimDesk
-Swim school management platform. Parent booking, rescheduling, absence management, skills tracking, digital certificates, instructor tools, and school swimming program management.
+Swim school management platform. Parent booking, rescheduling, absence management, skills tracking, digital certificates, instructor tools, and school swimming program management. Includes term-based and recurring payments with a flexible discount setup, parent payments from mobile, compensatory classes, facility-configurable rules for explained absences, and instructor voice notes sent to an individual student or an entire class. All users can work from a mobile, tablet or desktop.
 
 ### SportDesk
 Squad and competitive sports management. Heat creation, time tracking, qualifying benchmarks, wet and dry workout tracking, athlete progression, and parent engagement.
