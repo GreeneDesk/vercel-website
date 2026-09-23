@@ -78,6 +78,7 @@ const sections = [
       "Pass and not-pass assessments",
       "Evaluation history per student",
       "Send progress reports to parents",
+      "Supports AUSTSWIM and Royal Life Saving learn-to-swim programs — or any structured curriculum",
     ],
   },
   {
