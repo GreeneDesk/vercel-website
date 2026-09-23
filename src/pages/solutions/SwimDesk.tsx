@@ -102,17 +102,35 @@ const SwimDesk = () => {
     <Layout>
       <SEO
         title="Swim School & Aquatic Centre Management Software | SwimDesk Australia"
-        description="Australian swim school and aquatic centre management software. Class bookings, poolside attendance, skills assessments and progression tracking, digital certificates and a parent app. Hosted in AWS Sydney."
+        description="Australian swim school and aquatic centre management software. Class bookings, poolside attendance, skills assessments and progression tracking, digital certificates and a parent app. Works alongside your existing membership and payments system. Hosted in AWS Sydney."
         canonical="/solutions/swimdesk"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",
           "name": "SwimDesk – Swim School and Aquatic Centre Management Software",
-          "description": "Swim school and aquatic centre management software for Australian councils, YMCAs and learn-to-swim providers. Class scheduling and bookings, poolside attendance, skills assessments, progression tracking, digital certificates, parent app and automated communication. Supports structured learn-to-swim curricula including AUSTSWIM, Royal Life Saving and YMCA programs. Hosted in AWS Sydney.",
+          "description": "Swim school and aquatic centre management software for Australian councils, YMCAs and learn-to-swim providers. Class scheduling and bookings, poolside attendance, skills assessments, progression tracking, digital certificates, parent app and automated communication. Works alongside existing membership and payments systems including PerfectGym and Envibe. Supports structured learn-to-swim curricula including AUSTSWIM, Royal Life Saving and YMCA programs. Hosted in AWS Sydney.",
           "provider": { "@type": "Organization", "name": "GreeneDesk" },
           "areaServed": ["AU", "NZ"],
           "serviceType": "Swim School Management Software"
         }}
+        faq={[
+          {
+            question: "Does SwimDesk replace our membership or payments system?",
+            answer: "No. SwimDesk works alongside the system you already use — including PerfectGym and Envibe — and adds the learn-to-swim layer: class scheduling, poolside attendance, skills assessments, progression tracking and parent communication. There is no need to change your payments or membership setup."
+          },
+          {
+            question: "Which learn-to-swim curricula does SwimDesk support?",
+            answer: "SwimDesk supports structured learn-to-swim curricula including AUSTSWIM, Royal Life Saving and YMCA programs — or any structured curriculum your centre uses, with skills, levels and progressions configured to match."
+          },
+          {
+            question: "Is SwimDesk suitable for council aquatic facilities?",
+            answer: "Yes. Many SwimDesk customers are council-owned leisure and aquatic centres and YMCAs. It handles multi-pool and lane scheduling, instructor assignments, class capacity, school swimming programs and reporting, with instructors able to mark attendance and assessments poolside — including offline on the pool deck."
+          },
+          {
+            question: "Where is SwimDesk data hosted?",
+            answer: "All SwimDesk data is hosted in AWS Sydney, in Australia. Data is not processed offshore, supporting Australian Privacy Principles compliance for councils and other public-facing organisations."
+          }
+        ]}
       />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/swimdesk" }, { label: "SwimDesk" }]} />
 
