@@ -9,6 +9,7 @@ export const FAQ_CATEGORIES = [
   "SwimDesk",
   "FitDesk",
   "Data & Compliance",
+  "Operations & Safety",
   "Migration & Onboarding",
   "Support",
   "Integrations",
