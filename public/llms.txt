@@ -55,8 +55,41 @@ Competitive squad management for swimming, athletics, and other sports. Performa
 - Website: https://greenedesk.com.au
 - Data hosting: AWS Sydney (ap-southeast-2), Australia
 
+## Quick Answers (facts stated on the website)
+
+### Where is the data stored?
+All GreeneDesk customer data is stored in Australia on AWS infrastructure in the Sydney region (ap-southeast-2). Details: https://greenedesk.com.au/data-residency
+
+### Is it compliant with Australian privacy law?
+GreeneDesk is aligned with the Australian Privacy Principles, including APP 8 (cross-border disclosure), and with the New Zealand Privacy Act 2020. Customers own their data.
+
+### How is it priced?
+Pricing is tiered per product and based on enrolment or membership volume, quoted in AUD. Monthly or annual billing, with a 15% discount for annual. No hidden setup fees; onboarding, migration assistance and initial training are included. Details: https://greenedesk.com.au/pricing
+
+### Is there a free trial?
+SwimDesk offers a 15-day free trial with no credit card required, plus a complimentary 30-minute onboarding session.
+
+### How long does implementation take?
+Most centres are live within about 2 weeks. Enterprise and multi-site rollouts typically take 4-6 weeks. Data migration from an existing system is typically 5-10 business days.
+
+### What systems does GreeneDesk integrate with?
+GreeneDesk integrates with existing leisure and membership management systems, including PerfectGym and Envibe, using customer-authorised API access. It does not replace the core management system. Details: https://greenedesk.com.au/integrations
+
+### Does it work without internet on the pool deck?
+Yes. Poolside and gym-floor assessments can be recorded offline and sync when a connection returns.
+
+### What support is offered?
+Australian-based support, 7am-7pm AEST. Enterprise plans include SLA-backed priority support with a 4-hour response target.
+
+### Who is the supplier?
+GreeneDesk Pty Ltd, ABN 13 958 181 688, VIC, Australia. Phone 1300 181 665. Sales anita.w@greenedesk.com. Support support@greenedesk.com.
+
 ## Pages
 - [Homepage](/): Multi-sport operations platform overview for AU & NZ.
+- [Leisure Centre Software Australia](https://greenedesk.com.au/leisure-centre-software-australia): Software for Australian leisure and recreation centres.
+- [Swim School Software Australia](https://greenedesk.com.au/swim-school-software-australia): Learn-to-swim and aquatic centre software.
+- [Fitness & Wellness Software Australia](https://greenedesk.com.au/fitness-wellness-software-australia): Fitness, wellness and active ageing programs.
+- [Sports Facility Software](https://greenedesk.com.au/sports-facility-software): Multi-sport and sports facility operations.
 - [FitDesk with PerfectGym](https://greenedesk.com.au/integrations/perfectgym): Independent customer-authorised API integration adding assessments, programming, scheduling and engagement alongside PerfectGym.
 - [Mywellness Alternative](https://greenedesk.com.au/technogym-mywellness-alternative): Australian-hosted alternative to Mywellness software, keeping PerfectGym as the core management system.
 - [FitDesk](/solutions/fitdesk): Gym, leisure & wellness operations beyond the front desk.
