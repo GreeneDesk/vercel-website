@@ -30,6 +30,9 @@ const sections = [
       "Report absences",
       "Track progress",
       "Receive digital certificates",
+      "Pay for classes from their mobile or tablet",
+      "Book compensatory classes",
+      "Report explained absences under your facility's own rules",
     ],
   },
   {
@@ -91,6 +94,7 @@ const sections = [
       "Filter by level, instructor, or class",
       "Automated action rules for events",
       "Birthday, welcome, and progress emails",
+      "Voice notes to one student or an entire class — sent as notifications",
     ],
     secondImage: actionRules,
     secondImageAlt: "SwimDesk action rules for automated birthday, welcome, and progress notification emails",
