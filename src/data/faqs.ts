@@ -71,6 +71,14 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
       a: "Yes. Parents can manage their own confirmed absences, book makeup lessons, and join waitlists directly through the parent portal or app — without calling your front desk.",
     },
     {
+      q: "Does SwimDesk handle payments?",
+      a: "Yes. SwimDesk supports both term-based and recurring payments, with a flexible discount setup. Parents can pay from their mobile, book compensatory classes and report explained absences — and the rules around compensations and absences are configured and customised by your facility.",
+    },
+    {
+      q: "Can staff and parents use phones and tablets?",
+      a: "Yes. SwimDesk works on mobile, tablet and desktop. Instructors can run poolside attendance and assessments from a phone or tablet, parents manage bookings and payments from their mobile, and admin staff work from any browser.",
+    },
+    {
       q: "How does the Schools module work?",
       a: "The Schools module handles the full workflow: bulk upload of student data from a spreadsheet, session and class creation, pool-deck attendance and assessments (offline-capable), student movement between classes with one click, automated digital certificates, and reporting output including the Victorian Water Safety report. Schools get their own portal to manage their students.",
     },

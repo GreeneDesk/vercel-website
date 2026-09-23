@@ -30,6 +30,9 @@ const sections = [
       "Report absences",
       "Track progress",
       "Receive digital certificates",
+      "Pay for classes from their mobile or tablet",
+      "Book compensatory classes",
+      "Report explained absences under your facility's own rules",
     ],
   },
   {
@@ -91,6 +94,7 @@ const sections = [
       "Filter by level, instructor, or class",
       "Automated action rules for events",
       "Birthday, welcome, and progress emails",
+      "Voice notes to one student or an entire class — sent as notifications",
     ],
     secondImage: actionRules,
     secondImageAlt: "SwimDesk action rules for automated birthday, welcome, and progress notification emails",
@@ -116,7 +120,7 @@ const SwimDesk = () => {
         faq={[
           {
             question: "Does SwimDesk replace our membership or payments system?",
-            answer: "No. SwimDesk works alongside the system you already use — including PerfectGym and Envibe — and adds the learn-to-swim layer: class scheduling, poolside attendance, skills assessments, progression tracking and parent communication. There is no need to change your payments or membership setup."
+            answer: "No. SwimDesk works alongside the system you already use — including PerfectGym and Envibe — and adds the learn-to-swim layer: class scheduling, poolside attendance, skills assessments, progression tracking and parent communication. SwimDesk also includes its own payments — term-based and recurring with flexible discounts — so you can use as much or as little of it as you need. There is no need to change your payments or membership setup."
           },
           {
             question: "Which learn-to-swim curricula does SwimDesk support?",
@@ -277,6 +281,43 @@ const SwimDesk = () => {
               See the systems we integrate with
               <ArrowRight className="h-4 w-4" />
             </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Payments & flexibility */}
+      <section className="section-padding bg-surface-section">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              Payments and flexibility, configured by you
+            </h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              SwimDesk supports term-based and recurring payments with flexible discount setups.
+              Parents can pay from their mobile, book compensatory classes and report explained
+              absences — with the rules for compensations and absences set up and customised by
+              your facility.
+            </p>
+            <ul className="grid sm:grid-cols-2 gap-3 text-left max-w-2xl mx-auto">
+              {[
+                "Term-based and recurring payment options",
+                "Flexible discount setups",
+                "Parents pay from their mobile",
+                "Compensatory class bookings",
+                "Explained absences with facility-configurable rules",
+                "Works on mobile, tablet and desktop for all users",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="font-medium">{item}</span>
+                </li>
+              ))}
+            </ul>
           </motion.div>
         </div>
       </section>
