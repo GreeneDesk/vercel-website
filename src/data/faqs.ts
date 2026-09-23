@@ -9,6 +9,7 @@ export const FAQ_CATEGORIES = [
   "SwimDesk",
   "FitDesk",
   "Data & Compliance",
+  "Operations & Safety",
   "Migration & Onboarding",
   "Support",
   "Integrations",
@@ -119,6 +120,27 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     {
       q: "Who owns our data?",
       a: "You do. Always. All data stored in GreeneDesk remains the property of your organisation. If you leave, you receive a full data export. GreeneDesk does not sell, share, or use your member data for any purpose outside of operating your account.",
+    },
+  ],
+  "Operations & Safety": [
+    {
+      q: "Can GreeneDesk roster lifeguards and pool deck staff?",
+      a: "Yes. The roster and scheduler covers lifeguards, pool deck staff, instructors and trainers — not just class teachers. You build shifts and class allocations in one visual timetable across lanes, rooms and venues, with conflict detection when a shift or a person is double-booked, and substitute handling when someone calls in sick.",
+      link: { label: "See the roster and scheduler", href: "/platform/roster-scheduler" },
+    },
+    {
+      q: "Does it manage instructor-to-student ratios?",
+      a: "Yes. Each class type carries its own capacity and instructor-to-student ratio. Bookings, transfers and make-up lessons are checked against that ratio, so a class cannot be overfilled beyond the limit you set, and managers get alerts when a session is at or over capacity.",
+      link: { label: "See capacity management", href: "/platform/roster-scheduler" },
+    },
+    {
+      q: "Can we record incidents and WHS records in GreeneDesk?",
+      a: "Yes. Incident and safety records can be logged against the session, the venue and the staff member involved, with a date-stamped audit trail and role-based access so only authorised staff can view them. Records are retained in your account and can be exported for internal review or reporting.",
+    },
+    {
+      q: "Does GreeneDesk meet council tender and Australian safety requirements?",
+      a: "GreeneDesk is used by Australian councils and leisure operators and satisfies tender and Australian safety requirements, including Australian data residency on AWS Sydney, Australian Privacy Principles alignment, role-based access control and audit logging. We complete security, privacy and safety questionnaires as part of council tender and procurement processes — contact us with your documentation and we will work through it with you.",
+      link: { label: "Read about data residency", href: "/data-residency" },
     },
   ],
   "Migration & Onboarding": [

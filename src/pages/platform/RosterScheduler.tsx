@@ -19,8 +19,8 @@ import {
 } from "lucide-react";
 
 const coreFeatures = [
-  { icon: Calendar, title: "Visual scheduling", description: "Drag-and-drop timetables across lanes, rooms, and instructors" },
-  { icon: Users, title: "Capacity management", description: "Real-time visibility into class sizes and waitlists" },
+  { icon: Calendar, title: "Visual scheduling", description: "Drag-and-drop timetables across lanes, rooms, instructors, lifeguards and pool deck staff" },
+  { icon: Users, title: "Capacity and ratios", description: "Real-time visibility into class sizes, instructor-to-student ratios and waitlists" },
   { icon: Clock, title: "Term and ongoing programs", description: "Support for term-based, rolling, and casual bookings" },
   { icon: Layers, title: "Multi-location", description: "Manage schedules across multiple venues from one view" },
 ];
