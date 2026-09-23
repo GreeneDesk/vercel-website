@@ -39,8 +39,6 @@ const moreSolutionsItems = [
 
 const primaryLinks = [
   { title: "FitDesk", href: "/solutions/fitdesk" },
-  { title: "PerfectGym Integration", href: "/integrations/perfectgym" },
-  { title: "Mywellness Alternative", href: "/technogym-mywellness-alternative" },
 ];
 
 const secondaryLinks = [
