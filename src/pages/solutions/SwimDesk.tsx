@@ -190,6 +190,97 @@ const SwimDesk = () => {
         </div>
       </section>
 
+      {/* Why councils and YMCAs choose SwimDesk */}
+      <section className="section-padding bg-surface-section">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              Built for councils, YMCAs and learn-to-swim providers
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              SwimDesk focuses on what swim schools actually need day to day — lessons
+              delivery, assessments and parent communication — without asking you to
+              replace the systems you already run.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Poolside assessments",
+                text: "Mark attendance and track skills against each student's level from the pool deck, including offline. Assessments and digital certificates flow back to parents automatically.",
+              },
+              {
+                title: "Any structured curriculum",
+                text: "Configure skills, levels and progressions to match AUSTSWIM, Royal Life Saving or YMCA learn-to-swim programs — or any structured curriculum your centre follows.",
+              },
+              {
+                title: "School swimming programs",
+                text: "Run school group bookings, class lists and reporting alongside your regular learn-to-swim timetable, with dedicated school program management.",
+              },
+              {
+                title: "Australian-hosted data",
+                text: "All data is hosted in AWS Sydney. Nothing is processed offshore, supporting APP compliance requirements for council facilities.",
+              },
+            ].map((card, i) => (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="bg-card rounded-xl border border-border p-6"
+              >
+                <Check className="h-6 w-6 text-primary mb-4" />
+                <h3 className="font-display text-lg font-semibold mb-2">{card.title}</h3>
+                <p className="text-sm text-muted-foreground">{card.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Works alongside existing systems */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              Works alongside your existing systems
+            </h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Keep your current membership, payments and access system — including{" "}
+              <Link to="/integrations/perfectgym" className="text-primary font-medium hover:underline">
+                PerfectGym
+              </Link>{" "}
+              and{" "}
+              <Link to="/integrations" className="text-primary font-medium hover:underline">
+                Envibe
+              </Link>
+              . SwimDesk adds the learn-to-swim layer on top: scheduling, attendance,
+              assessments, progression tracking and parent communication. No rip-and-replace,
+              no migration of your payment setup.
+            </p>
+            <Link
+              to="/integrations"
+              className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+            >
+              See the systems we integrate with
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Feature Sections with Screenshots */}
       {sections.map((section, sectionIndex) => (
         <section key={section.title} className={`section-padding ${section.bg}`}>
