@@ -135,6 +135,12 @@ const SooperVision = () => {
                     <ExternalLink className="h-5 w-5" />
                   </a>
                 </Button>
+                <Button variant="outline" size="xl" asChild>
+                  <a href="https://soopervision.com.au/contact" target="_blank" rel="noopener">
+                    Request a live demo
+                    <ArrowRight className="h-5 w-5" />
+                  </a>
+                </Button>
               </div>
             </motion.div>
           </div>
@@ -230,7 +236,7 @@ const SooperVision = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
               <Button variant="cta" size="xl" asChild>
                 <a href="https://soopervision.com.au/contact" target="_blank" rel="noopener">
-                  Book a SooperVision Demo
+                  Request a live demo
                   <ArrowRight className="h-5 w-5" />
                 </a>
               </Button>
