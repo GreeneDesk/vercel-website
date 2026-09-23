@@ -28,7 +28,7 @@ export function HeroSection() {
 
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-2xl">
               GreeneDesk adds scheduling, assessments, workout programming, engagement and
-              performance tracking to your existing technology—including PerfectGym.
+              performance tracking to your existing technology—including PerfectGym and Envibe.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-5">
