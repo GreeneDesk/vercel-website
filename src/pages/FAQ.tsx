@@ -2,6 +2,11 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { FAQS, FAQ_CATEGORIES } from "@/data/faqs";
+
+const allFaqs = FAQ_CATEGORIES.flatMap((category) =>
+  FAQS[category].map((item) => ({ question: item.q, answer: item.a }))
+);
 
 const FAQ = () => {
   return (
@@ -10,6 +15,7 @@ const FAQ = () => {
         title="FAQ – Common Questions"
         description="Find answers about SwimDesk, FitDesk, pricing, data residency, onboarding, support and integrations. All your GreeneDesk questions answered."
         canonical="/faq"
+        faq={allFaqs}
       />
       <Breadcrumbs items={[{ label: "FAQ" }]} />
       <section className="pt-10 md:pt-14">
