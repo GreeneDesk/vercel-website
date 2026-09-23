@@ -5,7 +5,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Dumbbell, Users, Waves, HeartPulse, Trophy, MapPin, Puzzle, ClipboardList, CalendarClock, RefreshCw } from "lucide-react";
+import { ArrowRight, BookOpen, Dumbbell, Users, Waves, HeartPulse, Trophy, MapPin, Puzzle, ClipboardList, CalendarClock, RefreshCw, ShieldCheck } from "lucide-react";
 
 const categories = [
   { icon: Puzzle, title: "PerfectGym integrations", href: "/integrations/perfectgym" },
@@ -18,6 +18,8 @@ const categories = [
   { icon: MapPin, title: "Australian data residency", href: "/data-residency" },
   { icon: Waves, title: "Swim-school management", href: "/solutions/swimdesk" },
   { icon: Trophy, title: "Sports and squad management", href: "/solutions/sportdesk" },
+  { icon: Users, title: "Educator-to-child ratio calculator", href: "https://soopervision.com.au/tools/educator-to-child-ratio-calculator", external: true },
+  { icon: ShieldCheck, title: "QA2 supervision self-audit checklist", href: "https://soopervision.com.au/tools/qa2-supervision-self-audit-checklist", external: true },
 ];
 
 const Resources = () => {
@@ -65,21 +67,41 @@ const Resources = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Link
-                  to={category.href}
-                  className="block p-6 rounded-xl border border-border bg-background hover:border-primary/30 hover:shadow-lg transition-all duration-300 group"
-                >
-                  <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary-glow mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <category.icon className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <h3 className="font-display text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
-                    {category.title}
-                  </h3>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary transition-colors">
-                    <span>Learn more</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </div>
-                </Link>
+                {'external' in category && category.external ? (
+                  <a
+                    href={category.href}
+                    target="_blank"
+                    rel="noopener"
+                    className="block p-6 rounded-xl border border-border bg-background hover:border-primary/30 hover:shadow-lg transition-all duration-300 group"
+                  >
+                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary-glow mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <category.icon className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <h3 className="font-display text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                      {category.title}
+                    </h3>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                      <span>Open tool</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </div>
+                  </a>
+                ) : (
+                  <Link
+                    to={category.href}
+                    className="block p-6 rounded-xl border border-border bg-background hover:border-primary/30 hover:shadow-lg transition-all duration-300 group"
+                  >
+                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary to-primary-glow mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <category.icon className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <h3 className="font-display text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                      {category.title}
+                    </h3>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                      <span>Learn more</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </div>
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>

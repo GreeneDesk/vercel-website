@@ -210,6 +210,9 @@ const Council = () => {
             <Button variant="cta" size="xl" asChild>
               <Link to="/demo">Book a Demo <ArrowRight className="h-5 w-5" /></Link>
             </Button>
+            <p className="mt-6 text-sm text-text-on-dark-muted">
+              Running childcare or OSHC services? <Link to="/solutions/soopervision" className="font-semibold text-text-on-dark hover:underline">See SooperVision.</Link>
+            </p>
           </motion.div>
         </div>
       </section>

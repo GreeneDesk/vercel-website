@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Waves, Trophy } from "lucide-react";
+import { ArrowRight, ShieldCheck, Trophy, Waves } from "lucide-react";
 
 const products = [
   {
@@ -16,6 +16,13 @@ const products = [
     copy: "Squad, coaching and structured sports-program management.",
     href: "/solutions/sportdesk",
     cta: "Explore SportDesk",
+  },
+  {
+    icon: ShieldCheck,
+    name: "SooperVision",
+    copy: "AI supervision risk alerts for childcare centres on your existing CCTV.",
+    href: "/solutions/soopervision",
+    cta: "Explore SooperVision",
   },
 ];
 
@@ -35,7 +42,7 @@ export function MoreFromGreeneDesk() {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 gap-4 max-w-3xl">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl">
           {products.map((p) => (
             <Link
               key={p.name}
