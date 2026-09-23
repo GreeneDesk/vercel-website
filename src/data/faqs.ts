@@ -43,7 +43,16 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "Can we use our own curriculum and skill levels?",
-      a: "Fully. SwimDesk is customisable to your facility's curriculum, skill progression structure, and branding. Whether you follow Swim Australia, Royal Lifesaving, Water Safety New Zealand, or your own proprietary program — the system adapts to you.",
+      a: "Fully. SwimDesk is customisable to your facility's curriculum, skill progression structure, and branding. Whether you follow AUSTSWIM, Royal Life Saving, Swim Australia, Water Safety New Zealand, or your own proprietary program — the system adapts to you.",
+    },
+    {
+      q: "Does GreeneDesk support the AUSTSWIM and Royal Life Saving learn-to-swim programs?",
+      a: "Yes. AUSTSWIM and Royal Life Saving are industry organisations, not management platforms — and their learn-to-swim programs are fully supported by GreeneDesk. You can map their skill levels and progression criteria into SwimDesk, assess students against them poolside, and report progress to parents. Any structured curriculum can be configured, including your own.",
+    },
+    {
+      q: "Can GreeneDesk be used for sports other than swimming?",
+      a: "Yes. Any sport with a structured curriculum or skill progression works on GreeneDesk — gymnastics, martial arts, tennis, badminton, athletics and more. SportDesk handles squads, coaching, session tracking and athlete progression, while the same booking, assessment and parent-engagement tools apply across every program your centre runs.",
+      link: { label: "Explore SportDesk", href: "/solutions/sportdesk" },
     },
     {
       q: "How does SwimDesk improve parent engagement?",
@@ -75,7 +84,7 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "How many swim schools use SwimDesk?",
-      a: "SwimDesk is trusted by swim schools across Australia, New Zealand, the United States, United Arab Emirates, and India — ranging from private schools with 200 students to large national aquatic centres with over 5,000 enrolments. GreeneDesk has been operating since 2010.",
+      a: "SwimDesk is trusted by swim schools across Australia, New Zealand, Asia and the Middle East — including India and the United Arab Emirates — as well as the United States. Customers range from private schools with 200 students to large national aquatic centres with over 5,000 enrolments. GreeneDesk has been operating since 2010.",
     },
   ],
   FitDesk: [

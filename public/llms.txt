@@ -78,6 +78,15 @@ GreeneDesk integrates with existing leisure and membership management systems, i
 ### Does it work without internet on the pool deck?
 Yes. Poolside and gym-floor assessments can be recorded offline and sync when a connection returns.
 
+### Which learn-to-swim curricula does it support?
+GreeneDesk supports the AUSTSWIM and Royal Life Saving learn-to-swim programs, and any structured curriculum — skill levels and progression criteria are fully configurable to the facility's own program.
+
+### Which sports does GreeneDesk support beyond swimming?
+Any sport with a structured curriculum or skill progression: gymnastics, martial arts, tennis, badminton, athletics and more. SportDesk covers squads, coaching and athlete progression.
+
+### Which regions does GreeneDesk serve?
+Australia and New Zealand, with customers across Asia and the Middle East (including India and the United Arab Emirates) and the United States. All customer data is hosted in AWS Sydney, Australia.
+
 ### Can it roster lifeguards and pool deck staff?
 Yes. The roster and scheduler covers lifeguards, pool deck staff, instructors and trainers in one visual timetable across lanes, rooms and venues, with conflict detection and substitute handling.
 
