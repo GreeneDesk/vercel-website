@@ -102,17 +102,35 @@ const SwimDesk = () => {
     <Layout>
       <SEO
         title="Swim School & Aquatic Centre Management Software | SwimDesk Australia"
-        description="Australian swim school and aquatic centre management software. Class bookings, poolside attendance, skills assessments and progression tracking, digital certificates and a parent app. Hosted in AWS Sydney."
+        description="Australian swim school and aquatic centre management software. Class bookings, poolside attendance, skills assessments and progression tracking, digital certificates and a parent app. Works alongside your existing membership and payments system. Hosted in AWS Sydney."
         canonical="/solutions/swimdesk"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",
           "name": "SwimDesk – Swim School and Aquatic Centre Management Software",
-          "description": "Swim school and aquatic centre management software for Australian councils, YMCAs and learn-to-swim providers. Class scheduling and bookings, poolside attendance, skills assessments, progression tracking, digital certificates, parent app and automated communication. Supports structured learn-to-swim curricula including AUSTSWIM, Royal Life Saving and YMCA programs. Hosted in AWS Sydney.",
+          "description": "Swim school and aquatic centre management software for Australian councils, YMCAs and learn-to-swim providers. Class scheduling and bookings, poolside attendance, skills assessments, progression tracking, digital certificates, parent app and automated communication. Works alongside existing membership and payments systems including PerfectGym and Envibe. Supports structured learn-to-swim curricula including AUSTSWIM, Royal Life Saving and YMCA programs. Hosted in AWS Sydney.",
           "provider": { "@type": "Organization", "name": "GreeneDesk" },
           "areaServed": ["AU", "NZ"],
           "serviceType": "Swim School Management Software"
         }}
+        faq={[
+          {
+            question: "Does SwimDesk replace our membership or payments system?",
+            answer: "No. SwimDesk works alongside the system you already use — including PerfectGym and Envibe — and adds the learn-to-swim layer: class scheduling, poolside attendance, skills assessments, progression tracking and parent communication. There is no need to change your payments or membership setup."
+          },
+          {
+            question: "Which learn-to-swim curricula does SwimDesk support?",
+            answer: "SwimDesk supports structured learn-to-swim curricula including AUSTSWIM, Royal Life Saving and YMCA programs — or any structured curriculum your centre uses, with skills, levels and progressions configured to match."
+          },
+          {
+            question: "Is SwimDesk suitable for council aquatic facilities?",
+            answer: "Yes. Many SwimDesk customers are council-owned leisure and aquatic centres and YMCAs. It handles multi-pool and lane scheduling, instructor assignments, class capacity, school swimming programs and reporting, with instructors able to mark attendance and assessments poolside — including offline on the pool deck."
+          },
+          {
+            question: "Where is SwimDesk data hosted?",
+            answer: "All SwimDesk data is hosted in AWS Sydney, in Australia. Data is not processed offshore, supporting Australian Privacy Principles compliance for councils and other public-facing organisations."
+          }
+        ]}
       />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/swimdesk" }, { label: "SwimDesk" }]} />
 
@@ -169,6 +187,97 @@ const SwimDesk = () => {
               />
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Why councils and YMCAs choose SwimDesk */}
+      <section className="section-padding bg-surface-section">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              Built for councils, YMCAs and learn-to-swim providers
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              SwimDesk focuses on what swim schools actually need day to day — lessons
+              delivery, assessments and parent communication — without asking you to
+              replace the systems you already run.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Poolside assessments",
+                text: "Mark attendance and track skills against each student's level from the pool deck, including offline. Assessments and digital certificates flow back to parents automatically.",
+              },
+              {
+                title: "Any structured curriculum",
+                text: "Configure skills, levels and progressions to match AUSTSWIM, Royal Life Saving or YMCA learn-to-swim programs — or any structured curriculum your centre follows.",
+              },
+              {
+                title: "School swimming programs",
+                text: "Run school group bookings, class lists and reporting alongside your regular learn-to-swim timetable, with dedicated school program management.",
+              },
+              {
+                title: "Australian-hosted data",
+                text: "All data is hosted in AWS Sydney. Nothing is processed offshore, supporting APP compliance requirements for council facilities.",
+              },
+            ].map((card, i) => (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="bg-card rounded-xl border border-border p-6"
+              >
+                <Check className="h-6 w-6 text-primary mb-4" />
+                <h3 className="font-display text-lg font-semibold mb-2">{card.title}</h3>
+                <p className="text-sm text-muted-foreground">{card.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Works alongside existing systems */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              Works alongside your existing systems
+            </h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Keep your current membership, payments and access system — including{" "}
+              <Link to="/integrations/perfectgym" className="text-primary font-medium hover:underline">
+                PerfectGym
+              </Link>{" "}
+              and{" "}
+              <Link to="/integrations" className="text-primary font-medium hover:underline">
+                Envibe
+              </Link>
+              . SwimDesk adds the learn-to-swim layer on top: scheduling, attendance,
+              assessments, progression tracking and parent communication. No rip-and-replace,
+              no migration of your payment setup.
+            </p>
+            <Link
+              to="/integrations"
+              className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+            >
+              See the systems we integrate with
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </motion.div>
         </div>
       </section>
 
