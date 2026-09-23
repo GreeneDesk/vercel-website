@@ -43,11 +43,11 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "Can we use our own curriculum and skill levels?",
-      a: "Fully. SwimDesk is customisable to your facility's curriculum, skill progression structure, and branding. Whether you follow AUSTSWIM, Royal Life Saving, Swim Australia, Water Safety New Zealand, or your own proprietary program — the system adapts to you.",
+      a: "Fully. SwimDesk is customisable to your facility's curriculum, skill progression structure, and branding. Whether you follow AUSTSWIM, Royal Life Saving, the YMCA learn-to-swim program, Swim Australia, Water Safety New Zealand, or your own proprietary program — the system adapts to you.",
     },
     {
-      q: "Does GreeneDesk support the AUSTSWIM and Royal Life Saving learn-to-swim programs?",
-      a: "Yes. AUSTSWIM and Royal Life Saving are industry organisations, not management platforms — and their learn-to-swim programs are fully supported by GreeneDesk. You can map their skill levels and progression criteria into SwimDesk, assess students against them poolside, and report progress to parents. Any structured curriculum can be configured, including your own.",
+      q: "Does GreeneDesk support the AUSTSWIM, Royal Life Saving and YMCA learn-to-swim programs?",
+      a: "Yes. AUSTSWIM, Royal Life Saving and YMCA are industry organisations, not management platforms — and their learn-to-swim programs are fully supported by GreeneDesk. Many of our customers are council facilities and YMCAs running these programs. You can map their skill levels and progression criteria into SwimDesk, assess students against them poolside, and report progress to parents. Any structured curriculum can be configured, including your own.",
     },
     {
       q: "Can GreeneDesk be used for sports other than swimming?",

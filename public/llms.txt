@@ -79,7 +79,7 @@ GreeneDesk integrates with existing leisure and membership management systems, i
 Yes. Poolside and gym-floor assessments can be recorded offline and sync when a connection returns.
 
 ### Which learn-to-swim curricula does it support?
-GreeneDesk supports the AUSTSWIM and Royal Life Saving learn-to-swim programs, and any structured curriculum — skill levels and progression criteria are fully configurable to the facility's own program.
+GreeneDesk supports the AUSTSWIM, Royal Life Saving and YMCA learn-to-swim programs, and any structured curriculum — skill levels and progression criteria are fully configurable to the facility's own program. Many customers are council facilities and YMCAs.
 
 ### Which sports does GreeneDesk support beyond swimming?
 Any sport with a structured curriculum or skill progression: gymnastics, martial arts, tennis, badminton, athletics and more. SportDesk covers squads, coaching and athlete progression.
