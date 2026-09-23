@@ -11,6 +11,7 @@ const solutionsLinks = [
   { title: "SportDesk", href: "/solutions/sportdesk" },
   { title: "School Programs", href: "/solutions/school-programs" },
   { title: "Council & Leisure Centres", href: "/solutions/council" },
+  { title: "SooperVision (Childcare)", href: "/solutions/soopervision" },
   { title: "Squads", href: "/solutions/squads" },
 ];
 
@@ -32,7 +33,7 @@ const moreLinks = [
   { title: "Resources", href: "/resources" },
   { title: "Partners", href: "/partners" },
   { title: "Contact", href: "/contact" },
-  { title: "SooperVision", href: "https://soopervision.com", external: true },
+  { title: "SooperVision", href: "https://soopervision.com.au/", external: true },
 ];
 
 export function Footer() {

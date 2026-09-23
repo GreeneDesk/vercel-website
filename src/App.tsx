@@ -13,6 +13,7 @@ const SportDesk = lazy(() => import("./pages/solutions/SportDesk"));
 const SchoolPrograms = lazy(() => import("./pages/solutions/SchoolPrograms"));
 const Squads = lazy(() => import("./pages/solutions/Squads"));
 const Council = lazy(() => import("./pages/solutions/Council"));
+const SooperVision = lazy(() => import("./pages/solutions/SooperVision"));
 const Compare = lazy(() => import("./pages/Compare"));
 const Features = lazy(() => import("./pages/platform/Features"));
 const Communication = lazy(() => import("./pages/platform/Communication"));
@@ -72,6 +73,7 @@ const App = () => (
             <Route path="/solutions/school-programs" element={<SchoolPrograms />} />
             <Route path="/solutions/squads" element={<Squads />} />
             <Route path="/solutions/council" element={<Council />} />
+            <Route path="/solutions/soopervision" element={<SooperVision />} />
             <Route path="/solutions" element={<Home />} />
             <Route path="/compare" element={<Compare />} />
             
