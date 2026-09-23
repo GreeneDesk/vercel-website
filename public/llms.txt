@@ -84,6 +84,12 @@ GreeneDesk supports the AUSTSWIM, Royal Life Saving and YMCA learn-to-swim progr
 ### Which sports does GreeneDesk support beyond swimming?
 Any sport with a structured curriculum or skill progression: gymnastics, martial arts, tennis, badminton, athletics and more. SportDesk covers squads, coaching and athlete progression.
 
+### Is FitDesk an alternative to Technogym Mywellness?
+Yes. FitDesk is an Australian-hosted (AWS Sydney) alternative to Mywellness software. It replaces Mywellness for workout programming, digital assessments, trainer scheduling, progress tracking and member engagement, while the existing management system (e.g. PerfectGym) stays for memberships, billing and access. It replaces the software layer, not Technogym equipment. Details: https://greenedesk.com.au/technogym-mywellness-alternative
+
+### What does FitDesk add for gyms on PerfectGym or Envibe?
+FitDesk is a customer-authorised add-on for facilities running PerfectGym or Envibe. The core system keeps memberships, billing and access; FitDesk adds trainer scheduling, digital assessments (PARQ), a workout creator with an exercise video library, progress tracking and member engagement. No rip-and-replace.
+
 ### Which regions does GreeneDesk serve?
 Australia and New Zealand, with customers across Asia and the Middle East (including India and the United Arab Emirates) and the United States. All customer data is hosted in AWS Sydney, Australia.
 

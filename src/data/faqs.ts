@@ -116,6 +116,16 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
       q: "Do you need WiFi to run FitDesk at the gym?",
       a: "You need an internet connection and a computer or tablet. A stable WiFi connection is recommended for the gym floor. We can advise on kiosk and network setup if you're retrofitting an older facility.",
     },
+    {
+      q: "We're moving away from Technogym Mywellness — is FitDesk an alternative?",
+      a: "Yes. FitDesk is an Australian-hosted alternative to Mywellness software, hosted on AWS Sydney. It replaces Mywellness for workout programming, digital assessments, trainer scheduling, progress tracking and member engagement — while your existing management system (such as PerfectGym) stays in place for memberships, billing and access. FitDesk replaces the Mywellness software layer, not Technogym equipment.",
+      link: { label: "Compare Mywellness alternatives", href: "/technogym-mywellness-alternative" },
+    },
+    {
+      q: "We use PerfectGym or Envibe — what does FitDesk add?",
+      a: "FitDesk is a customer-authorised add-on for gyms and leisure centres running PerfectGym or Envibe. Your existing system keeps handling memberships, billing and access, while FitDesk adds trainer scheduling, digital assessments (including PARQ), a workout creator with an exercise video library, progress tracking and member engagement. There's no rip-and-replace.",
+      link: { label: "Explore the PerfectGym integration", href: "/integrations/perfectgym" },
+    },
   ],
   "Data & Compliance": [
     {
