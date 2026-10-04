@@ -92,6 +92,26 @@ const IClassProAlternative = () => (
     </section>
 
     <section className="section-padding bg-surface-section">
+      <div className="container-wide max-w-4xl mx-auto">
+        <h2 className="font-display text-3xl md:text-4xl font-bold mb-10 text-center">How the switch works</h2>
+        <ol className="grid sm:grid-cols-2 gap-5">
+          {[
+            { title: "Demo and plan", body: "We walk through your levels, classes and billing and agree a go-live date." },
+            { title: "Data import", body: "We import families, students, levels and class lists from your iClassPro export." },
+            { title: "Set up and train", body: "We configure your levels and train your office team and instructors." },
+            { title: "Go live", body: "Families get the parent app and you start the new term on SwimDesk. Typical time: 2 weeks." },
+          ].map((step, i) => (
+            <li key={step.title} className="rounded-xl border border-border bg-background p-6">
+              <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Step {i + 1}</p>
+              <h3 className="font-display text-lg font-bold mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.body}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <section className="section-padding bg-surface-section">
       <div className="container-wide max-w-3xl mx-auto text-center">
         <Quote className="h-8 w-8 text-primary mx-auto mb-4" aria-hidden="true" />
         <blockquote className="font-display text-xl md:text-2xl font-medium mb-4">

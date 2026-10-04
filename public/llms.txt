@@ -34,6 +34,8 @@
 - [Mywellness alternative](https://greenedesk.com.au/technogym-mywellness-alternative)
 - [iClassPro alternative for swim schools](https://greenedesk.com.au/iclasspro-alternative)
 - [PerfectGym plug-in](https://greenedesk.com.au/integrations/perfectgym)
+- Data migration: GreeneDesk can import data exported from any software; most centres go live within 2 weeks of signing.
+- PerfectGym sync: member profiles and membership status sync from PerfectGym to FitDesk through a customer-authorised API integration.
 
 ## Pricing
 

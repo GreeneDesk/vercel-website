@@ -65,7 +65,12 @@ const faqs: PageFaq[] = [
   {
     question: "Can our existing information be migrated?",
     answer:
-      "Migration depends on the information available from the existing system and the agreed project scope. GreeneDesk will review this before implementation.",
+      "Yes. We can export data from any software and import it into FitDesk. Migration depends on the information available from the existing system and the agreed project scope, which GreeneDesk reviews before implementation.",
+  },
+  {
+    question: "How do we move member programs from Mywellness?",
+    answer:
+      "We help you export member records and rebuild your program templates in FitDesk's exercise library. Most centres switch in 2 weeks.",
   },
 ];
 
