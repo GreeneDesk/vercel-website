@@ -8,6 +8,9 @@ import { ArrowRight, Check, Quote } from "lucide-react";
 
 const why = [
   { title: "Built for swimming", body: "iClassPro serves gymnastics, cheer, dance and swim. SwimDesk is built around swim: poolside skills assessments, level progressions, certificates and pool and lane scheduling." },
+  { title: "Learn-to-swim, school programs and squads in one", body: "Run lessons, school swimming programs and competitive squads on one platform. Students move from lessons into squads without re-entering a single record." },
+  { title: "A mobile app for everyone", body: "Instructors, coaches, office staff and parents each get a mobile app: poolside assessments for staff, bookings, make-ups and progress for families." },
+  { title: "AI that protects re-enrolments", body: "AI retention alerts flag students at risk of dropping out, based on attendance and progress, so you can contact families before term ends." },
   { title: "Your data stays in Australia", body: "SwimDesk is hosted on AWS in Sydney, so student and family records are stored in Australia." },
   { title: "Australian curricula, or your own", body: "AUSTSWIM, Royal Life Saving and YMCA levels are supported, or load your own syllabus and lesson plans." },
   { title: "Local support", body: "An Australian-based team on 1300 181 665, Monday to Friday 7am–7pm AEST." },
@@ -20,7 +23,10 @@ const features = [
   "Parent app: bookings, absences, make-up classes, progress",
   "Term-based and recurring billing",
   "Automated emails: welcome, birthday, progress",
-  "School swimming programs and group bookings",
+  "School swimming programs: group bookings, attendance and reporting",
+  "Squads module: squad groups, coaching sessions and athlete progress",
+  "Mobile apps for instructors, coaches, office staff and parents",
+  "AI retention alerts for students at risk of not re-enrolling",
   "Works alongside PerfectGym and Envibe at council centres",
 ];
 
@@ -28,7 +34,7 @@ const IClassProAlternative = () => (
   <Layout>
     <SEO
       title="iClassPro Alternative for Australian Swim Schools | SwimDesk by GreeneDesk"
-      description="Switching from iClassPro? SwimDesk is swim school software built in Australia and hosted on AWS Sydney, with poolside assessments, level progressions, a parent app and term billing."
+      description="Switching from iClassPro? SwimDesk runs learn-to-swim, school programs and squads in one Australian-hosted platform, with mobile apps for staff and parents and AI retention alerts."
       canonical="/iclasspro-alternative"
     />
     <Breadcrumbs items={[{ label: "Compare", href: "/compare" }, { label: "iClassPro Alternative" }]} />
@@ -43,7 +49,7 @@ const IClassProAlternative = () => (
             The iClassPro alternative built for <span className="text-gradient-primary">Australian swim schools</span>
           </h1>
           <p className="text-base md:text-lg text-muted-foreground mb-7">
-            SwimDesk is built around learn-to-swim, not every class type. Poolside assessments, level progressions and certificates, a parent app with make-up classes, and term billing. Hosted in Sydney, supported from Australia.
+            One platform from learn-to-swim to school swimming to squads, with a mobile app for every instructor, coach and parent, and AI that flags families at risk of leaving. Hosted in Sydney, supported from Australia.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button variant="cta" size="lg" className="md:h-14 md:px-8 md:text-base" asChild>
