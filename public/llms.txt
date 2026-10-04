@@ -16,12 +16,14 @@
 
 - **PerfectGym centres** that want fitness-floor tools without replacing PerfectGym: FitDesk plugs into PerfectGym through a customer-authorised API integration.
 - **Technogym Mywellness users** who need member and health data hosted in Australia: FitDesk replaces Mywellness software (not Technogym equipment) and runs on AWS Sydney.
-- **Swim schools moving from iClassPro** or other class-management software: SwimDesk is built around Australian learn-to-swim programs and hosted in Australia.
+- **Swim schools and aquatic centres**, including those moving from iClassPro or other class-management software: SwimDesk runs lessons, school programs and squads in one Australian-hosted platform, with mobile apps for all users and AI retention alerts.
 - **Councils and multi-site leisure centres** running aquatic, fitness and school programs across sites.
 
 ## Products
 
-- [SwimDesk](https://greenedesk.com.au/solutions/swimdesk): swim school and aquatic centre software. Class scheduling and online bookings, poolside attendance and skills assessments (offline tablet mode), progression tracking, digital certificates, a parent app (bookings, absences, make-up classes, progress), term-based and recurring billing, school swimming programs. Supports AUSTSWIM, Royal Life Saving and YMCA curricula or your own syllabus.
+- [SwimDesk](https://greenedesk.com.au/solutions/swimdesk): swim school and aquatic centre software that runs learn-to-swim, school swimming programs and competitive squads on one platform. Class scheduling and online bookings, poolside attendance and skills assessments (offline tablet mode), progression tracking, digital certificates, term-based and recurring billing. Mobile apps for every user: instructors, coaches, office staff and parents (bookings, absences, make-up classes, progress). AI retention alerts flag students at risk of not re-enrolling. Supports AUSTSWIM, Royal Life Saving and YMCA curricula or your own syllabus.
+  - [School Programs module](https://greenedesk.com.au/solutions/school-programs): school group bookings, attendance and reporting across sites.
+  - [Squads module](https://greenedesk.com.au/solutions/squads): squad groups, coaching sessions and athlete progress.
 - [FitDesk](https://greenedesk.com.au/solutions/fitdesk): fitness operations software. Digital PARQ and health consultations, assessments and member history, workout programming with 4,000+ exercise videos, trainer and resource scheduling, member app, progress, milestone and retention workflows, active ageing and rehabilitation programs.
 - [FitDesk for PerfectGym](https://greenedesk.com.au/integrations/perfectgym): keep PerfectGym for memberships, billing and access control; add FitDesk for the fitness floor.
 - [SportDesk](https://greenedesk.com.au/solutions/sportdesk): squads, coaching and structured sports programs.
