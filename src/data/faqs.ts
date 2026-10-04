@@ -43,7 +43,7 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "Is there a free trial?",
-      a: "We don't offer a self-serve trial. Book a demo and we'll show GreeneDesk set up for your centre type and current system.",
+      a: "Yes. After your demo, we set your centre up with a 15-day free trial so you can try GreeneDesk with your own programs and data. No credit card required.",
     },
   ],
   SwimDesk: [
