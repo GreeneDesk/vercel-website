@@ -35,7 +35,7 @@
 
 ## Pricing
 
-SwimDesk is priced by active enrolments: Essentials (up to 500), Professional (501–1,500) and Enterprise (1,500+). Plans start from A$350 per month; annual billing saves 15%. See [Pricing](https://greenedesk.com.au/pricing).
+SwimDesk is priced by active enrolments: Essentials (up to 500), Professional (501–1,500) and Enterprise (1,500+). Plans start from A$350 per month; annual billing saves 15%. FitDesk is priced by membership volume: Basic (up to 150 members), FitDesk+ (151–500) and Enterprise (500+). Plans start from A$550 per month; annual billing saves 15%. See [Pricing](https://greenedesk.com.au/pricing).
 
 ## Key pages
 

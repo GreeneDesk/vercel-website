@@ -25,6 +25,11 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
       link: { label: "See pricing", href: "/pricing" },
     },
     {
+      q: "How much does FitDesk cost?",
+      a: "FitDesk is priced by membership volume: Basic up to 150 members, FitDesk+ 151–500, and Enterprise 500+. Plans start from A$550 per month, and annual billing saves 15%.",
+      link: { label: "See pricing", href: "/pricing" },
+    },
+    {
       q: "How much does GreeneDesk cost?",
       a: "Pricing is based on enrolment or membership volume — you only pay for the scale you operate at. All plans are billed monthly or annually (15% discount annually). Contact us for an exact quote tailored to your centre size.",
     },
