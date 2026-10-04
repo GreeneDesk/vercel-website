@@ -102,6 +102,18 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
       a: "The Squads module is built for competitive swimming programs. It includes online bookings and payments for squad sessions, training time recording with an in-built stopwatch, video capture of training sets, AI communication tools and voice notes, and KPI reporting for coaches.",
     },
     {
+      q: "Can SwimDesk run our squads as well as lessons?",
+      a: "Yes. SwimDesk includes a Squads module for squad groups, coaching sessions and athlete progress. Learn-to-swim, school programs and squads run on one platform, so swimmers move from lessons into squads without re-entering records.",
+    },
+    {
+      q: "Is there a mobile app?",
+      a: "Yes, for every user. Instructors and coaches use it poolside for attendance and assessments, office staff for scheduling, and parents for bookings, absences, make-up classes, progress and certificates. FitDesk trainers and members have their own apps too.",
+    },
+    {
+      q: "How does AI retention work?",
+      a: "SwimDesk's AI retention alerts flag students at risk of dropping out or not re-enrolling, based on patterns such as missed lessons and stalled progress, so your team can contact families before term ends.",
+    },
+    {
       q: "Can SwimDesk bolt onto our existing management system?",
       a: "Yes. Many aquatic centres already use a leisure management system for memberships and bookings. SwimDesk integrates alongside these to add assessment tracking, parent communication, and retention analytics without replacing the existing system.",
     },
