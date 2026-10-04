@@ -65,12 +65,12 @@ const faqs: PageFaq[] = [
   {
     question: "How is FitDesk connected?",
     answer:
-      "The facility authorises the integration and securely supplies the required API credentials. GreeneDesk configures the connection according to the agreed implementation scope.",
+      "FitDesk connects through PerfectGym's extensive API. The facility authorises the integration and securely supplies the required API credentials. GreeneDesk configures the connection according to the agreed implementation scope.",
   },
   {
     question: "What information is synchronised?",
     answer:
-      "The available scope depends on the facility's PerfectGym environment, API access and implementation requirements. GreeneDesk confirms the exact data scope during onboarding.",
+      "Member profiles and membership status sync from PerfectGym to FitDesk, so trainers never re-key member details. GreeneDesk confirms the exact data scope with you during onboarding.",
   },
   {
     question: "Where is GreeneDesk customer data hosted?",

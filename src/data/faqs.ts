@@ -170,6 +170,11 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
       link: { label: "Compare Mywellness alternatives", href: "/technogym-mywellness-alternative" },
     },
     {
+      q: "How do we move member programs from Mywellness?",
+      a: "We help you export member records and rebuild your program templates in FitDesk's exercise library. Most centres switch in 2 weeks.",
+      link: { label: "Compare Mywellness alternatives", href: "/technogym-mywellness-alternative" },
+    },
+    {
       q: "We use PerfectGym or Envibe — what does FitDesk add?",
       a: "FitDesk is a customer-authorised add-on for gyms and leisure centres running PerfectGym or Envibe. Your existing system keeps handling memberships, billing and access, while FitDesk adds trainer scheduling, digital assessments (including PARQ), a workout creator with an exercise video library, progress tracking and member engagement. There's no rip-and-replace.",
       link: { label: "Explore the PerfectGym integration", href: "/integrations/perfectgym" },
@@ -213,7 +218,7 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
   "Migration & Onboarding": [
     {
       q: "Can you migrate our data from our current system?",
-      a: "Yes. We have experience migrating data from Udio, SimplySwim, iClassPro, Mindbody, and custom spreadsheet setups. Our team handles the migration — you don't need to re-enter data manually. Typically 5–10 business days.",
+      a: "Yes. We can export data from any software and import it into GreeneDesk, so you don't re-enter records manually. We have experience migrating from Udio, SimplySwim, iClassPro, Mindbody and custom spreadsheet setups. Typically 5–10 business days.",
     },
     {
       q: "How long does onboarding take?",
@@ -254,7 +259,12 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "How does FitDesk work alongside PerfectGym?",
-      a: "PerfectGym stays your core system for memberships, billing and access. FitDesk connects independently through the PerfectGym API — a connection your facility authorises and supplies credentials for — and adds assessments, workout programming, trainer scheduling, progress tracking and member engagement. GreeneDesk is not a PerfectGym partner or reseller.",
+      a: "PerfectGym stays your core system for memberships, billing and access. FitDesk connects independently through PerfectGym's extensive API — a connection your facility authorises and supplies credentials for — and adds assessments, workout programming, trainer scheduling, progress tracking and member engagement. GreeneDesk is not a PerfectGym partner or reseller.",
+      link: { label: "Explore the PerfectGym integration", href: "/integrations/perfectgym" },
+    },
+    {
+      q: "What syncs between PerfectGym and FitDesk?",
+      a: "Member profiles and membership status sync from PerfectGym to FitDesk, so trainers never re-key member details.",
       link: { label: "Explore the PerfectGym integration", href: "/integrations/perfectgym" },
     },
   ],
