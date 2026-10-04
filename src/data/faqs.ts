@@ -20,6 +20,11 @@ export type FAQCategory = (typeof FAQ_CATEGORIES)[number];
 export const FAQS: Record<FAQCategory, FAQItem[]> = {
   Pricing: [
     {
+      q: "How much does SwimDesk cost?",
+      a: "SwimDesk is priced by active enrolments: Essentials up to 500, Professional 501–1,500 and Enterprise 1,500+. Plans start from A$350 per month, and annual billing saves 15%.",
+      link: { label: "See pricing", href: "/pricing" },
+    },
+    {
       q: "How much does GreeneDesk cost?",
       a: "Pricing is based on enrolment or membership volume — you only pay for the scale you operate at. All plans are billed monthly or annually (15% discount annually). Contact us for an exact quote tailored to your centre size.",
     },
@@ -33,10 +38,15 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "Is there a free trial?",
-      a: "Yes. SwimDesk offers a 15-day free trial with no credit card required, plus a complimentary 30-minute onboarding session. Book your trial from the demo page.",
+      a: "We don't offer a self-serve trial. Book a demo and we'll show GreeneDesk set up for your centre type and current system.",
     },
   ],
   SwimDesk: [
+    {
+      q: "We use iClassPro. Can we switch to SwimDesk?",
+      a: "Yes. SwimDesk is an Australian-hosted platform built around Australian learn-to-swim programs, with poolside assessments, level progressions, a parent app with make-up classes, term billing and local support. Book a demo to plan your move.",
+      link: { label: "iClassPro alternative", href: "/iclasspro-alternative" },
+    },
     {
       q: "Does SwimDesk work on the pool deck without WiFi?",
       a: "Yes. Assessments and attendance can be recorded on any tablet or smartphone without an internet connection. Data auto-saves locally and syncs automatically once the device reconnects. No dropped records, no lost sessions, no dependency on a pool-side WiFi signal.",
@@ -92,10 +102,23 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "How many swim schools use SwimDesk?",
-      a: "SwimDesk is trusted by swim schools across Australia, New Zealand, Asia and the Middle East — including India and the United Arab Emirates — as well as the United States. Customers range from private schools with 200 students to large national aquatic centres with over 5,000 enrolments. GreeneDesk has been operating since 2010.",
+      a: "SwimDesk is trusted by swim schools across Australia, New Zealand, Asia and the Middle East — including India and the United Arab Emirates — as well as the United States. Customers range from private schools with 200 students to large national aquatic centres with over 5,000 enrolments. GreeneDesk has been operating since 2013.",
     },
   ],
   FitDesk: [
+    {
+      q: "What is the best Mywellness alternative for Australian leisure centres?",
+      a: "For centres that want member and health data hosted in Australia, FitDesk covers the same ground: digital PARQ and health consultations, assessments, workout programming with 4,000+ exercise videos and a member app. It is hosted on AWS Sydney and supported from Australia.",
+      link: { label: "Mywellness alternative", href: "/technogym-mywellness-alternative" },
+    },
+    {
+      q: "Can we keep our Technogym equipment?",
+      a: "Yes. FitDesk replaces Mywellness software only. It has nothing to do with your Technogym fitness equipment.",
+    },
+    {
+      q: "Can we replace Mywellness and keep PerfectGym?",
+      a: "Yes. FitDesk plugs into PerfectGym, so you can move off Mywellness without changing your membership and billing system.",
+    },
     {
       q: "What does FitDesk actually replace at our gym?",
       a: "FitDesk replaces paper-based fitness consultations, handwritten workout cards, manual PT appointment books, and ad-hoc member follow-up processes. Everything moves digital — health consultations (PARQ), workout programs with exercise videos, PT scheduling, and retention follow-ups — all in one system accessible on any device.",

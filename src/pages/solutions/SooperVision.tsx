@@ -36,7 +36,7 @@ const detections = [
 ];
 
 const reasons = [
-  "Australian company supporting centres since 2010",
+  "Australian company supporting centres since 2013",
   "Local deployment and support",
   "Pilot at one centre before wider rollout",
   "Pricing quoted per centre",

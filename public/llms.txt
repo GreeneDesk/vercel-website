@@ -1,156 +1,47 @@
-# GreeneDesk – Multi-Sport Operations Platform
+# GreeneDesk
 
-## What is GreeneDesk?
-GreeneDesk is a multi-sport operations platform built in Australia. It does not replace existing management systems — it integrates with them and powers scheduling, engagement, assessments, and program delivery.
+> GreeneDesk is Australian-built software for swim schools, leisure centres, councils and fitness teams in Australia and New Zealand. All customer data is hosted on AWS in Sydney, Australia. GreeneDesk works alongside existing management systems such as PerfectGym instead of replacing them.
 
-## Who is GreeneDesk for?
-- Council leisure centres and recreation facilities
-- Aquatic centres and swim schools
-- Wellness, rehab, and active ageing programs
-- Coaching academies and sports facilities
-- Multi-sport centres (gymnastics, martial arts, tennis, badminton)
+## Company
 
-GreeneDesk is NOT primarily for private gyms. It serves organisations managing complex, multi-service operations.
+- Legal name: GreeneDesk Pty Ltd
+- ABN: 80 161 808 144 · ACN: 161 808 144
+- Based in: Victoria, Australia
+- Operating since: 2013
+- Customers: 50+ centres across Australia and New Zealand, 500,000+ members
+- Support: 1300 181 665, Monday to Friday 7am–7pm AEST, Australian-based team
+- Data hosting: AWS Sydney (ap-southeast-2), Australia
+
+## Who GreeneDesk is for
+
+- **PerfectGym centres** that want fitness-floor tools without replacing PerfectGym: FitDesk plugs into PerfectGym through a customer-authorised API integration.
+- **Technogym Mywellness users** who need member and health data hosted in Australia: FitDesk replaces Mywellness software (not Technogym equipment) and runs on AWS Sydney.
+- **Swim schools moving from iClassPro** or other class-management software: SwimDesk is built around Australian learn-to-swim programs and hosted in Australia.
+- **Councils and multi-site leisure centres** running aquatic, fitness and school programs across sites.
 
 ## Products
 
-### FitDesk
-Operations platform for gyms, leisure centres, wellness facilities, and rehab programs. Covers scheduling, assessments, engagement, exercise programming, and trainer workflows. Integrates with existing management systems like PerfectGym.
+- [SwimDesk](https://greenedesk.com.au/solutions/swimdesk): swim school and aquatic centre software. Class scheduling and online bookings, poolside attendance and skills assessments (offline tablet mode), progression tracking, digital certificates, a parent app (bookings, absences, make-up classes, progress), term-based and recurring billing, school swimming programs. Supports AUSTSWIM, Royal Life Saving and YMCA curricula or your own syllabus.
+- [FitDesk](https://greenedesk.com.au/solutions/fitdesk): fitness operations software. Digital PARQ and health consultations, assessments and member history, workout programming with 4,000+ exercise videos, trainer and resource scheduling, member app, progress, milestone and retention workflows, active ageing and rehabilitation programs.
+- [FitDesk for PerfectGym](https://greenedesk.com.au/integrations/perfectgym): keep PerfectGym for memberships, billing and access control; add FitDesk for the fitness floor.
+- [SportDesk](https://greenedesk.com.au/solutions/sportdesk): squads, coaching and structured sports programs.
+- [SooperVision](https://soopervision.com.au/): AI supervision risk alerts for childcare centres using existing CCTV (separate site).
 
-### SwimDesk
-Swim school management platform. Parent booking, rescheduling, absence management, skills tracking, digital certificates, instructor tools, and school swimming program management. Includes term-based and recurring payments with a flexible discount setup, parent payments from mobile, compensatory classes, facility-configurable rules for explained absences, and instructor voice notes sent to an individual student or an entire class. All users can work from a mobile, tablet or desktop.
+## Switching guides
 
-### SportDesk
-Squad and competitive sports management. Heat creation, time tracking, qualifying benchmarks, wet and dry workout tracking, athlete progression, and parent engagement.
+- [Mywellness alternative](https://greenedesk.com.au/technogym-mywellness-alternative)
+- [iClassPro alternative for swim schools](https://greenedesk.com.au/iclasspro-alternative)
+- [PerfectGym plug-in](https://greenedesk.com.au/integrations/perfectgym)
 
-### School Programs
-End-to-end management of school swimming and sports programs. Bulk student intake, poolside assessments, attendance tracking, and automated reporting and certificates.
+## Pricing
 
-### Squads
-Competitive squad management for swimming, athletics, and other sports. Performance tracking, training plans, and athlete progression.
+SwimDesk is priced by active enrolments: Essentials (up to 500), Professional (501–1,500) and Enterprise (1,500+). Plans start from A$350 per month; annual billing saves 15%. See [Pricing](https://greenedesk.com.au/pricing).
 
-## Key Differentiators
-- Works alongside existing systems (PerfectGym, Envibe, others) — no rip-and-replace
-- Deep scheduling and trainer/instructor workflows
-- Digital assessments and program tracking
-- Parent, member, and trainer engagement apps
-- All data hosted exclusively in Sydney, Australia (AWS ap-southeast-2)
-- Multi-sport capability across a single platform
+## Key pages
 
-## Core Platform Capabilities
-- Scheduling and roster management
-- Communication (SMS, email)
-- Payments and billing
-- Analytics and reporting
-- Teacher and trainer tools
-- Parent and member portal
-- Manager and CEO dashboards
-
-## Company Information
-- Company: GreeneDesk
-- Location: VIC, Australia
-- Phone: 1300 181 665
-- Email: anita.w@greenedesk.com
-- Support: support@greenedesk.com
-- Website: https://greenedesk.com.au
-- Data hosting: AWS Sydney (ap-southeast-2), Australia
-
-## Quick Answers (facts stated on the website)
-
-### Where is the data stored?
-All GreeneDesk customer data is stored in Australia on AWS infrastructure in the Sydney region (ap-southeast-2). Details: https://greenedesk.com.au/data-residency
-
-### Is it compliant with Australian privacy law?
-GreeneDesk is aligned with the Australian Privacy Principles, including APP 8 (cross-border disclosure), and with the New Zealand Privacy Act 2020. Customers own their data.
-
-### How is it priced?
-Pricing is tiered per product and based on enrolment or membership volume, quoted in AUD. Monthly or annual billing, with a 15% discount for annual. No hidden setup fees; onboarding, migration assistance and initial training are included. Details: https://greenedesk.com.au/pricing
-
-### Is there a free trial?
-SwimDesk offers a 15-day free trial with no credit card required, plus a complimentary 30-minute onboarding session.
-
-### How long does implementation take?
-Most centres are live within about 2 weeks. Enterprise and multi-site rollouts typically take 4-6 weeks. Data migration from an existing system is typically 5-10 business days.
-
-### What systems does GreeneDesk integrate with?
-GreeneDesk integrates with existing leisure and membership management systems, including PerfectGym and Envibe, using customer-authorised API access. It does not replace the core management system. Details: https://greenedesk.com.au/integrations
-
-### Does it work without internet on the pool deck?
-Yes. Poolside and gym-floor assessments can be recorded offline and sync when a connection returns.
-
-### Does SwimDesk handle payments?
-Yes. SwimDesk supports term-based and recurring payments with a flexible discount setup. Parents can pay from their mobile, book compensatory classes and report explained absences, with the rules for compensations and absences configured and customised by each facility. SwimDesk can also run alongside an existing billing system.
-
-### Can SwimDesk be used on phones and tablets?
-Yes. All users — instructors, parents and admin staff — can use SwimDesk on a mobile, tablet or desktop browser, including poolside attendance and assessments.
-
-### Can instructors send audio notes?
-Yes. Instructors can record a voice note instead of typing a text note and send it to an individual student or an entire class. Parents receive it as a notification in the app.
-
-### Which learn-to-swim curricula does it support?
-GreeneDesk supports the AUSTSWIM, Royal Life Saving and YMCA learn-to-swim programs, and any structured curriculum — skill levels and progression criteria are fully configurable to the facility's own program. Many customers are council facilities and YMCAs.
-
-### Which sports does GreeneDesk support beyond swimming?
-Any sport with a structured curriculum or skill progression: gymnastics, martial arts, tennis, badminton, athletics and more. SportDesk covers squads, coaching and athlete progression.
-
-### Is FitDesk an alternative to Technogym Mywellness?
-Yes. FitDesk is an Australian-hosted (AWS Sydney) alternative to Mywellness software. It replaces Mywellness for workout programming, digital assessments, trainer scheduling, progress tracking and member engagement, while the existing management system (e.g. PerfectGym) stays for memberships, billing and access. It replaces the software layer, not Technogym equipment. Details: https://greenedesk.com.au/technogym-mywellness-alternative
-
-### What does FitDesk add for gyms on PerfectGym or Envibe?
-FitDesk is a customer-authorised add-on for facilities running PerfectGym or Envibe. The core system keeps memberships, billing and access; FitDesk adds trainer scheduling, digital assessments (PARQ), a workout creator with an exercise video library, progress tracking and member engagement. No rip-and-replace.
-
-### Which regions does GreeneDesk serve?
-Australia and New Zealand, with customers across Asia and the Middle East (including India and the United Arab Emirates) and the United States. All customer data is hosted in AWS Sydney, Australia.
-
-### Can it roster lifeguards and pool deck staff?
-Yes. The roster and scheduler covers lifeguards, pool deck staff, instructors and trainers in one visual timetable across lanes, rooms and venues, with conflict detection and substitute handling.
-
-### Does it manage instructor-to-student ratios?
-Yes. Each class type carries its own capacity and instructor-to-student ratio, and bookings, transfers and make-up lessons are checked against that ratio.
-
-### Can incidents and WHS records be recorded?
-Yes. Incident and safety records are logged against the session, venue and staff member with a date-stamped audit trail, role-based access and export for internal review.
-
-### Does it meet council tender and Australian safety requirements?
-GreeneDesk is used by Australian councils and leisure operators and satisfies tender and Australian safety requirements — Australian data residency on AWS Sydney, Australian Privacy Principles alignment, role-based access control and audit logging. GreeneDesk completes security, privacy and safety questionnaires for council tender and procurement processes.
-
-### What support is offered?
-Australian-based support, 7am-7pm AEST. Enterprise plans include SLA-backed priority support with a 4-hour response target.
-
-### Who is the supplier?
-GreeneDesk Pty Ltd, ABN 13 958 181 688, VIC, Australia. Phone 1300 181 665. Sales anita.w@greenedesk.com. Support support@greenedesk.com.
-
-## Pages
-- [Homepage](/): Multi-sport operations platform overview for AU & NZ.
-- [Leisure Centre Software Australia](https://greenedesk.com.au/leisure-centre-software-australia): Software for Australian leisure and recreation centres.
-- [Swim School Software Australia](https://greenedesk.com.au/swim-school-software-australia): Learn-to-swim and aquatic centre software.
-- [Fitness & Wellness Software Australia](https://greenedesk.com.au/fitness-wellness-software-australia): Fitness, wellness and active ageing programs.
-- [Sports Facility Software](https://greenedesk.com.au/sports-facility-software): Multi-sport and sports facility operations.
-- [FitDesk with PerfectGym](https://greenedesk.com.au/integrations/perfectgym): Independent customer-authorised API integration adding assessments, programming, scheduling and engagement alongside PerfectGym.
-- [Mywellness Alternative](https://greenedesk.com.au/technogym-mywellness-alternative): Australian-hosted alternative to Mywellness software, keeping PerfectGym as the core management system.
-- [FitDesk](/solutions/fitdesk): Gym, leisure & wellness operations beyond the front desk.
-- [SwimDesk](/solutions/swimdesk): Swim school management for aquatic centres.
-- [SportDesk](/solutions/sportdesk): Squad and competitive sports management.
-- [School Programs](/solutions/school-programs): School swimming and sports program delivery.
-- [Squads](/solutions/squads): Competitive squad management and athlete progression.
-- [Council & Leisure](/solutions/council): Multi-service council and leisure facilities.
-- [Platform Features](/platform/features): Full capability overview.
-- [Communication](/platform/communication): SMS and email messaging.
-- [Roster & Scheduler](/platform/roster-scheduler): Staff and class scheduling.
-- [Teacher & Trainer](/platform/teacher-trainer): Instructor mobile tools.
-- [Parent & Member](/platform/parent-member): Parent and member experience.
-- [Managers](/platform/managers): Operational manager dashboards.
-- [CEOs](/platform/ceos): Executive visibility and reporting.
-- [Payments](/platform/payments): Integrated billing and payments.
-- [Analytics](/platform/analytics): Reporting and insight tooling.
-- [Workout Programming](/platform/workout-programming): Exercise programming library.
-- [Integrations](/integrations): Systems we integrate with (PerfectGym, Envibe, more).
-- [Data Residency](/data-residency): AWS Sydney hosting and APP 8 compliance.
-- [Pricing](/pricing): Tiered pricing in AUD with annual discount.
-- [Compare](/compare): How GreeneDesk compares to alternatives.
-- [Resources](/resources): Articles, guides and case studies.
-- [Partners](/partners): Partner ecosystem and integrations.
-- [Book a Demo](/demo): Request a personalised demo.
-- [Contact](/contact): Get in touch with the team.
-- [FAQ](/faq): Frequently asked questions.
-- [Privacy Policy](/privacy-policy): Privacy and data handling.
+- [FAQ](https://greenedesk.com.au/faq)
+- [Data residency](https://greenedesk.com.au/data-residency)
+- [Integrations](https://greenedesk.com.au/integrations)
+- [Councils and leisure centres](https://greenedesk.com.au/solutions/council)
+- [Book a demo](https://greenedesk.com.au/demo)
+- [Contact](https://greenedesk.com.au/contact)
