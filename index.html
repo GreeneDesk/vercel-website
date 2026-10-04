@@ -17,9 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'" />
-    <title>FitDesk – Fitness Operations Software for AU &amp; NZ Leisure Centres</title>
+    <title>GreeneDesk – Swim School, Fitness &amp; Leisure Centre Software | AU &amp; NZ</title>
+    <meta name="description" content="Australian-hosted software for swim schools, leisure centres and fitness teams. Add FitDesk to PerfectGym, replace Mywellness, or switch your swim school to SwimDesk. Data on AWS Sydney." />
     <meta name="author" content="GreeneDesk" />
-    <meta name="keywords" content="PerfectGym integration, Mywellness alternative, fitness operations software Australia, workout programming software, gym software Australia, swim school software Australia, swim school software NZ, leisure centre software Australia, leisure centre software New Zealand, recreation centre software, council leisure software, aquatic centre software, member management, fitness software AU NZ, sports facility software" />
     <meta name="geo.region" content="AU" />
     <meta name="geo.placename" content="Victoria, Australia" />
     <meta name="geo.country" content="Australia" />
@@ -28,8 +28,8 @@
     <meta name="distribution" content="Australia, New Zealand" />
     <meta name="target_country" content="AU, NZ" />
 
-    <meta property="og:title" content="FitDesk by GreeneDesk – Fitness Operations Software for AU &amp; NZ" />
-    <meta property="og:description" content="FitDesk powers what happens beyond the front desk: Australian-hosted assessments, workout programming, trainer scheduling, progress tracking and member engagement." />
+    <meta property="og:title" content="GreeneDesk – Swim School, Fitness &amp; Leisure Centre Software | AU &amp; NZ" />
+    <meta property="og:description" content="Add FitDesk to PerfectGym, replace Mywellness, or switch your swim school to SwimDesk. All data hosted on AWS Sydney." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://greenedesk.com.au" />
     <meta property="og:image" content="https://greenedesk.com.au/og-image.jpg" />
@@ -39,6 +39,8 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@GreeneDesk" />
+    <meta name="twitter:title" content="GreeneDesk – Swim School, Fitness &amp; Leisure Centre Software | AU &amp; NZ" />
+    <meta name="twitter:description" content="Add FitDesk to PerfectGym, replace Mywellness, or switch your swim school to SwimDesk. All data hosted on AWS Sydney." />
     <meta name="twitter:image" content="https://greenedesk.com.au/og-image.jpg" />
 
     <link rel="alternate" hreflang="en-au" href="https://greenedesk.com.au" />
@@ -49,48 +51,52 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "GreeneDesk",
-      "url": "https://greenedesk.com.au",
-      "logo": "https://greenedesk.com.au/favicon.ico",
-      "email": "support@greenedesk.com",
-      "telephone": "+611300181665",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "VIC",
-        "addressCountry": "AU"
-      },
-      "areaServed": [
-        { "@type": "Country", "name": "Australia" },
-        { "@type": "Country", "name": "New Zealand" }
-      ],
-      "contactPoint": [
+      "@graph": [
         {
-          "@type": "ContactPoint",
+          "@type": "Organization",
+          "@id": "https://greenedesk.com.au/#org",
+          "name": "GreeneDesk",
+          "legalName": "GreeneDesk Pty Ltd",
+          "url": "https://greenedesk.com.au",
+          "logo": "https://greenedesk.com.au/og-image.jpg",
+          "foundingDate": "2013",
+          "taxID": "ABN 80 161 808 144",
+          "email": "support@greenedesk.com",
           "telephone": "+611300181665",
-          "email": "anita.w@greenedesk.com",
-          "contactType": "sales"
+          "address": { "@type": "PostalAddress", "addressRegion": "VIC", "addressCountry": "AU" },
+          "areaServed": ["AU", "NZ"],
+          "contactPoint": [
+            { "@type": "ContactPoint", "telephone": "+611300181665", "email": "anita.w@greenedesk.com", "contactType": "sales" },
+            { "@type": "ContactPoint", "email": "support@greenedesk.com", "contactType": "customer support" }
+          ],
+          "sameAs": ["https://soopervision.com.au/", "https://www.capterra.com.au/software/172359/swimdesk"]
         },
         {
-          "@type": "ContactPoint",
-          "email": "support@greenedesk.com",
-          "contactType": "customer support"
+          "@type": "WebSite",
+          "@id": "https://greenedesk.com.au/#website",
+          "url": "https://greenedesk.com.au",
+          "name": "GreeneDesk",
+          "publisher": { "@id": "https://greenedesk.com.au/#org" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "SwimDesk",
+          "url": "https://greenedesk.com.au/solutions/swimdesk",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, iOS, Android",
+          "description": "Swim school and aquatic centre software: bookings, poolside assessments, progression tracking, certificates, parent app and term billing. Hosted on AWS Sydney.",
+          "publisher": { "@id": "https://greenedesk.com.au/#org" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "FitDesk",
+          "url": "https://greenedesk.com.au/solutions/fitdesk",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, iOS, Android",
+          "description": "Fitness operations software that plugs into PerfectGym: digital PARQ, assessments, workout programming, trainer scheduling and member app. An Australian-hosted Mywellness alternative.",
+          "publisher": { "@id": "https://greenedesk.com.au/#org" }
         }
-      ],
-      "sameAs": []
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "GreeneDesk",
-      "url": "https://greenedesk.com.au",
-      "publisher": {
-        "@type": "Organization",
-        "name": "GreeneDesk"
-      }
+      ]
     }
     </script>
   </head>

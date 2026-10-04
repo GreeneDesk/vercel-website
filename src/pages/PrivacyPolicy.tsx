@@ -175,7 +175,7 @@ const PrivacyPolicy = () => {
               <p>
                 Where used in this privacy policy, "we" and "us" means:<br />
                 <strong>GreeneDesk Pty. Ltd.</strong><br />
-                ABN 13 958 181 688<br />
+                ABN 80 161 808 144<br />
                 VIC, Australia
               </p>
 
