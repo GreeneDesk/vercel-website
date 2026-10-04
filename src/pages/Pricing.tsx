@@ -17,7 +17,7 @@ const Pricing = () => {
         description="FitDesk pricing is based on facility size, member volume, required modules and integration scope. SwimDesk and SportDesk pricing also available. All data hosted in Australia."
         canonical="/pricing"
         faq={[
-          { question: "How much does GreeneDesk cost?", answer: "Pricing is based on enrolment or membership volume. SwimDesk starts from A$144/month (annual) for up to 300 students. FitDesk starts from A$254/month (annual)." },
+          { question: "How much does GreeneDesk cost?", answer: "Pricing is based on enrolment or membership volume. SwimDesk starts from A$350/month and FitDesk starts from A$550/month. Annual billing saves 15%." },
           { question: "Is there a free trial?", answer: "Yes. SwimDesk offers a 15-day free trial with no credit card required." },
           { question: "Where is my data stored?", answer: "All data is hosted exclusively on AWS Sydney (ap-southeast-2) in Australia." },
           { question: "Are there setup fees?", answer: "No hidden setup fees. All plans include onboarding support, data migration, and training." },
