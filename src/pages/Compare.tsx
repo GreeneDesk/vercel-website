@@ -12,8 +12,8 @@ const Compare = () => {
   return (
     <Layout>
       <SEO
-        title="Compare GreeneDesk vs Udio, Mindbody, SimplySwim & Mywellness"
-        description="Feature-by-feature comparison of GreeneDesk against Udio, Mindbody and SimplySwim, plus how FitDesk compares as a Mywellness software alternative."
+        title="Compare GreeneDesk vs Udio & Mywellness"
+        description="Feature-by-feature comparison of GreeneDesk against Udio, plus how FitDesk compares as a Mywellness software alternative."
         canonical="/compare"
       />
       <Breadcrumbs items={[{ label: "Compare" }]} />
