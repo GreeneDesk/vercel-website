@@ -4,6 +4,7 @@
 
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Layout } from "@/components/layout/Layout";
 
 const URL = "https://greenedesk.com.au/aged-care-retirement-living-fitness";
 const TITLE = "Fitness Software for Aged Care & Retirement Villages | FitDesk by GreeneDesk";
@@ -237,7 +238,8 @@ export default function AgedCareFitness() {
   const lead = "mt-3 max-w-3xl text-lg text-muted-foreground";
 
   return (
-    <main className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+    <Layout>
+    <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       {/* Hero */}
       <section>
         <p className="text-sm font-medium text-primary">FitDesk for aged care and retirement living</p>
@@ -411,9 +413,6 @@ export default function AgedCareFitness() {
           <Link to="/active-ageing-rehab-software" className="font-medium text-primary hover:underline">
             Active ageing and rehab programs
           </Link>
-          <Link to="/retention-calculator?type=fitness" className="font-medium text-primary hover:underline">
-            Retention calculator
-          </Link>
           <Link to="/data-residency" className="font-medium text-primary hover:underline">
             Data residency
           </Link>
@@ -443,6 +442,7 @@ export default function AgedCareFitness() {
           Book a Demo
         </Link>
       </section>
-    </main>
+    </div>
+    </Layout>
   );
 }
