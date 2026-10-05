@@ -146,7 +146,7 @@ export function PricingCards() {
 
               <Button variant={plan.enterprise ? "secondary" : "cta"} className="w-full" asChild>
                 <Link to={plan.enterprise ? "/contact" : "/demo"}>
-                  {plan.enterprise ? "Contact Us" : "Start Free Trial"}
+                  {plan.enterprise ? "Contact Us" : "Book a Demo"}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>

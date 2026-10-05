@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
+import { Helmet } from "react-helmet-async";
 import { Home } from "lucide-react";
 
 const NotFound = () => {
@@ -17,7 +18,9 @@ const NotFound = () => {
       <SEO
         title="Page Not Found"
         description="The page you're looking for doesn't exist or has been moved. Return to the GreeneDesk homepage or request a demo."
+        canonical={location.pathname}
       />
+      <Helmet><meta name="robots" content="noindex" /></Helmet>
       <section className="section-padding">
         <div className="container-wide text-center">
           <div className="max-w-md mx-auto">
@@ -30,19 +33,19 @@ const NotFound = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground mb-8">
-              Sorry, we couldn't find the page you're looking for. It might have been moved or doesn't exist.
+              The page you're looking for doesn't exist.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="cta" asChild>
                 <Link to="/">
                   <Home className="h-4 w-4" />
-                  Go to Homepage
+                  Go to homepage
                 </Link>
               </Button>
               <Button variant="outline" asChild>
                 <Link to="/demo">
-                  Request a Demo
+                  Book a Demo
                 </Link>
               </Button>
             </div>

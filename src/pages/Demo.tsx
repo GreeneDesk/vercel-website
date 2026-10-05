@@ -278,6 +278,7 @@ const Demo = () => {
                         <ArrowRight className="h-5 w-5" />
                       </Button>
                     </div>
+                    <p className="text-sm text-muted-foreground text-center">We reply within one business day. AU support: 1300 181 665.</p>
                   </form>
                 )}
 

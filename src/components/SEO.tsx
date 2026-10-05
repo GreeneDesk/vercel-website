@@ -76,12 +76,6 @@ export function SEO({ title, description, canonical, type = "website", image, js
       <meta name="coverage" content="Australia, New Zealand" />
       <meta name="target_country" content="AU, NZ" />
 
-      {/* hreflang */}
-      <link rel="alternate" hrefLang="en-au" href={url} />
-      <link rel="alternate" hrefLang="en-nz" href={url} />
-      <link rel="alternate" hrefLang="en" href={url} />
-      <link rel="alternate" hrefLang="x-default" href={url} />
-
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />

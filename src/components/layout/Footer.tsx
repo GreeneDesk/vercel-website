@@ -8,6 +8,7 @@ const solutionsLinks = [
   { title: "FitDesk with PerfectGym", href: "/integrations/perfectgym" },
   { title: "Mywellness Alternative", href: "/technogym-mywellness-alternative" },
   { title: "SwimDesk", href: "/solutions/swimdesk" },
+  { title: "iClassPro Alternative", href: "/iclasspro-alternative" },
   { title: "SportDesk", href: "/solutions/sportdesk" },
   { title: "School Programs", href: "/solutions/school-programs" },
   { title: "Council & Leisure Centres", href: "/solutions/council" },
