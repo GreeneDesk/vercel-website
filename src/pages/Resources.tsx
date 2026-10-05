@@ -5,9 +5,10 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Dumbbell, Users, Waves, HeartPulse, Trophy, MapPin, Puzzle, ClipboardList, CalendarClock, RefreshCw, ShieldCheck } from "lucide-react";
+import { ArrowRight, BookOpen, Dumbbell, Users, Waves, HeartPulse, Trophy, MapPin, Puzzle, ClipboardList, CalendarClock, RefreshCw, ShieldCheck, TrendingUp } from "lucide-react";
 
 const categories = [
+  { icon: TrendingUp, title: "Retention calculator", href: "/retention-calculator" },
   { icon: Puzzle, title: "PerfectGym integrations", href: "/integrations/perfectgym" },
   { icon: RefreshCw, title: "Mywellness alternatives and migration", href: "/technogym-mywellness-alternative" },
   { icon: Dumbbell, title: "Workout programming", href: "/platform/workout-programming" },

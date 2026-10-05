@@ -47,6 +47,10 @@ export function FitDeskHero() {
               </Button>
             </div>
 
+            <Link to="/retention-calculator?type=fitness" className="inline-block mb-6 text-sm font-semibold text-primary hover:underline">
+              Try the retention calculator
+            </Link>
+
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
               <Link to="/active-ageing-rehab-software" className="text-primary hover:underline">
                 Active ageing and rehab

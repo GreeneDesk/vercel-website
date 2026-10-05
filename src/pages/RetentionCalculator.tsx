@@ -4,6 +4,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import { Layout } from "@/components/layout/Layout";
 
 type Mode = "swim" | "fitness";
 
@@ -183,7 +184,8 @@ export default function RetentionCalculator() {
   const period = r.isSwim ? "terms" : "months";
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-12 sm:py-16">
+    <Layout>
+    <div className="mx-auto max-w-5xl px-4 py-12 sm:py-16">
       <p className="text-sm font-medium text-primary">Free tool</p>
       <h1 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
         Swim school and gym retention calculator
@@ -351,6 +353,7 @@ export default function RetentionCalculator() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
+    </Layout>
   );
 }
