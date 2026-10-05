@@ -175,6 +175,11 @@ const SwimDesk = () => {
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
+              <p className="mt-4">
+                <Link to="/retention-calculator" className="text-sm text-primary font-medium hover:underline">
+                  Calculate what retention is worth
+                </Link>
+              </p>
             </motion.div>
 
             <motion.div
