@@ -34,6 +34,7 @@ const moreLinks = [
   { title: "Data Residency", href: "/data-residency" },
   { title: "Pricing", href: "/pricing" },
   { title: "Resources", href: "/resources" },
+  { title: "Retention Calculator", href: "/retention-calculator" },
   { title: "Partners", href: "/partners" },
   { title: "Contact", href: "/contact" },
   { title: "SooperVision", href: "https://soopervision.com.au/", external: true },

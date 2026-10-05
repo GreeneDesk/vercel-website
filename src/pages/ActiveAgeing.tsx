@@ -30,7 +30,7 @@ const ActiveAgeing = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" className="md:h-14 md:px-8 md:text-base" asChild>
-                <Link to="/solutions/fitdesk">Explore FitDesk</Link>
+                <Link to={c.hero.secondaryCta.href}>{c.hero.secondaryCta.label}</Link>
               </Button>
             </div>
           </motion.div>

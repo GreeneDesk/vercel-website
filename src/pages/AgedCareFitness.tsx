@@ -413,6 +413,9 @@ export default function AgedCareFitness() {
           <Link to="/active-ageing-rehab-software" className="font-medium text-primary hover:underline">
             Active ageing and rehab programs
           </Link>
+          <Link to="/retention-calculator?type=fitness" className="font-medium text-primary hover:underline">
+            Retention calculator
+          </Link>
           <Link to="/data-residency" className="font-medium text-primary hover:underline">
             Data residency
           </Link>
