@@ -9,11 +9,11 @@ const solutionsLinks = [
   { title: "Mywellness Alternative", href: "/technogym-mywellness-alternative" },
   { title: "SwimDesk", href: "/solutions/swimdesk" },
   { title: "iClassPro Alternative", href: "/iclasspro-alternative" },
+  { title: "Swim School Programs", href: "/solutions/school-programs" },
+  { title: "Swim Squads", href: "/solutions/squads" },
   { title: "SportDesk", href: "/solutions/sportdesk" },
-  { title: "School Programs", href: "/solutions/school-programs" },
-  { title: "Council & Leisure Centres", href: "/solutions/council" },
+  { title: "Council and Leisure Centres", href: "/solutions/council" },
   { title: "SooperVision (Childcare)", href: "/solutions/soopervision" },
-  { title: "Squads", href: "/solutions/squads" },
 ];
 
 const platformLinks = [
