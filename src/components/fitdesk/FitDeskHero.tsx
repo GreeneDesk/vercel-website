@@ -30,9 +30,9 @@ export function FitDeskHero() {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              FitDesk gives leisure centres specialist tools for assessments, workout programming,
-              trainer scheduling, progress tracking and member engagement. Use it alongside
-              PerfectGym or as an alternative to Mywellness.
+              Fitness-floor software for leisure centres, seniors programs and rehab: digital screening,
+              assessments, workout programming, trainer scheduling and a member app. Plugs into
+              PerfectGym, hosted in Sydney.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
@@ -48,6 +48,12 @@ export function FitDeskHero() {
             </div>
 
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+              <Link to="/active-ageing-rehab-software" className="text-primary hover:underline">
+                Active ageing and rehab
+              </Link>
+              <Link to="/aged-care-retirement-living-fitness" className="text-primary hover:underline">
+                Aged care and retirement villages
+              </Link>
               <Link to="/technogym-mywellness-alternative" className="text-primary hover:underline">
                 Mywellness alternative
               </Link>

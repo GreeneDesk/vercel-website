@@ -32,6 +32,8 @@ const IClassProAlternative = lazy(() => import("./pages/IClassProAlternative"));
 const DataResidency = lazy(() => import("./pages/DataResidency"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Resources = lazy(() => import("./pages/Resources"));
+const ActiveAgeing = lazy(() => import("./pages/ActiveAgeing"));
+const AgedCareFitness = lazy(() => import("./pages/AgedCareFitness"));
 const Partners = lazy(() => import("./pages/Partners"));
 const Demo = lazy(() => import("./pages/Demo"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -98,6 +100,8 @@ const App = () => (
             <Route path="/data-residency" element={<DataResidency />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/active-ageing-rehab-software" element={<ActiveAgeing />} />
+            <Route path="/aged-care-retirement-living-fitness" element={<AgedCareFitness />} />
             <Route path="/partners" element={<Partners />} />
             <Route path="/demo" element={<Demo />} />
             <Route path="/contact" element={<Contact />} />

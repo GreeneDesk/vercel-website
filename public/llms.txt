@@ -10,14 +10,16 @@
 - Operating since: 2013
 - Customers: 50+ centres across Australia and New Zealand, 500,000+ members
 - Support: 1300 181 665, Monday to Friday 7am–7pm AEST, Australian-based team
-- Data hosting: AWS Sydney (ap-southeast-2), Australia
+- Data hosting: AWS Sydney (ap-southeast-2) for Australia and New Zealand; can be hosted in other regions or on a customer's or partner's own servers
 
 ## Who GreeneDesk is for
 
 - **PerfectGym centres** that want fitness-floor tools without replacing PerfectGym: FitDesk plugs into PerfectGym through a customer-authorised API integration.
 - **Technogym Mywellness users** who need member and health data hosted in Australia: FitDesk replaces Mywellness software (not Technogym equipment) and runs on AWS Sydney.
 - **Swim schools and aquatic centres**, including those moving from iClassPro or other class-management software: SwimDesk runs lessons, school programs and squads in one Australian-hosted platform, with mobile apps for all users and AI retention alerts.
+- **Active ageing, falls-prevention and rehab programs** at leisure centres, councils, seniors gyms and allied health teams: FitDesk is a fully configurable platform that digitises a centre's own pre-exercise screening and assessments, runs structured programs with reassessments, emails customised progress reports to GPs, physios and families, and gives members an app.
 - **Councils and multi-site leisure centres** running aquatic, fitness and school programs across sites.
+- **Partners worldwide**: management systems, allied health platforms, resellers and regional distributors can integrate with or sell FitDesk and SwimDesk. See [Partners](https://greenedesk.com.au/partners).
 
 ## Products
 
@@ -29,17 +31,23 @@
 - [SportDesk](https://greenedesk.com.au/solutions/sportdesk): squads, coaching and structured sports programs.
 - [SooperVision](https://soopervision.com.au/): AI supervision risk alerts for childcare centres using existing CCTV (separate site).
 
+## Tools
+
+
+## Active ageing and rehabilitation
+
+- [FitDesk for aged care and retirement villages](https://greenedesk.com.au/aged-care-retirement-living-fitness): exercise and gym software for residential aged care, retirement villages, seniors living and home care day programs. Digital screening, your own assessments digitised, workout programming from 4,000+ exercises, session records on the trainer app, reassessment reminders, and customised progress reports emailed to families, GPs and care managers.
+- [FitDesk for active ageing and rehab](https://greenedesk.com.au/active-ageing-rehab-software): strength and balance (falls prevention) classes, seniors gyms, step-down from physio, restorative programs, chronic conditions and hydrotherapy.
+
 ## Switching guides
 
 - [Mywellness alternative](https://greenedesk.com.au/technogym-mywellness-alternative)
 - [iClassPro alternative for swim schools](https://greenedesk.com.au/iclasspro-alternative)
 - [PerfectGym plug-in](https://greenedesk.com.au/integrations/perfectgym)
-- Data migration: GreeneDesk can import data exported from any software; most centres go live within 2 weeks of signing.
-- PerfectGym sync: member profiles and membership status sync from PerfectGym to FitDesk through a customer-authorised API integration.
 
 ## Pricing
 
-SwimDesk is priced by active enrolments: Essentials (up to 500), Professional (501–1,500) and Enterprise (1,500+). Plans start from A$350 per month; annual billing saves 15%. FitDesk is priced by membership volume: Basic (up to 150 members), FitDesk+ (151–500) and Enterprise (500+). Plans start from A$550 per month; annual billing saves 15%. A 15-day free trial is available after a demo — no credit card required. See [Pricing](https://greenedesk.com.au/pricing).
+SwimDesk is priced by active enrolments: Essentials (up to 500), Professional (501–1,500) and Enterprise (1,500+). Plans start from $[FILL] per month; annual billing saves 15%. See [Pricing](https://greenedesk.com.au/pricing).
 
 ## Key pages
 
