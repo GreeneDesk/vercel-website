@@ -5,6 +5,8 @@ import logoWhite from "@/assets/brand/logo-white-horizontal.png";
 
 const solutionsLinks = [
   { title: "FitDesk", href: "/solutions/fitdesk" },
+  { title: "Active Ageing & Rehab", href: "/active-ageing-rehab-software" },
+  { title: "Aged Care & Retirement Living", href: "/aged-care-retirement-living-fitness" },
   { title: "FitDesk with PerfectGym", href: "/integrations/perfectgym" },
   { title: "Mywellness Alternative", href: "/technogym-mywellness-alternative" },
   { title: "SwimDesk", href: "/solutions/swimdesk" },

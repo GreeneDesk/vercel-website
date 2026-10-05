@@ -50,8 +50,8 @@ const capabilities = [
     icon: HeartPulse,
     title: "Active ageing and rehabilitation",
     copy: "Deliver structured programs for older adults, community wellness, recovery and exercise-based services.",
-    href: "/solutions/fitdesk",
-    linkLabel: "FitDesk overview",
+    href: "/active-ageing-rehab-software",
+    linkLabel: "Active ageing and rehab",
   },
 ];
 

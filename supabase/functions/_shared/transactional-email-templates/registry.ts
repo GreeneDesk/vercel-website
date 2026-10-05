@@ -10,7 +10,9 @@ export interface TemplateEntry {
 }
 
 import { template as demoRequestNotification } from './demo-request-notification.tsx'
+import { template as partnerEnquiryNotification } from './partner-enquiry-notification.tsx'
 
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'demo-request-notification': demoRequestNotification,
+  'partner-enquiry-notification': partnerEnquiryNotification,
 }
