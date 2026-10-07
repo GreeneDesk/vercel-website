@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import socialPreview from "@/assets/brand/social-preview.asset.json";
 
 interface FAQItem {
   question: string;
@@ -18,7 +19,7 @@ interface SEOProps {
 const defaults = {
   title: "FitDesk by GreeneDesk – Fitness Operations Software AU & NZ",
   description: "Australian-hosted assessments, workout programming, trainer scheduling and member engagement for leisure centres across Australia and New Zealand.",
-  image: "https://greenedesk.com.au/og-image.jpg",
+  image: `https://greenedesk.com.au${socialPreview.url}`,
 };
 
 export function SEO({ title, description, canonical, type = "website", image, jsonLd, faq }: SEOProps) {
