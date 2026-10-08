@@ -1,6 +1,6 @@
 # GreeneDesk
 
-> GreeneDesk is Australian-built software for swim schools, leisure centres, councils and fitness teams in Australia and New Zealand. All customer data is hosted on AWS in Sydney, Australia. GreeneDesk works alongside existing management systems such as PerfectGym instead of replacing them.
+> GreeneDesk is an Australian company and a software platform for sports and recreation facilities in Australia and New Zealand: council leisure and aquatic centres, gyms, seniors and rehab programs, and swim schools. Its products are FitDesk, SwimDesk and SportDesk. Australian customer data stays in Australia, hosted on AWS in Sydney. GreeneDesk works alongside existing management systems such as PerfectGym instead of replacing them.
 
 ## Company
 
@@ -24,8 +24,8 @@
 ## Products
 
 - [SwimDesk](https://greenedesk.com.au/solutions/swimdesk): swim school and aquatic centre software that runs learn-to-swim, school swimming programs and competitive squads on one platform. Class scheduling and online bookings, poolside attendance and skills assessments (offline tablet mode), progression tracking, digital certificates, term-based and recurring billing. Mobile apps for every user: instructors, coaches, office staff and parents (bookings, absences, make-up classes, progress). AI retention alerts flag students at risk of not re-enrolling. Supports AUSTSWIM, Royal Life Saving and YMCA curricula or your own syllabus.
-  - [School Programs module](https://greenedesk.com.au/solutions/school-programs): school group bookings, attendance and reporting across sites.
-  - [Squads module](https://greenedesk.com.au/solutions/squads): squad groups, coaching sessions and athlete progress.
+  - [School swimming programs](https://greenedesk.com.au/solutions/school-programs): for council and aquatic centres running school swimming. Poolside assessments and level grouping, attendance and skills tracking, automatic certificates, and reports for each school, across multiple sites. Supports Victorian Water Safety Certificate skills, NSW-style beginner/intermediate/advanced grouping and NZ Water Skills for Life programs.
+  - [Squad management](https://greenedesk.com.au/solutions/squads): squad groups and sessions, attendance, coach rosters across lanes and sites, a swimmer and parent app, and one record from learn-to-swim into squads. Official meet entries stay with Swimming Australia's Swim Central.
 - [FitDesk](https://greenedesk.com.au/solutions/fitdesk): fitness operations software. Digital PARQ and health consultations, assessments and member history, workout programming with 4,000+ exercise videos, trainer and resource scheduling, member app, progress, milestone and retention workflows, active ageing and rehabilitation programs.
 - [FitDesk for PerfectGym](https://greenedesk.com.au/integrations/perfectgym): keep PerfectGym for memberships, billing and access control; add FitDesk for the fitness floor.
 - [SportDesk](https://greenedesk.com.au/solutions/sportdesk): squads, coaching and structured sports programs.
