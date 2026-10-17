@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { guides } from "@/content/guides";
 import { usePageMeta, SITE_URL } from "@/lib/seo";
 import { Layout } from "@/components/layout/Layout";
+import { GuideSignup } from "@/components/sections/GuideSignup";
 
 const TITLE = "Free Guides & Checklists for Leisure Centres | GreeneDesk";
 const DESC =
@@ -96,6 +97,8 @@ export default function Guides() {
           </section>
         );
       })}
+
+      <GuideSignup />
 
       <section className="mt-16 rounded-2xl bg-primary px-6 py-10 text-center text-primary-foreground sm:px-10">
         <h2 className="text-2xl font-semibold sm:text-3xl">Want these checklists running in your centre?</h2>
