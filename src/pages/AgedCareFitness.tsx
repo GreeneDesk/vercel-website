@@ -406,7 +406,7 @@ export default function AgedCareFitness() {
       <section className="mt-16 rounded-xl border bg-muted/40 p-6 sm:p-8">
         <h2 className="text-xl font-semibold text-foreground">Trusted by community fitness providers across Australia and New Zealand</h2>
         <p className="mt-2 max-w-3xl text-muted-foreground">
-          50+ centres, including council leisure centres and a university, use GreeneDesk products. Australian-built,
+          50+ centres, including council leisure centres and a university, use GreeneDesk products. An Australian company,
           supported from Australia on 1300 181 665, Monday to Friday 7am–7pm AEST.
         </p>
         <div className="mt-4 flex flex-wrap gap-4 text-sm">

@@ -106,7 +106,7 @@ const FitnessWellnessSoftware = () => {
       <RelatedPages heading="Explore Solutions" pages={[
         { title: "FitDesk", description: "Full gym and fitness operations platform", href: "/solutions/fitdesk" },
         { title: "Council & Leisure Centres", description: "Multi-service centre operations", href: "/solutions/council" },
-        { title: "Data Residency", description: "Australian-hosted infrastructure", href: "/data-residency" },
+        { title: "Data Residency", description: "Australian data stays in Australia", href: "/data-residency" },
       ]} />
 
       <section className="section-padding">

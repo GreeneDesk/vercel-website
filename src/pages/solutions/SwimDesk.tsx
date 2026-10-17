@@ -233,7 +233,7 @@ const SwimDesk = () => {
                 text: "Run school group bookings, class lists and reporting alongside your regular learn-to-swim timetable, with dedicated school program management.",
               },
               {
-                title: "Australian-hosted data",
+                title: "Australian data stays in Australia",
                 text: "All data is hosted in AWS Sydney. Nothing is processed offshore, supporting APP compliance requirements for council facilities.",
               },
             ].map((card, i) => (

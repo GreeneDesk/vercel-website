@@ -2,7 +2,7 @@
 
 export const partners = {
   seo: {
-    title: "Partner with GreeneDesk | Integration, Reseller & Distribution Partners",
+    title: "Partner with GreeneDesk | Integration and Reseller",
     description:
       "Integrate with FitDesk and SwimDesk, refer or resell GreeneDesk, or distribute in your region. Hosted in your region or on your own servers. Fitness-floor, active ageing and swim school software used by 50+ centres.",
   },

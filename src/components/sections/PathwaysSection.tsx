@@ -66,7 +66,7 @@ export function PathwaysSection() {
             </div>
             <h3 className="font-display text-2xl font-bold mb-3">Replace Mywellness</h3>
             <p className="text-muted-foreground mb-6 flex-1">
-              Move your programming and member-engagement workflows to an Australian-hosted platform
+              Move your programming and member-engagement workflows to a platform where Australian data stays in Australia
               without replacing PerfectGym.
             </p>
             <Button

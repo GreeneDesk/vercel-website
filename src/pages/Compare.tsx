@@ -40,7 +40,7 @@ const Compare = () => {
             <div>
               <h2 className="font-display text-2xl font-bold mb-2">FitDesk vs Mywellness</h2>
               <p className="text-muted-foreground max-w-2xl">
-                Considering an Australian-hosted alternative to Technogym Mywellness software? See
+                Considering an alternative to Technogym Mywellness software with Australian data residency? See
                 FitDesk's verified capabilities, migration considerations and the "Replace
                 Mywellness. Keep PerfectGym." proposition.
               </p>

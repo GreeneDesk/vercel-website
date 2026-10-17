@@ -155,7 +155,7 @@ const Integrations = () => {
         pages={[
           { title: "Platform Features", description: "Full overview of GreeneDesk capabilities", href: "/platform/features" },
           { title: "Payments & Billing", description: "Integrated payment processing for centres", href: "/platform/payments" },
-          { title: "Data Residency", description: "Australian-hosted infrastructure with audit trails", href: "/data-residency" },
+          { title: "Data Residency", description: "Australian data stays in Australia, with audit trails", href: "/data-residency" },
         ]}
       />
 

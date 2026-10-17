@@ -3,7 +3,7 @@
 
 export const activeAgeing = {
   seo: {
-    title: "Active Ageing, Falls Prevention & Rehab Exercise Software | FitDesk AU & NZ",
+    title: "Active Ageing and Rehab Exercise Software | FitDesk",
     description:
       "FitDesk helps leisure centres, councils and allied health teams run seniors strength, falls-prevention and rehab programs: digital pre-exercise screening, digitised assessments, structured programs, emailed progress reports and a simple member app. Hosted in Sydney.",
   },
