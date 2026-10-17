@@ -22,12 +22,12 @@ export function HeroSection() {
             </p>
 
             <h1 className="font-display text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-5xl font-bold mb-4">
-              Fitness programming and{" "}
-              <span className="text-gradient-primary">swim school software</span>
+              Software for fitness,{" "}
+              <span className="text-gradient-primary">active ageing and swim schools</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-2xl">
-              FitDesk runs your fitness floor, active ageing and rehab programs. SwimDesk runs
+              FitDesk supports your fitness floor, exercise programs for seniors and rehab programs. SwimDesk runs
               lessons, school programs and squads. Both work alongside your existing management
               system, including PerfectGym, and Australian customer data stays in Australia.
             </p>
