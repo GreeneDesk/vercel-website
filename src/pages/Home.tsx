@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <Layout>
       <SEO
-        title="FitDesk – Fitness Operations Software for AU & NZ Leisure Centres"
+        title="GreeneDesk | Gym, Seniors and Swim Software for AU and NZ"
         description="Complete PerfectGym or replace Mywellness with FitDesk. Assessments, workout programming, trainer scheduling and member engagement, with Australian data kept in Australia."
         canonical="/"
         jsonLd={[
@@ -83,6 +83,7 @@ const Home = () => {
         ]}
       />
       <HeroSection />
+      <WhoItsForRow />
       <TrustedBySection />
       <PathwaysSection />
       <FitDeskGapSection />
@@ -91,6 +92,7 @@ const Home = () => {
       <FitDeskScreenshots />
       <DataResidencyTeaser />
       <TrustBanner />
+      <GuidesStrip />
       <FinalCTASection />
       <MoreFromGreeneDesk />
     </Layout>
