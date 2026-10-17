@@ -1,6 +1,8 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { WhoItsForRow } from "@/components/sections/WhoItsForRow";
+import { GuidesStrip } from "@/components/sections/GuidesStrip";
 import { TrustedBySection } from "@/components/sections/TrustedBySection";
 import { PathwaysSection } from "@/components/sections/PathwaysSection";
 import { FitDeskGapSection } from "@/components/sections/FitDeskGapSection";

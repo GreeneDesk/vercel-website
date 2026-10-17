@@ -4,6 +4,7 @@
 import { Link, useParams } from "react-router-dom";
 import { getGuide } from "@/content/guides";
 import { usePageMeta, SITE_URL } from "@/lib/seo";
+import { Layout } from "@/components/layout/Layout";
 import NotFound from "./NotFound";
 
 export default function GuideDetail() {
@@ -56,6 +57,7 @@ function GuideView({ slug }: { slug: string }) {
   });
 
   return (
+    <Layout>
     <main className="mx-auto max-w-5xl px-4 py-12 sm:py-16">
       <nav className="text-sm text-muted-foreground">
         <Link to="/guides" className="hover:underline">
@@ -131,5 +133,6 @@ function GuideView({ slug }: { slug: string }) {
         General information only, not legal or medical advice. Sources are listed in the PDF.
       </p>
     </main>
+    </Layout>
   );
 }

@@ -4,6 +4,7 @@
 import { Link } from "react-router-dom";
 import { guides } from "@/content/guides";
 import { usePageMeta, SITE_URL } from "@/lib/seo";
+import { Layout } from "@/components/layout/Layout";
 
 const TITLE = "Free Guides & Checklists for Leisure Centres | GreeneDesk";
 const DESC =
@@ -43,6 +44,7 @@ export default function Guides() {
   });
 
   return (
+    <Layout>
     <main className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <section>
         <p className="text-sm font-medium text-primary">Free guides and checklists</p>
@@ -109,5 +111,6 @@ export default function Guides() {
         </Link>
       </section>
     </main>
+    </Layout>
   );
 }
