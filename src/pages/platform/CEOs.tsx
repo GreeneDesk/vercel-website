@@ -264,7 +264,7 @@ const CEOs = () => {
         pages={[
           { title: "Manager Dashboard", description: "Operational data that feeds into executive-level reporting", href: "/platform/managers" },
           { title: "Analytics & Retention", description: "Deep retention analytics and trend analysis across programs", href: "/platform/analytics" },
-          { title: "Data Residency", description: "Australian-hosted infrastructure with full audit trails", href: "/data-residency" },
+          { title: "Data Residency", description: "Australian data stays in Australia, with full audit trails", href: "/data-residency" },
         ]}
       />
 

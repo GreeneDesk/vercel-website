@@ -110,7 +110,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "We use iClassPro. Can we switch to SwimDesk?",
-        a: "Yes. We import your families, students, levels and class lists from your iClassPro data export and set up your levels before go-live. You get an Australian-hosted platform built around Australian learn-to-swim programs, with local support.",
+        a: "Yes. We import your families, students, levels and class lists from your iClassPro data export and set up your levels before go-live. You get a platform built around Australian learn-to-swim programs, with Australian data kept in Australia and local support.",
       },
       {
         q: "Does SwimDesk handle school swimming programs?",
