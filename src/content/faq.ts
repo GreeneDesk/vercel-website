@@ -139,7 +139,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "How much does FitDesk cost?",
-        a: "FitDesk is priced by active members: Basic up to 150, FitDesk+ 151–500 and Enterprise 500+. Plans start from A$550 per month, and annual billing saves 15%.",
+        a: "FitDesk is priced by active members: Basic up to 150, FitDesk+ 151–500 and Enterprise 500+. Plans start from A$750 per month, and annual billing saves 15%.",
       },
       {
         q: "Is there a free trial?",
