@@ -108,7 +108,7 @@ const ActiveAgeing = () => {
       <div className="container-wide py-6">
         <p className="text-xs text-muted-foreground">{c.disclaimer}</p>
       </div>
-      <section className="pb-10"><GuideCallout slug="older-adults-strength-balance-programs" /></section>
+      <section className="pb-10"><GuideCallout slug="older-adults-strength-balance-program-guide" /></section>
     </Layout>
   );
 };
