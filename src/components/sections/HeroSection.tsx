@@ -22,8 +22,8 @@ export function HeroSection() {
             </p>
 
             <h1 className="font-display text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-5xl font-bold mb-4">
-              Software for council gyms, seniors programs and{" "}
-              <span className="text-gradient-primary">swim schools</span>
+              Run better programs without{" "}
+              <span className="text-gradient-primary">replacing your management system</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-2xl">
