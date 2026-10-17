@@ -40,6 +40,14 @@
 - [FitDesk for aged care and retirement villages](https://greenedesk.com.au/aged-care-retirement-living-fitness): exercise and gym software for residential aged care, retirement villages, seniors living and home care day programs. Digital screening, your own assessments digitised, workout programming from 4,000+ exercises, session records on the trainer app, reassessment reminders, and customised progress reports emailed to families, GPs and care managers.
 - [FitDesk for active ageing and rehab](https://greenedesk.com.au/active-ageing-rehab-software): strength and balance (falls prevention) classes, seniors gyms, step-down from physio, restorative programs, chronic conditions and hydrotherapy.
 
+## Free guides and checklists
+
+- [All free guides](https://greenedesk.com.au/guides): PDF guides for leisure centres, gyms, swim schools, retirement villages and aged care in Australia and New Zealand.
+- [Falls prevention exercise programs in retirement villages and aged care](https://greenedesk.com.au/guides/falls-prevention-retirement-villages-aged-care): AIHW falls data, Cochrane evidence and a program checklist.
+- [Running strength and balance programs for older adults](https://greenedesk.com.au/guides/older-adults-strength-balance-program-guide): evidence, Australian guidelines for 65+, safe delivery and records.
+- [Pre-exercise screening and health records checklist](https://greenedesk.com.au/guides/gym-pre-exercise-screening-health-records-checklist): APSS screening and handling health information in council and YMCA gyms.
+- [Child safe checklist for aquatic and recreation programs](https://greenedesk.com.au/guides/child-safe-checklist-aquatic-recreation): National Principles, Victoria, NSW and New Zealand rules for pools and swim schools.
+
 ## Switching guides
 
 - [Mywellness alternative](https://greenedesk.com.au/technogym-mywellness-alternative)
