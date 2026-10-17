@@ -42,6 +42,8 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Unsubscribe = lazy(() => import("./pages/Unsubscribe"));
+const Guides = lazy(() => import("./pages/Guides"));
+const GuideDetail = lazy(() => import("./pages/GuideDetail"));
 
 // SEO Pages
 const LeisureCentreSoftware = lazy(() => import("./pages/seo/LeisureCentreSoftware"));
@@ -117,6 +119,8 @@ const App = () => (
             <Route path="/sports-facility-software" element={<SportsFacilitySoftware />} />
             
             <Route path="/unsubscribe" element={<Unsubscribe />} />
+            <Route path="/guides" element={<Guides />} />
+            <Route path="/guides/:slug" element={<GuideDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

@@ -45,6 +45,8 @@ const secondaryLinks = [
   { title: "Customers", href: "/compare" },
   { title: "Pricing", href: "/pricing" },
   { title: "Resources", href: "/resources" },
+  { title: "Free guides", href: "/guides" },
+  { title: "FAQ", href: "/faq" },
 ];
 
 const linkClass =
