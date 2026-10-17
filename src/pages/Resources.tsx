@@ -72,7 +72,7 @@ const Resources = () => {
                   <Link to={`/guides/${g.slug}`} className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
                     What's inside <ArrowRight className="h-4 w-4" />
                   </Link>
-                  <a href={g.pdf} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary">
+                  <a href={g.file} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary">
                     Download PDF <ArrowRight className="h-4 w-4" />
                   </a>
                 </div>

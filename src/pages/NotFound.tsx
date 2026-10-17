@@ -3,6 +3,7 @@
 // unknown URLs as duplicate homepages (the "soft 404" errors in the SEO report).
 
 import { Link, useLocation } from "react-router-dom";
+import { Layout } from "@/components/layout/Layout";
 import { usePageMeta } from "@/lib/seo";
 
 const links = [

@@ -25,7 +25,7 @@ export function GuideCallout({ slug }: { slug: string }) {
               What's inside <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href={guide.pdf}
+              href={guide.file}
               target="_blank"
               rel="noopener"
               className="inline-flex items-center justify-center gap-1.5 rounded-md border border-border px-4 py-2 text-sm font-medium hover:bg-background"
