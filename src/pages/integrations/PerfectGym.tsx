@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { GuideCallout } from "@/components/sections/GuideCallout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedPages } from "@/components/sections/RelatedPages";
@@ -254,6 +255,7 @@ const PerfectGymIntegration = () => {
         ]}
       />
 
+      <section className="pb-10"><GuideCallout slug="gym-pre-exercise-screening" /></section>
       {/* Closing CTA */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
         <div className="container-wide text-center">

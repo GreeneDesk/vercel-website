@@ -5,6 +5,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
+import { GuideCallout } from "@/components/sections/GuideCallout";
 
 const URL = "https://greenedesk.com.au/aged-care-retirement-living-fitness";
 const TITLE = "Fitness Software for Aged Care & Retirement Villages | FitDesk by GreeneDesk";
@@ -435,6 +436,7 @@ export default function AgedCareFitness() {
         </div>
       </section>
 
+      <section className="pb-10"><GuideCallout slug="falls-prevention-retirement-villages-aged-care" /></section>
       {/* CTA */}
       <section className="mt-16 rounded-2xl bg-primary px-6 py-10 text-center text-primary-foreground sm:px-10">
         <h2 className="text-2xl font-semibold sm:text-3xl">See FitDesk set up for your residents</h2>
