@@ -1,59 +1,52 @@
+// 404 page. Route: path="*" (must be the LAST route in src/App.tsx).
+// Replaces Lovable's default NotFound. Sets noindex so search engines stop treating
+// unknown URLs as duplicate homepages (the "soft 404" errors in the SEO report).
+
 import { Link, useLocation } from "react-router-dom";
-import { useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { Layout } from "@/components/layout/Layout";
-import { SEO } from "@/components/SEO";
-import { Helmet } from "react-helmet-async";
-import { Home } from "lucide-react";
+import { usePageMeta } from "@/lib/seo";
 
-const NotFound = () => {
-  const location = useLocation();
+const links = [
+  { label: "FitDesk", to: "/solutions/fitdesk" },
+  { label: "Active ageing & rehab", to: "/active-ageing-rehab-software" },
+  { label: "Aged care & retirement living", to: "/aged-care-retirement-living-fitness" },
+  { label: "SwimDesk", to: "/solutions/swimdesk" },
+  { label: "Councils & leisure centres", to: "/solutions/council" },
+  { label: "Free guides", to: "/guides" },
+  { label: "FAQ", to: "/faq" },
+  { label: "Contact", to: "/contact" },
+];
 
-  useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
-  }, [location.pathname]);
+export default function NotFound() {
+  const { pathname } = useLocation();
+  usePageMeta({
+    title: "Page not found | GreeneDesk",
+    description: "This page doesn't exist. Find FitDesk, SwimDesk, free guides and contact details for GreeneDesk.",
+    path: pathname,
+    noindex: true,
+  });
 
   return (
     <Layout>
-      <SEO
-        title="Page Not Found"
-        description="The page you're looking for doesn't exist or has been moved. Return to the GreeneDesk homepage or request a demo."
-        canonical={location.pathname}
-      />
-      <Helmet><meta name="robots" content="noindex" /></Helmet>
-      <section className="section-padding">
-        <div className="container-wide text-center">
-          <div className="max-w-md mx-auto">
-            <div className="inline-flex h-24 w-24 items-center justify-center rounded-full bg-primary/10 mb-8">
-              <span className="text-5xl font-bold text-primary">404</span>
-            </div>
-            
-            <h1 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Page not found
-            </h1>
-            
-            <p className="text-lg text-muted-foreground mb-8">
-              The page you're looking for doesn't exist.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" asChild>
-                <Link to="/">
-                  <Home className="h-4 w-4" />
-                  Go to homepage
-                </Link>
-              </Button>
-              <Button variant="outline" asChild>
-                <Link to="/demo">
-                  Book a Demo
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main className="mx-auto max-w-3xl px-4 py-20 text-center">
+      <p className="text-sm font-semibold text-primary">404</p>
+      <h1 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Page not found</h1>
+      <p className="mt-3 text-muted-foreground">
+        The page <span className="font-mono text-foreground">{pathname}</span> doesn't exist or has moved.
+      </p>
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
+        {links.map((l) => (
+          <Link key={l.to} to={l.to} className="rounded-md border px-4 py-2 text-sm font-medium hover:bg-muted">
+            {l.label}
+          </Link>
+        ))}
+      </div>
+      <Link
+        to="/"
+        className="mt-8 inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
+      >
+        Go to the homepage
+      </Link>
+    </main>
     </Layout>
   );
-};
-
-export default NotFound;
+}

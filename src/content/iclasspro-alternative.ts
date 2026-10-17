@@ -4,7 +4,7 @@ export const iclassproAlternative = {
   seo: {
     title: "iClassPro Alternative for Australian Swim Schools | SwimDesk by GreeneDesk",
     description:
-      "Switching from iClassPro? SwimDesk runs learn-to-swim, school programs and squads in one Australian-hosted platform, with mobile apps for staff and parents and AI retention alerts.",
+      "Switching from iClassPro? SwimDesk runs learn-to-swim, school programs and squads in one platform, with mobile apps for staff and parents and Australian data staying in Australia and AI retention alerts.",
   },
   hero: {
     eyebrow: "For swim schools moving from iClassPro",
