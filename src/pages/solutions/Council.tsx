@@ -69,7 +69,7 @@ const Council = () => {
   return (
     <Layout>
       <SEO
-        title="Council & Leisure Centre Software"
+        title="Council Leisure Centre Software | GreeneDesk"
         description="GreeneDesk works alongside your existing management system to power scheduling, engagement, and program delivery for council leisure centres."
         canonical="/solutions/council"
         jsonLd={{

@@ -19,7 +19,7 @@ const FitDesk = () => {
   return (
     <Layout>
       <SEO
-        title="FitDesk – Fitness Operations & Member Engagement Software"
+        title="FitDesk | Gym and Fitness Floor Software for Leisure Centres"
         description="FitDesk gives leisure centres assessments, workout programming, trainer scheduling, progress tracking and member engagement. Use it alongside PerfectGym or as a Mywellness alternative."
         canonical="/solutions/fitdesk"
         jsonLd={{

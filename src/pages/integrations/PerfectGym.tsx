@@ -82,7 +82,7 @@ const PerfectGymIntegration = () => {
   return (
     <Layout>
       <SEO
-        title="PerfectGym Add-On for Programming & Engagement | FitDesk"
+        title="FitDesk for PerfectGym | Fitness Floor Plug-in"
         description="Keep PerfectGym for memberships, billing and access. Add FitDesk for assessments, workout programming, trainer scheduling and member engagement."
         canonical="/integrations/perfectgym"
         faq={faqs}

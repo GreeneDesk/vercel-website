@@ -33,7 +33,7 @@ const benefits = [
 const Integrations = () => {
   return (
     <Layout>
-      <SEO title="Integrations – Connect Your Existing Systems" description="GreeneDesk integrates with leading payment, communication, and accounting platforms via their APIs. No rip-and-replace required." canonical="/integrations" />
+      <SEO title="Integrations | GreeneDesk" description="GreeneDesk integrates with leading payment, communication, and accounting platforms via their APIs. No rip-and-replace required." canonical="/integrations" />
       <Breadcrumbs items={[{ label: "Integrations" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">

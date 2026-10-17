@@ -25,7 +25,7 @@ const DataResidency = () => {
   return (
     <Layout>
       <SEO
-        title="Australian Data Residency – AWS Sydney Hosted"
+        title="Australian Data Residency | GreeneDesk"
         description="GreeneDesk customer data is stored in Australia using AWS infrastructure in the Sydney region, with role-based access, audit trails and Australian Privacy Principles alignment."
         canonical="/data-residency"
         faq={[

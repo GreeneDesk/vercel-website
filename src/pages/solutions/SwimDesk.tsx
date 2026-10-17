@@ -105,7 +105,7 @@ const SwimDesk = () => {
   return (
     <Layout>
       <SEO
-        title="Swim School & Aquatic Centre Management Software | SwimDesk Australia"
+        title="SwimDesk | Swim School and Aquatic Centre Software"
         description="Australian swim school and aquatic centre management software. Class bookings, poolside attendance, skills assessments and progression tracking, digital certificates and a parent app. Works alongside your existing membership and payments system. Hosted in AWS Sydney."
         canonical="/solutions/swimdesk"
         jsonLd={{

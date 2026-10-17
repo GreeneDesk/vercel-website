@@ -12,7 +12,7 @@ const Compare = () => {
   return (
     <Layout>
       <SEO
-        title="Compare GreeneDesk vs Udio & Mywellness"
+        title="Compare Leisure Centre Software | GreeneDesk"
         description="Feature-by-feature comparison of GreeneDesk against Udio, plus how FitDesk compares as a Mywellness software alternative."
         canonical="/compare"
       />

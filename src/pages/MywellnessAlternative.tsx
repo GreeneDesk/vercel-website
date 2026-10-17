@@ -78,7 +78,7 @@ const MywellnessAlternative = () => {
   return (
     <Layout>
       <SEO
-        title="Technogym Mywellness Alternative for Leisure Centres | FitDesk"
+        title="Mywellness Alternative with Australian Data | FitDesk"
         description="Explore FitDesk as an Australian-hosted alternative to Technogym Mywellness for workout programming, assessments and member engagement."
         canonical="/technogym-mywellness-alternative"
         faq={faqs}
