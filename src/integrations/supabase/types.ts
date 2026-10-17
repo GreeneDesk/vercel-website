@@ -134,6 +134,30 @@ export type Database = {
         }
         Relationships: []
       }
+      guide_subscribers: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          organisation: string | null
+          role: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          organisation?: string | null
+          role?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          organisation?: string | null
+          role?: string | null
+        }
+        Relationships: []
+      }
       suppressed_emails: {
         Row: {
           created_at: string
