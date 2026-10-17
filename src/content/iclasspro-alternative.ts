@@ -66,8 +66,8 @@ export const iclassproAlternative = {
     heading: "How the switch works",
     steps: [
       { title: "Demo and plan", body: "We walk through your levels, classes and billing and agree a go-live date." },
-      { title: "Data import", body: "[CONFIRM] We import families, students, levels and class lists from your iClassPro export." },
-      { title: "Set up and train", body: "[CONFIRM] We configure your levels and train your office team and instructors." },
+      { title: "Data import", body: "We import families, students, levels and class lists from your iClassPro export." },
+      { title: "Set up and train", body: "We configure your levels and train your office team and instructors." },
       { title: "Go live", body: "Families get the parent app and you start the new term on SwimDesk. Typical time: 2 weeks." },
     ],
   },
