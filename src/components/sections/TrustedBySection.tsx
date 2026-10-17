@@ -17,8 +17,6 @@ import activeMonash from "@/assets/logos/active-monash.png";
 import ballarat from "@/assets/logos/ballarat-aquatic.png";
 import joondalup from "@/assets/logos/joondalup.png";
 import waves from "@/assets/logos/waves.png";
-import aquadome from "@/assets/logos/aquadome.png";
-import bassCoast from "@/assets/logos/bass-coast.png";
 import leisurelink from "@/assets/logos/leisurelink.png";
 import greaterGeelong from "@/assets/logos/greater-geelong.png";
 import northcoteDarebin from "@/assets/logos/northcote-darebin.png";
@@ -43,8 +41,6 @@ const logos = [
   { src: ballarat, alt: "Ballarat Aquatic & Lifestyle Centre" },
   { src: joondalup, alt: "City of Joondalup" },
   { src: waves, alt: "Waves Leisure Centre" },
-  { src: aquadome, alt: "AquaDome" },
-  { src: bassCoast, alt: "Bass Coast Aquatic & Leisure Centre" },
   { src: leisurelink, alt: "Leisurelink Aquatic & Recreation Centre" },
   { src: greaterGeelong, alt: "City of Greater Geelong" },
   { src: northcoteDarebin, alt: "Northcote Aquatic & Recreation Centre (City of Darebin)" },

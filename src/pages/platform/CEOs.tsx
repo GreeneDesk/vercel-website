@@ -45,7 +45,7 @@ const enterpriseFeatures = [
   { 
     icon: Globe, 
     title: "Scalable infrastructure", 
-    description: "Built in Australia for the world. Enterprise-grade reliability as you grow." 
+    description: "An Australian company, built for the world. Enterprise-grade reliability as you grow." 
   },
 ];
 
@@ -58,7 +58,7 @@ const ceoQuestions = [
 ];
 
 const trustIndicators = [
-  "Australian-built and Australian-hosted",
+  "Australian company, Australian data stays in Australia",
   "No third-party data processors",
   "Role-based access control",
   "Complete audit trails",
@@ -234,7 +234,7 @@ const CEOs = () => {
             className="text-center mb-12"
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Built in Australia for the World
+              An Australian company, built for the world
             </h2>
             <p className="text-text-on-dark-muted max-w-2xl mx-auto">
               Trust isn't just a feature — it's the foundation.
@@ -264,7 +264,7 @@ const CEOs = () => {
         pages={[
           { title: "Manager Dashboard", description: "Operational data that feeds into executive-level reporting", href: "/platform/managers" },
           { title: "Analytics & Retention", description: "Deep retention analytics and trend analysis across programs", href: "/platform/analytics" },
-          { title: "Data Residency", description: "Australian-hosted infrastructure with full audit trails", href: "/data-residency" },
+          { title: "Data Residency", description: "Australian data stays in Australia, with full audit trails", href: "/data-residency" },
         ]}
       />
 

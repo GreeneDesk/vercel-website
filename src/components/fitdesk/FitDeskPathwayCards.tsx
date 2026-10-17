@@ -12,7 +12,7 @@ const cards = [
   },
   {
     title: "Using Mywellness?",
-    copy: "Explore an Australian-hosted alternative for your programming and member-engagement workflows.",
+    copy: "Explore an alternative for your programming and member-engagement workflows, with Australian data kept in Australia.",
     cta: "Replace Mywellness",
     href: "/technogym-mywellness-alternative",
   },

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { GuideCallout } from "@/components/sections/GuideCallout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { TrustedBySection } from "@/components/sections/TrustedBySection";
@@ -107,6 +108,7 @@ const ActiveAgeing = () => {
       <div className="container-wide py-6">
         <p className="text-xs text-muted-foreground">{c.disclaimer}</p>
       </div>
+      <section className="pb-10"><GuideCallout slug="older-adults-strength-balance-program-guide" /></section>
     </Layout>
   );
 };

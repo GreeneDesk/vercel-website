@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { GuideCallout } from "@/components/sections/GuideCallout";
 import { SEO } from "@/components/SEO";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -19,7 +20,7 @@ const FitDesk = () => {
   return (
     <Layout>
       <SEO
-        title="FitDesk – Fitness Operations & Member Engagement Software"
+        title="FitDesk | Gym and Fitness Floor Software for Leisure Centres"
         description="FitDesk gives leisure centres assessments, workout programming, trainer scheduling, progress tracking and member engagement. Use it alongside PerfectGym or as a Mywellness alternative."
         canonical="/solutions/fitdesk"
         jsonLd={{
@@ -75,6 +76,7 @@ const FitDesk = () => {
           { title: "Australian data residency", description: "Customer data hosted on AWS Sydney", href: "/data-residency" },
         ]}
       />
+      <section className="pb-10"><GuideCallout slug="gym-pre-exercise-screening" /></section>
       <FitDeskCTA />
     </Layout>
   );

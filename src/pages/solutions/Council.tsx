@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { GuideCallout } from "@/components/sections/GuideCallout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedPages } from "@/components/sections/RelatedPages";
@@ -69,7 +70,7 @@ const Council = () => {
   return (
     <Layout>
       <SEO
-        title="Council & Leisure Centre Software"
+        title="Council Leisure Centre Software | GreeneDesk"
         description="GreeneDesk works alongside your existing management system to power scheduling, engagement, and program delivery for council leisure centres."
         canonical="/solutions/council"
         jsonLd={{
@@ -200,6 +201,8 @@ const Council = () => {
         ]}
       />
 
+      <section className="pb-10"><GuideCallout slug="gym-pre-exercise-screening" /></section>
+      <section className="pb-10"><GuideCallout slug="child-safe-checklist-aquatic-recreation" /></section>
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-secondary via-secondary to-surface-dark-elevated text-text-on-dark">
         <div className="container-wide text-center">

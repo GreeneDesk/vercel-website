@@ -33,8 +33,8 @@ const features = [
 const IClassProAlternative = () => (
   <Layout>
     <SEO
-      title="iClassPro Alternative for Australian Swim Schools | SwimDesk by GreeneDesk"
-      description="Switching from iClassPro? SwimDesk runs learn-to-swim, school programs and squads in one Australian-hosted platform, with mobile apps for staff and parents and AI retention alerts."
+      title="iClassPro Alternative for Australian Swim Schools | SwimDesk"
+      description="Switching from iClassPro? SwimDesk runs learn-to-swim, school programs and squads in one platform, with mobile apps for staff and parents and AI retention alerts. Australian data stays in Australia."
       canonical="/iclasspro-alternative"
     />
     <Breadcrumbs items={[{ label: "Compare", href: "/compare" }, { label: "iClassPro Alternative" }]} />

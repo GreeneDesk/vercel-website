@@ -49,7 +49,7 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
   SwimDesk: [
     {
       q: "We use iClassPro. Can we switch to SwimDesk?",
-      a: "Yes. SwimDesk is an Australian-hosted platform built around Australian learn-to-swim programs, with poolside assessments, level progressions, a parent app with make-up classes, term billing and local support. Book a demo to plan your move.",
+      a: "Yes. SwimDesk is a platform built around Australian learn-to-swim programs, with Australian data kept in Australia, with poolside assessments, level progressions, a parent app with make-up classes, term billing and local support. Book a demo to plan your move.",
       link: { label: "iClassPro alternative", href: "/iclasspro-alternative" },
     },
     {
@@ -166,7 +166,7 @@ export const FAQS: Record<FAQCategory, FAQItem[]> = {
     },
     {
       q: "We're moving away from Technogym Mywellness — is FitDesk an alternative?",
-      a: "Yes. FitDesk is an Australian-hosted alternative to Mywellness software, hosted on AWS Sydney. It replaces Mywellness for workout programming, digital assessments, trainer scheduling, progress tracking and member engagement — while your existing management system (such as PerfectGym) stays in place for memberships, billing and access. FitDesk replaces the Mywellness software layer, not Technogym equipment.",
+      a: "Yes. FitDesk is an alternative to Mywellness software, hosted on AWS Sydney. It replaces Mywellness for workout programming, digital assessments, trainer scheduling, progress tracking and member engagement — while your existing management system (such as PerfectGym) stays in place for memberships, billing and access. FitDesk replaces the Mywellness software layer, not Technogym equipment.",
       link: { label: "Compare Mywellness alternatives", href: "/technogym-mywellness-alternative" },
     },
     {

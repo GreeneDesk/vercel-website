@@ -7,6 +7,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
+import { GuideCallout } from "@/components/sections/GuideCallout";
 
 type Status = "live" | "soon";
 
@@ -316,6 +317,7 @@ export default function SchoolPrograms() {
         </Link>
       </section>
     </div>
+      <section className="pb-10"><GuideCallout slug="child-safe-checklist-aquatic-recreation" /></section>
     </Layout>
   );
 }

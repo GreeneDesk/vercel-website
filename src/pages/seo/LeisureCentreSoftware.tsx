@@ -110,7 +110,7 @@ const LeisureCentreSoftware = () => {
       <RelatedPages heading="Explore Solutions" pages={[
         { title: "Council & Leisure Centres", description: "Purpose-built for council operations", href: "/solutions/council" },
         { title: "FitDesk", description: "Gym, wellness, and rehab programs", href: "/solutions/fitdesk" },
-        { title: "Data Residency", description: "Australian-hosted infrastructure", href: "/data-residency" },
+        { title: "Data Residency", description: "Australian data stays in Australia", href: "/data-residency" },
       ]} />
 
       <section className="section-padding">

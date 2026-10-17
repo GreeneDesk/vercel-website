@@ -78,8 +78,8 @@ const MywellnessAlternative = () => {
   return (
     <Layout>
       <SEO
-        title="Technogym Mywellness Alternative for Leisure Centres | FitDesk"
-        description="Explore FitDesk as an Australian-hosted alternative to Technogym Mywellness for workout programming, assessments and member engagement."
+        title="Mywellness Alternative with Australian Data | FitDesk"
+        description="Explore FitDesk as an alternative to Technogym Mywellness for workout programming, assessments and member engagement, with Australian data kept in Australia."
         canonical="/technogym-mywellness-alternative"
         faq={faqs}
         jsonLd={{
@@ -89,7 +89,7 @@ const MywellnessAlternative = () => {
           applicationCategory: "BusinessApplication",
           operatingSystem: "Web, iOS, Android",
           description:
-            "FitDesk is an Australian-hosted platform for workout programming, digital assessments, trainer scheduling, progress tracking and member engagement, and can be used as an alternative to Technogym Mywellness software while retaining PerfectGym.",
+            "FitDesk is a platform for workout programming, digital assessments, trainer scheduling, progress tracking and member engagement, and can be used as an alternative to Technogym Mywellness software while retaining PerfectGym.",
           provider: { "@type": "Organization", name: "GreeneDesk", url: "https://greenedesk.com.au" },
           areaServed: [
             { "@type": "Country", name: "Australia" },
@@ -118,7 +118,7 @@ const MywellnessAlternative = () => {
               <span className="text-gradient-primary">Keep PerfectGym.</span>
             </h1>
             <p className="text-base md:text-lg text-muted-foreground mb-7">
-              FitDesk gives leisure centres an Australian-hosted platform for digital assessments,
+              FitDesk gives leisure centres a platform for digital assessments,
               workout programming, trainer scheduling, progress tracking and member
               engagement—while allowing PerfectGym to remain your core management system.
             </p>
@@ -234,7 +234,7 @@ const MywellnessAlternative = () => {
         pages={[
           { title: "FitDesk", description: "Fitness operations and member engagement software", href: "/solutions/fitdesk" },
           { title: "PerfectGym integration", description: "Independent, customer-authorised API connection", href: "/integrations/perfectgym" },
-          { title: "Workout programming", description: "Australian-hosted workout programming software", href: "/platform/workout-programming" },
+          { title: "Workout programming", description: "Workout programming software, Australian data stays in Australia", href: "/platform/workout-programming" },
         ]}
       />
 

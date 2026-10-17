@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { Layout } from "@/components/layout/Layout";
+import { GuideCallout } from "@/components/sections/GuideCallout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { DifferentiatorBlock } from "@/components/shared/DifferentiatorBlock";
@@ -105,7 +106,7 @@ const SwimDesk = () => {
   return (
     <Layout>
       <SEO
-        title="Swim School & Aquatic Centre Management Software | SwimDesk Australia"
+        title="SwimDesk | Swim School and Aquatic Centre Software"
         description="Australian swim school and aquatic centre management software. Class bookings, poolside attendance, skills assessments and progression tracking, digital certificates and a parent app. Works alongside your existing membership and payments system. Hosted in AWS Sydney."
         canonical="/solutions/swimdesk"
         jsonLd={{
@@ -233,7 +234,7 @@ const SwimDesk = () => {
                 text: "Run school group bookings, class lists and reporting alongside your regular learn-to-swim timetable, with dedicated school program management.",
               },
               {
-                title: "Australian-hosted data",
+                title: "Australian data stays in Australia",
                 text: "All data is hosted in AWS Sydney. Nothing is processed offshore, supporting APP compliance requirements for council facilities.",
               },
             ].map((card, i) => (
@@ -394,6 +395,7 @@ const SwimDesk = () => {
         ]}
       />
 
+      <section className="pb-10"><GuideCallout slug="child-safe-checklist-aquatic-recreation" /></section>
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
         <div className="container-wide text-center">

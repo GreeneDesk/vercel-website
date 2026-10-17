@@ -17,13 +17,13 @@ interface SEOProps {
 }
 
 const defaults = {
-  title: "FitDesk by GreeneDesk – Fitness Operations Software AU & NZ",
-  description: "Australian-hosted assessments, workout programming, trainer scheduling and member engagement for leisure centres across Australia and New Zealand.",
+  title: "GreeneDesk | Gym, Seniors and Swim Software for AU and NZ",
+  description: "Assessments, workout programming, trainer scheduling and member engagement for leisure centres across Australia and New Zealand. Australian data stays in Australia.",
   image: `https://greenedesk.com.au${socialPreview.url}`,
 };
 
 export function SEO({ title, description, canonical, type = "website", image, jsonLd, faq }: SEOProps) {
-  const fullTitle = title ? `${title} | GreeneDesk` : defaults.title;
+  const fullTitle = title ? (title.includes("GreeneDesk") ? title : `${title} | GreeneDesk`) : defaults.title;
   const desc = description || defaults.description;
   const url = canonical ? `https://greenedesk.com.au${canonical}` : "https://greenedesk.com.au";
   const ogImage = image || defaults.image;

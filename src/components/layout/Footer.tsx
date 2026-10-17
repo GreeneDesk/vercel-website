@@ -34,6 +34,8 @@ const moreLinks = [
   { title: "Data Residency", href: "/data-residency" },
   { title: "Pricing", href: "/pricing" },
   { title: "Resources", href: "/resources" },
+  { title: "Free guides", href: "/guides" },
+  { title: "FAQ", href: "/faq" },
   { title: "Retention Calculator", href: "/retention-calculator" },
   { title: "Partners", href: "/partners" },
   { title: "Contact", href: "/contact" },
@@ -54,7 +56,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm text-text-on-dark-muted mb-2">
               <MapPin className="h-4 w-4 text-primary" />
-              <span>Built and hosted in Australia. Serving AU, NZ & beyond.</span>
+              <span>An Australian company. Australian data stays in Australia. Serving AU, NZ and partners worldwide.</span>
             </div>
             <a href="tel:1300181665" onClick={() => trackEvent("phone_link_click", { location: "footer" })} className="flex items-center gap-2 text-sm text-text-on-dark-muted hover:text-text-on-dark transition-colors">
               <span className="text-primary">📞</span>

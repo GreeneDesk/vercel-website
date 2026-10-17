@@ -18,17 +18,18 @@ export function HeroSection() {
             transition={{ duration: 0.6 }}
           >
             <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[11px] md:text-xs font-bold uppercase tracking-widest text-primary mb-4">
-              🇦🇺 🇳🇿 Built in Australia · Trusted across AU &amp; NZ
+              Australian company · 50+ centres across AU and NZ since 2013
             </p>
 
             <h1 className="font-display text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-5xl font-bold mb-4">
-              Run better programs without{" "}
-              <span className="text-gradient-primary">replacing your management system</span>
+              Software for council gyms, seniors programs and{" "}
+              <span className="text-gradient-primary">swim schools</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-2xl">
-              GreeneDesk adds scheduling, assessments, workout programming, engagement and
-              performance tracking to your existing technology—including PerfectGym.
+              FitDesk runs your fitness floor, active ageing and rehab programs. SwimDesk runs
+              lessons, school programs and squads. Both work alongside your existing management
+              system, including PerfectGym, and Australian customer data stays in Australia.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-5">
@@ -39,12 +40,12 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" className="md:h-14 md:px-8 md:text-base" asChild>
-                <Link to="/solutions/fitdesk">Explore FitDesk</Link>
+                <Link to="/guides">Free guides</Link>
               </Button>
             </div>
 
             <p className="text-xs md:text-sm text-muted-foreground">
-              Australian-built · Data hosted on AWS Sydney · AU-based support
+              Australian company · Australian data stays in Australia · AU-based support
             </p>
           </motion.div>
 

@@ -21,7 +21,7 @@ export function FitDeskHero() {
               <img src={fitdeskLogo} alt="FitDesk by GreeneDesk" className="h-10 w-auto" />
             </div>
             <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-6">
-              FitDesk by GreeneDesk · Built and hosted in Australia
+              FitDesk by GreeneDesk · An Australian company, with Australian data kept in Australia
             </p>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">

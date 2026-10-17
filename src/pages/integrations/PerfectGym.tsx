@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
+import { GuideCallout } from "@/components/sections/GuideCallout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedPages } from "@/components/sections/RelatedPages";
@@ -82,7 +83,7 @@ const PerfectGymIntegration = () => {
   return (
     <Layout>
       <SEO
-        title="PerfectGym Add-On for Programming & Engagement | FitDesk"
+        title="FitDesk for PerfectGym | Fitness Floor Plug-in"
         description="Keep PerfectGym for memberships, billing and access. Add FitDesk for assessments, workout programming, trainer scheduling and member engagement."
         canonical="/integrations/perfectgym"
         faq={faqs}
@@ -254,6 +255,7 @@ const PerfectGymIntegration = () => {
         ]}
       />
 
+      <section className="pb-10"><GuideCallout slug="gym-pre-exercise-screening" /></section>
       {/* Closing CTA */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
         <div className="container-wide text-center">

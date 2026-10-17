@@ -29,7 +29,7 @@ const SportDesk = () => {
   return (
     <Layout>
       <SEO
-        title="SportDesk – Squad & Coaching Management"
+        title="SportDesk | Squad and Sports Program Software"
         description="Manage squads, performance, and progression in one system. Heat tracking, benchmarks, workouts, and athlete engagement."
         canonical="/solutions/sportdesk"
         jsonLd={{

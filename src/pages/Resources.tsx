@@ -5,6 +5,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { motion } from "framer-motion";
+import { guides } from "@/content/guides";
 import { ArrowRight, BookOpen, Dumbbell, Users, Waves, HeartPulse, Trophy, MapPin, Puzzle, ClipboardList, CalendarClock, RefreshCw, ShieldCheck, TrendingUp } from "lucide-react";
 
 const categories = [
@@ -26,7 +27,7 @@ const categories = [
 const Resources = () => {
   return (
     <Layout>
-      <SEO title="Resources – Guides & Best Practices" description="Guides on PerfectGym integrations, Mywellness alternatives, workout programming, assessments, member engagement and Australian data residency." canonical="/resources" />
+      <SEO title="Resources, Guides and Tools | GreeneDesk" description="Guides on PerfectGym integrations, Mywellness alternatives, workout programming, assessments, member engagement and Australian data residency." canonical="/resources" />
       <Breadcrumbs items={[{ label: "Resources" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-light via-background to-background">
@@ -52,6 +53,36 @@ const Resources = () => {
                 Guides for improving fitness-floor operations, member engagement and program delivery—without replacing your core management system.
               </p>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Free guides */}
+      <section className="section-padding pt-0 md:pt-0 -mt-8">
+        <div className="container-wide">
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-2">Free guides and checklists</h2>
+          <p className="text-muted-foreground mb-8">Plain-English guides for gyms, swim schools, councils and seniors programs.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {guides.map((g) => (
+              <div key={g.slug} className="flex flex-col p-5 rounded-xl border border-border bg-background">
+                <span className="text-xs font-semibold uppercase tracking-wide text-primary">{g.type} · PDF · {g.pages} pages</span>
+                <h3 className="mt-2 font-display text-base font-semibold leading-snug">{g.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground flex-1">{g.description}</p>
+                <div className="mt-4 flex flex-col gap-2">
+                  <Link to={`/guides/${g.slug}`} className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
+                    What's inside <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <a href={g.file} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary">
+                    Download PDF <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6">
+            <Link to="/guides" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
+              See all guides <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>

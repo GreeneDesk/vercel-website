@@ -73,7 +73,7 @@ export function FitDeskCapabilities() {
           </h2>
           <p className="text-lg text-muted-foreground">
             Assessments, programming, scheduling, engagement and progress tracking in one
-            Australian-hosted platform.
+            platform, with Australian customer data kept in Australia.
           </p>
         </motion.div>
 

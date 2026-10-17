@@ -25,7 +25,7 @@ const DataResidency = () => {
   return (
     <Layout>
       <SEO
-        title="Australian Data Residency – AWS Sydney Hosted"
+        title="Australian Data Residency | GreeneDesk"
         description="GreeneDesk customer data is stored in Australia using AWS infrastructure in the Sydney region, with role-based access, audit trails and Australian Privacy Principles alignment."
         canonical="/data-residency"
         faq={[
@@ -52,7 +52,7 @@ const DataResidency = () => {
             >
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/20 px-4 py-1.5 text-sm font-medium text-primary mb-6">
                 <Shield className="h-4 w-4" />
-                Built in Australia for the World.
+                An Australian company, built for the world.
               </div>
               
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">

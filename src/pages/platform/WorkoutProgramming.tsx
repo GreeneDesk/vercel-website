@@ -252,7 +252,7 @@ const WorkoutProgramming = () => {
           {
             title: "Mywellness Alternative",
             description:
-              "Australian-hosted workout programming software as a Mywellness alternative",
+              "Workout programming software as a Mywellness alternative, with Australian data residency",
             href: "/technogym-mywellness-alternative",
           },
           {

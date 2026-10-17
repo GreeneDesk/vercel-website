@@ -1,6 +1,8 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { WhoItsForRow } from "@/components/sections/WhoItsForRow";
+import { GuidesStrip } from "@/components/sections/GuidesStrip";
 import { TrustedBySection } from "@/components/sections/TrustedBySection";
 import { PathwaysSection } from "@/components/sections/PathwaysSection";
 import { FitDeskGapSection } from "@/components/sections/FitDeskGapSection";
@@ -16,8 +18,8 @@ const Home = () => {
   return (
     <Layout>
       <SEO
-        title="FitDesk – Fitness Operations Software for AU & NZ Leisure Centres"
-        description="Complete PerfectGym or replace Mywellness with FitDesk. Australian-hosted assessments, workout programming, trainer scheduling and member engagement."
+        title="GreeneDesk | Gym, Seniors and Swim Software for AU and NZ"
+        description="Complete PerfectGym or replace Mywellness with FitDesk. Assessments, workout programming, trainer scheduling and member engagement, with Australian data kept in Australia."
         canonical="/"
         jsonLd={[
           {
@@ -26,7 +28,7 @@ const Home = () => {
             "name": "GreeneDesk",
             "url": "https://greenedesk.com.au",
             "logo": "https://greenedesk.com.au/og-image.png",
-            "description": "GreeneDesk is an Australian software company for leisure centres, aquatic and recreation facilities and sports programs across Australia and New Zealand. Built and hosted in Australia.",
+            "description": "GreeneDesk is an Australian software company for leisure centres, aquatic and recreation facilities and sports programs across Australia and New Zealand. Australian customer data stays in Australia.",
             "address": {
               "@type": "PostalAddress",
               "addressRegion": "VIC",
@@ -81,6 +83,7 @@ const Home = () => {
         ]}
       />
       <HeroSection />
+      <WhoItsForRow />
       <TrustedBySection />
       <PathwaysSection />
       <FitDeskGapSection />
@@ -89,6 +92,7 @@ const Home = () => {
       <FitDeskScreenshots />
       <DataResidencyTeaser />
       <TrustBanner />
+      <GuidesStrip />
       <FinalCTASection />
       <MoreFromGreeneDesk />
     </Layout>
