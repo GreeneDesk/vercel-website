@@ -68,7 +68,7 @@ export default function Guides() {
               {list.map((g) => (
                 <article key={g.slug} className="flex flex-col rounded-xl border bg-card p-6">
                   <span className="text-xs font-semibold uppercase tracking-wide text-primary">
-                    {g.type} · PDF · {g.pages} pages
+                    {g.type} · PDF · {g.pages} {g.pages === 1 ? "page" : "pages"}
                   </span>
                   <h3 className="mt-2 text-lg font-semibold text-foreground">
                     <Link to={`/guides/${g.slug}`} className="hover:underline">
