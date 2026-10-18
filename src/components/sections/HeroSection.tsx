@@ -18,7 +18,7 @@ export function HeroSection() {
             transition={{ duration: 0.6 }}
           >
             <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-[11px] md:text-xs font-bold uppercase tracking-widest text-primary mb-4">
-              Australian company · 50+ centres across AU and NZ since 2013
+              Supporting fitness, swim and seniors programs since 2013
             </p>
 
             <h1 className="font-display text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-5xl font-bold mb-4">
