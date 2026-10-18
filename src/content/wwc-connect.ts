@@ -1,0 +1,21 @@
+export const wwcConnect = {
+  slug: "wwc-connect-victorian-swim-schools",
+  file: "/guides/GreeneDesk-wwc-connect-checklist-victorian-swim-schools.pdf",
+  title: "WWC Connect checklist for Victorian swim schools",
+  seoTitle: "WWC Connect Checklist for Victorian Swim Schools",
+  description: "What Victorian swim schools need to do from 19 October 2026: check, connect and maintain Working with Children records. Free checklist, no sign-up.",
+  cardDescription: "What Victorian swim schools need to do from 19 October 2026: check, connect and maintain Working with Children records.",
+  summary: "From Monday 19 October 2026, Victorian organisations engaging people in child-related work use a new online service, WWC Connect. This page summarises what changes for swim schools and aquatic centres, and gives you a one-page checklist to keep.",
+  requirements: { startsOn: "2026-10-19", workerDays: 7, volunteerDays: 21, retentionYears: 7, trainingMinutes: 45 },
+  faqs: [
+    { q: "When does WWC Connect start?", a: "Monday 19 October 2026." },
+    { q: "Do swim schools need to use WWC Connect?", a: "Organisations engaging people in child-related work need to. Children's coaching and tuition are recognised occupational fields, so swim teaching is in scope. Assess each role by its duties." },
+    { q: "Do we have to connect existing staff straight away?", a: "The published guidance does not require all existing staff to be connected by 19 October, but it is strongly encouraged. New engagements from 19 October must be connected, and changes and departures must be reported." },
+    { q: "Can a swim instructor start while their application is processed?", a: "Only where they are permitted to work while it is assessed. Use the official status checker. An application receipt alone is not enough." },
+    { q: "Can we use a volunteer clearance for paid lessons?", a: "No. Paid child-related work needs an employee clearance unless an exemption applies." },
+    { q: "How long must we keep records?", a: "At least 7 years after the engagement ends." },
+    { q: "Does supervision by another teacher remove the need for a check?", a: "No. Supervision does not remove the screening requirement for in-scope work." },
+    { q: "Can we upload our whole team at once?", a: "A CSV bulk upload is supported. Direct HR or payroll integration is not available at launch." },
+    { q: "Does the child safety training replace our own induction?", a: "No. It does not cover your site's procedures, so continue your own induction and supervision." },
+  ],
+};

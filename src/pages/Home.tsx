@@ -13,9 +13,12 @@ import { DataResidencyTeaser } from "@/components/sections/DataResidencyTeaser";
 import { TrustBanner } from "@/components/sections/TrustBanner";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import { MoreFromGreeneDesk } from "@/components/sections/MoreFromGreeneDesk";
+import { WwcAnnouncement } from "@/components/sections/WwcAnnouncement";
 
 const Home = () => {
   return (
+    <>
+    <WwcAnnouncement />
     <Layout>
       <SEO
         title="GreeneDesk | Gym, Seniors and Swim Software for AU and NZ"
@@ -96,6 +99,7 @@ const Home = () => {
       <FinalCTASection />
       <MoreFromGreeneDesk />
     </Layout>
+    </>
   );
 };
 

@@ -2,6 +2,8 @@
 // PDFs live in public/guides/. To add a guide: drop the PDF in public/guides/, add an entry here,
 // and add its URL to public/sitemap.xml. No AI prompt needed.
 
+import { wwcConnect } from "./wwc-connect";
+
 export type Guide = {
   slug: string;
   file: string; // path under public/
@@ -13,7 +15,7 @@ export type Guide = {
   summary: string;
   who: string;
   inside: string[];
-  faqs: { q: string; a: string }[];
+  faqs: { q: string; a: string; appendix?: { text: string; linkText: string; to: string } }[];
   related: { label: string; to: string }[];
   pages: number;
 };
@@ -127,6 +129,25 @@ export const guides: Guide[] = [
     pages: 4,
   },
   {
+    slug: wwcConnect.slug,
+    file: wwcConnect.file,
+    type: "Checklist",
+    audience: "Swim and children's programs",
+    title: wwcConnect.title,
+    seoTitle: wwcConnect.seoTitle,
+    description: wwcConnect.cardDescription,
+    summary: wwcConnect.summary,
+    who: "Victorian swim schools and aquatic centres.",
+    inside: ["Check, Connect, Maintain", "A recruitment checklist for swim schools", "Keeping a clear record"],
+    faqs: wwcConnect.faqs,
+    related: [
+      { label: "Child safe checklist for aquatic and recreation programs", to: "/guides/child-safe-checklist-aquatic-recreation" },
+      { label: "SwimDesk", to: "/solutions/swimdesk" },
+      { label: "Swim School Programs", to: "/solutions/school-programs" },
+    ],
+    pages: 1,
+  },
+  {
     slug: "child-safe-checklist-aquatic-recreation",
     file: "/guides/GreeneDesk-child-safe-checklist-aquatic-recreation.pdf",
     type: "Checklist",
@@ -152,6 +173,11 @@ export const guides: Guide[] = [
       {
         q: "Do swim instructors need a Working with Children Check?",
         a: "Yes, people in paid or volunteer child-related work need a Working with Children Check in their state, and in NSW organisations must verify it. In New Zealand, government-funded organisations and their contractors must safety-check children's workers under the Children's Act 2014.",
+        appendix: {
+          text: "In Victoria, a new online service, WWC Connect, starts on 19 October 2026.",
+          linkText: "See our WWC Connect checklist for Victorian swim schools.",
+          to: "/guides/wwc-connect-victorian-swim-schools",
+        },
       },
       {
         q: "Is this legal advice?",
@@ -161,6 +187,7 @@ export const guides: Guide[] = [
     related: [
       { label: "SwimDesk", to: "/solutions/swimdesk" },
       { label: "School swimming programs", to: "/solutions/school-programs" },
+      { label: "WWC Connect checklist for Victorian swim schools", to: "/guides/wwc-connect-victorian-swim-schools" },
     ],
     pages: 4,
   },

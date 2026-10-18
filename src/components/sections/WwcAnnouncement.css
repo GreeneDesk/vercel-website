@@ -1,0 +1,6 @@
+.wwc-announcement {
+  --announcement-background: 176 56% 55%;
+  --announcement-foreground: 222 47% 11%;
+  background-color: hsl(var(--announcement-background));
+  color: hsl(var(--announcement-foreground));
+}
