@@ -6,9 +6,11 @@ import { getGuide } from "@/content/guides";
 import { usePageMeta, SITE_URL } from "@/lib/seo";
 import { Layout } from "@/components/layout/Layout";
 import NotFound from "./NotFound";
+import WwcConnectGuide from "./WwcConnectGuide";
 
 export default function GuideDetail() {
   const { slug } = useParams();
+  if (slug === "wwc-connect-victorian-swim-schools") return <WwcConnectGuide />;
   const g = getGuide(slug);
   if (!g) return <NotFound />;
   return <GuideView slug={g.slug} />;
@@ -49,7 +51,7 @@ function GuideView({ slug }: { slug: string }) {
           mainEntity: g.faqs.map((f) => ({
             "@type": "Question",
             name: f.q,
-            acceptedAnswer: { "@type": "Answer", text: f.a },
+            acceptedAnswer: { "@type": "Answer", text: f.appendix ? `${f.a} ${f.appendix.text} ${f.appendix.linkText}` : f.a },
           })),
         },
       ],
@@ -109,7 +111,7 @@ function GuideView({ slug }: { slug: string }) {
           {g.faqs.map((f) => (
             <details key={f.q} className="p-5">
               <summary className="cursor-pointer list-none font-medium text-foreground">{f.q}</summary>
-              <p className="mt-2 text-muted-foreground">{f.a}</p>
+              <p className="mt-2 text-muted-foreground">{f.a}{f.appendix && <> {f.appendix.text} <Link to={f.appendix.to} className="font-medium text-primary hover:underline">{f.appendix.linkText}</Link></>}</p>
             </details>
           ))}
         </div>
