@@ -6,6 +6,7 @@ import { GuideCallout } from "@/components/sections/GuideCallout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { DifferentiatorBlock } from "@/components/shared/DifferentiatorBlock";
+import { PageFaqs, type PageFaq } from "@/components/shared/PageFaqs";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
@@ -102,6 +103,41 @@ const sections = [
   },
 ];
 
+const swimdeskFaqs: PageFaq[] = [
+  {
+    question: "What software do Australian swim schools use?",
+    answer: "Swim schools use software for bookings, poolside attendance and assessments, progression tracking and parent communication. SwimDesk does this for swim schools and aquatic centres in Australia and New Zealand.",
+  },
+  {
+    question: "Does SwimDesk support AUSTSWIM, Royal Life Saving and YMCA levels?",
+    answer: "Yes. You can set up AUSTSWIM, Royal Life Saving or YMCA levels, or any structured curriculum your centre follows.",
+  },
+  {
+    question: "Do instructors need wifi at the pool?",
+    answer: "No. Poolside assessments and attendance work on a tablet offline and sync when the device reconnects.",
+  },
+  {
+    question: "Can parents book classes and see progress?",
+    answer: "Yes. Parents can book and reschedule classes, report absences, track progress, receive digital certificates and pay from their mobile.",
+  },
+  {
+    question: "Do we have to replace our membership or billing system?",
+    answer: "No. SwimDesk works alongside the system you already use, including PerfectGym and Envibe.",
+  },
+  {
+    question: "Where is student data stored?",
+    answer: "Customer data is hosted on AWS in Sydney. New Zealand customers are also hosted in Sydney.",
+  },
+  {
+    question: "How long does setup and migration take?",
+    answer: "Setup and data migration typically take about 2 weeks, depending on the data supplied.",
+  },
+  {
+    question: "How much does SwimDesk cost?",
+    answer: "Plans start from A$350 per month, based on active enrolments. See the pricing page.",
+  },
+];
+
 const SwimDesk = () => {
   return (
     <Layout>
@@ -118,24 +154,7 @@ const SwimDesk = () => {
           "areaServed": ["AU", "NZ"],
           "serviceType": "Swim School Management Software"
         }}
-        faq={[
-          {
-            question: "Does SwimDesk replace our membership or payments system?",
-            answer: "No. SwimDesk works alongside the system you already use — including PerfectGym and Envibe — and adds the learn-to-swim layer: class scheduling, poolside attendance, skills assessments, progression tracking and parent communication. SwimDesk also includes its own payments — term-based and recurring with flexible discounts — so you can use as much or as little of it as you need. There is no need to change your payments or membership setup."
-          },
-          {
-            question: "Which learn-to-swim curricula does SwimDesk support?",
-            answer: "SwimDesk supports structured learn-to-swim curricula including AUSTSWIM, Royal Life Saving and YMCA programs — or any structured curriculum your centre uses, with skills, levels and progressions configured to match."
-          },
-          {
-            question: "Is SwimDesk suitable for council aquatic facilities?",
-            answer: "Yes. Many SwimDesk customers are council-owned leisure and aquatic centres and YMCAs. It handles multi-pool and lane scheduling, instructor assignments, class capacity, school swimming programs and reporting, with instructors able to mark attendance and assessments poolside — including offline on the pool deck."
-          },
-          {
-            question: "Where is SwimDesk data hosted?",
-            answer: "All SwimDesk data is hosted in AWS Sydney, in Australia. Data is not processed offshore, supporting Australian Privacy Principles compliance for councils and other public-facing organisations."
-          }
-        ]}
+        faq={swimdeskFaqs}
       />
       <Breadcrumbs items={[{ label: "Solutions", href: "/solutions/swimdesk" }, { label: "SwimDesk" }]} />
 
@@ -396,6 +415,9 @@ const SwimDesk = () => {
       />
 
       <section className="pb-10"><GuideCallout slug="child-safe-checklist-aquatic-recreation" /></section>
+
+      <PageFaqs heading="Questions about swim school software" faqs={swimdeskFaqs} />
+
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
         <div className="container-wide text-center">
