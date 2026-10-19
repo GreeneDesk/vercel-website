@@ -34,6 +34,7 @@ const IClassProAlternative = () => (
   <Layout>
     <SEO
       title="iClassPro Alternative for Australian Swim Schools | SwimDesk"
+      noSuffix
       description="Switching from iClassPro? SwimDesk is built for swimming: poolside assessments, a parent app, and setup and migration in about 2 weeks. Hosted in Sydney."
       canonical="/iclasspro-alternative"
     />
