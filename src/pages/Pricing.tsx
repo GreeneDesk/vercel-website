@@ -13,8 +13,8 @@ const Pricing = () => {
   return (
     <Layout>
       <SEO
-        title="Pricing | SwimDesk and FitDesk | GreeneDesk"
-        description="FitDesk pricing is based on facility size, member volume, required modules and integration scope. SwimDesk and SportDesk pricing also available. All data hosted in Australia."
+        title="SwimDesk & FitDesk Pricing | GreeneDesk"
+        description="SwimDesk plans start from A$350 per month, priced by active enrolments. FitDesk is priced by active members. No per-transaction fees. All prices in AUD."
         canonical="/pricing"
         faq={[
           { question: "How much does GreeneDesk cost?", answer: "Pricing is based on enrolment or membership volume. SwimDesk starts from A$350/month and FitDesk starts from A$450/month. Annual billing saves 15%." },

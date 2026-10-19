@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Check, Quote } from "lucide-react";
 
 const why = [
-  { title: "Built for swimming", body: "iClassPro serves gymnastics, cheer, dance and swim. SwimDesk is built around swim: poolside skills assessments, level progressions, certificates and pool and lane scheduling." },
+  { title: "Built for swimming", body: "SwimDesk is dedicated to swimming: poolside skills assessments, level progressions, certificates and pool and lane scheduling." },
   { title: "Learn-to-swim, school programs and squads in one", body: "Run lessons, school swimming programs and competitive squads on one platform. Students move from lessons into squads without re-entering a single record." },
   { title: "A mobile app for everyone", body: "Instructors, coaches, office staff and parents each get a mobile app: poolside assessments for staff, bookings, make-ups and progress for families." },
   { title: "AI that protects re-enrolments", body: "AI retention alerts flag students at risk of dropping out, based on attendance and progress, so you can contact families before term ends." },
@@ -34,7 +34,8 @@ const IClassProAlternative = () => (
   <Layout>
     <SEO
       title="iClassPro Alternative for Australian Swim Schools | SwimDesk"
-      description="Switching from iClassPro? SwimDesk runs learn-to-swim, school programs and squads in one platform, with mobile apps for staff and parents and AI retention alerts. Australian data stays in Australia."
+      noSuffix
+      description="Switching from iClassPro? SwimDesk is built for swimming: poolside assessments, a parent app, and setup and migration in about 2 weeks. Hosted in Sydney."
       canonical="/iclasspro-alternative"
     />
     <Breadcrumbs items={[{ label: "Compare", href: "/compare" }, { label: "iClassPro Alternative" }]} />
@@ -99,7 +100,7 @@ const IClassProAlternative = () => (
             { title: "Demo and plan", body: "We walk through your levels, classes and billing and agree a go-live date." },
             { title: "Data import", body: "We import families, students, levels and class lists from your iClassPro export." },
             { title: "Set up and train", body: "We configure your levels and train your office team and instructors." },
-            { title: "Go live", body: "Families get the parent app and you start the new term on SwimDesk. Typical time: 2 weeks." },
+            { title: "Go live", body: "Families get the parent app and you start the new term on SwimDesk. Setup and data migration typically take about 2 weeks, depending on the data supplied." },
           ].map((step, i) => (
             <li key={step.title} className="rounded-xl border border-border bg-background p-6">
               <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">Step {i + 1}</p>

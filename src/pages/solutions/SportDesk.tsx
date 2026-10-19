@@ -29,8 +29,9 @@ const SportDesk = () => {
   return (
     <Layout>
       <SEO
-        title="SportDesk | Squad and Sports Program Software"
-        description="Manage squads, performance, and progression in one system. Heat tracking, benchmarks, workouts, and athlete engagement."
+        title="Sports Class Management Software Australia | SportDesk"
+        noSuffix
+        description="Sports class software for Australian and NZ centres: scheduling, attendance, progression and parent communication for martial arts, gymnastics and tennis."
         canonical="/solutions/sportdesk"
         jsonLd={{
           "@context": "https://schema.org",

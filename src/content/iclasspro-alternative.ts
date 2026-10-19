@@ -18,7 +18,7 @@ export const iclassproAlternative = {
     items: [
       {
         title: "Built for swimming",
-        body: "iClassPro serves gymnastics, cheer, dance and swim. SwimDesk is built around swim: poolside skills assessments, level progressions, certificates and pool and lane scheduling.",
+        body: "SwimDesk is dedicated to swimming: poolside skills assessments, level progressions, certificates and pool and lane scheduling.",
       },
       {
         title: "Learn-to-swim, school programs and squads in one",
@@ -68,7 +68,7 @@ export const iclassproAlternative = {
       { title: "Demo and plan", body: "We walk through your levels, classes and billing and agree a go-live date." },
       { title: "Data import", body: "We import families, students, levels and class lists from your iClassPro export." },
       { title: "Set up and train", body: "We configure your levels and train your office team and instructors." },
-      { title: "Go live", body: "Families get the parent app and you start the new term on SwimDesk. Typical time: 2 weeks." },
+      { title: "Go live", body: "Families get the parent app and you start the new term on SwimDesk. Setup and data migration typically take about 2 weeks, depending on the data supplied." },
     ],
   },
   testimonial: {

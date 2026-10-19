@@ -11,9 +11,9 @@ import { Layout } from "@/components/layout/Layout";
 type Status = "live" | "soon";
 
 const URL = "https://greenedesk.com.au/solutions/squads";
-const TITLE = "Swim Squad Management Software | Times, Attendance & Dryland | SwimDesk";
+const TITLE = "Swim Squad Management Software | SwimDesk";
 const DESC =
-  "Squad management for swim schools and aquatic centres: squad groups, attendance, coach rosters, swimmer and parent app, and progress, with pool and dryland training planned together. One record from first lesson to first race.";
+  "Swim squad software for aquatic centres: squad groups, attendance, coach rosters and a swimmer and parent app. One record from first lesson to first race.";
 
 const problems = [
   "Training times live on a coach's stopwatch, phone or paper",
@@ -131,6 +131,8 @@ export default function Squads() {
     setMeta('meta[property="og:title"]', "property", "og:title", TITLE);
     setMeta('meta[property="og:description"]', "property", "og:description", DESC);
     setMeta('meta[property="og:url"]', "property", "og:url", URL);
+    setMeta('meta[name="twitter:title"]', "name", "twitter:title", TITLE);
+    setMeta('meta[name="twitter:description"]', "name", "twitter:description", DESC);
     let canon = document.head.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canon) {
       canon = document.createElement("link");

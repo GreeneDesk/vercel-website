@@ -28,7 +28,7 @@ export const TESTIMONIALS: Testimonial[] = [
     country: "Australia",
   },
   {
-    quote: "I do like the SwimDesk system — it's so easy to follow. I love the fact that once Hailey has been assessed her results are on the SwimDesk within the same day. I'm always kept updated with her progress.",
+    quote: "I do like the SwimDesk system — it's so easy to follow. I love the fact that once my daughter has been assessed her results are on the SwimDesk within the same day. I'm always kept updated with her progress.",
     name: "Swim School Parent",
     role: "SwimDesk Parent Portal User",
     initials: "SP",
@@ -44,15 +44,6 @@ export const TESTIMONIALS: Testimonial[] = [
     flag: "🇳🇿",
     product: "SwimDesk",
     country: "New Zealand",
-  },
-  {
-    quote: "The retention reporting alone paid for the software in the first month. We identified 47 at-risk students we would have lost — and kept 38 of them.",
-    name: "Operations Director",
-    role: "Multi-Sport Leisure Centre",
-    initials: "OD",
-    flag: "🇦🇺",
-    product: "SwimDesk",
-    country: "Australia",
   },
   {
     quote: "Switching from our old system to GreeneDesk was far smoother than we expected. The onboarding team migrated everything and we were live within two weeks.",

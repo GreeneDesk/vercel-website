@@ -21,8 +21,8 @@ const Home = () => {
     <WwcAnnouncement />
     <Layout>
       <SEO
-        title="GreeneDesk | Gym, Seniors and Swim Software for AU and NZ"
-        description="Complete PerfectGym or replace Mywellness with FitDesk. Assessments, workout programming, trainer scheduling and member engagement, with Australian data kept in Australia."
+        title="Swim School & Gym Software for Australia & NZ | GreeneDesk"
+        description="Swim school, gym and active ageing software for Australian and NZ leisure centres and councils. Built in Australia, hosted in Sydney."
         canonical="/"
         jsonLd={[
           {

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Puzzle, Repeat } from "lucide-react";
+import { ArrowRight, Puzzle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 
 export function PathwaysSection() {
@@ -52,35 +52,10 @@ export function PathwaysSection() {
             <p className="text-xs text-muted-foreground mt-4">
               Independent, customer-authorised API integration
             </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="rounded-2xl border border-border bg-background p-8 flex flex-col"
-          >
-            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-accent to-accent-hover mb-5 flex items-center justify-center">
-              <Repeat className="h-6 w-6 text-accent-foreground" aria-hidden="true" />
-            </div>
-            <h3 className="font-display text-2xl font-bold mb-3">Replace Mywellness</h3>
-            <p className="text-muted-foreground mb-6 flex-1">
-              Move your programming and member-engagement workflows to a platform where Australian data stays in Australia
-              without replacing PerfectGym.
-            </p>
-            <Button
-              asChild
-              className="self-start"
-              onClick={() => trackEvent("home_pathway_mywellness_click", { pathway: "replace-mywellness" })}
-            >
-              <Link to="/technogym-mywellness-alternative">
-                Explore the Mywellness alternative
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            <p className="text-sm mt-3">
+              <Link to="/compare" className="text-primary font-medium hover:underline">
+                Switching from another system? See how to move →
               </Link>
-            </Button>
-            <p className="text-xs text-muted-foreground mt-4">
-              This concerns Mywellness software, not Technogym fitness equipment.
             </p>
           </motion.div>
         </div>
