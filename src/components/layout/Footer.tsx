@@ -11,6 +11,7 @@ const solutionsLinks = [
   { title: "Mywellness Alternative", href: "/technogym-mywellness-alternative" },
   { title: "SwimDesk", href: "/solutions/swimdesk" },
   { title: "iClassPro Alternative", href: "/iclasspro-alternative" },
+  { title: "SimplySwim Alternative", href: "/simplyswim-alternative" },
   { title: "Swim School Programs", href: "/solutions/school-programs" },
   { title: "Swim Squads", href: "/solutions/squads" },
   { title: "SportDesk", href: "/solutions/sportdesk" },

@@ -3,17 +3,39 @@ import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ComparisonTable } from "@/components/sections/ComparisonTable";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+
+const cards = [
+  {
+    title: "Moving from iClassPro",
+    description: "How SwimDesk works for swim schools, and what a switch involves.",
+    href: "/iclasspro-alternative",
+  },
+  {
+    title: "Moving from SimplySwim",
+    description: "A checklist to test any swim school software, and how SwimDesk answers each point.",
+    href: "/simplyswim-alternative",
+  },
+  {
+    title: "Using PerfectGym? Keep it",
+    description: "Add FitDesk for assessments, programming and member engagement without replacing PerfectGym.",
+    href: "/integrations/perfectgym",
+  },
+  {
+    title: "Moving from Mywellness",
+    description: "Move programming and member engagement to an Australian-hosted platform.",
+    href: "/technogym-mywellness-alternative",
+  },
+];
 
 const Compare = () => {
   return (
     <Layout>
       <SEO
-        title="Compare Leisure Centre Software | GreeneDesk"
-        description="Feature-by-feature comparison of GreeneDesk against Udio, plus how FitDesk compares as a Mywellness software alternative."
+        title="Switching Software? Start Here | GreeneDesk"
+        noSuffix
+        description="Practical guides for swim schools, gyms and leisure centres moving to SwimDesk or FitDesk. Data hosted in Sydney."
         canonical="/compare"
       />
       <Breadcrumbs items={[{ label: "Compare" }]} />
@@ -21,59 +43,50 @@ const Compare = () => {
       <section className="pt-10 md:pt-14">
         <div className="container-wide max-w-3xl">
           <h1 className="font-display text-[1.75rem] leading-[1.15] sm:text-4xl lg:text-5xl font-bold mb-4">
-            Compare GreeneDesk with the{" "}
-            <span className="text-gradient-primary">alternatives</span>
+            Switching software? Start here
           </h1>
           <p className="text-base md:text-lg text-muted-foreground">
-            Honest comparisons for swim schools, gyms, leisure centres and aquatic facilities across
-            Australia and New Zealand.
+            Practical guides for swim schools, gyms and leisure centres moving to SwimDesk or FitDesk.
           </p>
         </div>
       </section>
 
-      <ComparisonTable />
-
-      {/* Fourth comparison option */}
-      <section className="pb-12 md:pb-16">
-        <div className="container-wide">
-          <div className="max-w-5xl mx-auto rounded-2xl border-2 border-primary bg-surface-section p-8 md:flex md:items-center md:justify-between md:gap-8">
-            <div>
-              <h2 className="font-display text-2xl font-bold mb-2">FitDesk vs Mywellness</h2>
-              <p className="text-muted-foreground max-w-2xl">
-                Considering an alternative to Technogym Mywellness software with Australian data residency? See
-                FitDesk's verified capabilities, migration considerations and the "Replace
-                Mywellness. Keep PerfectGym." proposition.
-              </p>
-            </div>
-            <Button asChild className="mt-6 md:mt-0 flex-shrink-0">
-              <Link to="/technogym-mywellness-alternative">
-                Explore the Mywellness alternative
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </Button>
+      <section className="section-padding">
+        <div className="container-wide max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-5">
+            {cards.map((card, i) => (
+              <motion.div
+                key={card.href}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+              >
+                <Link
+                  to={card.href}
+                  className="block rounded-xl border border-border bg-background p-6 h-full hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+                >
+                  <h2 className="font-display text-lg font-bold mb-2">{card.title}</h2>
+                  <p className="text-sm text-muted-foreground mb-4">{card.description}</p>
+                  <span className="inline-flex items-center gap-2 text-primary text-sm font-medium">
+                    Read the guide <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                </Link>
+              </motion.div>
+            ))}
           </div>
-        </div>
-      </section>
 
-      <TestimonialsSection />
-
-      <section className="section-padding bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
-        <div className="container-wide text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Ready to see the difference?
-            </h2>
-            <Button variant="secondary" size="xl" asChild>
+          <div className="text-center mt-12">
+            <Button variant="cta" size="xl" asChild>
               <Link to="/demo">
                 Book a Demo
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </Link>
             </Button>
-          </motion.div>
+            <p className="text-xs text-muted-foreground mt-8 max-w-xl mx-auto">
+              Product names are trademarks of their respective owners. GreeneDesk is not affiliated with or endorsed by them.
+            </p>
+          </div>
         </div>
       </section>
     </Layout>
