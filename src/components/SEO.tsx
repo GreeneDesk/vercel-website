@@ -23,8 +23,8 @@ const defaults = {
   image: `https://greenedesk.com.au${socialPreview.url}`,
 };
 
-export function SEO({ title, description, canonical, type = "website", image, jsonLd, faq }: SEOProps) {
-  const fullTitle = title ? (title.includes("GreeneDesk") ? title : `${title} | GreeneDesk`) : defaults.title;
+export function SEO({ title, description, canonical, type = "website", image, jsonLd, faq, noSuffix }: SEOProps) {
+  const fullTitle = title ? (noSuffix || title.includes("GreeneDesk") ? title : `${title} | GreeneDesk`) : defaults.title;
   const desc = description || defaults.description;
   const url = canonical ? `https://greenedesk.com.au${canonical}` : "https://greenedesk.com.au";
   const ogImage = image || defaults.image;

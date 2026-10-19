@@ -33,6 +33,7 @@ const moreLinks = [
   { title: "Integrations", href: "/integrations" },
   { title: "Data Residency", href: "/data-residency" },
   { title: "Pricing", href: "/pricing" },
+  { title: "Compare", href: "/compare" },
   { title: "Resources", href: "/resources" },
   { title: "Free guides", href: "/guides" },
   { title: "FAQ", href: "/faq" },
