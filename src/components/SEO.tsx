@@ -14,6 +14,7 @@ interface SEOProps {
   image?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   faq?: FAQItem[];
+  noSuffix?: boolean;
 }
 
 const defaults = {

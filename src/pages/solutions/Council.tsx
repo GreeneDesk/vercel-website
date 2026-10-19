@@ -70,8 +70,8 @@ const Council = () => {
   return (
     <Layout>
       <SEO
-        title="Council Leisure Centre Software | GreeneDesk"
-        description="GreeneDesk works alongside your existing management system to power scheduling, engagement, and program delivery for council leisure centres."
+        title="Leisure & Aquatic Centre Software for Councils | GreeneDesk"
+        description="Software for council leisure and aquatic centres in Australia and NZ. Works alongside your management system. Data hosted in Sydney."
         canonical="/solutions/council"
         jsonLd={{
           "@context": "https://schema.org",

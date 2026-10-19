@@ -20,8 +20,8 @@ const FitDesk = () => {
   return (
     <Layout>
       <SEO
-        title="FitDesk | Gym and Fitness Floor Software for Leisure Centres"
-        description="FitDesk gives leisure centres assessments, workout programming, trainer scheduling, progress tracking and member engagement. Use it alongside PerfectGym or as a Mywellness alternative."
+        title="FitDesk – Gym Programming & Assessment Software | GreeneDesk"
+        description="FitDesk adds digital assessments, workout programming, trainer scheduling and member apps to your existing system, including PerfectGym. Hosted in Sydney."
         canonical="/solutions/fitdesk"
         jsonLd={{
           "@context": "https://schema.org",

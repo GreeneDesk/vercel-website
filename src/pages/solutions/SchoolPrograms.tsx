@@ -12,9 +12,9 @@ import { GuideCallout } from "@/components/sections/GuideCallout";
 type Status = "live" | "soon";
 
 const URL = "https://greenedesk.com.au/solutions/school-programs";
-const TITLE = "School Swimming Program Software for Aquatic Centres | SwimDesk";
+const TITLE = "School Swimming Program Software | SwimDesk";
 const DESC =
-  "Run school swimming programs without the paperwork. SwimDesk handles school bookings, class lists, level grouping, poolside assessments, certificates and reports for every school. Australian data stays in Australia.";
+  "Run school swimming programs without paperwork: level grouping, poolside assessments, certificates and reports for every school.";
 
 const problems = [
   "Schools book with PDF forms and hire agreements emailed back and forth",
@@ -91,7 +91,7 @@ const whyNow = [
 
 const quotes = [
   {
-    text: "SwimDesk has transformed how we manage our school program. What used to take admin days now takes minutes.",
+    text: "SwimDesk has transformed how we manage our school program. What used to take our admin team days of manual work each week now takes minutes.",
     who: "Centre Manager, New Zealand council",
   },
   {
@@ -155,6 +155,8 @@ export default function SchoolPrograms() {
     setMeta('meta[property="og:title"]', "property", "og:title", TITLE);
     setMeta('meta[property="og:description"]', "property", "og:description", DESC);
     setMeta('meta[property="og:url"]', "property", "og:url", URL);
+    setMeta('meta[name="twitter:title"]', "name", "twitter:title", TITLE);
+    setMeta('meta[name="twitter:description"]', "name", "twitter:description", DESC);
     let canon = document.head.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canon) {
       canon = document.createElement("link");
