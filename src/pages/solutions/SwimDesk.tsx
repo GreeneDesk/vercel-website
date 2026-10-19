@@ -106,8 +106,8 @@ const SwimDesk = () => {
   return (
     <Layout>
       <SEO
-        title="SwimDesk | Swim School and Aquatic Centre Software"
-        description="Australian swim school and aquatic centre management software. Class bookings, poolside attendance, skills assessments and progression tracking, digital certificates and a parent app. Works alongside your existing membership and payments system. Hosted in AWS Sydney."
+        title="Swim School Software Australia | SwimDesk by GreeneDesk"
+        description="Swim school software for Australia and NZ: bookings, poolside assessments, progression, certificates and a parent app. Data hosted in Sydney."
         canonical="/solutions/swimdesk"
         jsonLd={{
           "@context": "https://schema.org",
@@ -154,7 +154,7 @@ const SwimDesk = () => {
                 <img src={swimdeskLogo} alt="SwimDesk" className="h-10 w-auto" />
               </div>
               <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
-                Swim School &amp; Aquatic Centre Management
+                Swim school software for Australia and NZ
               </p>
               
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -235,7 +235,7 @@ const SwimDesk = () => {
               },
               {
                 title: "Australian data stays in Australia",
-                text: "All data is hosted in AWS Sydney. Nothing is processed offshore, supporting APP compliance requirements for council facilities.",
+                text: "All data is hosted in AWS Sydney. Customer data is hosted on AWS in Sydney.",
               },
             ].map((card, i) => (
               <motion.div
