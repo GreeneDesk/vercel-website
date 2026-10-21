@@ -1,4 +1,5 @@
 import { trackEvent } from "@/lib/analytics";
+import { supabase } from "@/integrations/supabase/client";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -68,7 +69,48 @@ const Contact = () => {
     }
 
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    const submissionId = crypto.randomUUID();
+    const { error } = await supabase.from("contact_submissions").insert({
+      id: submissionId,
+      first_name: formData.firstName.trim(),
+      last_name: formData.lastName.trim() || null,
+      email: formData.email.trim(),
+      phone: formData.phone.trim() || null,
+      job_title: formData.jobTitle.trim() || null,
+      subject: formData.subject.trim() || null,
+      message: formData.message.trim(),
+    });
+
+    if (error) {
+      setIsSubmitting(false);
+      toast({
+        title: "Message not sent",
+        description:
+          "Something went wrong on our end. Please email support@greenedesk.com or call 1 300 181 665 instead.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Notify the team (best effort — the enquiry is already saved)
+    supabase.functions.invoke("send-transactional-email", {
+      body: {
+        templateName: "contact-enquiry-notification",
+        recipientEmail: "anita.w@greenedesk.com",
+        idempotencyKey: `contact-enquiry-${submissionId}`,
+        templateData: {
+          firstName: formData.firstName.trim(),
+          lastName: formData.lastName.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim(),
+          jobTitle: formData.jobTitle.trim(),
+          subject: formData.subject.trim(),
+          message: formData.message.trim(),
+        },
+      },
+    });
+
     setIsSubmitting(false);
     setIsSubmitted(true);
 
