@@ -98,7 +98,7 @@ const Contact = () => {
       body: {
         templateName: "contact-enquiry-notification",
         recipientEmail: "anita.w@greenedesk.com",
-        idempotencyKey: `contact-enquiry-${data.id}`,
+        idempotencyKey: `contact-enquiry-${submissionId}`,
         templateData: {
           firstName: formData.firstName.trim(),
           lastName: formData.lastName.trim(),
