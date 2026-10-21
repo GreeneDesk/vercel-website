@@ -70,21 +70,19 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    const { data, error } = await supabase
-      .from("contact_submissions")
-      .insert({
-        first_name: formData.firstName.trim(),
-        last_name: formData.lastName.trim() || null,
-        email: formData.email.trim(),
-        phone: formData.phone.trim() || null,
-        job_title: formData.jobTitle.trim() || null,
-        subject: formData.subject.trim() || null,
-        message: formData.message.trim(),
-      })
-      .select("id")
-      .single();
+    const submissionId = crypto.randomUUID();
+    const { error } = await supabase.from("contact_submissions").insert({
+      id: submissionId,
+      first_name: formData.firstName.trim(),
+      last_name: formData.lastName.trim() || null,
+      email: formData.email.trim(),
+      phone: formData.phone.trim() || null,
+      job_title: formData.jobTitle.trim() || null,
+      subject: formData.subject.trim() || null,
+      message: formData.message.trim(),
+    });
 
-    if (error || !data) {
+    if (error) {
       setIsSubmitting(false);
       toast({
         title: "Message not sent",
