@@ -29,12 +29,12 @@ const platformItems = [
 ];
 
 const moreSolutionsItems = [
-  { title: "FitDesk member app", href: "/fitdesk-app", description: "Member app for iPhone & Android" },
   { title: "SwimDesk", href: "/solutions/swimdesk", description: "Swim schools & aquatic centres" },
-  { title: "SportDesk", href: "/solutions/sportdesk", description: "Squads, coaching & competitive sports" },
   { title: "School Programs", href: "/solutions/school-programs", description: "School swimming & sports" },
   { title: "Squads", href: "/solutions/squads", description: "Squad progression & tracking" },
+  { title: "SportDesk", href: "/solutions/sportdesk", description: "Squads, coaching & competitive sports" },
   { title: "Council & Leisure Centres", href: "/solutions/council", description: "Multi-service centre operations" },
+  { title: "FitDesk member app", href: "/fitdesk-app", description: "Member app for iPhone & Android" },
   { title: "Compare", href: "/compare", description: "How GreeneDesk compares" },
 ];
 
