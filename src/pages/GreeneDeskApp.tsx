@@ -3,6 +3,7 @@
 // Needs src/lib/seo.ts (already in the project).
 
 import { Link } from "react-router-dom";
+import { Layout } from "@/components/layout/Layout";
 import { usePageMeta, SITE_URL } from "@/lib/seo";
 
 const IOS = "https://apps.apple.com/au/app/greenedesk/id6447428480";
@@ -130,6 +131,7 @@ export default function GreeneDeskApp() {
   const btn = "inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium";
 
   return (
+    <Layout>
     <main className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <section>
         <p className="text-sm font-medium text-primary">GreeneDesk app</p>
@@ -231,5 +233,6 @@ export default function GreeneDeskApp() {
         </Link>
       </section>
     </main>
+    </Layout>
   );
 }
