@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { GuideCallout } from "@/components/sections/GuideCallout";
 import { SEO } from "@/components/SEO";
@@ -77,6 +78,39 @@ const FitDesk = () => {
         ]}
       />
       <section className="pb-10"><GuideCallout slug="gym-pre-exercise-screening" /></section>
+
+      <section className="section-padding bg-surface-section">
+        <div className="container-wide max-w-3xl mx-auto text-center">
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
+            The FitDesk member app
+          </h2>
+          <p className="text-muted-foreground mb-6">
+            Members follow their trainer's program, watch exercise videos, log workouts and track progress on iPhone and Android.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-4">
+            <a
+              href="https://apps.apple.com/au/app/fitdesk/id6744887528"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
+            >
+              App Store
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=www.mygreenedesk.com.fitdesk"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
+            >
+              Google Play
+            </a>
+          </div>
+          <Link to="/fitdesk-app" className="text-sm font-medium text-primary hover:underline">
+            About the app
+          </Link>
+        </div>
+      </section>
+
       <FitDeskCTA />
     </Layout>
   );

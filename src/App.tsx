@@ -45,6 +45,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const Unsubscribe = lazy(() => import("./pages/Unsubscribe"));
 const Guides = lazy(() => import("./pages/Guides"));
 const GuideDetail = lazy(() => import("./pages/GuideDetail"));
+const FitDeskApp = lazy(() => import("./pages/FitDeskApp"));
 
 // SEO Pages
 const LeisureCentreSoftware = lazy(() => import("./pages/seo/LeisureCentreSoftware"));
@@ -123,6 +124,7 @@ const App = () => (
             <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/guides/:slug" element={<GuideDetail />} />
+            <Route path="/fitdesk-app" element={<FitDeskApp />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
