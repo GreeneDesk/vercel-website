@@ -318,6 +318,10 @@ export default function AgedCareFitness() {
             </div>
           ))}
         </div>
+        <p className="mt-6 text-center text-muted-foreground">
+          Members and residents follow their program in the free{" "}
+          <Link to="/fitdesk-app" className="font-medium text-primary hover:underline">FitDesk app</Link>.
+        </p>
       </section>
 
       {/* How trainers create workouts */}

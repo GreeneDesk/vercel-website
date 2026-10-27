@@ -29,6 +29,7 @@ const platformItems = [
 ];
 
 const moreSolutionsItems = [
+  { title: "FitDesk member app", href: "/fitdesk-app", description: "Member app for iPhone & Android" },
   { title: "SwimDesk", href: "/solutions/swimdesk", description: "Swim schools & aquatic centres" },
   { title: "SportDesk", href: "/solutions/sportdesk", description: "Squads, coaching & competitive sports" },
   { title: "School Programs", href: "/solutions/school-programs", description: "School swimming & sports" },
@@ -138,6 +139,9 @@ export function Header() {
                   {item.title}
                 </Link>
               ))}
+              <Link to="/fitdesk-app" className="pl-4 text-base font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
+                FitDesk member app
+              </Link>
 
               <Button variant="cta" asChild>
                 <Link to="/demo" onClick={() => setIsOpen(false)}>Book a FitDesk Demo</Link>
