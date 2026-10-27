@@ -126,7 +126,11 @@ export default function FitDeskApp() {
           </a>
         </div>
         <p className="mt-3 text-sm text-muted-foreground">
-          Free for members. You'll need sign-in details from your centre.
+          Free for members. You'll need sign-in details from your centre. Staff and parents use the{" "}
+          <Link to="/greenedesk-app" className="text-primary hover:underline">
+            GreeneDesk app
+          </Link>
+          .
         </p>
       </section>
 

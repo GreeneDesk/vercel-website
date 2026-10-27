@@ -418,6 +418,38 @@ const SwimDesk = () => {
 
       <PageFaqs heading="Questions about swim school software" faqs={swimdeskFaqs} />
 
+      <section className="section-padding bg-surface-section">
+        <div className="container-wide max-w-3xl mx-auto text-center">
+          <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
+            The GreeneDesk app
+          </h2>
+          <p className="text-muted-foreground mb-6">
+            Parents see their child's progress and book make-up lessons, and instructors mark attendance and record skills poolside, all in the free GreeneDesk app.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-4">
+            <a
+              href="https://apps.apple.com/au/app/greenedesk/id6447428480"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
+            >
+              App Store
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=www.mygreenedesk.com.greenedesk"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
+            >
+              Google Play
+            </a>
+          </div>
+          <Link to="/greenedesk-app" className="text-sm font-medium text-primary hover:underline">
+            About the app
+          </Link>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-glow text-primary-foreground">
         <div className="container-wide text-center">

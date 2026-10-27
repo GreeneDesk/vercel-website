@@ -311,6 +311,24 @@ export default function SchoolPrograms() {
         </div>
       </section>
 
+      <section className="mt-16 rounded-xl border bg-muted/40 p-6 sm:p-8 text-center">
+        <h2 className={h2}>The GreeneDesk app</h2>
+        <p className="mt-3 mx-auto max-w-3xl text-muted-foreground">
+          Parents see their child's progress and book make-up lessons, and instructors mark attendance and record skills poolside, all in the free GreeneDesk app.
+        </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <a href="https://apps.apple.com/au/app/greenedesk/id6447428480" target="_blank" rel="noopener" className="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90">
+            App Store
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=www.mygreenedesk.com.greenedesk" target="_blank" rel="noopener" className="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90">
+            Google Play
+          </a>
+        </div>
+        <Link to="/greenedesk-app" className="mt-4 inline-block text-sm font-medium text-primary hover:underline">
+          About the app
+        </Link>
+      </section>
+
       <section className="mt-16 rounded-2xl bg-primary px-6 py-10 text-center text-primary-foreground sm:px-10">
         <h2 className="text-2xl font-semibold sm:text-3xl">See your next school program in SwimDesk</h2>
         <p className="mx-auto mt-2 max-w-2xl opacity-90">A short demo set up with your levels, your sites and your schools.</p>

@@ -35,6 +35,7 @@ const moreSolutionsItems = [
   { title: "SportDesk", href: "/solutions/sportdesk", description: "Squads, coaching & competitive sports" },
   { title: "Council & Leisure Centres", href: "/solutions/council", description: "Multi-service centre operations" },
   { title: "FitDesk member app", href: "/fitdesk-app", description: "Member app for iPhone & Android" },
+  { title: "GreeneDesk staff and parent app", href: "/greenedesk-app", description: "Staff & family app for iPhone & Android" },
   { title: "Compare", href: "/compare", description: "How GreeneDesk compares" },
 ];
 
@@ -141,6 +142,9 @@ export function Header() {
               ))}
               <Link to="/fitdesk-app" className="pl-4 text-base font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
                 FitDesk member app
+              </Link>
+              <Link to="/greenedesk-app" className="pl-4 text-base font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
+                GreeneDesk staff and parent app
               </Link>
 
               <Button variant="cta" asChild>
