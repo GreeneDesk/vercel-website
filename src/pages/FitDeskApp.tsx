@@ -3,6 +3,7 @@
 // Needs src/lib/seo.ts (already in the project from the guides update).
 
 import { Link } from "react-router-dom";
+import { Layout } from "@/components/layout/Layout";
 import { usePageMeta, SITE_URL } from "@/lib/seo";
 
 const IOS = "https://apps.apple.com/au/app/fitdesk/id6744887528";
@@ -102,6 +103,7 @@ export default function FitDeskApp() {
   const btn = "inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium";
 
   return (
+    <Layout>
     <main className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <section>
         <p className="text-sm font-medium text-primary">FitDesk member app</p>
@@ -189,5 +191,6 @@ export default function FitDeskApp() {
         </Link>
       </section>
     </main>
+    </Layout>
   );
 }
